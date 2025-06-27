@@ -1,4 +1,7 @@
+RoyalHorsemage.DisplayName: Royal Horsemage
+
 LonelySorceress: {
+	DisplayName: Lonely Sorceress
 	Bestiary: A strange lady, she seems to overflow with magical energy!
 	Bestiary2: Lonely Feeble Sorceress
 	Button: Spar with your new wife
@@ -18,30 +21,175 @@ LonelySorceress: {
 	Basic14: Shhh hush hun, we should try to spar instead :3
 }
 
-ShadowWraith.Bestiary: Powerful skulls sent by skeletron to roam the darkness for the next pray
-ShadeSlime.Bestiary: A slime formed of pure darkness conjured by powerful beasts
-RoyalSlime.Bestiary: The slime kings Royal heir, it will take his place opon death...
-TribalPriest.Bestiary: A much richer form of the trible worshippers
-TribalPeasant.Bestiary: Even the weakest, most poor among the warriors in the morrow are still decent foes..
-MorrowedJellyFish.Bestiary: Extremely powerful jellyfish that has been aflicted by the gild in the morrow, very dangerour
+CarianKnight.DisplayName: Carian Knight
+AlcaricVoidSmall.DisplayName: Alcaric Void Small
+
+ShadowWraith: {
+	DisplayName: Shadow Wraith
+	Bestiary: Powerful skulls sent by skeletron to roam the darkness for the next pray
+}
+
+ShadeSlime: {
+	DisplayName: Shade Slime
+	Bestiary: A slime formed of pure darkness conjured by powerful beasts
+}
+
+RoyalSlime: {
+	DisplayName: Royal Slime
+	Bestiary: The slime kings Royal heir, it will take his place opon death...
+}
+
+IvythornSlime.DisplayName: Ivythorn Slime
+TribalWorshipper.DisplayName: Tribal Worshipper
+
+TribalPriest: {
+	DisplayName: Tribal Priest
+	Bestiary: A much richer form of the trible worshippers
+}
+
+TribalPeasant: {
+	DisplayName: Tribal Peasant
+	Bestiary: Even the weakest, most poor among the warriors in the morrow are still decent foes..
+}
+
+TribalGuard.DisplayName: Tribal Guard
+TopazBeetle.DisplayName: Topaz Beetle
+SapphireBeetle.DisplayName: Sapphire Beetle
+RubyBeetle.DisplayName: Ruby Beetle
+MossyZombie.DisplayName: Mossy Zombie
+
+MorrowedJellyFish: {
+	DisplayName: Morrowed Jellyfish
+	Bestiary: Extremely powerful jellyfish that has been aflicted by the gild in the morrow, very dangerour
+}
+
+EmeraldBeetle.DisplayName: Emerald Beetle
+AmethystBeetle.DisplayName: Amethyst Beetle
+GoliathJellyfish.DisplayName: Goliath Jellyfish
+GoliathCryogenicJellyfish.DisplayName: Goliath Cryogenic Jellyfish
+WinterSoul3.DisplayName: Winter Soul
+WinterSoul2.DisplayName: Winter Soul
+WinterSoul1.DisplayName: Winter Soul
+WinterBornSlime.DisplayName: Winter Born Slime
+WinterbornBat.DisplayName: Winterborn Bat
 HarvestVirulent.DisplayName: Harvest Virulent
+SkyRune.DisplayName: Sky Rune
+RedLightBig.DisplayName: Red Light Big
+PearledGold.DisplayName: Pearled Gold
+OverworldRuneLightBig.DisplayName: Overworld Rune Light Big
+OverworldRune.DisplayName: Overworld Rune
+OceanRuneLightBig.DisplayName: Ocean Rune Light Big
+OceanRune.DisplayName: Ocean Rune
+JungleRune.DisplayName: Jungle Rune
 HarvestUM.DisplayName: Harvest U M
 HarvestOverworld.DisplayName: Harvest Overworld
 HarvestGovheil.DisplayName: Harvest Govheil
+GreenLightBig.DisplayName: Green Light Big
+GoldLightBig.DisplayName: Gold Light Big
+DesertRuneLightBig.DisplayName: Desert Rune Light Big
+DesertRune.DisplayName: Desert Rune
+BlueLightBig.DisplayName: Blue Light Big
 HarvestIce.DisplayName: Harvest Ice
-GovheilProtector.Bestiary: The last protectors of the govheil, and they are pretty formidable...
-GovheilGuardian.Bestiary: Guardians who are ready to die for Gothivia?
-Gintzling.Bestiary: Lowest of the Gintze but can wipe you out fast! They need food too yknow :(
-GintzeSolider.Bestiary: A Captain of Gofria's ranks, be careful
-GintzeCaptain.Bestiary: A Captain of Gothivia's ranks, be careful
-GintziaHand.Bestiary: A scarecrow reanimated by the passion of wandering flames
-SnowWalkerNPC.Bestiary: The most adorable goodest spicy child. Do not dare be mean to him!
-SandWalkerNPC.Bestiary: The most adorable goodest spicy child. Do not dare be mean to him!
-PandorasGuard.Bestiary: They guard what is theirs!
-StarteV.Bestiary: Clone of a powerful sexy goddess :)
-CloneV.Bestiary: Clone of a powerful sexy goddess :)
+
+GovheilProtector: {
+	DisplayName: Govheil Protector
+	Bestiary: The last protectors of the govheil, and they are pretty formidable...
+}
+
+GovheilGuardian: {
+	DisplayName: Govheil Guardian
+	Bestiary: Guardians who are ready to die for Gothivia?
+}
+
+Gintzling: {
+	DisplayName: Gintzling
+	Bestiary: Lowest of the Gintze but can wipe you out fast! They need food too yknow :(
+}
+
+GintzeWindRider.DisplayName: Gintze Wind Rider
+GintzeWarrior.DisplayName: Gintze Warrior
+GintzeSpearman.DisplayName: Gintze Spearman
+
+GintzeSolider: {
+	DisplayName: Gintze Solider
+	Bestiary: A Captain of Gofria's ranks, be careful
+}
+
+GintzeCaptain: {
+	DisplayName: Gintze Captain
+	Bestiary: A Captain of Gothivia's ranks, be careful
+}
+
+GintziaHand: {
+	DisplayName: Gintzia Hand
+	Bestiary: A scarecrow reanimated by the passion of wandering flames
+}
+
+StarSlime.DisplayName: Star Slime
+DiceinNPC.DisplayName: Dicein
+Shrewmet.DisplayName: Shrewmet
+Shrewder.DisplayName: Shrewder
+
+SnowWalkerNPC: {
+	DisplayName: Snow Walker
+	Bestiary: The most adorable goodest spicy child. Do not dare be mean to him!
+}
+
+SandWalkerNPC: {
+	DisplayName: Sand Walker
+	Bestiary: The most adorable goodest spicy child. Do not dare be mean to him!
+}
+
+THEGREATDEVOURER.DisplayName: THE GREAT DEVOURER
+FlamingWitch.DisplayName: Flaming Witch
+CinderCrawlerTail.DisplayName: Cinder Crawler Tail
+CinderCrawlerHead.DisplayName: Cinder Crawler Head
+CinderCrawlerBody.DisplayName: Cinder Crawler Body
+CharredSoul.DisplayName: Charred Soul
+CharredSkulls.DisplayName: Charred Skulls
+BottomFeeder.DisplayName: Bottom Feeder
+WaterRifle.DisplayName: Water Rifle
+WaterLauncher.DisplayName: Water Launcher
+WaterGun.DisplayName: Water Gun
+WaterCogwork.DisplayName: Water Cogwork
+SpikeBallGun.DisplayName: Spike Ball Gun
+NeedleGun.DisplayName: Needle Gun
+IronNailGun.DisplayName: Iron Nail Gun
+PandorasSeeker.DisplayName: Pandoras Seeker
+PandorasKnife.DisplayName: Pandoras Knife
+
+PandorasGuard: {
+	DisplayName: Pandoras Guard
+	Bestiary: They guard what is theirs!
+}
+
+BlazingSerpentTail.DisplayName: Blazing Serpent Tail
+BlazingSerpentBody.DisplayName: Blazing Serpent Body
+BlazeBeamWarn.DisplayName: Blaze Beam Warn
+CatacombsBossSpawn.DisplayName: Catacombs Boss Spawner
+Viola.DisplayName: Viola
+Sword3.DisplayName: Sword3
+Sword2.DisplayName: Sword2
+Sword1.DisplayName: Sword1
+
+StarteV: {
+	DisplayName: Verlia
+	Bestiary: Clone of a powerful sexy goddess :)
+}
+
+GhostCharger.DisplayName: Ghost Charger
+
+CloneV: {
+	DisplayName: Clone Verlia
+	Bestiary: Clone of a powerful sexy goddess :)
+}
+
+Zapwarn.DisplayName: Zapwarn
+Veiizal.DisplayName: Veiizal
+VoidWall.DisplayName: Void Wall
 
 UnderworldRift: {
+	DisplayName: Underworld Rift
 	Bestiary: A strange rift to void, disturbing it may yield catastrophic results...
 	Button: Disturb Rift
 }
@@ -49,57 +197,165 @@ UnderworldRift: {
 VoidWormTail.DisplayName: Void Worm Tail
 VoidWormHead.DisplayName: Void Worm Head
 VoidWormBody.DisplayName: Void Worm Body
+SunStalkerRayLightBig.DisplayName: Sun Stalker Ray Light Big
+SunStalkerRayLight.DisplayName: Sun Stalker Ray Light
+SunStalkerPreSpawn.DisplayName: Sun Stalker Pre Spawn
+SunStalkerLighting.DisplayName: Sun Stalker Lighting
+SunStalkerDeath.DisplayName: Sun Stalker Death
 
 SunStalker: {
-	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/SunClaw] at an altar in the desert.
+	DisplayName: Sun Stalker
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/SunClaw] at an altar in the desert.
 	Bestiary: Former flyer and born where all big birds were born, in the cinderspark.
 }
 
+Sun.DisplayName: Sun
 StoneDeath.DisplayName: Stone Death
 Flowerball.DisplayName: Flowerball
+STARBOMBERGUN.DisplayName: STARBOMBER GUN
+STARLINGBIG.DisplayName: STARLING BIG
+STARLING.DisplayName: STARLING
+STARBOMBERLASERWARNBIG.DisplayName: STARBOMBER BIG LASER WARNING
+STARBOMBERLASERWARN.DisplayName: STARBOMBER LASER WARN
 
 STARBOMBER: {
+	DisplayName: STARBOMBER
 	BossChecklistIntegration.SpawnInfo: Randomly during a hardmode Aurorean Starfall, they may fall from the sky.
 	Bestiary: Destruction is what these bring, Fenix may of purchased some things off the black market, destroy these immediately...
 }
 
-SingularityOrb.Bestiary: A poisonous slime mutated from normal green slimes
-LazerOrb.Bestiary: A poisonous slime mutated from normal green slimes
+Voidling.DisplayName: Voidling
+
+SingularityOrb: {
+	DisplayName: Singularity Orb
+	Bestiary: A poisonous slime mutated from normal green slimes
+}
+
+SingularitySparkBig.DisplayName: Singularity Spark
+SingularitySpark.DisplayName: Singularity Spark
+SingularityLazer2.DisplayName: Singularity Deathray
+SingularityLazer.DisplayName: Singularity Deathray
+
+LazerOrb: {
+	DisplayName: Lazer Orb
+	Bestiary: A poisonous slime mutated from normal green slimes
+}
+
+Jackoslime.DisplayName: Jackoslime
+JackDeath.DisplayName: Jack Death
 
 Jack: {
-	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/WanderingEssence] at a post in the Fabled Castle to the right at night.
+	DisplayName: Jack
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/WanderingEssence] at a post in the Fabled Castle to the right at night.
 	Bestiary: A scarecrow reanimated by the passion of wandering flames, exploring out of the veil.
 }
 
+IrradiatedNestDeath.DisplayName: Irradiated Nest Death
+
 IrradiatedNest: {
-	BossChecklistIntegration.SpawnInfo: Buy a [i:LunarVeilLegacy/EDR] from Gia and use it in the virulent acid or find an Unknown Signal."
+	DisplayName: Irradiated Nest
+	BossChecklistIntegration.SpawnInfo: Buy a [i:Stellamod/EDR] from Gia and use it in the virulent acid or find an Unknown Signal."
 	Bestiary: A abomination housing the eggs for what seems to be a mechanical bird, born from the acid and a creation of Gia.
 	Bestiary2: Irradiated Nest
 }
 
-Train2.Bestiary: A part of gothivia's largest creations
-Train1.Bestiary: A part of gothivia's largest creations
-Rek.Bestiary: A loving little pet of the sun goddess Gothivia
-Gothiviabb.Bestiary: I guess she knows you destroyed her singularity inside Daedus, oops
-Gothiviab.Bestiary: This person isn't the real gothivia, where is she?
+IrradiatedCreeper.DisplayName: Irradiated Creeper
+IRNDeathBomb.DisplayName: I R N Death Bomb
+IrradieagleSurvent.DisplayName: Irradieagle Survent
+Irradieagle.DisplayName: Irradieagle
+
+Train2: {
+	DisplayName: Train2
+	Bestiary: A part of gothivia's largest creations
+}
+
+Train1: {
+	DisplayName: Train1
+	Bestiary: A part of gothivia's largest creations
+}
+
+Rek: {
+	DisplayName: Havoc
+	Bestiary: A loving little pet of the sun goddess Gothivia
+}
+
+Gothiviabb: {
+	DisplayName: Gothiviabb
+	Bestiary: I guess she knows you destroyed her singularity inside Daedus, oops
+}
+
+Gothiviab: {
+	DisplayName: Irradia
+	Bestiary: This person isn't the real gothivia, where is she?
+}
+
+FenixWarn.DisplayName: Fenix Warn
+FenixSnipe.DisplayName: Fenix Snipe
+FenixSlash.DisplayName: Fenix Slash
 
 Fenix: {
+	DisplayName: Fenix
 	BossChecklistIntegration.SpawnInfo: She resides in the royal capital far to the left, she may want to play with you!
 	Bestiary: Searching for a lover, this particular Queen lacks anyone she can socialize with as she tries to gain power of the void to kill Sigfried for revenge, so much power yet so lonely.
 	Bestiary2: Fenix the Vengeful
 }
 
-DreadMiresHeart.Bestiary:
-	'''
-	The heart of the beast brought on by devilish intent
-	(How the hell does that thing fit inside her chest?)
-	'''
-DreadSurvent.Bestiary: Powerful skulls tainted by devilish intent (dreadmire must�ve got bored with this one)
-DreadMire.Bestiary: One of the three powerful cosmic deities that has been tainted by devilish intent
-DreadFireCircle.Bestiary: A poisonous slime mutated from normal green slimes
-BloodCyst.Bestiary: A crystal which holds the power of summoning one of the three deities
-SolarSingularity.Bestiary: A small singularity granted to Daedus in exchange for where he lives and protects for.
-SolarPortal.Bestiary: A scarecrow reanimated by the passion of wandering flames
+ExpoiyosOrb.DisplayName: Expoiyos Orb
+AlcSpark.DisplayName: Alc Spark
+DrownOut.DisplayName: Drown Out
+ALCADSWIRL.DisplayName: A L C A D S W I R L
+ALCADHOLE.DisplayName: ALCADHOLE
+
+DreadMiresHeart: {
+	DisplayName: Dread Mires Heart
+	Bestiary:
+		'''
+		The heart of the beast brought on by devilish intent
+		(How the hell does that thing fit inside her chest?)
+		'''
+}
+
+DreadSurvent: {
+	DisplayName: Dread Survent
+	Bestiary: Powerful skulls tainted by devilish intent (dreadmire must�ve got bored with this one)
+}
+
+DreadMireZapwarnBig.DisplayName: Dread Mire Zapwarn Big
+DreadMireZapwarn.DisplayName: Dread Mire Zapwarn
+DreadMirePentagramSmall.DisplayName: Dread Mire Pentagram Small
+DreadMirePentagramMid.DisplayName: Dread Mire Pentagram Mid
+DreadMirePentagram.DisplayName: Dread Mire Pentagram
+
+DreadMire: {
+	DisplayName: Dread Mire
+	Bestiary: One of the three powerful cosmic deities that has been tainted by devilish intent
+}
+
+DreadFireCircle: {
+	DisplayName: Dread Fire Circle
+	Bestiary: A poisonous slime mutated from normal green slimes
+}
+
+DreadFireBomb.DisplayName: Dread Fire Bomb
+BloodCystDead.DisplayName: Blood Cyst Dead
+
+BloodCyst: {
+	DisplayName: Blood Cyst
+	Bestiary: A crystal which holds the power of summoning one of the three deities
+}
+
+SolarSingularity: {
+	DisplayName: Solar Singularity
+	Bestiary: A small singularity granted to Daedus in exchange for where he lives and protects for.
+}
+
+SolarPortal: {
+	DisplayName: Solar Portal
+	Bestiary: A scarecrow reanimated by the passion of wandering flames
+}
+
+DRay.DisplayName: D Ray
+LanternOfHope.DisplayName: Lantern Of Hope
 Daedus.DisplayName: Daedus
 CaevaSnipe.DisplayName: Caeva Snipe
 CaevaDeathRowR.DisplayName: Caeva Death Row R
@@ -110,53 +366,108 @@ Caeva: {
 	Bestiary: A scarecrow reanimated by the passion of wandering flames
 }
 
-AbysmLunatic.Bestiary: Powerful skulls sent by skeletron to roam the darkness for the next pray
-Sparn.BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Trapped Catacombs, it may appear...
-WaterJellyfish.BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Water Catacombs, it may appear...
-PandorasFlamebox.BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Fire Catacombs, it may appear...
-Cogwork.BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Trapped or Water Catacombs, it may appear...
+ToxicHornet.DisplayName: Toxic Hornet
+ToxicBoulder.DisplayName: Toxic Boulder
+AcidSpirit.DisplayName: Acid Spirit
+AcidSlime.DisplayName: Acid Slime
+AcidProbe.DisplayName: Acid Probe
+AbyssalSlime.DisplayName: Abyssal Slime
+AbyssalSkull.DisplayName: Abyssal Skull
+AbyssalSeeker.DisplayName: Abyssal Seeker
+
+AbysmLunatic: {
+	DisplayName: Abysm Lunatic
+	Bestiary: Powerful skulls sent by skeletron to roam the darkness for the next pray
+}
+
+TericGramNPC2.DisplayName: Teric Gram
+TericGramNPC.DisplayName: Teric Gram
+
+Sparn: {
+	DisplayName: Sparn
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Trapped Catacombs, it may appear...
+}
+
+WaterJellyfish: {
+	DisplayName: Water Jellyfish
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Water Catacombs, it may appear...
+}
+
+PandorasFlamebox: {
+	DisplayName: Pandora's Flamebox
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Fire Catacombs, it may appear...
+}
+
+Cogwork: {
+	DisplayName: Cogwork
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Trapped or Water Catacombs, it may appear...
+}
 
 BlazingSerpentHead: {
-	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Fire Catacombs, it may appear...
+	DisplayName: Blazing Serpent
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Fire Catacombs, it may appear...
 	Bestiary: Burining with passion I guess.
 }
 
 StarrVeriplant: {
-	BossChecklistIntegration.SpawnInfo: Interact with the Old Guard's Shrine. After using the [i:LunarVeilLegacy/AnotherRock] in your Starter bag.
+	DisplayName: Stone Guardian
+	BossChecklistIntegration.SpawnInfo: Interact with the Old Guard's Shrine. After using the [i:Stellamod/AnotherRock] in your Starter bag.
 	Bestiary: A beloved magical stone guardian, protected the natural life and would petrify anyone who disturbs it.
 }
 
 Sylia: {
+	DisplayName: Sylia
 	BossChecklistIntegration.SpawnInfo: Interact with the strange anomaly that lies in within the Underworld Ruins.
 	Bestiary: Someone who was consumed by their dark magic, even more so than Fenix would bother with.
 	Bestiary2: Sylia, Merena's Sister.
 }
 
 VerliaB: {
-	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/MoonflameLantern] at a shrine in the Cathedral over the ice biome!
+	DisplayName: Verlia Of the Moon
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/MoonflameLantern] at a shrine in the Cathedral over the ice biome!
 	Bestiary: Verlia, The Empress of the Stars and moon, Vixyl's sister and a master magic swordswoman.
 }
 
 SingularityFragment: {
-	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/VoidKey] at an altar, in the Aurelus, deep in the ice.
+	DisplayName: Singularity Fragment
+	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/VoidKey] at an altar, in the Aurelus, deep in the ice.
 	Bestiary: A powerful gift that was given to Cozmire, yet was stolen away by Fenix to seal away Verlia.
 	Bestiary2: Singularity Fragment
 }
 
 CommanderGintzia: {
+	DisplayName: Commander Gintzia
 	BossChecklistIntegration.SpawnInfo: Randomly each day, if you have 3 npcs and have killed the Stone Guardian, an army will raid you!
 	Bestiary: He's evil yet so weak. This fellow betrayed Gothivia during their war against Fenix and his part of the army joined the other side for power.
 	Bestiary2: Commander Gintzia, the betrayer
 }
 
 DaedusR: {
+	DisplayName: Daedus The Forgotten
 	BossChecklistIntegration.SpawnInfo: Disturb with the ruined tablet deep within the morrow.
 	Bestiary: One who followed power, exchanging their freedom for a taste of a singularity. Trapped forever guarding whats left of the Govheil.
 	Bestiary2: The aspiring forgotten puppet
 }
 
 Aimacra: {
+	DisplayName: Aimacra
+
 	TownNPCMood: {
+		Content: I am content.
+		NoHome: I hate not having a home.
+		FarFromHome: I am too far from home.
+		LoveSpace: I love having so much space.
+		DislikeCrowded: I dislike how crowded I am.
+		HateCrowded: I hate how crowded I am.
+		LoveBiome: I love {BiomeName}.
+		LikeBiome: I like {BiomeName}.
+		DislikeBiome: I dislike {BiomeName}.
+		LoveNPC: I love {NPCName}.
+		LikeNPC: I like {NPCName}.
+		DislikeNPC: I dislike {NPCName}.
+		HateNPC: I hate {NPCName}.
+		LikeNPC_Princess: I like {NPCName}.
+		Princess_LovesNPC: I like {NPCName}.
 	}
 
 	Bestiary: Aimacra??? From Diari?? Crazy
@@ -185,6 +496,7 @@ Aimacra: {
 }
 
 Bordoc: {
+	DisplayName: Bordoc
 	Bestiary: Steaming from the depths
 	Bestiary2: Bordoc the eternal blacksmith
 	Button: Heart of the Morrow
@@ -206,7 +518,17 @@ Bordoc: {
 }
 
 BoundGia: {
+	DisplayName: Bound Gia
+
 	TownNPCMood: {
+		Content: I am content.
+		NoHome: I hate not having a home.
+		FarFromHome: I am too far from home.
+		LoveSpace: I love having so much space.
+		DislikeCrowded: I dislike how crowded I am.
+		HateCrowded: I hate how crowded I am.
+		LikeNPC_Princess: I like {NPCName}.
+		Princess_LovesNPC: I like {NPCName}.
 	}
 
 	Basic: Oh goodness thank you for saving me. I dont know how long I was tied up... I got stranded down here by a bunch of scouts I presume are from the morrow. I really caused a mess this time but I am really glad you saved me. D'you have a place to stay?
@@ -215,6 +537,7 @@ BoundGia: {
 }
 
 CellConverter: {
+	DisplayName: Cell Converter
 	Bestiary: Burning in a magical laboratory
 	Bestiary2: The Cell converter
 	Button: Put in scrap token
@@ -230,6 +553,7 @@ CellConverter: {
 }
 
 Delgrim: {
+	DisplayName: Delgrim
 	Bestiary: A magical engineer huh?
 	Bestiary2: Delgrim the eternal engineer.
 	Button: Old Tales
@@ -271,7 +595,24 @@ Delgrim: {
 }
 
 Gambit: {
+	DisplayName: Gambit
+
 	TownNPCMood: {
+		Content: "{$Mods.Stellamod.TownNPCMood.Gambit.Content}"
+		NoHome: I really dont have a house
+		FarFromHome: Spiderman far from home
+		LoveSpace: I really like this space
+		DislikeCrowded: I dont like being crowded, get me out babe
+		HateCrowded: PLEASE LET ME HAVE A SPACE WITH YOU
+		LoveBiome: THIS IS AMAZEBALLS
+		LikeBiome: This is cool
+		DislikeBiome: I dont like this biome
+		LoveNPC: I loveeee you
+		LikeNPC: "{$Mods.Stellamod.TownNPCMood.Gambit.LikeNPC}"
+		DislikeNPC: "{$Mods.Stellamod.TownNPCMood.Gambit.DislikeNPC}"
+		HateNPC: "{$Mods.Stellamod.TownNPCMood.Gambit.HateNPC}"
+		LikeNPC_Princess: I like {NPCName}.
+		Princess_LovesNPC: I like {NPCName}.
 	}
 
 	Bestiary: She loves those ruin medals huh?, so much so that she is now attracted to you :(
@@ -303,6 +644,8 @@ Gambit: {
 }
 
 Gia: {
+	DisplayName: Gia
+
 	TownNPCMood: {
 		Content: I am content.
 		NoHome: I hate not having a home.
@@ -343,7 +686,24 @@ Gia: {
 }
 
 Ginztel: {
+	DisplayName: Ginztel
+
 	TownNPCMood: {
+		Content: I am content.
+		NoHome: I hate not having a home.
+		FarFromHome: I am too far from home.
+		LoveSpace: I love having so much space.
+		DislikeCrowded: I dislike how crowded I am.
+		HateCrowded: I hate how crowded I am.
+		LoveBiome: I love {BiomeName}.
+		LikeBiome: I like {BiomeName}.
+		DislikeBiome: I dislike {BiomeName}.
+		LoveNPC: I love {NPCName}.
+		LikeNPC: I like {NPCName}.
+		DislikeNPC: I dislike {NPCName}.
+		HateNPC: I hate {NPCName}.
+		LikeNPC_Princess: I like {NPCName}.
+		Princess_LovesNPC: I like {NPCName}.
 	}
 
 	Bestiary: Dumbfounded by your strength, the commander retired and came to your base for a visit and a free hotel.
@@ -357,6 +717,7 @@ Ginztel: {
 }
 
 Merena: {
+	DisplayName: Merena
 	Bestiary: Magic Magic MAGIC
 	Bestiary2: Merena the bewitched sorcerer
 	Button: Merenas Quest
@@ -382,9 +743,13 @@ Merena: {
 	Special7: Hey, I have nothing else for you to do! Thanks for all of your help, have you checked out my shop yet?
 }
 
-NaturalWitch.Bestiary: A Captain of Gofria's ranks, be careful
+NaturalWitch: {
+	DisplayName: Natural Witch
+	Bestiary: A Captain of Gofria's ranks, be careful
+}
 
 Zui: {
+	DisplayName: Zui
 	BossChecklistIntegration: After Plantera, Zui will sell you an item that'll allow you to fight her in the witch town!
 	Bestiary: A traveller of the lands who may hold great power
 	Bestiary2: Zui the Traveller
@@ -416,30 +781,75 @@ Zui: {
 	Special11: Hey you wanna do a quest? I'll open up my expansive magic shop for you if you do.. I have quite some great goodies in store but I want to become the best witch in all of the Lunar Veil, and I want you to help me make a tome, but first I need you to kill Verlia first for me.
 }
 
-Rustwork.Bestiary: An old rusted cog with some magical abilities
+AbandonedMinor.DisplayName: Abandoned Minor
+AbandonedMinorSummon.DisplayName: Abandoned Minor Summon
+FloweredRedLight.DisplayName: Flowered Red Light
+FloweredWhiteLight.DisplayName: Flowered White Light
+RedFlower.DisplayName: Red Flower
+WhiteFlower.DisplayName: White Flower
+DreadFireBombG.DisplayName: Dread Fire Bomb G
+HeatBombLighting.DisplayName: Heat Bomb Lighting
+HeatBombRayLight.DisplayName: Heat Bomb Ray Light
+
+Rustwork: {
+	DisplayName: Rustwork
+	Bestiary: An old rusted cog with some magical abilities
+}
+
+MechanicalMinorSummon.DisplayName: Mechanical Minor Summon
+MechanicalMinor.DisplayName: Mechanical Minor
+InfusedSlime.DisplayName: Infused Slime
+RustedBomber.DisplayName: Rusted Bomber
+RustedBomberSummon.DisplayName: Rusted Bomber Summon
+Steeru.DisplayName: Steeru
 
 ZuiTheTraveller: {
+	DisplayName: Zui The Radiance
 	Bestiary: Zui, not exactly someone that can be killed but loves to play around I guess? Sirestias is closely accompanied with her
 	Bestiary2: Zui the Radiance
 }
 
+TestLaserNPC.DisplayName: Test Laser N P C
+
 UnknownSignal: {
+	DisplayName: Unknown Signal
 	Bestiary: An Unknown Signal
 	Button: Touch Unknown Circuitry
 	Basic: A static voice confirms the identity of the user, you are in the right place.
 }
 
+AlcaricVoidBig.DisplayName: Alcaric Void Big
+ZuiLASERWARN.DisplayName: Zui L A S E R W A R N
+GoldBeamWarn.DisplayName: Gold Beam Warn
+ZuiDeath.DisplayName: Zui Death
 LuminullSpiritCrystal.DisplayName: Luminull Spirit Crystal
-DeathVerlia.Bestiary: Clone of a powerful sexy goddess :)
+IceRune.DisplayName: Ice Rune
+VerliaSpawn.DisplayName: Verlia Spawn
+Bossdeath1.DisplayName: Bossdeath1
+
+DeathVerlia: {
+	DisplayName: Death Verlia
+	Bestiary: Clone of a powerful sexy goddess :)
+}
+
+VerliaDP.DisplayName: Verlia D P
 
 Niivi: {
+	DisplayName: Niivi
 	BossChecklistIntegration.SpawnInfo: Deal enough damage to Niivi to anger her, you may find her flying around The Great Illuria! -or sleeping...
 	Bestiary: Niivi, The First Dragon
 }
 
-IllurianMage.Bestiary: A respected sorcerer from Sigfried's old rein
+IllurianMage: {
+	DisplayName: Illurian Mage
+	Bestiary: A respected sorcerer from Sigfried's old rein
+}
+
+IllurianGuard.DisplayName: Illurian Guard
+SyliaDeath.DisplayName: Sylia Death
 
 Veldris: {
+	DisplayName: Veldris
 	Bestiary: Freezing to death
 	Bestiary2: Veldris the assassin
 	Button: Talk
@@ -470,15 +880,21 @@ Veldris: {
 }
 
 SupernovaZapwarn.DisplayName: Supernova Zapwarn
-SupernovaOrb.Bestiary: A poisonous slime mutated from normal green slimes
+
+SupernovaOrb: {
+	DisplayName: Supernova Orb
+	Bestiary: A poisonous slime mutated from normal green slimes
+}
 
 SupernovaFragment: {
+	DisplayName: Supernova Fragment
 	BossChecklistIntegration.SpawnInfo: Go down to the Cinderspark and nag Ordin to get a gift for Ereshkigal and she may give you something in return...
 	Bestiary: A powerful gift from Lumi V. to her trusted sisters.
 	Bestiary2: Supernova Fragment
 }
 
 Sirestias: {
+	DisplayName: Sirestias
 	Bestiary: Your eternal bonding with this individual resonates with everyone throughout!
 	Basic1: Here to give me some company I see?
 	Basic2: Hmph how's Aimacra doing? Nevermind I already know that answer.
@@ -512,7 +928,14 @@ Sirestias: {
 	Downed19: Okie dokie, Gothivia has agree to stay calm so we aren't going to assassinate her anymore, I feel bad for killing her sister now. I hope Vixyl doesn't find out.
 }
 
-DreadMonolith.Bestiary: A crystal which holds the power of summoning one of the three deities
+JellyGlow.DisplayName: Jelly Glow
+BabyJellyGlow.DisplayName: Baby Jelly Glow
+
+DreadMonolith: {
+	DisplayName: Dread Monolith
+	Bestiary: A crystal which holds the power of summoning one of the three deities
+}
+
 HavocHead.DisplayName: Havoc Head
 HavocSegmentBack.DisplayName: Havoc Segment Back
 HavocSegmentFront.DisplayName: Havoc Segment Front
@@ -520,6 +943,7 @@ HavocSegmentMiddle.DisplayName: Havoc Segment Middle
 HavocTail.DisplayName: Havoc Tail
 
 IrradiaIdle: {
+	DisplayName: Irradia Idle
 	Bestiary: A suspicious person at the bottom of the Govheil Castle
 	Bestiary2: ???
 	Button: Show Verlia's Manifested Bravery
@@ -530,28 +954,51 @@ IrradiaIdle: {
 	Special1: Stop bothering me, you don't deserve to die.
 }
 
+Havoc.DisplayName: Havoc
+
 Ishtar: {
+	DisplayName: Ishtar
 	Bestiary: Entrance
 	Bestiary2: The entrance to the Ishtar Citadel
 }
 
+PULSARHOLE.DisplayName: P U L S A R H O L E
+BabySwarmer.DisplayName: Baby Swarmer
+BabySwarmerSummon.DisplayName: Baby Swarmer Summon
+HavocSignal.DisplayName: Havoc Signal
+IrradiaElectricBoxNode.DisplayName: Irradia Electric Box Node
+IrradiaSpikeBox.DisplayName: Irradia Spike Box
+
 Irradia: {
-	BossChecklistIntegration.SpawnInfo: Give Irradia a [i:LunarVeilLegacy/ManifestedBravery] at a bottom of the Govheil Castle, underneath the Virulent.
+	DisplayName: Irradia
+	BossChecklistIntegration.SpawnInfo: Give Irradia a [i:Stellamod/ManifestedBravery] at a bottom of the Govheil Castle, underneath the Virulent.
 	Bestiary: The most committed protector of the Govhiel. She just wishes to see her friend's and village again.
 	Bestiary2: Irradia N Havoc
 }
 
 DreadMireR: {
+	DisplayName: Dread Mire R
 	BossChecklistIntegration.SpawnInfo: Destroy 3 dread monoliths to create a Dread medallion and summon her during night.
 	Bestiary: Traded her singularity in turn for more dreadful power, ridden of anxiety and all things dreadful
 	Bestiary2: Cozmire- Dreadmire Veil??
 }
 
-StartIrradia.Bestiary: Start to something bad
-GraveShard.Bestiary: A crystal which holds the power of summoning one of the three deities
+DreadMirePentagramV2.DisplayName: Dread Mire Pentagram V2
+
+StartIrradia: {
+	DisplayName: Start Irradia
+	Bestiary: Start to something bad
+}
+
+GraveShard: {
+	DisplayName: Grave Shard
+	Bestiary: A crystal which holds the power of summoning one of the three deities
+}
+
 IncresianDisc.DisplayName: Incresian Disc
 
 Mardenth: {
+	DisplayName: Mardenth
 	Bestiary: One of the 3 Children of Daeden, this one being the most useless
 	Bestiary2: Mardenth of the Veil
 	Button2: Talk
@@ -578,6 +1025,7 @@ Mardenth: {
 }
 
 Ordin: {
+	DisplayName: Ordin
 	Bestiary: Steaming from the depths
 	Bestiary2: Ordin, The New Monarch
 	Button: Reminisce of Sigfried
@@ -600,19 +1048,34 @@ Ordin: {
 	Special10: Now I sit ill waiting for the lands of the veil to change.
 }
 
+DustNadoSpawner.DisplayName: Dust Nado Spawn
+Stalker.DisplayName: Stalker
+StalkerSpawner.DisplayName: Stalker Spawning
+
 RekSnake: {
+	DisplayName: Rek, The Burning Serpent
 	BossChecklistIntegration.SpawnInfo: Gothivia's sworn protector, you must take him down before you can get to Gothivia.
 	Bestiary: A special snake from the Cinderspark that was atop it's food chain and took a liking to Gothivia. Eventually it became her guardian.
 	Bestiary2: Rek, The Sun Serpent
 }
 
+RekFireCrystal.DisplayName: Rek Fire Crystal
+RekFireEye.DisplayName: Flamed Eye
+Sun2.DisplayName: Sun2
+
 GothiviaIyx: {
+	DisplayName: Gothivia Iyx, The Green Sun
 	BossChecklistIntegration.SpawnInfo: After killing her friend Irradia, Green sun will start and she will await your arrival, kill Rek to challenge her.
 	Bestiary: Empress of the Green sun and nature. Everything empowering and living falls under her reign.
 	Bestiary2: Gothivia, One of the Green Sun
 }
 
+Carmody.DisplayName: Carmody
+CarmodyGreen.DisplayName: Carmody Green
+SupernovaZapwarnFinal.DisplayName: Supernova Zapwarn Final
+
 GothiviaIdle: {
+	DisplayName: Gothivia Idle
 	Bestiary: You sense a strange godly prescence coming from Gothivia
 	Bestiary2: ???
 	Button: Challenge
@@ -623,11 +1086,38 @@ GothiviaIdle: {
 	Special1: You're not worth the effort, Rek can avenge them for me. Idiot.
 }
 
-StartGoth.Bestiary: Start to something bad
-IrravheilSprayer.Bestiary: A lowly civilian who bought old parts from Irradia before being contaminated. They now seek revenge after having their minds altered by the acid.
-Tulacrowe.Bestiary: The highest form of worshippers of Gothivia corrupted and risen from the grounds of the fallen Govheil Castle
+StartGoth: {
+	DisplayName: Start Goth
+	Bestiary: Start to something bad
+}
+
+RekSnakeIdle.DisplayName: Rek Snake Idle
+CentipedeTail.DisplayName: Centipede Tail
+CentipedeHead.DisplayName: Centipede Head
+CentipedeBody.DisplayName: Centipede Body
+IrravheilSlime.DisplayName: Irravheil Slime
+IrravheilLandwormTail.DisplayName: Irravheil Landworm Tail
+IrravheilLandwormHead.DisplayName: Irravheil Landworm
+IrravheilLandwormBody.DisplayName: Irravheil Landworm Body
+
+IrravheilSprayer: {
+	DisplayName: Irravheil Sprayer
+	Bestiary: A lowly civilian who bought old parts from Irradia before being contaminated. They now seek revenge after having their minds altered by the acid.
+}
+
+Tulacrowe: {
+	DisplayName: Tulacrowe
+	Bestiary: The highest form of worshippers of Gothivia corrupted and risen from the grounds of the fallen Govheil Castle
+}
+
+NiiviCrystalStars.DisplayName: Niivi Crystal Stars
+NiiviCrystalLightning.DisplayName: Niivi Crystal Lightning
+NiiviCrystalFrost.DisplayName: Niivi Crystal Frost
+NiiviRoaming.DisplayName: Niivi Roaming
+GothiviaDeath.DisplayName: Gothivia Death
 
 EreshkigalIdle: {
+	DisplayName: Ereshkigal Idle
 	Bestiary: A mystical veil user who took accountability to chain up Sigfried
 	Bestiary2: Ereshkigal the Lover
 	Button: Sigfried?
@@ -649,6 +1139,8 @@ EreshkigalIdle: {
 	Special10: Special11:
 	Special12: Special13:
 }
+
+GraveSeeker.DisplayName: Grave Seeker
 
 Azurerin: {
 	DisplayName: Azurerin
