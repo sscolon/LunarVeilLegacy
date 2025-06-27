@@ -1,0 +1,3 @@
+displayName = Lunar Veil Legacy
+author = Zenovia
+version = 0.1
