@@ -236,16 +236,7 @@ namespace LunarVeilLegacy.Helpers
 
             string frommod = reader.ReadString();
             string name = reader.ReadString();
-            Mod m = null;
-            if (ModLoader.TryGetMod(frommod, out m))
-            {
-                return m.Find<ModWall>(name).Type;
-            }
-            else
-            {
-                Mod.Logger.Warn("Mod was not loaded for walltype, returning 0");
-                return 0;
-            }
+            return LunarVeilLegacy.Instance.Find<ModWall>(name).Type;
         }
 
         private static int ReadModTile(BinaryReader reader)
@@ -253,17 +244,9 @@ namespace LunarVeilLegacy.Helpers
             string FromMod = reader.ReadString();
             string Name = reader.ReadString();
             Mod m = null;
-            if (ModLoader.TryGetMod(FromMod, out m))
-            {
-                return m.Find<ModTile>(Name).Type;
-            }
-            else
-            {
-                //I should place unloded tiles but idk how
-                Mod.Logger.Warn("Mod was not loaded, placing dirt instead");
-                return TileID.Dirt;
-            }
+            return LunarVeilLegacy.Instance.Find<ModTile>(Name).Type;
         }
+
         /// <summary>
         /// saves a struct to a .str file to be read. This method must be called 2 times, the first one being the bottom left, the second being the top right. the first call will not create a .str. After the second call, the file will be in the mod sources folder for your mod. Rename it then build + reload to place it with the other method
         /// </summary>
