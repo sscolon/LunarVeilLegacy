@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Alsis
+namespace LunarVeilLegacy.Items.Armors.Alsis
 {
     // - ModProjectile - the minion itself
 

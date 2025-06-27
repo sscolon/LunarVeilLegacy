@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     public class CombusterExplosionProj1 : ModProjectile
     {

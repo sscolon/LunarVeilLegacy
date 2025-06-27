@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.UI.Systems
+namespace LunarVeilLegacy.UI.Systems
 {
     public class ShakeModSystem : ModSystem
 	{

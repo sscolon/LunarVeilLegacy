@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -10,7 +10,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class CrysalizerArrow1 : ModProjectile
     {
@@ -54,15 +54,15 @@ namespace Stellamod.Projectiles.Bow
                     player.GetModPlayer<MyPlayer>().CrysalizerHits += 1;
                     if (player.GetModPlayer<MyPlayer>().CrysalizerHits == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer1"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer1"), player.position);
                     }
                     if (player.GetModPlayer<MyPlayer>().CrysalizerHits == 2)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer2"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer2"), player.position);
                     }
                     if (player.GetModPlayer<MyPlayer>().CrysalizerHits == 3)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer3"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer3"), player.position);
                     }
                     if (player.GetModPlayer<MyPlayer>().CrysalizerHits == 4)
                     {
@@ -74,7 +74,7 @@ namespace Stellamod.Projectiles.Bow
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer5"), player.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer5"), player.position);
                     player.GetModPlayer<MyPlayer>().CrysalizerNpc = target;
                     player.GetModPlayer<MyPlayer>().CrysalizerHits = 0;
                 }

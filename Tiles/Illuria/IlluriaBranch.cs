@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Illuria
+namespace LunarVeilLegacy.Tiles.Illuria
 
 {
 	public class IlluriaBranch : ModTile

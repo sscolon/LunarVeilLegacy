@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     internal class PegasusMinionFrostBombProj : ModProjectile
     {
@@ -91,7 +91,7 @@ namespace Stellamod.Projectiles.Summons.Minions
             GameShaders.Misc["VampKnives:BasicTrail"].SetShaderTexture(TrailRegistry.FadedStreak);
             TrailDrawer.DrawPrims(Projectile.oldPos, Projectile.Size * 0.5f - Main.screenPosition, 155);
 
-            var textureAsset = ModContent.Request<Texture2D>("Stellamod/Particles/AuroranSlashParticle");
+            var textureAsset = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/AuroranSlashParticle");
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 drawSize = textureAsset.Size();

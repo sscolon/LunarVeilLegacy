@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class FabelFire : ModProjectile
 	{

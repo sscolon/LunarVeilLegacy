@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class WinterboundFlare : ModProjectile
     {
@@ -34,7 +34,7 @@ namespace Stellamod.Projectiles.Bow
             Projectile.ai[1]++;
             if (!Moved && Projectile.ai[1] >= 0)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterboundFlare"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterboundFlare"), Projectile.position);
 
                 Projectile.spriteDirection = Projectile.direction;
                 Projectile.rotation = Projectile.velocity.ToRotation() + 1.57f + 3.14f;

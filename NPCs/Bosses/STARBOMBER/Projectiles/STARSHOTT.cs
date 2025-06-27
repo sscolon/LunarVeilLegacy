@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles
 {
 	public class STARSHOTT : ModProjectile
 	{

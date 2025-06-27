@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     public class PerfectionProj : ModProjectile
     {
@@ -146,7 +146,7 @@ namespace Stellamod.Projectiles.Magic
 
         public override bool PreDraw(ref Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(25f * alphaCounter), (int)(85f * alphaCounter), (int)(65f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (5 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(25f * alphaCounter), (int)(85f * alphaCounter), (int)(65f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (5 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(25f * alphaCounter), (int)(85f * alphaCounter), (int)(65f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.07f * (5 + 0.6f), SpriteEffects.None, 0f);

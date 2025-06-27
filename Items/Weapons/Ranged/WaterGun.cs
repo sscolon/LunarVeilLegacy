@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class WaterGun : ClassSwapItem
     {

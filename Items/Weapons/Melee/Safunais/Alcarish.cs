@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Safunai.Alcarish;
+using LunarVeilLegacy.Projectiles.Safunai.Alcarish;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Safunais
+namespace LunarVeilLegacy.Items.Weapons.Melee.Safunais
 {
     public class Alcarish : ModItem
 	{

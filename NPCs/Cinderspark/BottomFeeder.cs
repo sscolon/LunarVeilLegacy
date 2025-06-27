@@ -2,22 +2,22 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.DreadMire;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.singularityFragment.Phase1;
-using Stellamod.NPCs.Bosses.Verlia;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment.Phase1;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.Projectiles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -26,7 +26,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Cinderspark
+namespace LunarVeilLegacy.NPCs.Cinderspark
 {
     internal class BottomFeeder : ModNPC
     {
@@ -47,8 +47,8 @@ namespace Stellamod.NPCs.Cinderspark
             NPC.knockBackResist = 0f;
             NPC.npcSlots = 1;
             NPC.lavaImmune = true;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
         }
 
         public override void FindFrame(int frameHeight)

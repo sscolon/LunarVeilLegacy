@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Crossbows.Magical;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Crossbows.Magical;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged.Crossbows
+namespace LunarVeilLegacy.Items.Weapons.Ranged.Crossbows
 {
 
     public class DesertCrossbow : ModItem

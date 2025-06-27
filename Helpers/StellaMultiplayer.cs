@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Irradia;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
-using Stellamod.NPCs.Town;
-using Stellamod.UI.Dialogue;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Irradia;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.NPCs.Town;
+using LunarVeilLegacy.UI.Dialogue;
+using LunarVeilLegacy.WorldG;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,7 +17,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     public static class StellaMultiplayer
 	{
@@ -81,14 +81,14 @@ namespace Stellamod
 
 		public static ModPacket WriteToPacket(int capacity, MessageType type)
 		{
-			ModPacket packet = Stellamod.Instance.GetPacket(capacity);
+			ModPacket packet = LunarVeilLegacy.Instance.GetPacket(capacity);
 			packet.Write((byte)type);
 			return packet;
 		}
 
 		public static ModPacket WriteToPacket(int capacity, MessageType type, Action<ModPacket> action)
 		{
-			ModPacket packet = Stellamod.Instance.GetPacket(capacity);
+			ModPacket packet = LunarVeilLegacy.Instance.GetPacket(capacity);
 			packet.Write((byte)type);
 			action?.Invoke(packet);
 			return packet;
@@ -255,6 +255,6 @@ namespace Stellamod
 		}
 
 		public static void SpawnBossFromClient(byte whoAmI, int type, int x, int y) => 
-			Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(), (byte)MessageType.BossSpawnFromClient, whoAmI, type, x, y).Send(-1);
+			LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(), (byte)MessageType.BossSpawnFromClient, whoAmI, type, x, y).Send(-1);
 	}
 }

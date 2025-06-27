@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Buffs;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
@@ -18,7 +18,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     // [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
     [AutoloadHead]
@@ -331,57 +331,57 @@ namespace Stellamod.NPCs.Town
 					.Add(new Item(ItemID.PotionOfReturn)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.WormholePotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<LenaSongPowder>())
 					{
 						shopCustomPrice = 15,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<FrostedPowder>())
 					{
 						shopCustomPrice = 3,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<PaperPaws>())
 					{
 						shopCustomPrice = 10,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<Steali>())
 					{
 						shopCustomPrice = 5,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<Items.Consumables.Gambit>())
 					{
 						shopCustomPrice = 5,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<Items.Consumables.BagOfCards>(), 1)
 					{
 						shopCustomPrice = 2,
 						
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<Items.Weapons.Thrown.ThrowingCards>())
 					{
 						shopCustomPrice = 1,
 					
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 
@@ -389,14 +389,14 @@ namespace Stellamod.NPCs.Town
 					{
 						shopCustomPrice = 1,
 					
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ModContent.ItemType<Items.Accessories.Igniter.ReverieExtenderPowder>())
 					{
 						shopCustomPrice = 5,
 
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 
@@ -404,7 +404,7 @@ namespace Stellamod.NPCs.Town
 					{
 						shopCustomPrice = 15,
 
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 
@@ -483,14 +483,14 @@ public class GambitPersonProfile : ITownNPCProfile
 		public Asset<Texture2D> GetTextureNPCShouldUse(NPC npc)
 		{
 			if (npc.IsABestiaryIconDummy && !npc.ForcePartyHatOn)
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Gambit");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Gambit");
 
 			if (npc.altTexture == 1)
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Gambit_Party");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Gambit_Party");
 
-			return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Gambit");
+			return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Gambit");
 		}
 
-		public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("Stellamod/NPCs/Town/Gambit_Head");
+		public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("LunarVeilLegacy/NPCs/Town/Gambit_Head");
 	}
 }

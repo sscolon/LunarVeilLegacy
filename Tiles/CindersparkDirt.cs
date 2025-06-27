@@ -1,12 +1,12 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Items.Harvesting;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     public class CindersparkDirt : ModTile
     {

@@ -1,12 +1,12 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Projectiles.Magic;
-using Stellamod.Projectiles.Slashers.GrailAxe;
-using Stellamod.Projectiles.Slashers.Helios;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Slashers.GrailAxe;
+using LunarVeilLegacy.Projectiles.Slashers.Helios;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -14,7 +14,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class GrailAxe : ModItem
     {
@@ -55,7 +55,7 @@ namespace Stellamod.Items.Weapons.Melee
             Item.value = 10000;
             Item.noMelee = true;
 
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/StarSheith");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StarSheith");
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<GrailAxeProj>();
             Item.shootSpeed = 20f;
@@ -74,7 +74,7 @@ namespace Stellamod.Items.Weapons.Melee
             if (player.GetModPlayer<MyPlayer>().SwordCombo >= 1)
             {
                 type = ModContent.ProjectileType<GrailAxeProj>();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StormDragon_Bomb"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_Bomb"), player.position);
             }
         }
 

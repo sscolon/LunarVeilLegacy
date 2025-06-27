@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
 
     internal class CarianKnightProj : ModProjectile
@@ -106,7 +106,7 @@ namespace Stellamod.Projectiles
             }
 
 
-            Texture2D texture = Request<Texture2D>("Stellamod/Effects/Masks/Spiin").Value;
+            Texture2D texture = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Spiin").Value;
             float r = 234;
             float g = 118;
             float b = 135;

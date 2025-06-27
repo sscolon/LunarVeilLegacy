@@ -1,12 +1,12 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Tiles.RoyalCapital;
+using LunarVeilLegacy.Tiles.RoyalCapital;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     public class StarbloomDirt : ModTile
     {

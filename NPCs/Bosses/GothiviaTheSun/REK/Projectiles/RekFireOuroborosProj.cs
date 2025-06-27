@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
 {
     internal class RekFireOuroborosProj : ModProjectile
     {

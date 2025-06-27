@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Lasers
+namespace LunarVeilLegacy.Projectiles.Crossbows.Lasers
 {
     internal class TraumatizingRay : ModProjectile, IPixelPrimitiveDrawer
     {

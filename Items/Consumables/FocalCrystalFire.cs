@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials.Tech;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials.Tech;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     internal class FocalCrystalFire : ModItem
     {

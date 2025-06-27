@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Ores;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class Vhel : ModItem
     {

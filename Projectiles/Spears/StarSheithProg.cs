@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Spears
+namespace LunarVeilLegacy.Projectiles.Spears
 {
     internal class StarSheithProg : ModProjectile
     {
@@ -44,7 +44,7 @@ namespace Stellamod.Projectiles.Spears
             if (!Sounded)
             {
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StarSheith"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StarSheith"));
                 Sounded = true;
             }
  

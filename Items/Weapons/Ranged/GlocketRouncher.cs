@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class GlocketRouncher : ModItem
     {
@@ -23,7 +23,7 @@ namespace Stellamod.Items.Weapons.Ranged
             Item.knockBack = 6;
             Item.value = Item.buyPrice(0, 25, 0, 0);
             Item.rare = ItemRarityID.LightRed;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GlocketRouncher");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GlocketRouncher");
             Item.autoReuse = true;
             Item.shootSpeed = 20f;
             Item.shoot = ModContent.ProjectileType<GlocketRouncherProj>();

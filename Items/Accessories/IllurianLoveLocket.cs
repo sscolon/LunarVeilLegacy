@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     internal class IllurianLoveLocket : ModItem
     {

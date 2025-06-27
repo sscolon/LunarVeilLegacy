@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.NPCs.Bosses.DreadMire;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     internal class DreadMedalion : ModItem
     {

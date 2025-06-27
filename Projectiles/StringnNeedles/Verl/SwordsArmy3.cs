@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.StringnNeedles.Verl
+namespace LunarVeilLegacy.Projectiles.StringnNeedles.Verl
 {
     // - ModProjectile - the minion itself
 

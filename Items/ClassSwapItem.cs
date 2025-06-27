@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.Items
+namespace LunarVeilLegacy.Items
 {
     public abstract class ClassSwapItem :ModItem
     {
@@ -45,32 +45,32 @@ namespace Stellamod.Items
             Vector2 drawOrigin=Vector2.Zero;
             if (IsSwapped)
             {
-                iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Transformer/Token").Value;
+                iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Transformer/Token").Value;
                 drawOrigin = new Vector2(20, 20);
             }
             else if(AlternateClass == DamageClass.Magic)
             {
-                iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Transformer/Magic").Value;
+                iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Transformer/Magic").Value;
                 drawOrigin = new Vector2(18, 18);
             } 
             else if(AlternateClass == DamageClass.Melee)
             {
-                iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Transformer/Melee").Value;
+                iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Transformer/Melee").Value;
                 drawOrigin = new Vector2(16, 20);
             } 
             else if (AlternateClass == DamageClass.Ranged)
             {
-                iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Transformer/Ranger").Value;
+                iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Transformer/Ranger").Value;
                 drawOrigin = new Vector2(18, 20);
             } 
             else if (AlternateClass == DamageClass.Summon)
             {
-                iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Transformer/Summoner").Value;
+                iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Transformer/Summoner").Value;
                 drawOrigin = new Vector2(8, 12);
             } 
             else if (AlternateClass == DamageClass.Throwing)
             {
-                iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Transformer/Throwing").Value;
+                iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Transformer/Throwing").Value;
                 drawOrigin = new Vector2(20, 20);
             }
 

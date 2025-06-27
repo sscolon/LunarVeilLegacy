@@ -9,11 +9,11 @@ using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria.DataStructures;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 { 
     class TheAurora : ClassSwapItem
     {

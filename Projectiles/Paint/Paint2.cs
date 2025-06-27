@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Paint
+namespace LunarVeilLegacy.Projectiles.Paint
 {
     public class Paint2 : ModProjectile
 	{

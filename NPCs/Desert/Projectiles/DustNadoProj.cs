@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Desert.Projectiles
+namespace LunarVeilLegacy.NPCs.Desert.Projectiles
 {
     internal class DustNadoProj : ModProjectile
     {

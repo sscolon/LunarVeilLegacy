@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Particles;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.ItemDropRules;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Morrow
+namespace LunarVeilLegacy.NPCs.Morrow
 {
     public class RubyBeetle : ModNPC
 	{
@@ -46,11 +46,11 @@ namespace Stellamod.NPCs.Morrow
             if (NPC.life <= 0 && Main.netMode != NetmodeID.Server)
             {
                 var entitySource = NPC.GetSource_FromThis();
-                int Gore1 = ModContent.Find<ModGore>("Stellamod/RBeetle1").Type;
-				int Gore2 = ModContent.Find<ModGore>("Stellamod/RBeetle2").Type;
-				int Gore3 = ModContent.Find<ModGore>("Stellamod/RBeetle3").Type;
-				int Gore4 = ModContent.Find<ModGore>("Stellamod/RBeetle4").Type;
-                int Gore5 = ModContent.Find<ModGore>("Stellamod/RBeetle5").Type;
+                int Gore1 = ModContent.Find<ModGore>("LunarVeilLegacy/RBeetle1").Type;
+				int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/RBeetle2").Type;
+				int Gore3 = ModContent.Find<ModGore>("LunarVeilLegacy/RBeetle3").Type;
+				int Gore4 = ModContent.Find<ModGore>("LunarVeilLegacy/RBeetle4").Type;
+                int Gore5 = ModContent.Find<ModGore>("LunarVeilLegacy/RBeetle5").Type;
                 Gore.NewGore(entitySource, NPC.position, NPC.velocity, Gore1);
                 Gore.NewGore(entitySource, NPC.position, NPC.velocity, Gore2);
                 Gore.NewGore(entitySource, NPC.position, NPC.velocity, Gore3);

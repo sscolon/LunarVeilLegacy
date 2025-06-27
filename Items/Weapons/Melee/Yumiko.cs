@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Slashers.Voyager;
-using Stellamod.Projectiles.Swords.Altride;
-using Stellamod.Projectiles.Swords.Fenix;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Slashers.Voyager;
+using LunarVeilLegacy.Projectiles.Swords.Altride;
+using LunarVeilLegacy.Projectiles.Swords.Fenix;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -17,7 +17,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
 	public class Yumiko : ClassSwapItem
 	{
@@ -109,20 +109,20 @@ namespace Stellamod.Items.Weapons.Melee
 			int Sound = Main.rand.Next(1, 4);
 			if (Sound == 1)
 			{
-				 SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Yumiko"), position);
+				 SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Yumiko"), position);
 			}
 			if (Sound == 2)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Yumiko2"), position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Yumiko2"), position);
 			}
 			if (Sound == 3)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Yumiko3"), position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Yumiko3"), position);
 
 			}
 			if (Sound == 4)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Yumiko4"), position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Yumiko4"), position);
 
 			}
 			return false;

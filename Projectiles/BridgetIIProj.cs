@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class BridgetIIProj : ModProjectile
     {
@@ -91,7 +91,7 @@ namespace Stellamod.Projectiles
             
 
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterStorm"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterStorm"), Projectile.position);
             for (int i = 0; i < 20; i++)
             {
                 Dust.NewDustPerfect(base.Projectile.Center, DustID.BlueTorch, (Vector2.One * Main.rand.Next(1, 5)).RotatedByRandom(25.0), 0, default(Color), 1f).noGravity = false;

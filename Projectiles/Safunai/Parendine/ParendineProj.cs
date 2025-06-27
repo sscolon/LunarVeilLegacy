@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Safunai.Parendine
+namespace LunarVeilLegacy.Projectiles.Safunai.Parendine
 {
     public class ParendineProj : ModProjectile
 	{
@@ -142,7 +142,7 @@ namespace Stellamod.Projectiles.Safunai.Parendine
 			if (Slam)
             {
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 32f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Parendine"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Parendine"));
                 for (int i = 0; i < 14; i++)
                 {
                     Dust.NewDustPerfect(target.Center, ModContent.DustType<GlowDust>(), (Vector2.One * Main.rand.Next(1, 5)).RotatedByRandom(19.0), 0, Color.DeepSkyBlue, 1f).noGravity = true;
@@ -154,7 +154,7 @@ namespace Stellamod.Projectiles.Safunai.Parendine
 			}
 			else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Parendine2"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Parendine2"));
                 ShakeModSystem.Shake = 4;
                 for (int i = 0; i < 8; i++)
                 {

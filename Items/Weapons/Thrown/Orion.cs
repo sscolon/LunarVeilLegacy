@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Spears;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Spears;
 using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Thrown;
+using LunarVeilLegacy.Projectiles.Thrown;
 
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     internal class Orion : ClassSwapItem
     {

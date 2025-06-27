@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
     public class FrostBoom : Particle
     {

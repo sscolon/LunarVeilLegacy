@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterBubbleBussyProj : GunHolsterProjectile
     {
@@ -40,7 +40,7 @@ namespace Stellamod.Projectiles.GunHolster
             velocity = velocity.RotatedByRandom(MathHelper.PiOver4 / 15);
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), position, velocity,
                 ModContent.ProjectileType<BubbleBussyProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/TentacleBubbleOut");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/TentacleBubbleOut");
             soundStyle.PitchVariance = 0.5f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
         }

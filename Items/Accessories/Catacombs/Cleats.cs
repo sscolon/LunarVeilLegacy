@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Catacombs
+namespace LunarVeilLegacy.Items.Accessories.Catacombs
 {
     internal class Cleats : ModItem
     {

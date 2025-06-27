@@ -1,16 +1,16 @@
 ﻿
-using Stellamod.Tiles;
-using Stellamod.Tiles.Abyss;
-using Stellamod.Tiles.Abyss.Aurelus;
-using Stellamod.Tiles.Acid;
-using Stellamod.Tiles.Catacombs;
-using Stellamod.Tiles.Veil;
-using Stellamod.Tiles.RoyalCapital;
+using LunarVeilLegacy.Tiles;
+using LunarVeilLegacy.Tiles.Abyss;
+using LunarVeilLegacy.Tiles.Abyss.Aurelus;
+using LunarVeilLegacy.Tiles.Acid;
+using LunarVeilLegacy.Tiles.Catacombs;
+using LunarVeilLegacy.Tiles.Veil;
+using LunarVeilLegacy.Tiles.RoyalCapital;
 using System;
 using Terraria.ModLoader;
-using Stellamod.Tiles.Ishtar;
+using LunarVeilLegacy.Tiles.Ishtar;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     public class BiomeTileCounts : ModSystem
     {

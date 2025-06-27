@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Stellamod.NPCs.Bosses.Verlia;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.UI.Dialogue
+namespace LunarVeilLegacy.UI.Dialogue
 {
     internal class ExampleDialogue : Dialogue
     {
@@ -20,9 +20,9 @@ namespace Stellamod.UI.Dialogue
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/ExampleDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/ExampleDialoguePortrait");
                    
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("ExampleDialogue1"));
                     break;
                 case 1:

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class SrTetanusProj : ModProjectile
     {

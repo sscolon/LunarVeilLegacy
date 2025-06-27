@@ -1,5 +1,5 @@
-﻿using Stellamod.Assets.Biomes;
-using Stellamod.Items.Harvesting;
+﻿using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
@@ -8,20 +8,20 @@ using Terraria.ModLoader.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.Jack;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.Jack;
 
-namespace Stellamod.NPCs.Catacombs.Fire
+namespace LunarVeilLegacy.NPCs.Catacombs.Fire
 {
 
 	[AutoloadBossHead]

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Swingers
+namespace LunarVeilLegacy.Projectiles.Slashers.Swingers
 {
     internal class VulcanBreakerBlowtorchProj : ModProjectile
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Gemmed
+namespace LunarVeilLegacy.Projectiles.Crossbows.Gemmed
 {
     public class TungstenCrossbowHold : ModProjectile
     {
@@ -48,7 +48,7 @@ namespace Stellamod.Projectiles.Crossbows.Gemmed
 				// Main.PlaySound, Dust.NewDust, Projectile.NewProjectile, etc. Up to you.
 
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/MorrowSalfi"), Projectile.position);
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/MorrowSalfi"), Projectile.position);
 				Timer = 0;
 			}
 			Player player = Main.player[Projectile.owner];
@@ -77,7 +77,7 @@ namespace Stellamod.Projectiles.Crossbows.Gemmed
 				float speedX = Projectile.velocity.X * 10;
 				float speedY = Projectile.velocity.Y * 7;
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CrossbowPull"), Projectile.position);
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CrossbowPull"), Projectile.position);
 			}
 
 			if (Timer == 40)

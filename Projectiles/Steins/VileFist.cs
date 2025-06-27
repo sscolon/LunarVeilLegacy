@@ -6,21 +6,21 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System.IO;
-using Stellamod.Dusts;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.Items.Accessories.Players;
+using LunarVeilLegacy.Items.Accessories.Players;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions.Stein;
-using Stellamod.Items.Weapons.Mage.Stein;
-using Stellamod.NPCs.Bosses.DreadMire;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions.Stein;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
 
-namespace Stellamod.Projectiles.Steins
+namespace LunarVeilLegacy.Projectiles.Steins
 {
 	public class VileFist : ModProjectile
 	{
@@ -173,16 +173,16 @@ namespace Stellamod.Projectiles.Steins
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_BoneSpawn1") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Dreadmire__Skulls"), Projectile.Center);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_BoneSpawn1") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Dreadmire__Skulls"), Projectile.Center);
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Fire1") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Dreadmire__Skulls"), Projectile.Center);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Fire1") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Dreadmire__Skulls"), Projectile.Center);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__LightingRain2") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Dreadmire__Skulls"), Projectile.Center);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__LightingRain2") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Dreadmire__Skulls"), Projectile.Center);
 						break;
 
 				}
@@ -368,10 +368,10 @@ namespace Stellamod.Projectiles.Steins
 		{
 			Main.spriteBatch.End();
 
-			var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirmTrail").Value;
-			var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WaterTrail").Value;
-			var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/CrystalTrail").Value;
-			var TrailTex4 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhiteTrail").Value;
+			var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirmTrail").Value;
+			var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WaterTrail").Value;
+			var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/CrystalTrail").Value;
+			var TrailTex4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhiteTrail").Value;
 			Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
 

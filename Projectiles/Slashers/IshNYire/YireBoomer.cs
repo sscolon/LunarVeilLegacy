@@ -6,20 +6,20 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System.IO;
-using Stellamod.Dusts;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.Items.Accessories.Players;
+using LunarVeilLegacy.Items.Accessories.Players;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions.Stein;
-using Stellamod.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions.Stein;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
 using Terraria.DataStructures;
 
-namespace Stellamod.Projectiles.Slashers.IshNYire
+namespace LunarVeilLegacy.Projectiles.Slashers.IshNYire
 {
 	public class YireBoomer : ModProjectile
 	{
@@ -265,10 +265,10 @@ namespace Stellamod.Projectiles.Slashers.IshNYire
 		{
 			Main.spriteBatch.End();
 
-			var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhiteTrail").Value;
-			var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/SkiTrail").Value;
-			var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/CrystalTrail").Value;
-			var TrailTex4 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/SkiTrail").Value;
+			var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhiteTrail").Value;
+			var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/SkiTrail").Value;
+			var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/CrystalTrail").Value;
+			var TrailTex4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/SkiTrail").Value;
 			Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
 

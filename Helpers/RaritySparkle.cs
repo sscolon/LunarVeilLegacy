@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public class RaritySparkle
     {

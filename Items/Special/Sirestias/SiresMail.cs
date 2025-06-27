@@ -1,6 +1,6 @@
-﻿using Stellamod.Helpers;
-using Stellamod.UI.Dialogue;
-using Stellamod.UI.Scripture;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Dialogue;
+using LunarVeilLegacy.UI.Scripture;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,30 +12,30 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Dusts;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Vanity.Gia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Quest.BORDOC;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Mage.Stein;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Melee.Greatswords;
-using Stellamod.Items.Weapons.Melee.Safunais;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.Items.Weapons.Whips;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Vanity.Gia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Quest.BORDOC;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords;
+using LunarVeilLegacy.Items.Weapons.Melee.Safunais;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.Items.Weapons.Whips;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
@@ -44,7 +44,7 @@ using Terraria.Localization;
 using Terraria.ModLoader.Utilities;
 using Terraria.Utilities;
 
-namespace Stellamod.Items.Special.Sirestias
+namespace LunarVeilLegacy.Items.Special.Sirestias
 {
     internal class SiresMail : ModItem
     {
@@ -520,9 +520,9 @@ namespace Stellamod.Items.Special.Sirestias
                 {
                     case 0:
                         //Set the texture of the portrait
-                        DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                        DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                        //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                        //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                         DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk15"));
                         break;
 
@@ -576,9 +576,9 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk16"));
                     break;
 
@@ -587,7 +587,7 @@ namespace Stellamod.Items.Special.Sirestias
                     //Set the texture of the portrait
            
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk17"));
                     break;
 
@@ -596,7 +596,7 @@ namespace Stellamod.Items.Special.Sirestias
                     //Set the texture of the portrait
                   
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk18"));
                     break;
 
@@ -651,9 +651,9 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk19"));
                     break;
 
@@ -662,7 +662,7 @@ namespace Stellamod.Items.Special.Sirestias
                     //Set the texture of the portrait
 
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk17"));
                     break;
 
@@ -671,7 +671,7 @@ namespace Stellamod.Items.Special.Sirestias
                     //Set the texture of the portrait
 
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk18"));
                     break;
 
@@ -727,9 +727,9 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-                   // DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                   // DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk20"));
                     break;
 
@@ -778,17 +778,17 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-                     DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                     DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk21"));
                     break;
 
                 case 1:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk22"));
                     break;
 
@@ -832,25 +832,25 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk23"));
                     break;
 
                 case 1:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk24"));
                     break;
 
                 case 2:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk25"));
                     break;
             }
@@ -897,25 +897,25 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk26"));
                     break;
 
                 case 1:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk27"));
                     break;
 
                 case 2:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk28"));
                     break;
             }
@@ -959,9 +959,9 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk29"));
                     break;
 
@@ -1006,9 +1006,9 @@ namespace Stellamod.Items.Special.Sirestias
             {
                 case 0:
                     //Set the texture of the portrait
-              //      DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/SirestiasDialoguePortrait");
+              //      DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/SirestiasDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("SirestiasTalk30"));
                     break;
 

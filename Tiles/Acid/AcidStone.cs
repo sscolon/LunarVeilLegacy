@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Acid
+namespace LunarVeilLegacy.Tiles.Acid
 {
     public class AcidStone : ModTile
     {

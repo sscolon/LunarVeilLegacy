@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Diagnostics.Metrics;
 using System.IO.Pipelines;
@@ -13,7 +13,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     public class AuroraStar : ModProjectile
     {
@@ -81,7 +81,7 @@ namespace Stellamod.Projectiles.Magic
             Projectile.ai[1]++;
             if (Projectile.ai[1] <= 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Aurora"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Aurora"), Projectile.position);
             }
             Projectile.rotation += 0.3f;
         }

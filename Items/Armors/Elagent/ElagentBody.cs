@@ -1,11 +1,11 @@
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Armors.Elagent
+namespace LunarVeilLegacy.Items.Armors.Elagent
 {
     [AutoloadEquip(EquipType.Body)]
     public class ElagentBody : ModItem

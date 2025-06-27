@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Bow;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class Dunderbustion : ModItem
     {
@@ -48,7 +48,7 @@ namespace Stellamod.Items.Weapons.Ranged
 
             float rot = velocity.ToRotation();
             float spread = 0.4f;
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MiniPistol3"));
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol3"));
 
             Vector2 offset = new Vector2(2, -0f * player.direction).RotatedBy(rot);
             for (int k = 0; k < 15; k++)

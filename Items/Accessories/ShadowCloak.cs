@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Items.Materials;
-using Stellamod.Particles;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     internal class ShadowCloak : ModItem
     {

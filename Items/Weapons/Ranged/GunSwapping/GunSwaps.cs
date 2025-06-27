@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles.GunHolster;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles.GunHolster;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged.GunSwapping
+namespace LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping
 {
     internal abstract class MiniGun : ModItem
     {
@@ -30,7 +30,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             Item.useStyle = ItemUseStyleID.HoldUp;
             Item.DamageType = DamageClass.Ranged;
             Item.rare = ItemRarityID.Blue;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
         }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
@@ -140,7 +140,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
         public override void PostDrawInInventory(SpriteBatch spriteBatch, Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale)
         {
             Texture2D iconTexture = null;
-            const string Base_Path = "Stellamod/Items/Weapons/Ranged/GunSwapping/";
+            const string Base_Path = "LunarVeilLegacy/Items/Weapons/Ranged/GunSwapping/";
 
             if (IsSpecial)
             {
@@ -192,7 +192,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             LeftHand = true;
             GunHolsterProjectile = ModContent.ProjectileType<GunHolsterEagleProj>();
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/MiniPistol3");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol3");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -247,7 +247,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             GunHolsterProjectile = ModContent.ProjectileType<GunHolsterMsFreezeProj>();
 
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/HarmonicBlasphemy1");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/HarmonicBlasphemy1");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -272,7 +272,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             LeftHand = true;
             GunHolsterProjectile = ModContent.ProjectileType<GunHolsterMintyBlastProj>();
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GunLaser");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GunLaser");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -287,7 +287,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             LeftHand = true;
             GunHolsterProjectile = ModContent.ProjectileType<GunHolsterElectrifyingProj>();
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GunElectric");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GunElectric");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -310,7 +310,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             GunHolsterProjectile2 = ModContent.ProjectileType<GunHolsterRavestBlastRightProj>();
 
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GunRaving");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GunRaving");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -351,7 +351,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             LeftHand = true;
             GunHolsterProjectile = ModContent.ProjectileType<GunHolsterCinderNeedleProj>();
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/Gunsotp");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gunsotp");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -378,7 +378,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             RightHand = true;
             GunHolsterProjectile = ModContent.ProjectileType<GunHolsterBubbleBussyProj>();
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/TentacleBubbleOut");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/TentacleBubbleOut");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -433,7 +433,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
 
 
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GunBlasting");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GunBlasting");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }
@@ -470,7 +470,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             RightHand = true;
             GunHolsterProjectile = ModContent.ProjectileType<GunHolsterAzureWrathProj>();
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/TON618");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/TON618");
             soundStyle.PitchVariance = 0.5f;
             Item.UseSound = soundStyle;
         }

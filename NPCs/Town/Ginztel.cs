@@ -1,20 +1,20 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Assets.Biomes;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Pieces.RareMetals;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Melee.Safunais;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Pieces.RareMetals;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Melee.Safunais;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.Projectiles.Magic;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -28,7 +28,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.Utilities;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     // [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
     [AutoloadHead]
@@ -72,7 +72,7 @@ namespace Stellamod.NPCs.Town
 
 			NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
 
-			// Set Example Person's biome and neighbor preferences with the NPCHappiness hook. You can add happiness text and remarks with localization (See an example in Stellamod/Localization/en-US.lang).
+			// Set Example Person's biome and neighbor preferences with the NPCHappiness hook. You can add happiness text and remarks with localization (See an example in LunarVeilLegacy/Localization/en-US.lang).
 			// NOTE: The following code uses chaining - a style that works due to the fact that the SetXAffection methods return the same NPCHappiness instance they're called on.
 			NPC.Happiness
 				.SetBiomeAffection<ForestBiome>(AffectionLevel.Like) // Example Person prefers the forest.
@@ -197,7 +197,7 @@ namespace Stellamod.NPCs.Town
 			return false;
 		}
 
-		// Example Person needs a house built out of Stellamod tiles. You can delete this whole method in your townNPC for the regular house conditions.
+		// Example Person needs a house built out of LunarVeilLegacy tiles. You can delete this whole method in your townNPC for the regular house conditions.
 	
 
 		public override ITownNPCProfile TownNPCProfile()

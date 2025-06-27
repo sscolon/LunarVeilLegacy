@@ -1,13 +1,13 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class Curlistine : ClassSwapItem
     {

@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.GameContent.Bestiary;
@@ -12,7 +12,7 @@ using static Terraria.ModLoader.ModContent;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.DaedusRework
+namespace LunarVeilLegacy.NPCs.Bosses.DaedusRework
 {
 
     public class SolarPortal : ModNPC

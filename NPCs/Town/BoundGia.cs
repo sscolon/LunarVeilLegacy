@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     // This ModNPC serves as an example of a completely custom AI.
     public class BoundGia : ModNPC
@@ -52,7 +52,7 @@ namespace Stellamod.NPCs.Town
 			NPC.aiStyle = 0;
 			NPC.damage = 0;
 			NPC.defense = 25;
-			NPC.DeathSound = new SoundStyle($"Stellamod/Assets/Sounds/ItemHarvested");  // The sound the NPC will make when it dies.
+			NPC.DeathSound = new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ItemHarvested");  // The sound the NPC will make when it dies.
 			NPC.knockBackResist = 0f;
 			NPC.rarity = 1;
 			NPC.value = 250f; // How many copper coins the NPC will drop when killed.

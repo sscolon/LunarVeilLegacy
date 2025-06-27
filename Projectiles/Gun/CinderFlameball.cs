@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     internal class CinderFlameball : ModProjectile
     {

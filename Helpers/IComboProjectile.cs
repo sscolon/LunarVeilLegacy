@@ -1,4 +1,4 @@
-﻿namespace Stellamod.Helpers
+﻿namespace LunarVeilLegacy.Helpers
 {
     internal interface IComboProjectile
     {

@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles
 {
     internal class STARBOMBERLASERWARN : ModNPC
     {
@@ -68,7 +68,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
 
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Main.spriteBatch.Draw(texture2D4, NPC.Center - Main.screenPosition, null, new Color((int)(30f * alphaCounter), (int)(15f * alphaCounter), (int)(55f * alphaCounter), 0), 0, new Vector2(30 / 2, 1028 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
             return true;
         }
@@ -95,15 +95,15 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
                     int Sound = Main.rand.Next(1, 4);
                     if (Sound == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__LightingRain1"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__LightingRain1"), NPC.position);
                     }
                     if (Sound == 2)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__LightingRain2"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__LightingRain2"), NPC.position);
                     }
                     if (Sound == 3)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__LightingRain3"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__LightingRain3"), NPC.position);
 
                     }
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 32f);

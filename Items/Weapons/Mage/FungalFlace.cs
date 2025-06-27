@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -9,7 +9,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 	public class FungalFlace : ClassSwapItem
 	{
@@ -44,7 +44,7 @@ namespace Stellamod.Items.Weapons.Mage
 			Item.knockBack = 6;
 			Item.value = 10000;
 			Item.rare = ItemRarityID.LightRed;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/SwordThrow");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordThrow");
 			Item.autoReuse = true;
 			Item.shoot = ProjectileType<FungalFlaceBall>();
 			Item.shootSpeed = 14f;

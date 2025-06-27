@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class Violarproj : ModProjectile
 	{
@@ -104,28 +104,28 @@ namespace Stellamod.Projectiles
 					int S1 = Main.rand.Next(0, 3);
 					if(S1 == 0)
 					{
-                        SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowSong"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowSong"), Projectile.position);
                     }
                     if (S1 == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowSong2"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowSong2"), Projectile.position);
                     }
                     if (S1 == 2)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowSong3"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowSong3"), Projectile.position);
                     }
                     int S2 = Main.rand.Next(0, 3);
                     if (S2 == 0)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowSong"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowSong"), Projectile.position);
                     }
                     if (S2 == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowSong2"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowSong2"), Projectile.position);
                     }
                     if (S2 == 2)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowSong3"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowSong3"), Projectile.position);
                     }
 
 
@@ -138,7 +138,7 @@ namespace Stellamod.Projectiles
 					float speedX = Projectile.velocity.X * Main.rand.NextFloat(.2f, .3f) + Main.rand.NextFloat(-4f, 4f);
 					float speedY = Projectile.velocity.Y * Main.rand.Next(20, 35) * 0.01f + Main.rand.Next(-10, 11) * 0.2f;
 					Projectile.Kill();
-					SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowExp"), Projectile.position);
+					SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowExp"), Projectile.position);
 					Timer = 0;
                 }
                 if (Timer >= 100)

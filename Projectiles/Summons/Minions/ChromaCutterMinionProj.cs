@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Projectiles.Swords;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.Swords;
+using LunarVeilLegacy.Trails;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
@@ -14,7 +14,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     internal class ChromaCutterMinionProj : ModProjectile
     {
@@ -234,13 +234,13 @@ namespace Stellamod.Projectiles.Summons.Minions
             switch (Main.rand.Next(0, 3))
             {
                 case 0:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Chroma3") with { PitchVariance = 0.1f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Chroma3") with { PitchVariance = 0.1f }, Projectile.position);
                     break;
                 case 1:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Chroma2") with { PitchVariance = 0.1f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Chroma2") with { PitchVariance = 0.1f }, Projectile.position);
                     break;
                 case 2:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Chroma1") with { PitchVariance = 0.1f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Chroma1") with { PitchVariance = 0.1f }, Projectile.position);
                     break;
             }
         }
@@ -414,10 +414,10 @@ namespace Stellamod.Projectiles.Summons.Minions
             switch (Main.rand.Next(0, 2))
             {
                 case 0:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit"), target.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"), target.position);
                     break;
                 case 1:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2"), target.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2"), target.position);
                     break;
             }
 
@@ -430,7 +430,7 @@ namespace Stellamod.Projectiles.Summons.Minions
 
                 case ActionState.Orange:
                     owner.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 32f);
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Kaboom"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Kaboom"));
                     Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, Vector2.Zero,
                         ModContent.ProjectileType<CombustionBoomMini>(), Projectile.damage * 2, Projectile.knockBack, Projectile.owner);
                     for (int i = 0; i < 6; i++)
@@ -486,10 +486,10 @@ namespace Stellamod.Projectiles.Summons.Minions
                     switch (Main.rand.Next(0, 2))
                     {
                         case 0:
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CyroBolt1"), target.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CyroBolt1"), target.position);
                             break;
                         case 1:
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CyroBolt2"), target.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CyroBolt2"), target.position);
                             break;
                     }
                     break;

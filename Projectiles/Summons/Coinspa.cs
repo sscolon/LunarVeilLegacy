@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons
+namespace LunarVeilLegacy.Projectiles.Summons
 {
     public class Coinspa : ModProjectile
 	{

@@ -10,7 +10,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Furniture
+namespace LunarVeilLegacy.Tiles.Furniture
 {
     // Common code for a Master Mode boss relic
     // Contains comments for optional Item.placeStyle handling if you wish to add more relics but use the same tile type (then it would be wise to name this class something more generic like BossRelic)
@@ -23,7 +23,7 @@ namespace Stellamod.Tiles.Furniture
         public const int VerticalFrames = 1; // Optional: Increase this number to match the amount of relics you have on your extra sheet, if you choose to go the Item.placeStyle way
 
         public Asset<Texture2D> RelicTexture;
-        public virtual string RelicTextureName => "Stellamod/Tiles/Furniture/DaedusBossRelic";
+        public virtual string RelicTextureName => "LunarVeilLegacy/Tiles/Furniture/DaedusBossRelic";
 
         public override void Load()
         {

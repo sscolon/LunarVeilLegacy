@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Armors.Vanity.Verlia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Quest.Zui;
-using Stellamod.NPCs.Bosses.Zui.Projectiles;
-using Stellamod.NPCs.Town;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Armors.Vanity.Verlia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Quest.Zui;
+using LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles;
+using LunarVeilLegacy.NPCs.Town;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,7 +22,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Zui
+namespace LunarVeilLegacy.NPCs.Bosses.Zui
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
 	public class ZuiTheTraveller : ModNPC
@@ -113,7 +113,7 @@ namespace Stellamod.NPCs.Bosses.Zui
 			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Ichor] = true;
 			// Influences how the NPC looks in the Bestiary
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-			drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/Zui/ZuiBestiary";
+			drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/Zui/ZuiBestiary";
 			drawModifiers.PortraitScale = 1f; // Portrait refers to the full picture when clicking on the icon in the bestiary
 			drawModifiers.PortraitPositionYOverride = 0f;
 			NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -249,7 +249,7 @@ namespace Stellamod.NPCs.Bosses.Zui
 			
 				Vector2 drawPosition = NPC.Center - screenPos;
 				Vector2 origin = new Vector2(45, 40);
-				Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Zui/ZuiElement").Value;
+				Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Zui/ZuiElement").Value;
 				int wingFrameSpeed = 1;
 				int wingFrameCount = 60;
 				spriteBatch.Draw(syliaWingsTexture, drawPosition,
@@ -526,7 +526,7 @@ namespace Stellamod.NPCs.Bosses.Zui
 
 			if (timer == 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenAura2"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenAura2"), NPC.position);
 				if (StellaMultiplayer.IsHost)
 				{
 					Projectile.NewProjectile(entitySource, NPC.Center + new Vector2(150, 150), Vector2.Zero,
@@ -629,11 +629,11 @@ namespace Stellamod.NPCs.Bosses.Zui
 					switch (Main.rand.Next(2))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 						break;
 
 
@@ -656,11 +656,11 @@ namespace Stellamod.NPCs.Bosses.Zui
 				switch (Main.rand.Next(2))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 						break;
 
 
@@ -680,11 +680,11 @@ namespace Stellamod.NPCs.Bosses.Zui
 					switch (Main.rand.Next(2))
 					{
 						case 0:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 							break;
 						case 1:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 							break;
 
 
@@ -705,11 +705,11 @@ namespace Stellamod.NPCs.Bosses.Zui
 					switch (Main.rand.Next(2))
 					{
 						case 0:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 							break;
 						case 1:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 							break;
 
 
@@ -730,11 +730,11 @@ namespace Stellamod.NPCs.Bosses.Zui
 					switch (Main.rand.Next(2))
 					{
 						case 0:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 							break;
 						case 1:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 							break;
 
 
@@ -754,11 +754,11 @@ namespace Stellamod.NPCs.Bosses.Zui
 					switch (Main.rand.Next(2))
 					{
 						case 0:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 							break;
 						case 1:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 							break;
 
 
@@ -777,11 +777,11 @@ namespace Stellamod.NPCs.Bosses.Zui
 					switch (Main.rand.Next(2))
 					{
 						case 0:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 							break;
 						case 1:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 							break;
 					}
 				}
@@ -873,14 +873,14 @@ namespace Stellamod.NPCs.Bosses.Zui
 					switch (Main.rand.Next(3))
 					{
 						case 0:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Gold1"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Gold1"), NPC.position);
 
 							break;
 						case 1:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Gold2"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Gold2"), NPC.position);
 							break;
 						case 2:
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Gold3"), NPC.position);
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Gold3"), NPC.position);
 							break;
 
 					}
@@ -970,14 +970,14 @@ namespace Stellamod.NPCs.Bosses.Zui
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 						break;
 
 				}
@@ -1008,14 +1008,14 @@ namespace Stellamod.NPCs.Bosses.Zui
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Laserlock2"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Laserlock2"), NPC.position);
 						break;
 
 				}
@@ -1024,8 +1024,8 @@ namespace Stellamod.NPCs.Bosses.Zui
 
 			
 
-			//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Moaning"), NPC.position);
-			//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordHoldVerlia"), NPC.position);
+			//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Moaning"), NPC.position);
+			//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"), NPC.position);
 
 
 
@@ -1360,13 +1360,13 @@ namespace Stellamod.NPCs.Bosses.Zui
 					Projectile.NewProjectile(entitySource, NPC.Center + new Vector2(150, 150), Vector2.Zero,
 						ModContent.ProjectileType<ZuiSpawnEffect>(), 0, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Zoee"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Zoee"));
 
 
 
 
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Moaning"), NPC.position);
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordHoldVerlia"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Moaning"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"), NPC.position);
 			}
 
 			if (timer < 10)
@@ -1383,8 +1383,8 @@ namespace Stellamod.NPCs.Bosses.Zui
 				}
 				
 					
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AbsoluteSwing"));
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Hyuh"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AbsoluteSwing"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Hyuh"));
 
 
 
@@ -1429,26 +1429,26 @@ namespace Stellamod.NPCs.Bosses.Zui
 					Dust.NewDustPerfect(base.NPC.Center, DustID.CopperCoin, (Vector2.One * Main.rand.Next(1, 12)).RotatedByRandom(25.0), 0, default(Color), 2f).noGravity = false;
 				}
 
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Moaning"), NPC.position);
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordHoldVerlia"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Moaning"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"), NPC.position);
 			}
 			if (timer == 55)
 			{
                 switch (Main.rand.Next(3))
                 {
                     case 0:
-                        SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldPrice4"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldPrice4"), NPC.position);
 
                         break;
                     case 1:
-                        SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenPrice5"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenPrice5"), NPC.position);
                         break;
                     case 2:
-                        SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenPrice6"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenPrice6"), NPC.position);
                         break;
 
                 }
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SunStalker_PreSpawn"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SunStalker_PreSpawn"));
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1024f, 32f);
 
                 if (StellaMultiplayer.IsHost)
@@ -1552,20 +1552,20 @@ namespace Stellamod.NPCs.Bosses.Zui
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldPrice4"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldPrice4"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenPrice5"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenPrice5"), NPC.position);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenPrice6"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenPrice6"), NPC.position);
 						break;
 
 				}
 
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Moaning"), NPC.position);
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordHoldVerlia"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Moaning"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"), NPC.position);
 			}
 
 
@@ -1616,14 +1616,14 @@ namespace Stellamod.NPCs.Bosses.Zui
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenSlice1"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenSlice1"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenSlice2"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenSlice2"), NPC.position);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenSlice3"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenSlice3"), NPC.position);
 						break;
 
 				}
@@ -1658,8 +1658,8 @@ namespace Stellamod.NPCs.Bosses.Zui
 					Dust.NewDustPerfect(base.NPC.Center, DustID.CopperCoin, (Vector2.One * Main.rand.Next(1, 12)).RotatedByRandom(25.0), 0, default(Color), 2f).noGravity = false;
 				}
 
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Moaning"), NPC.position);
-				//SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordHoldVerlia"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Moaning"), NPC.position);
+				//SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"), NPC.position);
 			}
 			if (timer == 35)
 			{
@@ -1683,14 +1683,14 @@ namespace Stellamod.NPCs.Bosses.Zui
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Gold1"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Gold1"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Gold2"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Gold2"), NPC.position);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Gold3"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Gold3"), NPC.position);
 						break;
 
 				}
@@ -1790,18 +1790,18 @@ namespace Stellamod.NPCs.Bosses.Zui
                 NPC.position.X = target.Center.X + distanceY;
                 NPC.position.Y = target.Center.Y + distanceYa;
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CorsageRune2"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CorsageRune2"), NPC.position);
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SunStalker_Charge"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SunStalker_Charge"), NPC.position);
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SunStalker_Charge"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SunStalker_Charge"), NPC.position);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SunStalker_Charge"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SunStalker_Charge"), NPC.position);
 						break;
 
 				}
@@ -1916,8 +1916,8 @@ namespace Stellamod.NPCs.Bosses.Zui
 					NPC.noTileCollide = true;
 					if (yud >= 10)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GoldenFall"), NPC.position);
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Verifall"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GoldenFall"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Verifall"));
 
 						if (Main.netMode != NetmodeID.Server && Terraria.Graphics.Effects.Filters.Scene["Shockwave"].IsActive())
 						{
@@ -1979,14 +1979,14 @@ namespace Stellamod.NPCs.Bosses.Zui
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GW1"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GW1"));
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GW2"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GW2"));
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GW3"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GW3"));
 						break;
 
 				}
@@ -2226,7 +2226,7 @@ namespace Stellamod.NPCs.Bosses.Zui
 	
 		public override void OnKill()
 		{
-			SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Binding_Abyss_Spawn"), NPC.position);
+			SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Spawn"), NPC.position);
 			Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 128f);
 			var entitySource = NPC.GetSource_FromThis();
 			if (StellaMultiplayer.IsHost)

@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.DreadMire
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire
 {
     internal class DreadFireHand : ModProjectile
     {
@@ -38,11 +38,11 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ShadeHand"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ShadeHand"), Projectile.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ShadeHand2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ShadeHand2"), Projectile.position);
                 }
             }
 

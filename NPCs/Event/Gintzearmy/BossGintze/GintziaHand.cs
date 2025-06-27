@@ -2,8 +2,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -14,7 +14,7 @@ using static Terraria.ModLoader.ModContent;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
+namespace LunarVeilLegacy.NPCs.Event.Gintzearmy.BossGintze
 {
 
     public class GintziaHand : ModNPC

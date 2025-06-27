@@ -7,13 +7,13 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Terraria.GameContent.Creative;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Gun;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class Polaris : ClassSwapItem
     {

@@ -1,11 +1,11 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     internal class MerenaQuestSystem : ModSystem
     {
@@ -91,7 +91,7 @@ namespace Stellamod.NPCs.Town
             HandleCompleteQuest(questType);
             if (Main.netMode != NetmodeID.SinglePlayer)
             {
-                Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(), 
+                LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(), 
                     (byte)MessageType.CompleteMerenaQuest, 
                     (byte)questType).Send(-1);
             }

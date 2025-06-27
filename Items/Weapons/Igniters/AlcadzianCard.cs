@@ -1,19 +1,19 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Brooches;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.IgniterEx;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.IgniterEx;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Igniters
+namespace LunarVeilLegacy.Items.Weapons.Igniters
 {
 	internal class AlcadzianCard : ModItem
 	{
@@ -38,7 +38,7 @@ namespace Stellamod.Items.Weapons.Igniters
 			Item.DamageType = DamageClass.Magic;
 			Item.value = 200;
 			Item.rare = ItemRarityID.LightPurple;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/clickk");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/clickk");
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<IgniterStart>();
 			Item.autoReuse = true;

@@ -6,7 +6,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Acid
+namespace LunarVeilLegacy.Tiles.Acid
 {
     internal class AcidBush2 : ModTile
     {

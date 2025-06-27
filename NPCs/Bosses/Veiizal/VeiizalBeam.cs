@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.Veiizal
+namespace LunarVeilLegacy.NPCs.Bosses.Veiizal
 {
 
     internal class VeiizalBeam : ModProjectile

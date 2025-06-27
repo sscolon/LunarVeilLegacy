@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Special.MinerLogs;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Special.MinerLogs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 
 {
     public class FiveAdvance : ModItem

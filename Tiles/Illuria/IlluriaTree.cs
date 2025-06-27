@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Materials;
-using Stellamod.Tiles.Acid;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Tiles.Acid;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Illuria
+namespace LunarVeilLegacy.Tiles.Illuria
 {
     class IlluriaTree : ModTree
     {
@@ -22,9 +22,9 @@ namespace Stellamod.Tiles.Illuria
         public override void SetStaticDefaults() => GrowsOnTileId = new int[] { ModContent.TileType<IlluriaDirt>() };
         public override int CreateDust() => 22;
         public override int DropWood() => ModContent.ItemType<CarianWood>();
-        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("Stellamod/Tiles/Illuria/IlluriaTree");
-        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/Illuria/IlluriaTree_Top");
-        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/Illuria/IlluriaTree_Branches");
+        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Illuria/IlluriaTree");
+        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Illuria/IlluriaTree_Top");
+        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Illuria/IlluriaTree_Branches");
 
         public override int SaplingGrowthType(ref int style)
         {

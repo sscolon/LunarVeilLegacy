@@ -2,14 +2,14 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Gutinier
+namespace LunarVeilLegacy.Projectiles.Slashers.Gutinier
 {
     public class GutinierSwordProj2 : ModProjectile
     {

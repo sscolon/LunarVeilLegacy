@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     public class StarvastCustomSwingProjectile : ModProjectile
 	{
         private bool _init;
-        public override string Texture => "Stellamod/Items/Weapons/Melee/Starvast";
+        public override string Texture => "LunarVeilLegacy/Items/Weapons/Melee/Starvast";
 
         ref float Dir => ref Projectile.ai[0];
         ref float Timer => ref Projectile.ai[1];
@@ -145,8 +145,8 @@ namespace Stellamod.Projectiles.Swords
         {
             Main.spriteBatch.End();
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StarTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhispyTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StarTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhispyTrail").Value;
         
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Brooches;
-using Stellamod.Particles;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     internal class RoseShield : ModProjectile
     {

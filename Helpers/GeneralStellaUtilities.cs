@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.DataStructures;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public static class GeneralStellaUtilities
     {

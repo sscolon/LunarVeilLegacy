@@ -4,10 +4,10 @@ using Terraria.ModLoader;
 using System.Collections.Generic;
 using Terraria.ID;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
 	public class RadiantOrb : ModProjectile
     {

@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace Stellamod.Dusts
+namespace LunarVeilLegacy.Dusts
 {
     public class Solution : ModDust
 	{

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class Opinine : ClassSwapItem
     {

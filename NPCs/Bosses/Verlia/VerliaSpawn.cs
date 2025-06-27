@@ -1,25 +1,25 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Catacombs.Fire.BlazingSerpent;
-using Stellamod.NPCs.Catacombs.Fire;
-using Stellamod.NPCs.Catacombs.Trap.Cogwork;
-using Stellamod.NPCs.Catacombs.Trap.Sparn;
-using Stellamod.NPCs.Catacombs.Water.WaterCogwork;
-using Stellamod.NPCs.Catacombs.Water.WaterJellyfish;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Catacombs.Fire.BlazingSerpent;
+using LunarVeilLegacy.NPCs.Catacombs.Fire;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Cogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterJellyfish;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System;
-using Stellamod.Tiles.Catacombs;
-using Stellamod.Dusts;
-using Stellamod.Texts;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.Tiles.Catacombs;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Texts;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
 
-namespace Stellamod.NPCs.Bosses.Verlia
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia
 {
     internal class VerliaSpawn : ModNPC
     {
@@ -55,7 +55,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
             _centerSparkleSize += 0.02f;
             if (ai_Timer == 0)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VerliaSummoning"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VerliaSummoning"));
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().FocusOn(NPC.Center, 9f);
             }
 

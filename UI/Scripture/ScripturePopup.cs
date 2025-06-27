@@ -4,11 +4,11 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace Stellamod.UI.Scripture
+namespace LunarVeilLegacy.UI.Scripture
 {
     public class ScripturePopup : UIElement
     {
-        public virtual string Texture { get; set; } = "Stellamod/UI/Scripture/ExampleScripture";
+        public virtual string Texture { get; set; } = "LunarVeilLegacy/UI/Scripture/ExampleScripture";
    
         public override void Draw(SpriteBatch spriteBatch)
         {

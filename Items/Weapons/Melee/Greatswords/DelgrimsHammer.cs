@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Slashers.DelgrimsHammer;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Slashers.DelgrimsHammer;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Greatswords
+namespace LunarVeilLegacy.Items.Weapons.Melee.Greatswords
 {
     public class DelgrimsHammer : ModItem
     {
@@ -76,7 +76,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords
 
             }
             
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwingyAr") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwingyAr") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
             AttackCounter = -AttackCounter;
             Projectile.NewProjectile(source, position, velocity, type, damage * 3, knockback, player.whoAmI, 1, dir);
             return false;

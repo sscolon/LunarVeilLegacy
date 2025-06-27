@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.UI.Dialogue;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Dialogue;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Stellamod.NPCs.Town.MerenaQuestSystem;
+using static LunarVeilLegacy.NPCs.Town.MerenaQuestSystem;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles
 {
     public class StarteV : ModNPC
 	{
@@ -173,7 +173,7 @@ namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
             {
 				int index = NPC.NewNPC(NPC.GetSource_FromThis(), (int)NPC.Center.X, (int)NPC.Center.Y - 30, ModContent.NPCType<GhostCharger>());
 				NPC minionNPC = Main.npc[index];
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Upp"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Upp"));
 			}
 			
 			 if (timer == 39)
@@ -220,7 +220,7 @@ namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
                 } 
 				else
 				{
-                    Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(),
+                    LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(),
 						(byte)MessageType.StartDialogue,
                         (int)DialogueType.Start_Verlia).Send(-1);
                 }

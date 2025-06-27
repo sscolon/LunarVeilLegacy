@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Projectiles.Swords;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Whips
+namespace LunarVeilLegacy.Projectiles.Whips
 {
     internal class LaceratorMiracleProj : ModProjectile
     {

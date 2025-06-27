@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.DreadMire
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire
 {
     internal class DreadMirePentagramMid : ModNPC
     {
@@ -65,8 +65,8 @@ namespace Stellamod.NPCs.Bosses.DreadMire
         float counter = 6;
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
-            Texture2D texture2D5 = Request<Texture2D>("Stellamod/Effects/Masks/PentagramP2").Value;
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/Pentagram").Value;
+            Texture2D texture2D5 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/PentagramP2").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Pentagram").Value;
             Main.spriteBatch.Draw(texture2D4, NPC.Center - Main.screenPosition, null, new Color((int)(55f * alphaCounter), (int)(15f * alphaCounter), (int)(25f * alphaCounter), 0), NPC.rotation, new Vector2(157, 157), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D5, NPC.Center - Main.screenPosition, null, new Color((int)(55f * alphaCounter), (int)(15f * alphaCounter), (int)(25f * alphaCounter), 0), -NPC.rotation, new Vector2(157, 157), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
             return true;

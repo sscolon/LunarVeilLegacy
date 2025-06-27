@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -9,11 +9,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.Slashers.Swingers
+namespace LunarVeilLegacy.Projectiles.Slashers.Swingers
 {
     internal class VulcanBreakerSwingProj : ModProjectile
     {
-        public override string Texture => "Stellamod/Items/Weapons/Melee/VulcanBreaker";
+        public override string Texture => "LunarVeilLegacy/Items/Weapons/Melee/VulcanBreaker";
         //DrawCode
         private TrailRenderer SwordSlash;
         private bool _exploded;
@@ -142,7 +142,7 @@ namespace Stellamod.Projectiles.Slashers.Swingers
                 oldPos[i] += Projectile.rotation.ToRotationVector2() * Projectile.width / 3f;
             }
 
-            Texture2D tipSlashTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/TerraTrail").Value;
+            Texture2D tipSlashTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/TerraTrail").Value;
             if (SwordSlash == null)
             {
                 SwordSlash = new TrailRenderer(tipSlashTexture, TrailRenderer.DefaultPass,

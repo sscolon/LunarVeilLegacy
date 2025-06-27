@@ -1,13 +1,13 @@
-﻿using Stellamod.Assets.Biomes;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
+﻿using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Desert
+namespace LunarVeilLegacy.NPCs.Desert
 {
 	public class Shrewder : ModNPC
 	{

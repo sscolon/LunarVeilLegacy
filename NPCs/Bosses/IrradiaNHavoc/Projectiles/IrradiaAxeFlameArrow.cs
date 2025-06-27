@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Projectiles
 {
     internal class IrradiaAxeFlameArrow : ModProjectile
     {
@@ -68,7 +68,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
         }
         public override void PostDraw(Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             if (Main.rand.NextBool(5))
             {
                 int dustnumber = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.GoldCoin, 0f, 0f, 150, Color.White, 1f);

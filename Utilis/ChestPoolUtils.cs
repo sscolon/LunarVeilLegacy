@@ -4,7 +4,7 @@ using System.Linq;
 using Terraria;
 using Terraria.ID;
 
-namespace Stellamod.Utilis
+namespace LunarVeilLegacy.Utilis
 {
     public static class ChestPoolUtils
     {

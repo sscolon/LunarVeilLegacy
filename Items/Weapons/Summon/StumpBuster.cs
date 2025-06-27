@@ -1,9 +1,9 @@
-﻿using Stellamod.Projectiles;
+﻿using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     internal class StumpBuster : ClassSwapItem
 	{

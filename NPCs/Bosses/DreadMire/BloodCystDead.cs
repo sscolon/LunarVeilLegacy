@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.NPCs.Bosses.DreadMire
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire
 {
 
     public class BloodCystDead : ModNPC
@@ -97,7 +97,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
             }
             if (NPC.ai[0] == 300)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Laugh"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Laugh"));
                 NPC.active = false;
                 if (StellaMultiplayer.IsHost)
                 { 

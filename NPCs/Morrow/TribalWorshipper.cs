@@ -1,14 +1,14 @@
-﻿using Stellamod.Assets.Biomes;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Utilis;
+﻿using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Morrow
+namespace LunarVeilLegacy.NPCs.Morrow
 {
 	public class TribalWorshipper : ModNPC
 	{

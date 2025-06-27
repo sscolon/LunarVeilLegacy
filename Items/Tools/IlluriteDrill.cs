@@ -1,9 +1,9 @@
-﻿using Stellamod.Projectiles.Tools;
+﻿using LunarVeilLegacy.Projectiles.Tools;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Tools
+namespace LunarVeilLegacy.Items.Tools
 {
     internal class IlluriteDrill : ModItem
     {

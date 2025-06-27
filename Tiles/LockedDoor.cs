@@ -1,5 +1,5 @@
-﻿using Stellamod.Dusts;
-using Stellamod.Items.Consumables;
+﻿using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Items.Consumables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     public abstract class LockedDoor : ModTile
     {

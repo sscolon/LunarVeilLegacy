@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Terraria.DataStructures;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     internal class ShredderProj : ModProjectile, 
         IPixelPrimitiveDrawer

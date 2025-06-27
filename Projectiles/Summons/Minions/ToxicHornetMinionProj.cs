@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     public class ToxicHornetMinionProj : ModProjectile
     {

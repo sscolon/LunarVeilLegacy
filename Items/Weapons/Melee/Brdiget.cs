@@ -1,13 +1,13 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class Bridget : ClassSwapItem
     {

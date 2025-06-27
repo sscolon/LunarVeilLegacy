@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     internal class SupernovaSitar : ClassSwapItem
 	{
@@ -68,7 +68,7 @@ namespace Stellamod.Items.Weapons.Mage
 			Item.DamageType = DamageClass.Magic;
 			Item.value = 15000;
 			Item.rare = ItemRarityID.Orange;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/bongo");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/bongo");
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<Supernova>();
 			Item.autoReuse = true;

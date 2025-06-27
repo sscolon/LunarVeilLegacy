@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Spears;
+using LunarVeilLegacy.Projectiles.Spears;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class ScarecrowSaber : ModItem
     {

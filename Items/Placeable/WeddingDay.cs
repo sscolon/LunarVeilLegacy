@@ -1,9 +1,9 @@
-﻿using Stellamod.Tiles.Furniture;
+﻿using LunarVeilLegacy.Tiles.Furniture;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
     public class WeddingDay : ModItem
 	{

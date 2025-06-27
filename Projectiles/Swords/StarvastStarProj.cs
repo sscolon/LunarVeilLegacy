@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     internal class StarvastStarProj : ModProjectile,
         IPixelPrimitiveDrawer

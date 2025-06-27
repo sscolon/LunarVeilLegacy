@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +11,9 @@ using Terraria.Graphics.Shaders;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 
-namespace Stellamod.Projectiles.Slashers.Dula
+namespace LunarVeilLegacy.Projectiles.Slashers.Dula
 {
     internal class DulaSwirl : ModProjectile
     {

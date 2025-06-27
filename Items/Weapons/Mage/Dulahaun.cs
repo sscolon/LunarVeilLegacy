@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 	internal class Dulahaun : ClassSwapItem
 	{
@@ -44,7 +44,7 @@ namespace Stellamod.Items.Weapons.Mage
 			Item.DamageType = DamageClass.Melee;
 			Item.value = 200;
 			Item.rare = ItemRarityID.Blue;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/OverGrowth_TP2");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/OverGrowth_TP2");
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<Dulahan>();
 			Item.autoReuse = true;

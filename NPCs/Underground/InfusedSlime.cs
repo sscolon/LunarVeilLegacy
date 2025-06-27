@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Projectiles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -13,7 +13,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class InfusedSlime : ModNPC
     {
@@ -29,8 +29,8 @@ namespace Stellamod.NPCs.Underground
             NPC.damage = 68;
             NPC.defense = 8;
             NPC.lifeMax = 100;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
             NPC.value = 563f;
             NPC.knockBackResist = .45f;
         }

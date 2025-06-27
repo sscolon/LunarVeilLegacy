@@ -5,7 +5,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Structures
+namespace LunarVeilLegacy.Tiles.Structures
 {
     public class SmallShroomS : ModTile
 	{

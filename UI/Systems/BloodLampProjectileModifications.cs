@@ -1,8 +1,8 @@
-﻿using Stellamod.Buffs;
+﻿using LunarVeilLegacy.Buffs;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.UI.Systems
+namespace LunarVeilLegacy.UI.Systems
 {
     // Here is a class dedicated to showcasing projectile modifications
     public class BloodLampProjectileModifications : GlobalProjectile

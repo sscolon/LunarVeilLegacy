@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
 	public class Poyashot : ModProjectile
 	{

@@ -1,31 +1,31 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Vanity.Gia;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Quest.BORDOC;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Mage.Stein;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Melee.Greatswords;
-using Stellamod.Items.Weapons.Melee.Safunais;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.Items.Weapons.Thrown.Jugglers;
-using Stellamod.Items.Weapons.Whips;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Vanity.Gia;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Quest.BORDOC;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords;
+using LunarVeilLegacy.Items.Weapons.Melee.Safunais;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.Items.Weapons.Thrown.Jugglers;
+using LunarVeilLegacy.Items.Weapons.Whips;
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
@@ -39,7 +39,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 using Terraria.Utilities;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
 	// [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
 	//[AutoloadHead]
@@ -142,15 +142,15 @@ namespace Stellamod.NPCs.Town
 			public Asset<Texture2D> GetTextureNPCShouldUse(NPC npc)
 			{
 				if (npc.IsABestiaryIconDummy && !npc.ForcePartyHatOn)
-					return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Delgrim");
+					return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Delgrim");
 
 				if (npc.altTexture == 1)
-					return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Delgrim_Head");
+					return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Delgrim_Head");
 
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Delgrim");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Delgrim");
 			}
 
-			public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("Stellamod/NPCs/Town/Delgrim_Head");
+			public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("LunarVeilLegacy/NPCs/Town/Delgrim_Head");
 		}
 
 		public override bool CanChat()
@@ -280,7 +280,7 @@ namespace Stellamod.NPCs.Town
 				Player player = Main.LocalPlayer;
 				WeightedRandom<string> chat = new WeightedRandom<string>();
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2"));
 
 				//-----------------------------------------------------------------------------------------------	
 				Main.npcChatText = Main.npcChatText = LangText.Chat(this, "Special" + Main.rand.Next(1,31));

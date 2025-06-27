@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Abyss.Aurelus
+namespace LunarVeilLegacy.Tiles.Abyss.Aurelus
 {
     public class AurelusBorderS : ModTile
 	{

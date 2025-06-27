@@ -1,10 +1,10 @@
 
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,10 +12,10 @@ using Terraria.DataStructures;
 using Terraria.GameContent.UI.Elements;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Stellamod.Items.Weapons.Summon.DripplerStaff;
+using static LunarVeilLegacy.Items.Weapons.Summon.DripplerStaff;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
 	public class DripplerStaff : ModItem
 	{

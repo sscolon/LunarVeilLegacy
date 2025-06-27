@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Jianxin
+namespace LunarVeilLegacy.Items.Armors.Jianxin
 {
     internal class WateryWhisp : ModProjectile
     {

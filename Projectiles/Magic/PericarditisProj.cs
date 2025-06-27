@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class PericarditisProj : ModProjectile
     {
@@ -44,7 +44,7 @@ namespace Stellamod.Projectiles.Magic
             if (Projectile.ai[1] == 1)
             {
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Pericarditis"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Pericarditis"), Projectile.position);
             }
         }
 
@@ -53,11 +53,11 @@ namespace Stellamod.Projectiles.Magic
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_BoneSpawn1"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_BoneSpawn1"), Projectile.position);
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_BoneSpawn2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_BoneSpawn2"), Projectile.position);
             }
 
             for (int i = 0; i < 14; i++)

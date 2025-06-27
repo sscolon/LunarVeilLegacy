@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class PetalDance : ModProjectile
     {

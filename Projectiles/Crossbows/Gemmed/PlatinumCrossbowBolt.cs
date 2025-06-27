@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.Crossbows.Gemmed
+namespace LunarVeilLegacy.Projectiles.Crossbows.Gemmed
 {
     public class PlatinumCrossbowBolt : ModProjectile
     {

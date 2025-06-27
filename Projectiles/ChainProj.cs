@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
 using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class ChainProj : ModProjectile
 	{

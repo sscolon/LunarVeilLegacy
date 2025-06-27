@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Tiles.Structures.Cathedral;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Tiles.Structures.Cathedral;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable.Cathedral
+namespace LunarVeilLegacy.Items.Placeable.Cathedral
 {
     public class Orb1I : ModItem
 	{

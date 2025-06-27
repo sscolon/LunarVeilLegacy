@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.StarrVeriplant.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.StarrVeriplant.Projectiles
 {
     internal class StompShockwave : ModProjectile
     {

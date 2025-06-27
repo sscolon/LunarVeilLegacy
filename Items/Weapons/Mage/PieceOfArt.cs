@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.Projectiles.Nails;
-using Stellamod.Projectiles.Paint;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.Projectiles.Nails;
+using LunarVeilLegacy.Projectiles.Paint;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 	public class PieceOfArt : ModItem
 	{

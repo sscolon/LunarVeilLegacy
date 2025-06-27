@@ -1,8 +1,8 @@
-﻿using Stellamod.Assets.Biomes;
+﻿using LunarVeilLegacy.Assets.Biomes;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs
+namespace LunarVeilLegacy.NPCs
 {
     internal static class SpawnRates
     {

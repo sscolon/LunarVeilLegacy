@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
-namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks
 {
 
     public class Train2 : ModNPC
@@ -343,7 +343,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 			timer++;
 			if (timer == 1)
 			{
-				// SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+				// SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
 			}
 
 			if (timer == 50)
@@ -478,7 +478,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 			float speed = 25f;
 			if (timer == 1)
 			{
-				// SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+				// SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
 			}
 			if (timer < 3)
 			{
@@ -515,7 +515,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 			float speed = 25f;
 			if (timer == 1)
 			{
-				// SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+				// SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
 			}
 			if (timer < 3)
 			{
@@ -552,7 +552,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 			float speedYb = NPC.velocity.Y * Main.rand.Next(0, 0) * 0.0f + Main.rand.Next(0, 0) * 0f;
 			if (timer == 1)
 			{
-				// SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+				// SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
 			}
 
 			if (timer < 30)
@@ -571,7 +571,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
                         ProjectileID.EyeBeam, 14, 0f, Owner: Main.myPlayer);
                 }
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcharilitDrone1"));		
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"));		
 			}
 
 			if (timer == 30)
@@ -583,7 +583,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X, NPC.position.Y, speedXb * 0, 10,
 						ProjectileID.EyeBeam, 14, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcharilitDrone1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"));
 			}
 
 			if (timer == 50)
@@ -595,7 +595,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X, NPC.position.Y, speedXb * 0, 10,
 						ProjectileID.EyeBeam, 14, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcharilitDrone1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"));
 			}
 
 			if (timer == 70)
@@ -607,7 +607,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X, NPC.position.Y, speedXb * 0, 10,
 						ProjectileID.EyeBeam, 14, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcharilitDrone1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"));
 			}
 
 			if (timer == 90)
@@ -619,7 +619,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X, NPC.position.Y, speedXb * 0, 10,
 						ProjectileID.EyeBeam, 14, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcharilitDrone1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"));
 			}
 
 			if (timer == 110)
@@ -631,7 +631,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X, NPC.position.Y, speedXb * 0, 10,
 						ProjectileID.EyeBeam, 14, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcharilitDrone1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"));
 			}
 
 

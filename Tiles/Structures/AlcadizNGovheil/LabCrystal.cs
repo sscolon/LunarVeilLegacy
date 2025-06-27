@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable.Cathedral;
-using Stellamod.NPCs.Bosses.Caeva;
-using Stellamod.NPCs.Bosses.Jack;
-using Stellamod.NPCs.Town;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable.Cathedral;
+using LunarVeilLegacy.NPCs.Bosses.Caeva;
+using LunarVeilLegacy.NPCs.Bosses.Jack;
+using LunarVeilLegacy.NPCs.Town;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -20,7 +20,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Structures.AlcadizNGovheil
+namespace LunarVeilLegacy.Tiles.Structures.AlcadizNGovheil
 {
 
     public class LabCrystal : ModTile
@@ -137,7 +137,7 @@ namespace Stellamod.Tiles.Structures.AlcadizNGovheil
                 } 
 				else
 				{
-                    Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(), (byte)MessageType.CreatePortal,
+                    LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(), (byte)MessageType.CreatePortal,
                         altar.X,
 						altar.Y,
                         left,
@@ -146,8 +146,8 @@ namespace Stellamod.Tiles.Structures.AlcadizNGovheil
 
  
                 Vector2 portalPosition = new Vector2((left+ 1) * 16, (top - 6) * 16);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_PreSpawn2"), player.position);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_PreSpawn"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_PreSpawn2"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_PreSpawn"), player.position);
                 Projectile.NewProjectile(player.GetSource_FromThis(), portalPosition, Vector2.Zero,
 					ModContent.ProjectileType<KaBoomMagic2>(), 0, 1, player.whoAmI);
 				player.GetModPlayer<MyPlayer>().ShakeAtPosition(player.position, 1024, 32);
@@ -242,7 +242,7 @@ namespace Stellamod.Tiles.Structures.AlcadizNGovheil
 
 			if (tile == null || !tile.HasTile) { return false; }
 
-			Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Particles/GradientPillar").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/GradientPillar").Value;
 
 			Vector2 offScreen = new Vector2(Main.offScreenRange);
 			Vector2 globalPosition = p.ToWorldCoordinates(0f, 0f);

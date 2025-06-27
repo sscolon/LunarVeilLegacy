@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     //Use class swap item
     public class FireflyCannon : ClassSwapItem
@@ -87,7 +87,7 @@ namespace Stellamod.Items.Weapons.Ranged
                 Dust.NewDust(position, 0, 0, DustID.CopperCoin, vel.X * 0.5f, vel.Y * 0.5f);
             }
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Starexplosion"), player.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Starexplosion"), player.position);
             return base.Shoot(player, source, position, velocity, type, damage, knockback);
         }
 

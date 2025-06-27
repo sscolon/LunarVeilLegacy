@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Magic;
-using Stellamod.Projectiles.Spears;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Spears;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
@@ -9,7 +9,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     internal class Mordred : ModItem
     {

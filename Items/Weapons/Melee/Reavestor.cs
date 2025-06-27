@@ -1,11 +1,11 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
 
-using Stellamod.Projectiles.Slashers.Hearstspire;
-using Stellamod.Projectiles.Slashers.Reavestor;
+using LunarVeilLegacy.Projectiles.Slashers.Hearstspire;
+using LunarVeilLegacy.Projectiles.Slashers.Reavestor;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class Reavestor : ModItem
     {

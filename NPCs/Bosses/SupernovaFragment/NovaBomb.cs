@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Dusts;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.SupernovaFragment
+namespace LunarVeilLegacy.NPCs.Bosses.SupernovaFragment
 {
     internal class NovaBomb : ModProjectile
     {
@@ -63,7 +63,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                 }
 
                 Projectile.scale = 1.5f;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SoftSummon2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon2"), Projectile.position);
             }
             if (Main.rand.NextBool(3))
             {
@@ -122,7 +122,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
 
         public override void PostDraw(Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(85f * 1), (int)(45f * 1), (int)(15f * 1), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(85f * 1), (int)(45f * 1), (int)(15f * 1), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(85f * 1), (int)(45f * 1), (int)(15f * 1), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);

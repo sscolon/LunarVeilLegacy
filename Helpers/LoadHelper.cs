@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.Events;
 using Terraria.ID;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public static class LoadHelper
     {
@@ -97,7 +97,7 @@ namespace Stellamod.Helpers
             }
             return false;
         }
-        public static MyPlayer Stellamod(this Player player)
+        public static MyPlayer LunarVeilLegacy(this Player player)
         {
             return player.GetModPlayer<MyPlayer>();
         }

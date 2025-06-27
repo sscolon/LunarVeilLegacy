@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using Terraria.ModLoader;
 using Terraria.ID;
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Items.Materials;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Items.Armors.Windmillion
+namespace LunarVeilLegacy.Items.Armors.Windmillion
 {
     [AutoloadEquip(EquipType.Head)]
     public class WindmillionHat : ModItem

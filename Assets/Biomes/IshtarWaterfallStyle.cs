@@ -1,7 +1,7 @@
 ﻿
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     public class IshtarWaterfallStyle : ModWaterfallStyle
     {

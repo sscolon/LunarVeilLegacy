@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
 using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Zui.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles
 {
     public class Holdr : ModProjectile
 	{

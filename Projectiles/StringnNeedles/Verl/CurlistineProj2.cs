@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.StringnNeedles.Verl
+namespace LunarVeilLegacy.Projectiles.StringnNeedles.Verl
 {
     public class CurlistineProj2 : ModProjectile
     {

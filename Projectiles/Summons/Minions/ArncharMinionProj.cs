@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +12,11 @@ using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Buffs.Minions;
+using LunarVeilLegacy.Buffs.Minions;
 using Terraria.Audio;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Bow;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     public class ArncharMinionProj : ModProjectile
     {
@@ -223,11 +223,11 @@ namespace Stellamod.Projectiles.Summons.Minions
                         int Sound = Main.rand.Next(1, 3);
                         if (Sound == 1)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ArcharilitDrone1"), Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"), Projectile.position);
                         }
                         else
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ArcharilitDrone2"), Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ArcharilitDrone2"), Projectile.position);
                         }
                         Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 512f, 32f);
                         Projectile.velocity.Y -= 10;
@@ -243,11 +243,11 @@ namespace Stellamod.Projectiles.Summons.Minions
                         int Sound = Main.rand.Next(1, 3);
                         if (Sound == 1)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ArcharilitDrone1"), Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ArcharilitDrone1"), Projectile.position);
                         }
                         else
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ArcharilitDrone2"), Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ArcharilitDrone2"), Projectile.position);
                         }
                         Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 512f, 32f);
                         Projectile.velocity.Y -= 10;

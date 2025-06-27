@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria.ID;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria.Audio;
 using Terraria.Graphics.Shaders;
-using Stellamod.Buffs.Minions;
+using LunarVeilLegacy.Buffs.Minions;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
 
 

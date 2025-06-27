@@ -1,4 +1,4 @@
-﻿using Stellamod.Projectiles.Test;
+﻿using LunarVeilLegacy.Projectiles.Test;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +10,11 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Projectiles.Slashers.Swingers;
+using LunarVeilLegacy.Projectiles.Slashers.Swingers;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     internal class VulcanBreaker : ClassSwapItem
     {

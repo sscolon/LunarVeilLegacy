@@ -1,11 +1,11 @@
 ﻿
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     internal class WanderingEssence : ModItem
     {

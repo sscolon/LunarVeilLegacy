@@ -1,22 +1,22 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Flasks;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Special;
-using Stellamod.Items.Special.Sirestias;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Flasks;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Special;
+using LunarVeilLegacy.Items.Special.Sirestias;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Summon;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     public class SirestiasStarterBag : ModItem
 	{

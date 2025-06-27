@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     internal class VacuumLightningBolt : ModProjectile, IPixelPrimitiveDrawer
     {
@@ -171,7 +171,7 @@ namespace Stellamod.Projectiles.Gun
         public float alphaCounter = 1;
         public override bool PreDraw(ref Color lightColor)
         {
-            Texture2D texture2D4 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Vector2 drawPos = _lightningArcPos[_lightningArcPos.Length - 1];
             Vector2 drawOrigin = new Vector2(32, 32);
             for(int i = 0; i < 3; i++)

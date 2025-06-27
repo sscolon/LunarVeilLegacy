@@ -3,11 +3,11 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
     public class RipperSlashTelegraphParticle : Particle
     {
@@ -27,7 +27,7 @@ namespace Stellamod.Particles
 
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
-            Texture2D tex3 = Request<Texture2D>("Stellamod/Particles/RipperSlashTelegraphParticle").Value;
+            Texture2D tex3 = Request<Texture2D>("LunarVeilLegacy/Particles/RipperSlashTelegraphParticle").Value;
             Vector2 origin = this.OriginCenter();
             spriteBatch.Draw(tex3, screenPos, 
                 tex3.AnimationFrame(ref frameCount, ref frameTick, Frame_Duration, Frame_Count, true), Color.White, 

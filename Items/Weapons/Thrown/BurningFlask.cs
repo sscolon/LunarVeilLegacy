@@ -1,13 +1,13 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Paint;
-using Stellamod.Projectiles.Thrown;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Paint;
+using LunarVeilLegacy.Projectiles.Thrown;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     public class BurningFlask : ClassSwapItem
     {

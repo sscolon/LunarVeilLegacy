@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords.Fenix
+namespace LunarVeilLegacy.Projectiles.Swords.Fenix
 {
     public class AngelenthalProj3 : ModProjectile
     {

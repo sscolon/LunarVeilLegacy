@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Wings;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles;
-using Stellamod.Projectiles.Visual;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Wings;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK.Projectiles;
+using LunarVeilLegacy.Projectiles.Visual;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -25,7 +25,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK
 {
     internal class RekSegment
     {
@@ -56,7 +56,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
     internal class RekSnake : ModNPC
     {
         //Draw Code
-        private string BaseTexturePath => "Stellamod/NPCs/Bosses/GothiviaTheSun/REK/";
+        private string BaseTexturePath => "LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/REK/";
         public PrimDrawer TrailDrawer { get; private set; } = null;
         private float SegmentStretch = 0.66f;
         private float ChargeTrailOpacity;
@@ -130,7 +130,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
 
             // Influences how the NPC looks in the Bestiary
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/GothiviaTheSun/REK/RekBestiary";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/REK/RekBestiary";
             drawModifiers.PortraitScale = 0.8f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -505,7 +505,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
             if (Timer == 1)
             {
                 NPC.TargetClosest();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/HavocCharge"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/HavocCharge"), NPC.position);
 
                 Vector2 directionToPlayer = NPC.Center.DirectionTo(Target.Center);
                 Vector2 targetVelocity = directionToPlayer * 1;
@@ -581,7 +581,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
                 //Turn on the trail and roar!!!
                 DrawChargeTrail = true;
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1024f, 64f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SNAKEROAR"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SNAKEROAR"), NPC.position);
                 StopSegmentGlow();
             }
 
@@ -626,7 +626,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
             if (Timer == 1)
             {
                 NPC.TargetClosest();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/HavocCharge"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/HavocCharge"), NPC.position);
 
                 Vector2 directionToPlayer = NPC.Center.DirectionTo(Target.Center);
                 Vector2 targetVelocity = directionToPlayer * 1;
@@ -701,7 +701,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
                 //Turn on the trail and roar!!!
                 MyPlayer myPlayer = Main.LocalPlayer.GetModPlayer<MyPlayer>();
                 myPlayer.ShakeAtPosition(NPC.Center, 1024f, 64f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SNAKEROAR"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SNAKEROAR"), NPC.position);
             
                 //Explode
                 for (int i = 0; i < Segments.Length; i++)
@@ -739,7 +739,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
 
             if(Timer == 240)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekClappbackStart"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekClappbackStart"), NPC.position);
                 StartSegmentGlow(Color.White);
             }
 
@@ -779,8 +779,8 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
                     Projectile.NewProjectile(EntitySource, NPC.Center, Vector2.Zero, ModContent.ProjectileType<RekFireShockWave>(),
                         DamageFireShockWave, knockback);
                 }
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SNAKEROAR"), NPC.position);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekShockwave"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SNAKEROAR"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekShockwave"), NPC.position);
                 NPC.velocity = -Vector2.UnitY;
             }
 
@@ -978,7 +978,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
                 {
                     if (Vector2.Distance(NPC.Center, targetSegment.Center) <= 32)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/REKEAT"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/REKEAT"), NPC.position);
                         if (StellaMultiplayer.IsHost)
                         {
                             float rot = targetSegment.Rotation - MathHelper.PiOver2;
@@ -1026,7 +1026,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
                     screenShaderSystem.TintScreen(Color.Orange, 0.3f, timer: 30f);
                     screenShaderSystem.DistortScreen(TextureRegistry.NormalNoise1, new Vector2(0.5f, 0.5f), timer: 30);
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 3000f, 48);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekOuroborosExplosion"), NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekOuroborosExplosion"), NPC.Center);
                     float num = 8;
                     for (int i = 0; i < num; i++)
                     {
@@ -1181,7 +1181,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
             if(Timer >= 300)
             {
                 //DIE NOWWWW!!!
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekDeath"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekDeath"), NPC.position);
 
                 MyPlayer myPlayer = Main.LocalPlayer.GetModPlayer<MyPlayer>();
                 myPlayer.ShakeAtPosition(NPC.position, 6000, 128);

@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Govheil
+namespace LunarVeilLegacy.Items.Armors.Govheil
 {
     // - ModProjectile - the minion itself
 

@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
 {
     internal class RekFireEyeLaserMiniProj : ModProjectile,
         IPixelPrimitiveDrawer
@@ -36,14 +36,14 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
             Timer++;
             if(Timer == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekFireballShoot"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekFireballShoot"), Projectile.position);
             }
         }
 
         public override void OnKill(int timeLeft)
         {
             base.OnKill(timeLeft);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekFireballDeath"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekFireballDeath"), Projectile.position);
         }
 
         public override void OnHitPlayer(Player target, Player.HurtInfo info)

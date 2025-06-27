@@ -1,5 +1,5 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class VoidBlaster : ModItem
 	{

@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.StringnNeedles.Alcadiz
+namespace LunarVeilLegacy.Projectiles.StringnNeedles.Alcadiz
 {
     // - ModProjectile - the minion itself
 

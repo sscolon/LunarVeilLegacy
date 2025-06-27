@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Test
+namespace LunarVeilLegacy.Projectiles.Test
 {
     internal class ExampleSinSwingProj : ModProjectile
     {
@@ -110,7 +110,7 @@ namespace Stellamod.Projectiles.Test
                 oldPos[i] += Projectile.rotation.ToRotationVector2() * Projectile.width / 3f;
             }
 
-            Texture2D tipSlashTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/TerraTrail").Value;
+            Texture2D tipSlashTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/TerraTrail").Value;
             if (SwordSlash == null)
             {
                 SwordSlash = new TrailRenderer(tipSlashTexture, TrailRenderer.DefaultPass, 

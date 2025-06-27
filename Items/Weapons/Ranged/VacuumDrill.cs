@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Materials.Tech;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class VacuumDrill : ClassSwapItem
     {

@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
-using Stellamod.Projectiles.Visual;
+using LunarVeilLegacy.Projectiles.Visual;
 
 
-namespace Stellamod.Projectiles.Paint
+namespace LunarVeilLegacy.Projectiles.Paint
 {
     public class POAProj4 : ModProjectile, IPixelPrimitiveDrawer
     {

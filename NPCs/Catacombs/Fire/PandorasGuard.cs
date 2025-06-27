@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.WorldG;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -15,7 +15,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Catacombs.Fire
+namespace LunarVeilLegacy.NPCs.Catacombs.Fire
 {
 	public class PandorasGuard : ModNPC
 	{
@@ -55,8 +55,8 @@ namespace Stellamod.NPCs.Catacombs.Fire
 			NPC.damage = 90; // The amount of damage that this npc deals
 			NPC.defense = 20; // The amount of defense that this npc has
 			NPC.lifeMax = 1500; // The amount of health that this npc has
-			NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-			NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+			NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+			NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
 			NPC.value = 50f; // How many copper coins the NPC will drop when killed.
 			NPC.knockBackResist = 0.5f;
 
@@ -137,7 +137,7 @@ namespace Stellamod.NPCs.Catacombs.Fire
 				}
 			}
 
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Morrowpes"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Morrowpes"));
 		}
 
 

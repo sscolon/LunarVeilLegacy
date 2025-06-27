@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Catacombs
+namespace LunarVeilLegacy.Items.Accessories.Catacombs
 {
     internal class IcarusFeather : ModItem
     {

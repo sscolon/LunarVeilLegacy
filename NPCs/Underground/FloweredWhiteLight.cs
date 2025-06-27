@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class FloweredWhiteLight : ModNPC
     {
@@ -66,7 +66,7 @@ namespace Stellamod.NPCs.Underground
 
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/RayLight3").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/RayLight3").Value;
             Main.spriteBatch.Draw(texture2D4, NPC.Center - Main.screenPosition, null, new Color((int)(55f * alphaCounter), (int)(55f * alphaCounter), (int)(55f * alphaCounter), 0), NPC.rotation, new Vector2(171 / 2, 51 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
             return true;
         }

@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Glyph
+namespace LunarVeilLegacy.Projectiles.Summons.Glyph
 {
     // - ModProjectile - the minion itself
 

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Swords.Fenix
+namespace LunarVeilLegacy.Projectiles.Swords.Fenix
 {
     internal class NekomaraProj : ModProjectile
     {
@@ -93,7 +93,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             float speedYa = -Projectile.velocity.Y * Main.rand.Next(0, 0) * 0.01f + Main.rand.Next(-20, 21) * 0.0f;
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 2212f, 6f);
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXa, Projectile.position.Y + speedYa, speedXa * 0, speedYa * 0, ModContent.ProjectileType<KaBoomSigil>(), (int)(Projectile.damage * 1.5f), 0f, Projectile.owner, 0f, 0f);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Starblast"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Starblast"), Projectile.position);
             // Item.NewItem(Projectile.GetSource_FromThis(), Projectile.getRect(), ModContent.ItemType<AuroreanStarI>(), Main.rand.Next(1, 1));
 
 
@@ -132,7 +132,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
         }
         public override void PostDraw(Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(60f * alphaCounter), (int)(25f * alphaCounter), (int)(55f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.37f * (7 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(60f * alphaCounter), (int)(25f * alphaCounter), (int)(55f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.27f * (7 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(60f * alphaCounter), (int)(45f * alphaCounter), (int)(15f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.27f * (7 + 0.6f), SpriteEffects.None, 0f);

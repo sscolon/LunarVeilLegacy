@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria.ModLoader;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public class RarityTextureRegistry : ModSystem
     {
-        public const string Path = "Stellamod/Particles/Sparkles/";
+        public const string Path = "LunarVeilLegacy/Particles/Sparkles/";
 
         public static Texture2D BaseRarityGlow
         {

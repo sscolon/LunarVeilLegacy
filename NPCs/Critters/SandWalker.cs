@@ -11,9 +11,9 @@ using Terraria.ModLoader.Utilities;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.NPCs.Critters
+namespace LunarVeilLegacy.NPCs.Critters
 {
     internal class SandWalker
     {   /// <summary>

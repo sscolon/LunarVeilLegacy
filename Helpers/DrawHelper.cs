@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public static class DrawHelper
     {
 		public static void DrawDimLight(Vector2 pos, Color color, float rotation, float scale)
 		{
             SpriteBatch spriteBatch = Main.spriteBatch;
-            Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Color drawColor = new Color(color.R, color.G, color.B, 0);
 			Vector2 drawOrigin = texture.Size() / 2;
             spriteBatch.Draw(texture, pos, null, drawColor, rotation, drawOrigin, scale, SpriteEffects.None, 0f);
@@ -273,7 +273,7 @@ namespace Stellamod.Helpers
         public static void DrawLineTelegraph(Vector2 drawPos, Color drawColor, Vector2 velocity, float drawScale = 1f, SpriteEffects spriteEffects = SpriteEffects.None)
         {
             SpriteBatch spriteBatch = Main.spriteBatch;
-            Texture2D lineTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D lineTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Vector2 drawOrigin = lineTexture.Size() / 2;
 			float rotation = velocity.ToRotation() + MathHelper.PiOver2;
             spriteBatch.Draw(lineTexture, drawPos, null, drawColor, rotation, drawOrigin, drawScale, spriteEffects, 0);
@@ -283,7 +283,7 @@ namespace Stellamod.Helpers
         public static void DrawLineTelegraph(Vector2 drawPos, Color drawColor, float rotation, float drawScale = 1f, SpriteEffects spriteEffects = SpriteEffects.None)
 		{
 			SpriteBatch spriteBatch = Main.spriteBatch;
-            Texture2D lineTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D lineTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Vector2 drawOrigin = lineTexture.Size() / 2;
             spriteBatch.Draw(lineTexture, drawPos, null, drawColor, rotation, drawOrigin, drawScale, spriteEffects, 0);
         }
@@ -485,7 +485,7 @@ namespace Stellamod.Helpers
 		/// <param name="dimLightZ"></param>
 		public static void DrawDimLight(Projectile projectile, float dimLightX, float dimLightY, float dimLightZ, Color worldLightingColor, Color lightColor, int glowCount = 4)
         {
-			Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
 			for (int i = 0; i < glowCount; i++)
 			{
 				Main.spriteBatch.Draw(texture, projectile.Center - Main.screenPosition, null, new Color((int)(dimLightX * 1), (int)(dimLightY * 1), (int)(dimLightZ * 1), 0), projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
@@ -497,7 +497,7 @@ namespace Stellamod.Helpers
 
 		public static void DrawDimLight(NPC npc, float dimLightX, float dimLightY, float dimLightZ, Color worldLightingColor, Color lightColor, int glowCount = 4)
 		{
-			Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
 			for (int i = 0; i < glowCount; i++)
 			{
 				Main.spriteBatch.Draw(texture, npc.Center - Main.screenPosition, null, new Color((int)(dimLightX * 1), (int)(dimLightY * 1), (int)(dimLightZ * 1), 0), npc.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);

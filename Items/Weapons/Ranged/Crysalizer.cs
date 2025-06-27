@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class Crysalizer : ClassSwapItem
     {
@@ -63,20 +63,20 @@ namespace Stellamod.Items.Weapons.Ranged
             if (WinterboundArrow >= 3)
             {
                 WinterboundArrow = 0;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterboundArrow"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterboundArrow"), player.position);
                 type = ModContent.ProjectileType<CrysalizerArrow1>();
                 Projectile.NewProjectile(source, position.X, position.Y, velocity.X, velocity.Y, type, damage, knockback, player.whoAmI);
             }
             if (WinterboundArrow == 2)
             {
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterboundArrow"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterboundArrow"), player.position);
                 type = ModContent.ProjectileType<CrysalizerArrow2>();
                 Projectile.NewProjectile(source, position.X, position.Y, velocity.X, velocity.Y, type, damage, knockback, player.whoAmI);
             }
             if (WinterboundArrow == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterboundArrow"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterboundArrow"), player.position);
                 type = ModContent.ProjectileType<CrysalizerArrow3>();
                 Projectile.NewProjectile(source, position.X, position.Y, velocity.X, velocity.Y, type, damage, knockback, player.whoAmI);
             }

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Foods;
-using Stellamod.Items.Armors.Pieces.RareMetals;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Ores;
-using Stellamod.Utilis;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Foods;
+using LunarVeilLegacy.Items.Armors.Pieces.RareMetals;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Utilis;
+using LunarVeilLegacy.WorldG;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -17,7 +17,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
 	public class NaturalWitch : ModNPC
 	{
@@ -62,8 +62,8 @@ namespace Stellamod.NPCs.Town
 			NPC.damage = 1; // The amount of damage that this npc deals
 			NPC.defense = 2; // The amount of defense that this npc has
 			NPC.lifeMax = 2000; // The amount of health that this npc has
-			NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-			NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+			NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+			NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
 			NPC.value = 10f; // How many copper coins the NPC will drop when killed.
 			NPC.knockBackResist = 0f;
 			NPC.noGravity = false;

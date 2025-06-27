@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     public class GovheilTile : ModTile
 	{

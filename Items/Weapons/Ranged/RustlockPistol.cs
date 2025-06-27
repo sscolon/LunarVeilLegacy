@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class RustlockPistol : ModItem
 	{

@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.INest
+namespace LunarVeilLegacy.NPCs.Bosses.INest
 {
 
     public class IrradiatedNestDeath : ModNPC
@@ -227,7 +227,7 @@ namespace Stellamod.NPCs.Bosses.INest
                             }
                             NPC.active = false;
                             DrugRidus = 50;
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Land"));
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Land"));
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 256f);
                             NPC.ai[0] = 1000;
                         }

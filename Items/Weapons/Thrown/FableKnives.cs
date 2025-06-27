@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles.Thrown;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles.Thrown;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     internal class FableKnives : ModItem
     {

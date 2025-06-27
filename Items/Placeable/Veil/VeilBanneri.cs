@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable.Veil
+namespace LunarVeilLegacy.Items.Placeable.Veil
 {
     public class VeilBanneri : ModItem
 	{

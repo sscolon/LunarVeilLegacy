@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Water.WaterJellyfish
+namespace LunarVeilLegacy.NPCs.Catacombs.Water.WaterJellyfish
 {
     [AutoloadBossHead]
 	public class WaterJellyfish : ModNPC
@@ -39,7 +39,7 @@ namespace Stellamod.NPCs.Catacombs.Water.WaterJellyfish
 			NPC.defense = 10; // The amount of defense that this npc has
 			NPC.lifeMax = 6000; // The amount of health that this npc has
 			NPC.HitSound = SoundID.NPCHit25; // The sound the NPC will make when being hit.
-			NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+			NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
 			NPC.knockBackResist = 0f;
 			NPC.noGravity = true;
 			NPC.noTileCollide = true;
@@ -173,7 +173,7 @@ namespace Stellamod.NPCs.Catacombs.Water.WaterJellyfish
 					NPC.aiStyle = 10;
 					if(ai_Counter > 120)
                     {
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__LightingRain"));
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__LightingRain"));
 						SwitchState(AttackState.Anger);
                     }
                     break;

@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Dusteffects;
-using Stellamod.Buffs.PocketDustEffects;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Dusteffects;
+using LunarVeilLegacy.Buffs.PocketDustEffects;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.IgniterEx
+namespace LunarVeilLegacy.Projectiles.IgniterEx
 {
     public class IgniterStart : ModProjectile
 	{
@@ -110,7 +110,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			{
 				ShakeModSystem.Shake = 8;
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcaneExplode"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcaneExplode"));
 				for (int j = 0; j < 7; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);
@@ -157,7 +157,7 @@ namespace Stellamod.Projectiles.IgniterEx
 		
 				for (int j = 0; j < 1; j++)
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GhostExcalibur1"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GhostExcalibur1"));
 					Projectile.scale = 1.5f;
 					ShakeModSystem.Shake = 6;
 					npc.SimpleStrikeNPC(Projectile.damage * 3, 1, crit: false, Projectile.knockBack);
@@ -207,7 +207,7 @@ namespace Stellamod.Projectiles.IgniterEx
                 for (int j = 0; j < 1; j++)
                 {
                     //ExplosionHolyNecklaceWave
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ExplosionGaseous") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ExplosionGaseous") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
                     Projectile.scale = 1.5f;
                     ShakeModSystem.Shake = 6;
                     npc.SimpleStrikeNPC(Projectile.damage * 4, 1, crit: false, Projectile.knockBack);
@@ -253,7 +253,7 @@ namespace Stellamod.Projectiles.IgniterEx
 
 				for (int j = 0; j < 1; j++)
 				{
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StaalkerDescend") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StaalkerDescend") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
                     Projectile.scale = 1.5f;
 					ShakeModSystem.Shake = 6;
 					npc.SimpleStrikeNPC(Projectile.damage * 3, 1, crit: false, Projectile.knockBack);
@@ -299,7 +299,7 @@ namespace Stellamod.Projectiles.IgniterEx
 
 				for (int j = 0; j < 1; j++)
 				{
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GhostExcalibur1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GhostExcalibur1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
                     Projectile.scale = 1.5f;
 					ShakeModSystem.Shake = 5;
 					npc.SimpleStrikeNPC(Projectile.damage * 2, 1, crit: false, Projectile.knockBack);
@@ -339,7 +339,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			if (npc.active && npc.HasBuff<FlameDust>())
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/HeatExplosion"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/HeatExplosion"));
 				for (int j = 0; j < 20; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -351,7 +351,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 150)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
 					}
 
@@ -361,7 +361,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Kaboom"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Kaboom"));
 							Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.DaybreakExplosion, Projectile.damage, Projectile.knockBack);
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 10;
@@ -417,7 +417,7 @@ namespace Stellamod.Projectiles.IgniterEx
             if (npc.active && npc.HasBuff<MushyBuff>())
             {
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/HeatExplosion"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/HeatExplosion"));
                 for (int j = 0; j < 20; j++)
                 {
                     Vector2 speed = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -429,7 +429,7 @@ namespace Stellamod.Projectiles.IgniterEx
                     Timer++;
                     if (Timer == 150)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+                        SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
                     }
 
@@ -439,7 +439,7 @@ namespace Stellamod.Projectiles.IgniterEx
                         Vector2 velocity = npc.velocity;
                         if (npc.active && npc.HasBuff<EXPtime>())
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Green") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Green") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
                             Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.DaybreakExplosion, Projectile.damage, Projectile.knockBack);
                             Projectile.scale = 1.5f;
                             ShakeModSystem.Shake = 10;
@@ -492,7 +492,7 @@ namespace Stellamod.Projectiles.IgniterEx
             if (npc.active && npc.HasBuff<IlluBuff>())
             {
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/HeatExplosion"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/HeatExplosion"));
                 for (int j = 0; j < 20; j++)
                 {
                     Vector2 speed = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -504,7 +504,7 @@ namespace Stellamod.Projectiles.IgniterEx
                     Timer++;
                     if (Timer == 150)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+                        SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
                     }
 
@@ -514,7 +514,7 @@ namespace Stellamod.Projectiles.IgniterEx
                         Vector2 velocity = npc.velocity;
                         if (npc.active && npc.HasBuff<EXPtime>())
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Green") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Green") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
                             Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.DaybreakExplosion, Projectile.damage, Projectile.knockBack);
                             Projectile.scale = 1.5f;
                             ShakeModSystem.Shake = 10;
@@ -570,7 +570,7 @@ namespace Stellamod.Projectiles.IgniterEx
             if (npc.active && npc.HasBuff<SpiritDust>())
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/HeatExplosion"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/HeatExplosion"));
 				for (int j = 0; j < 20; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -582,7 +582,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 140)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Briskfly"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Briskfly"));
 
 					}
 
@@ -596,7 +596,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Yumiko4"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Yumiko4"));
 							Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.NebulaArcanumExplosionShot, Projectile.damage, Projectile.knockBack);
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 10;
@@ -649,7 +649,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			if (npc.active && npc.HasBuff<VoiddDust>())
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/HeatExplosion"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/HeatExplosion"));
 				for (int j = 0; j < 20; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -661,7 +661,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 150)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
 					}
 
@@ -671,7 +671,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ExplosionBurstBomb"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ExplosionBurstBomb"));
 							Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.NebulaArcanumExplosionShot, Projectile.damage, Projectile.knockBack);
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 10;
@@ -732,7 +732,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			if (npc.active && npc.HasBuff<AlcadDust>())
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/HeatExplosion"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/HeatExplosion"));
 				for (int j = 0; j < 20; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -744,7 +744,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 200)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
 					}
 
@@ -816,7 +816,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			if (npc.active && npc.HasBuff<GovheilDust>())
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/HeatExplosion"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/HeatExplosion"));
 				for (int j = 0; j < 20; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -828,7 +828,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 200)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
 					}
 
@@ -838,7 +838,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Binding_Abyss_Rune"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Rune"));
 
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 7;
@@ -885,17 +885,17 @@ namespace Stellamod.Projectiles.IgniterEx
 
 					if (Timer == 230)
                     {
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Binding_Abyss_Rune"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Rune"));
 						npc.SimpleStrikeNPC(Projectile.damage * 7, 1, crit: false, Projectile.knockBack);
 					}
 					if (Timer == 240)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Binding_Abyss_Rune"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Rune"));
 						npc.SimpleStrikeNPC(Projectile.damage * 6, 1, crit: false, Projectile.knockBack);
 					}
 					if (Timer == 250)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Binding_Abyss_Rune"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Rune"));
 						npc.SimpleStrikeNPC(Projectile.damage * 4, 1, crit: false, Projectile.knockBack);
 					}
 					if (Timer == 251)
@@ -921,7 +921,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			if (npc.active && npc.HasBuff<ShadeDust>())
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ShadowExplosion"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ShadowExplosion"));
 				for (int d = 0; d < 20; d++)
 				{
 					Vector2 speedea = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -932,7 +932,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 100)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
 					}
 
@@ -942,7 +942,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime2>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ExplosionBurstBomb"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ExplosionBurstBomb"));
 							Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.DaybreakExplosion, Projectile.damage, Projectile.knockBack);
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 10;
@@ -1005,7 +1005,7 @@ namespace Stellamod.Projectiles.IgniterEx
 
 			if (npc.active && npc.HasBuff<EldritchDust>())
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SpidrSummon"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SpidrSummon"));
 				
 				for (int d = 0; d < 20; d++)
 				{
@@ -1017,7 +1017,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 100)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/StormDragon_WaveCharge"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/StormDragon_WaveCharge"));
 
 					}
 
@@ -1027,7 +1027,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime2>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/StormDragon_LightingZap"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/StormDragon_LightingZap"));
 							Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.LostSoulFriendly, Projectile.damage, Projectile.knockBack);
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 10;
@@ -1090,7 +1090,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			if (npc.active && npc.HasBuff<AgreviDust>())
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SpidrSummon"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SpidrSummon"));
 				for (int d = 0; d < 20; d++)
 				{
 					Vector2 speedea = Main.rand.NextVector2Circular(0.5f, 0.5f);
@@ -1101,7 +1101,7 @@ namespace Stellamod.Projectiles.IgniterEx
 					Timer++;
 					if (Timer == 100)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
 					}
 
@@ -1111,7 +1111,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime2>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Kaboom"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Kaboom"));
 							Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.DaybreakExplosion, Projectile.damage, Projectile.knockBack);
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 10;
@@ -1194,7 +1194,7 @@ namespace Stellamod.Projectiles.IgniterEx
 
 						ShakeModSystem.Shake = 3;
 						Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXabx, Projectile.position.Y + speedYabx, speedXabx * 0, speedYabx * 0, ModContent.ProjectileType<FrostbiteProj>(), (int)(Projectile.damage * 1.5), 0f, Projectile.owner, 0f, 0f);
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Frosty"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Frosty"));
 						for (int da = 0; da < 4; da++)
 						{
 
@@ -1235,7 +1235,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						{
 							ShakeModSystem.Shake = 3;
 							Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXabx, Projectile.position.Y + speedYabx, speedXabx * 0, speedYabx * 0, ModContent.ProjectileType<FrostbiteProj>(), (int)(Projectile.damage * 1.5), 0f, Projectile.owner, 0f, 0f);
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Frosty"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Frosty"));
 							for (int da = 0; da < 6; da++)
 							{
 
@@ -1290,7 +1290,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			{
 				ShakeModSystem.Shake = 3;
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Dirt"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Dirt"));
 				for (int jf = 0; jf < 3; jf++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);
@@ -1318,7 +1318,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			{
 				ShakeModSystem.Shake = 3;
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/windpetal"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/windpetal"));
 				for (int jf = 0; jf < 2; jf++)
 				{
 					Vector2 speed = Main.rand.NextVector2CircularEdge(1f, 1f);
@@ -1362,7 +1362,7 @@ namespace Stellamod.Projectiles.IgniterEx
 			{
 				ShakeModSystem.Shake = 6;
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/LenaSongEx"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/LenaSongEx"));
 				for (int j = 0; j < 2; j++)
 				{
 
@@ -1424,7 +1424,7 @@ namespace Stellamod.Projectiles.IgniterEx
 
 						ShakeModSystem.Shake = 3;
 						Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXabxa, Projectile.position.Y + speedYabxa, speedXabxa * 0, speedYabxa * 0, ModContent.ProjectileType<TrickbiteProj>(), (int)(Projectile.damage * 1.5), 0f, Projectile.owner, 0f, 0f);
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Burnbefore"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Burnbefore"));
 
 						for (int da = 0; da < 4; da++)
 						{
@@ -1468,7 +1468,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						{
 							ShakeModSystem.Shake = 8;
 							Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXabxa, Projectile.position.Y + speedYabxa, speedXabxa * 0, speedYabxa * 0, ModContent.ProjectileType<KaBoomTrick>(), (int)(Projectile.damage * 1.5), 0f, Projectile.owner, 0f, 0f);
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/trickbomb"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/trickbomb"));
 
 
 							npc.SimpleStrikeNPC(Projectile.damage * 9, 1, crit: false, Projectile.knockBack);
@@ -1503,7 +1503,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						{
 							ShakeModSystem.Shake = 8;
 							Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXabxa, Projectile.position.Y + speedYabxa, speedXabxa * 0, speedYabxa * 0, ModContent.ProjectileType<KaBoomTrick>(), (int)(Projectile.damage * 1.5), 0f, Projectile.owner, 0f, 0f);
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/trickbomb"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/trickbomb"));
 
 
 							npc.SimpleStrikeNPC(Projectile.damage * 17, 1, crit: false, Projectile.knockBack);
@@ -1673,7 +1673,7 @@ namespace Stellamod.Projectiles.IgniterEx
 						Vector2 velocity = npc.velocity;
 						if (npc.active && npc.HasBuff<EXPtime>())
 						{
-							SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Suckler"));
+							SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Suckler"));
 							Projectile.NewProjectile(npc.GetSource_FromThis(), npc.position, velocity * 0, ProjectileID.DaybreakExplosion, Projectile.damage, Projectile.knockBack);
 							Projectile.scale = 1.5f;
 							ShakeModSystem.Shake = 10;

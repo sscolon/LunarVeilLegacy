@@ -1,11 +1,11 @@
-﻿using Stellamod.Tiles.RoyalCapital;
-using Stellamod.Tiles.DrakonicManor;
+﻿using LunarVeilLegacy.Tiles.RoyalCapital;
+using LunarVeilLegacy.Tiles.DrakonicManor;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
-using Stellamod.Tiles.Veil;
-using Stellamod.Tiles.Fable;
+using LunarVeilLegacy.Tiles.Veil;
+using LunarVeilLegacy.Tiles.Fable;
 
-namespace Stellamod.Items.Placeable.Veil
+namespace LunarVeilLegacy.Items.Placeable.Veil
 {
 	public class SmallVeilPottery : ModItem
 	{

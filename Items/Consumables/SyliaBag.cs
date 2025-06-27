@@ -1,10 +1,10 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Wings;
-using Stellamod.Items.Armors.Miracle;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Wings;
+using LunarVeilLegacy.Items.Armors.Miracle;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Creative;
@@ -12,7 +12,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     internal class SyliaBag : ModItem
     {

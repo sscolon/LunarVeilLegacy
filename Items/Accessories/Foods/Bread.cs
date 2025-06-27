@@ -5,7 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Foods
+namespace LunarVeilLegacy.Items.Accessories.Foods
 {
     public class Bread : ModItem
     {

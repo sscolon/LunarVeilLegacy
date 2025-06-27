@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.NPCs.Bosses.SupernovaFragment;
-using Stellamod.NPCs.Bosses.Zui;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.NPCs.Bosses.SupernovaFragment;
+using LunarVeilLegacy.NPCs.Bosses.Zui;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     internal class MagicDoor : ModProjectile
     {

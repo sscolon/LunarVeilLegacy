@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviFrostFlowerProj : ModProjectile
     {
@@ -56,7 +56,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
 
         public override bool PreDraw(ref Color lightColor)
         {
-            var textureAsset = ModContent.Request<Texture2D>("Stellamod/Particles/AuroranSlashParticle");
+            var textureAsset = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/AuroranSlashParticle");
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 drawSize = textureAsset.Size();

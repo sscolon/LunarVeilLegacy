@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
 using System;
 using Terraria;
 using Terraria.GameContent;
@@ -9,7 +9,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
 	public class TempleKeyMold : ModItem
 	{

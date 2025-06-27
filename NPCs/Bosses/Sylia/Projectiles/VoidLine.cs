@@ -1,13 +1,13 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles
 {
     internal class VoidLine : ModProjectile,
         IPixelPrimitiveDrawer

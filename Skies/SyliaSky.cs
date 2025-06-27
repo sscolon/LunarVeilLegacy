@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
-namespace Stellamod.Skies
+namespace LunarVeilLegacy.Skies
 {
     public class SyliaSky : CustomSky
 	{
@@ -94,7 +94,7 @@ namespace Stellamod.Skies
 			_windSpeed = _windSpeed % 10f;
 		}
 
-		public static Effect Neffect = ModContent.Request<Effect>("Stellamod/Effects/Primitives/NaxtrinSky", AssetRequestMode.ImmediateLoad).Value;
+		public static Effect Neffect = ModContent.Request<Effect>("LunarVeilLegacy/Effects/Primitives/NaxtrinSky", AssetRequestMode.ImmediateLoad).Value;
 
 		public override void Draw(SpriteBatch spriteBatch, float minDepth, float maxDepth)
 		{
@@ -119,13 +119,13 @@ namespace Stellamod.Skies
 
 				Effect storm = Neffect;
 				storm.Parameters["uScreenSize"].SetValue(Main.ScreenSize.ToVector2());
-				storm.Parameters["uTexture0"].SetValue(ModContent.Request<Texture2D>("Stellamod/Textures/Noise7").Value);
-				storm.Parameters["uTexture1"].SetValue(ModContent.Request<Texture2D>("Stellamod/Textures/Noise8").Value);
+				storm.Parameters["uTexture0"].SetValue(ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/Noise7").Value);
+				storm.Parameters["uTexture1"].SetValue(ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/Noise8").Value);
 				storm.Parameters["uOffsetPosition"].SetValue(offset);
 				storm.Parameters["uWorldPosition"].SetValue((Main.screenPosition + Main.ScreenSize.ToVector2() / 2f) / 5.5f);
 				storm.Parameters["uTime"].SetValue(_windSpeed / 16f);
 				storm.Parameters["uCurveFactor"].SetValue(1.2f);
-				storm.Parameters["uColorMap"].SetValue(ModContent.Request<Texture2D>("Stellamod/Textures/ColorMap4").Value);
+				storm.Parameters["uColorMap"].SetValue(ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/ColorMap4").Value);
 				storm.Parameters["uColorMapSection"].SetValue(0.2f);
 				storm.Parameters["uStrength"].SetValue(0.8f);
 				storm.Parameters["uPower"].SetValue(2.2f);
@@ -140,7 +140,7 @@ namespace Stellamod.Skies
 
 
 				//glowing up the sky
-				Texture2D backGlow = (ModContent.Request<Texture2D>("Stellamod/Textures/Backglow").Value);
+				Texture2D backGlow = (ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/Backglow").Value);
 				float glowYPos = worldSurface - Utils.GetLerpValue(-worldSurface * 2, worldSurface, Main.screenPosition.Y) * worldSurface + backGlow.Height / 3 * 2;
 				Vector2 glowPosition = new Vector2(Main.screenWidth / 2, glowYPos); //creating vertical parallax
 				Rectangle glowFrame = new Rectangle(0, 0, Main.screenWidth, backGlow.Height);
@@ -161,13 +161,13 @@ namespace Stellamod.Skies
 
 				Effect storm = Neffect;
 				storm.Parameters["uScreenSize"].SetValue(Main.ScreenSize.ToVector2());
-				storm.Parameters["uTexture0"].SetValue(ModContent.Request<Texture2D>("Stellamod/Textures/Noise7").Value);
-				storm.Parameters["uTexture1"].SetValue(ModContent.Request<Texture2D>("Stellamod/Textures/Noise8").Value);
+				storm.Parameters["uTexture0"].SetValue(ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/Noise7").Value);
+				storm.Parameters["uTexture1"].SetValue(ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/Noise8").Value);
 				storm.Parameters["uOffsetPosition"].SetValue(offset);
 				storm.Parameters["uWorldPosition"].SetValue((Main.screenPosition + Main.ScreenSize.ToVector2() / 2f) / 2.5f);
 				storm.Parameters["uTime"].SetValue(_windSpeed/16f);
 				storm.Parameters["uCurveFactor"].SetValue(1.6f);
-				storm.Parameters["uColorMap"].SetValue(ModContent.Request<Texture2D>("Stellamod/Textures/ColorMap4").Value);
+				storm.Parameters["uColorMap"].SetValue(ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/ColorMap4").Value);
 				storm.Parameters["uColorMapSection"].SetValue(0.2f);
 				storm.Parameters["uStrength"].SetValue(1.6f);
 				storm.Parameters["uPower"].SetValue(5f);

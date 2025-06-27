@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-namespace Stellamod.Tiles.Ambient
+namespace LunarVeilLegacy.Tiles.Ambient
 {
     public class OwlTrunck2 : ModTile
 	{

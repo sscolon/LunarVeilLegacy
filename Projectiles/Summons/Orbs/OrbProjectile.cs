@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Orbs
+namespace LunarVeilLegacy.Projectiles.Summons.Orbs
 {
     internal abstract class OrbProjectile : ModProjectile
     {

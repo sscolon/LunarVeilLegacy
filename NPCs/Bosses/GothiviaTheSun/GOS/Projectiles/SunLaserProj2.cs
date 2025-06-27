@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
 {
     internal class SunLaserProj2 : ModProjectile,
         IPixelPrimitiveDrawer

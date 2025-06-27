@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviFrostBombProj : ModProjectile
     {
@@ -21,7 +21,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
 
         private float MaxScale => 1f;
         private float LifeTime => 180;
-        private string FrostTexture => "Stellamod/Assets/Effects/VoxTexture3";
+        private string FrostTexture => "LunarVeilLegacy/Assets/Effects/VoxTexture3";
 
         public override void SetStaticDefaults()
         {

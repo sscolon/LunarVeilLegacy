@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
@@ -8,7 +8,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Ishtar
+namespace LunarVeilLegacy.Tiles.Ishtar
 
 {
 	public class IshtarCandles : ModTile

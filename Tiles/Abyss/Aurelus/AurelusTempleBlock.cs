@@ -1,12 +1,12 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Placeable.Cathedral;
+using LunarVeilLegacy.Items.Placeable.Cathedral;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Tiles.Abyss.Aurelus
+namespace LunarVeilLegacy.Tiles.Abyss.Aurelus
 {
     public class AurelusTempleBlock : ModTile
     {

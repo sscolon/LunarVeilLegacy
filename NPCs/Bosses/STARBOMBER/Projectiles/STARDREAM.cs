@@ -4,18 +4,18 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles
 {
 	public class STARDREAM : ModProjectile
 	{

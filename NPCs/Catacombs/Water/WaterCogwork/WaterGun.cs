@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Water.WaterCogwork
+namespace LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork
 {
     internal class WaterGun : ModNPC
     {
@@ -123,7 +123,7 @@ namespace Stellamod.NPCs.Catacombs.Water.WaterCogwork
             if (ai_Counter > 30)
             {
                 Vector2 velocity = NPC.Center.DirectionTo(player.Center) * 7;
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARSHOOT"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARSHOOT"));
             
                 int count = 48;
                 for (int k = 0; k < count; k++)

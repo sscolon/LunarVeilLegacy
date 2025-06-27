@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Fable
+namespace LunarVeilLegacy.Tiles.Fable
 
 {
 	public class SmallVeilPot : ModTile

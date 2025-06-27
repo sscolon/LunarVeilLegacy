@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles
 {
     public class GhostCharger : ModNPC
 	{

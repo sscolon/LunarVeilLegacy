@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Gun;
-using Stellamod.Projectiles.Slashers.SingularDive;
-using Stellamod.Projectiles.Slashers.Voyager;
-using Stellamod.Projectiles.Swords.Altride;
-using Stellamod.Projectiles.Swords.Fenix;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Slashers.SingularDive;
+using LunarVeilLegacy.Projectiles.Slashers.Voyager;
+using LunarVeilLegacy.Projectiles.Swords.Altride;
+using LunarVeilLegacy.Projectiles.Swords.Fenix;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -20,7 +20,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Melee.Greatswords
+namespace LunarVeilLegacy.Items.Weapons.Melee.Greatswords
 {
 	public class SingularDive : ModItem
 	{
@@ -152,7 +152,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords
 				}
 
 			}
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwingyAr") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwingyAr") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
 
             return false;
 		}

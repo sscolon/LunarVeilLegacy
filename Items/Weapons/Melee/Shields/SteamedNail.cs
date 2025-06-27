@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Nails;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Nails;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Shields
+namespace LunarVeilLegacy.Items.Weapons.Melee.Shields
 {
     public class SteamedNail : ModItem
     {

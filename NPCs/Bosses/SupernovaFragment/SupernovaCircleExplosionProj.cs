@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.SupernovaFragment
+namespace LunarVeilLegacy.NPCs.Bosses.SupernovaFragment
 {
     internal class SupernovaExplosionCircleProj : ModProjectile,
         IPixelPrimitiveDrawer
@@ -86,7 +86,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
             if (Timer == 1)
             {
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024, 16f);
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Kaboom"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Kaboom"), Projectile.position);
                 for (int i = 0; i < 4; i++)
                 {
                     Dust.NewDustPerfect(Projectile.Center, ModContent.DustType<TSmokeDust>(), (Vector2.One * Main.rand.Next(1, 5)).RotatedByRandom(19.0), 0, Color.DarkGray, 1f).noGravity = true;

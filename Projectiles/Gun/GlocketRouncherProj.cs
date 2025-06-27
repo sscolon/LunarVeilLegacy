@@ -3,9 +3,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Mono.Cecil;
-using Stellamod.Dusts;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
-using Stellamod.NPCs.Overworld.ShadowWraith;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.NPCs.Overworld.ShadowWraith;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     public class GlocketRouncherProj : ModProjectile
     {
@@ -79,7 +79,7 @@ namespace Stellamod.Projectiles.Gun
             {
                 if (Projectile.ai[0] == 20)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GlocketRouncher2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GlocketRouncher2"), Projectile.position);
                 }
                 if (Projectile.ai[0] == 50)
                 {

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 using Terraria.ID;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class Venatici : ClassSwapItem
     {
@@ -35,7 +35,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.knockBack = 2;
 			Item.value = 100000;
 			Item.rare = ItemRarityID.Green;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/TON618");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/TON618");
 			Item.autoReuse = false;
 			Item.shoot = ProjectileType<Venbullet>();
 			Item.shootSpeed = 20f;

@@ -1,12 +1,12 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class MorrowSword : ModItem
 	{

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.RoyalCapital
+namespace LunarVeilLegacy.Tiles.RoyalCapital
 {
     public class CarianWallNatural : ModWall
 	{

@@ -8,7 +8,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Abyss
+namespace LunarVeilLegacy.Tiles.Abyss
 {
     internal class BlueFlower : ModTile
     {

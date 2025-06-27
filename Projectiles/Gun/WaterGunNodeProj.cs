@@ -1,4 +1,4 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     internal class WaterGunNodeProj : ModProjectile
     {

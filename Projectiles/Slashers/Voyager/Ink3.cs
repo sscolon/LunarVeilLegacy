@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.UI.Systems;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Voyager
+namespace LunarVeilLegacy.Projectiles.Slashers.Voyager
 {
     public class Ink3 : ModProjectile
 	{

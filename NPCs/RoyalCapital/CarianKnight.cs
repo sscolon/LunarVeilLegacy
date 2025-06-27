@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Assets.Biomes;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.RoyalCapital
+namespace LunarVeilLegacy.NPCs.RoyalCapital
 {
     internal class CarianKnight : ModNPC
     {
@@ -60,7 +60,7 @@ namespace Stellamod.NPCs.RoyalCapital
                         ModContent.ProjectileType<CarianKnightProj>(), 40, 1, Main.myPlayer);
                 }
   
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GhostExcalibur1"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GhostExcalibur1"));
                 for (int i = 0; i < 16; i++)
                 {
                     Vector2 speed = Main.rand.NextVector2CircularEdge(4f, 4f);

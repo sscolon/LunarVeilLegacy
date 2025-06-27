@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Catacombs;
-using Stellamod.NPCs.Catacombs.Fire;
-using Stellamod.NPCs.Catacombs.Fire.BlazingSerpent;
-using Stellamod.NPCs.Catacombs.Trap.Cogwork;
-using Stellamod.NPCs.Catacombs.Trap.Sparn;
-using Stellamod.NPCs.Catacombs.Water.WaterCogwork;
-using Stellamod.NPCs.Catacombs.Water.WaterJellyfish;
-using Stellamod.NPCs.Minibosses;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Catacombs;
+using LunarVeilLegacy.NPCs.Catacombs.Fire;
+using LunarVeilLegacy.NPCs.Catacombs.Fire.BlazingSerpent;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Cogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterJellyfish;
+using LunarVeilLegacy.NPCs.Minibosses;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.ObjectInteractions;
@@ -21,7 +21,7 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 
-namespace Stellamod.Tiles.Catacombs
+namespace LunarVeilLegacy.Tiles.Catacombs
 {
     internal class CatacombsSummon : ModTile
     {

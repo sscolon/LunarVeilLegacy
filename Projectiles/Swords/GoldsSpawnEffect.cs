@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     public class GoldsSpawnEffect : ModProjectile
     {
@@ -43,7 +43,7 @@ namespace Stellamod.Projectiles.Swords
 
         public override bool PreDraw(ref Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/Extra_62").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_62").Value;
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(85f * alphaCounter), (int)(75f * alphaCounter), (int)(05f * alphaCounter), 0), Projectile.rotation, new Vector2(37, 37), 0.4f * (alphaCounter + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(55f * alphaCounter), (int)(75f * alphaCounter), (int)(05f * alphaCounter), 0), Projectile.rotation, new Vector2(37, 37), 0.6f * (alphaCounter + 0.6f), SpriteEffects.None, 0f);
             return true;

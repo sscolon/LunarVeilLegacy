@@ -1,16 +1,16 @@
 ﻿
-using Stellamod.Items.Armors.Vanity.Astolfo;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Special.MinerLogs;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Ranged.Crossbows;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Armors.Vanity.Astolfo;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Special.MinerLogs;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Ranged.Crossbows;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Global
+namespace LunarVeilLegacy.NPCs.Global
 {
     class NPCShopEdits : GlobalNPC
 	{

@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Lovestruck
+namespace LunarVeilLegacy.Items.Armors.Lovestruck
 {
     public class LovestruckP : ModProjectile
 	{

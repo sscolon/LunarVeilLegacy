@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class RazzleDazzleProj : ModProjectile
     {

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Ammo
+namespace LunarVeilLegacy.Projectiles.Ammo
 {
     internal class EldritchPlanetoid : ModProjectile
     {
@@ -66,7 +66,7 @@ namespace Stellamod.Projectiles.Ammo
                             d.noGravity = true;
                         }
 
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SoftSummon") { PitchVariance = 0.15f }, Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon") { PitchVariance = 0.15f }, Projectile.position);
                         Projectile.Kill();
                         break;
                     }

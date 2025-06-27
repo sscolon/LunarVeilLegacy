@@ -1,7 +1,7 @@
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.DataStructures;
@@ -10,7 +10,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
 
     public class MiracleThread : ModItem

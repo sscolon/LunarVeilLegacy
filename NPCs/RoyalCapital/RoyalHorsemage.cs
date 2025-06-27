@@ -1,6 +1,6 @@
-﻿using Stellamod.Assets.Biomes;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
+﻿using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
@@ -9,18 +9,18 @@ using Terraria.ModLoader.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Accessories;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.Utilis;
 using System;
 using Terraria.Audio;
 using Terraria.GameContent;
 
 using static Terraria.ModLoader.ModContent;
 using System.IO;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Magic;
 
-namespace Stellamod.NPCs.RoyalCapital
+namespace LunarVeilLegacy.NPCs.RoyalCapital
 {
 	public class RoyalHorsemage : ModNPC
 	{

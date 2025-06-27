@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
 	public class GlassBreak : ModProjectile
 	{

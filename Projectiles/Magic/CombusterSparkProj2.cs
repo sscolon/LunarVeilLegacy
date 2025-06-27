@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class CombusterSparkProj2 : ModProjectile
     {
@@ -34,12 +34,12 @@ namespace Stellamod.Projectiles.Magic
             {
                 Player owner = Main.player[Projectile.owner];
                 Dust.QuickDustLine(Projectile.Center, owner.Center, 32, Color.Orange);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CombusterSnap") with { PitchVariance = 0.15f });
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CombusterSnap") with { PitchVariance = 0.15f });
             }
 
             if (ai_Timer == 45)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CombusterReady"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CombusterReady"));
             }
 
             if (ai_Timer % 4 == 0)
@@ -59,7 +59,7 @@ namespace Stellamod.Projectiles.Magic
         public override void OnKill(int timeLeft)
         {
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.position, 2048, 8);
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Kaboom"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Kaboom"), Projectile.position);
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, Vector2.Zero,
                 ModContent.ProjectileType<CombustionBoomMini>(), Projectile.damage * 2, Projectile.knockBack, Projectile.owner);
             for (int i = 0; i < 6; i++)

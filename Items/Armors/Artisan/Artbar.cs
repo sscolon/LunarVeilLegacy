@@ -1,12 +1,12 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Artisan
+namespace LunarVeilLegacy.Items.Armors.Artisan
 {
 	// - ModProjectile - the minion itself
 

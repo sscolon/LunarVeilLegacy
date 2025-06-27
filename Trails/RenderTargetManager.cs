@@ -5,7 +5,7 @@ using System.Linq;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Trails
+namespace LunarVeilLegacy.Trails
 {
     public class RenderTargetManager : ModSystem
     {

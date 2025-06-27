@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using System.Collections.Generic;
 using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 
-namespace Stellamod.Projectiles.Crossbows.Eckasect
+namespace LunarVeilLegacy.Projectiles.Crossbows.Eckasect
 {
     internal class ExecutionRay : ModProjectile, IPixelPrimitiveDrawer
     {

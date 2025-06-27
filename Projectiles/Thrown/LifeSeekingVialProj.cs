@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
 	public class LifeSeekingVialProj : ModProjectile
 	{

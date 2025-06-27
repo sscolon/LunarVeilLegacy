@@ -2,19 +2,19 @@
 using Terraria;
 using Terraria.ModLoader;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 
-namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles
 {
 	public class CrileShot : ModProjectile
 	{

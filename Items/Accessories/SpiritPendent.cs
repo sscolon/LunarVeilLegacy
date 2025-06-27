@@ -1,11 +1,11 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     public class SpiritPendent : ModItem
     {

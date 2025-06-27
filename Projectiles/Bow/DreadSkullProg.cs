@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class DreadSkullProg : ModProjectile
     {

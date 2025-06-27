@@ -5,18 +5,18 @@ using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Dusts;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.Items.Accessories.Players;
+using LunarVeilLegacy.Items.Accessories.Players;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Projectiles.Slashers.Maelstrom
+namespace LunarVeilLegacy.Projectiles.Slashers.Maelstrom
 {
     public class MaelstromProj : ModProjectile
     {
@@ -145,10 +145,10 @@ namespace Stellamod.Projectiles.Slashers.Maelstrom
         {
             Main.spriteBatch.End();
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhiteTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/SmooothTrail").Value;
-            var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/SmooothTrail").Value;
-            var TrailTex4 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WaterTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhiteTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/SmooothTrail").Value;
+            var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/SmooothTrail").Value;
+            var TrailTex4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WaterTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
             if (SwordSlash == null)
             {

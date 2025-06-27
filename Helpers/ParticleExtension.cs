@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public static class ParticleExtension
     {

@@ -2,16 +2,16 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.singularityFragment.Phase1;
-using Stellamod.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment.Phase1;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
 using System;
 using System.IO;
 using Terraria;
@@ -22,7 +22,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.singularityFragment
+namespace LunarVeilLegacy.NPCs.Bosses.singularityFragment
 {
     [AutoloadBossHead]
     public class SingularityFragment : ModNPC
@@ -52,7 +52,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
             // Influences how the NPC looks in the Bestiary
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/singularityFragment/SingularityFragmentBestiary";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/singularityFragment/SingularityFragmentBestiary";
             drawModifiers.PortraitScale = 1f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -92,7 +92,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
             NPC.defense = 11;
             NPC.lifeMax = 4500;
             NPC.scale = 0.9f;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/VoidDead1") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidDead1") with { PitchVariance = 0.1f };
             NPC.value = Item.buyPrice(gold: 5);
             NPC.knockBackResist = 0f;
             NPC.boss = true;
@@ -100,7 +100,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
             NPC.noTileCollide = true;
             NPC.npcSlots = 10f;
             Music = MusicLoader.GetMusicSlot(Mod, "Assets/Music/SingularityFragment");
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
             NPC.BossBar = ModContent.GetInstance<SInBossBar>();
             NPC.aiStyle = 0;
         }
@@ -288,7 +288,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                                 if (NPC.scale == 0)
                                 {
                                     Main.LocalPlayer.GetModPlayer<MyPlayer>().FocusOn(NPC.Center, 8f);
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
                                     NPC.ai[0] = 1;
                                 }
                                 if (NPC.ai[0] >= 1)
@@ -325,7 +325,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                                                     ModContent.NPCType<SingularityOrb>(), NPC.whoAmI, NPC.whoAmI, I * rot, radius);
                                             }
                                         }
-                                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
+                                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
                                         Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 1212f, 62f);
                                         for (int i = 0; i < 14; i++)
                                         {
@@ -549,7 +549,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                         NPC.ai[0]++;
                         if (NPC.ai[0] <= 5)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Charge"));
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Charge"));
                         }
                         if (NPC.ai[0] >= 275)
                         {
@@ -604,7 +604,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                         base.NPC.velocity.Y *= 0.95f;
                         if (NPC.ai[0] == 50 || NPC.ai[0] == 150)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Shot"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Shot"), NPC.position);
                             Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 1212f, 62f);
                             SoundEngine.PlaySound(SoundID.Item8, NPC.position);
@@ -623,7 +623,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                         }
                         if (NPC.ai[0] == 100 || NPC.ai[0] == 200)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Shot1"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Shot1"), NPC.position);
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1212f, 62f);
                             if (StellaMultiplayer.IsHost)
                             {
@@ -656,7 +656,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                             if (NPC.ai[0] <= 2)
                             {
                                 NPC.damage = 0;
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
                             }
                             if (!TP)
                             {
@@ -665,7 +665,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                                 if (NPC.scale <= 0)
                                 {
                                     NPC.scale = 0;
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
                                     TP = true;
                                     NPC.velocity.Y = 0;
                                     NPC.position = SingularityStart;
@@ -688,7 +688,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                         {
                             if (NPC.ai[0] <= 5)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Charge2"));
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Charge2"));
                             }
                             if (NPC.ai[0] >= 440)
                             {
@@ -729,7 +729,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                                         ModContent.ProjectileType<RuneSpawnEffect2>(), 0, 0f, Owner: Main.myPlayer);
                                 }
      
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_LAZER"));
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_LAZER"));
                                 float radius = 10;
                                 float rot = MathHelper.TwoPi / 2;
                                 for (int I = 0; I < 1; I++)
@@ -759,7 +759,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                             if (NPC.ai[0] == 1)
                             {
                                 NPC.damage = 0;
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
                             }
                             if (!TP)
                             {
@@ -768,7 +768,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                                 if (NPC.scale <= 0)
                                 {
                                     NPC.scale = 0;
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
                                     TP = true;
                                     NPC.velocity.Y = 0;
                                     NPC.position = SingularityStart;
@@ -791,7 +791,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                         {
                             if (NPC.ai[0] <= 5)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Charge2"));
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Charge2"));
                             }
                             if (NPC.ai[0] >= 440)
                             {
@@ -852,7 +852,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
                                         ModContent.ProjectileType<RuneSpawnEffect2>(), 0, 0f, Owner: Main.myPlayer);
                                 }
 
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_LAZER"));
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_LAZER"));
                                 float radius = 10;
                                 float rot = MathHelper.TwoPi / 2;
                                 for (int I = 0; I < 1; I++)
@@ -978,7 +978,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
         {
             if (!Dead)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
                 Dead = true;
             }
             NPC.velocity.Y += 0.1f;

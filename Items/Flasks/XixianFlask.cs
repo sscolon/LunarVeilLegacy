@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Brooches;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Flasks
+namespace LunarVeilLegacy.Items.Flasks
 {
     public class XixianFlask : ModItem
     {

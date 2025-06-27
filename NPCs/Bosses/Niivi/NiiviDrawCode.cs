@@ -1,13 +1,13 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Niivi.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi
 {
     internal class NiiviCrystalDraw
     {
@@ -47,7 +47,7 @@ namespace Stellamod.NPCs.Bosses.Niivi
     internal partial class Niivi 
     {
         private int _segmentIndex;
-        public const string BaseTexturePath = "Stellamod/NPCs/Bosses/Niivi/";
+        public const string BaseTexturePath = "LunarVeilLegacy/NPCs/Bosses/Niivi/";
         private string BaseProjectileTexturePath => $"{BaseTexturePath}Projectiles/";
 
         public Vector2 NextSegmentPos;

@@ -4,7 +4,7 @@ using System.Reflection;
 using Terraria;
 using Terraria.Graphics.Shaders;
 
-namespace Stellamod.Trails
+namespace LunarVeilLegacy.Trails
 {
     static class TrailUtilities
     {

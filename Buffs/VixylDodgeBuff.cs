@@ -1,8 +1,8 @@
-﻿using Stellamod.Items.Weapons.Melee;
+﻿using LunarVeilLegacy.Items.Weapons.Melee;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     internal class VixylDodgeBuff : ModBuff
     {

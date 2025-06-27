@@ -5,11 +5,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
 
 
-namespace Stellamod.Projectiles.IgniterExplosions
+namespace LunarVeilLegacy.Projectiles.IgniterExplosions
 {
     public class MalachoBoom : ModProjectile
     {

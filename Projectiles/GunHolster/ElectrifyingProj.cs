@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Terraria.Utilities;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class ElectrifyingProj : ModProjectile, IPixelPrimitiveDrawer
     {

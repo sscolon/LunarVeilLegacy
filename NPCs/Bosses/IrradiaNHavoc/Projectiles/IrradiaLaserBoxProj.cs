@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Projectiles
 {
     internal class IrradiaLaserBoxProj : ModProjectile
     {

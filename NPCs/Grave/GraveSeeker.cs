@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Assets.Biomes;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Grave
+namespace LunarVeilLegacy.NPCs.Grave
 {
     public class GraveSeeker : ModNPC
 	{

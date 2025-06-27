@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Vanity.Gothivia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.NPCs.Bosses.GothiviaNRek.Reks;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Vanity.Gothivia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -19,7 +19,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaNRek.Gothivia
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Gothivia
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
 	public class Gothiviab : ModNPC
@@ -765,7 +765,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Gothivia
             {
 				float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(0f, 0f);
 				float speedYb = NPC.velocity.Y * Main.rand.Next(0, 0) * 0.0f + Main.rand.Next(0, 0) * 0f;
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/bloodlamp"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/bloodlamp"), NPC.position);
                 var entitySource = NPC.GetSource_FromThis();
                 Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
                 SoundEngine.PlaySound(SoundID.Item8, NPC.Center);
@@ -1023,7 +1023,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Gothivia
 			timer++;
             if (timer <= 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Hyuh"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Hyuh"), NPC.position);
 				NPC.noTileCollide = true;
 				NPC.velocity.Y -= 15.0f;
 				if(GothiviaStartPos.X <= NPC.position.X)

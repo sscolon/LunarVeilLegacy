@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -8,12 +8,12 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 using ReLogic.Content;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria.Graphics.Shaders;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
 
     internal class MordredProj : ModProjectile
@@ -216,9 +216,9 @@ namespace Stellamod.Projectiles.Magic
         Vector2 BombOffset;
         public override void OnKill(int timeLeft)
         {
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Infernis1"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Infernis1"), Projectile.position);
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Binding_Abyss_Rune"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Rune"), Projectile.position);
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 512f, 32f);
             var EntitySource = Projectile.GetSource_FromThis();
             int fireball = Projectile.NewProjectile(EntitySource, Projectile.Center.X, Projectile.Center.Y - 216, 0, 0, ModContent.ProjectileType<MalachoBoom>(), Projectile.damage * 2, 1, Projectile.owner);

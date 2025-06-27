@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -8,7 +8,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class WinterStormFragProg : ModProjectile
     {
@@ -57,7 +57,7 @@ namespace Stellamod.Projectiles.Magic
 
         public override void OnKill(int timeLeft)
         {
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterStorm2"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterStorm2"), Projectile.position);
             for (int i = 0; i < 20; i++)
             {
                 int num1 = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.Snow, 0f, -2f, 0, default(Color), .8f);

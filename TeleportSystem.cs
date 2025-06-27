@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
-using Stellamod.Tiles;
-using Stellamod.Tiles.Abyss;
-using Stellamod.Tiles.Catacombs;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Tiles;
+using LunarVeilLegacy.Tiles.Abyss;
+using LunarVeilLegacy.Tiles.Catacombs;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,7 +13,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     internal class TeleportSystem : ModSystem
     {

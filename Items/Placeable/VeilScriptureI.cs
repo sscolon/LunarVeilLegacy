@@ -1,11 +1,11 @@
 ﻿
-using Stellamod.Tiles;
-using Stellamod.Tiles.Abyss.Aurelus;
-using Stellamod.Tiles.Catacombs;
+using LunarVeilLegacy.Tiles;
+using LunarVeilLegacy.Tiles.Abyss.Aurelus;
+using LunarVeilLegacy.Tiles.Catacombs;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
 	public class VeilScriptureI : ModItem
 	{

@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs
+namespace LunarVeilLegacy.NPCs
 {
     internal class DiceinNPC : ModNPC
     {
@@ -136,7 +136,7 @@ namespace Stellamod.NPCs
                         break;
                 }
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Kaboom"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Kaboom"));
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 16f);
                 NPC.active = false;
             }

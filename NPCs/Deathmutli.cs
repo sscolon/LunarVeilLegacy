@@ -1,8 +1,8 @@
-﻿using Stellamod.Buffs;
+﻿using LunarVeilLegacy.Buffs;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs
+namespace LunarVeilLegacy.NPCs
 {
     public class Deathmulti : GlobalNPC
 	{

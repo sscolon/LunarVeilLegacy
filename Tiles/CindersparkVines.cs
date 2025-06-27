@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     [TileTag(TileTags.VineSway)]
     public class CindersparkVines : ModTile

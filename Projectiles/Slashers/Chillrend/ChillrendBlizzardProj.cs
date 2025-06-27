@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace Stellamod.Projectiles.Slashers.Chillrend
+namespace LunarVeilLegacy.Projectiles.Slashers.Chillrend
 {
     internal class ChillrendBlizzardProj : ModProjectile
     {

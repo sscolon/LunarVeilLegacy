@@ -1,14 +1,14 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class MorrowRapier : ModItem
 	{

@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterElectrifyingProj : GunHolsterProjectile
     {
@@ -52,7 +52,7 @@ namespace Stellamod.Projectiles.GunHolster
                     ModContent.ProjectileType<ElectrifyingProj>(), Projectile.damage, Projectile.knockBack, player.whoAmI);
             }
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GunElectric");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GunElectric");
             soundStyle.PitchVariance = 0.5f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
         }

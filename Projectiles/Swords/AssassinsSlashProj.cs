@@ -4,7 +4,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     public class AssassinsSlashProj : ModProjectile
     {
@@ -37,19 +37,19 @@ namespace Stellamod.Projectiles.Swords
                 int Sound = Main.rand.Next(1, 5);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlash"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlash"), Projectile.position);
                 }
                 if (Sound == 2)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj2"), Projectile.position);
                 }
                 if (Sound == 3)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj3"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj3"), Projectile.position);
                 }
                 if (Sound == 4)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj4"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj4"), Projectile.position);
                 }
 
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 512f, 32f);

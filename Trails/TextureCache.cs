@@ -4,7 +4,7 @@ using System;
 using System.Reflection;
 using Terraria.ModLoader;
 
-namespace Stellamod.Trails
+namespace LunarVeilLegacy.Trails
 {
     public sealed class TextureCache : ILoadable
     {
@@ -57,14 +57,14 @@ namespace Stellamod.Trails
             var arr = new Asset<Texture2D>[arrLength];
             for (int i = 0; i < arrLength; i++)
             {
-                arr[i] = ModContent.Request<Texture2D>("Stellamod/" + folderSpace + "/Trail");
+                arr[i] = ModContent.Request<Texture2D>("LunarVeilLegacy/" + folderSpace + "/Trail");
             }
             p.SetMethod.Invoke(null, new object[] { arr });
         }
         private void InnerLoadProperty(PropertyInfo p)
         {
             string folderSpace = InnerGetPath(p);
-            p.SetMethod.Invoke(null, new object[] { ModContent.Request<Texture2D>("Stellamod/" + folderSpace + "/Trail") });
+            p.SetMethod.Invoke(null, new object[] { ModContent.Request<Texture2D>("LunarVeilLegacy/" + folderSpace + "/Trail") });
         }
         private string InnerGetPath(PropertyInfo p)
         {

@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.Utilis;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.SupernovaFragment
+namespace LunarVeilLegacy.NPCs.Bosses.SupernovaFragment
 {
     internal class SupernovaZapwarnFinal : ModNPC
     {
@@ -39,7 +39,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
         float counter = 8;
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Main.spriteBatch.Draw(texture2D4, NPC.Center - Main.screenPosition, null, new Color((int)(75f * alphaCounter), (int)(35f * alphaCounter), (int)(15f * alphaCounter), 0), NPC.rotation, new Vector2(30 / 4, 1028 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, NPC.Center - Main.screenPosition, null, new Color((int)(75f * alphaCounter), (int)(35f * alphaCounter), (int)(15f * alphaCounter), 0), NPC.rotation, new Vector2(30 / 4, 1028 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, NPC.Center - Main.screenPosition, null, new Color((int)(75f * alphaCounter), (int)(35f * alphaCounter), (int)(15f * alphaCounter), 0), NPC.rotation, new Vector2(30 / 4, 1028 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
@@ -65,11 +65,11 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SupernovaFragment_EndLazer1"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SupernovaFragment_EndLazer1"), NPC.position);
                 }
                 if (Sound == 2)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SupernovaFragment_EndLazer2"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SupernovaFragment_EndLazer2"), NPC.position);
                 }
 
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 64f);

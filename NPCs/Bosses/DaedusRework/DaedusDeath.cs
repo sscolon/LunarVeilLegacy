@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.DaedusRework
+namespace LunarVeilLegacy.NPCs.Bosses.DaedusRework
 {
     internal class DaedusDeath : ModProjectile
     {

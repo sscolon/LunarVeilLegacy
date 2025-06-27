@@ -2,19 +2,19 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.DreadMire;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.singularityFragment.Phase1;
-using Stellamod.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment.Phase1;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -23,7 +23,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.Veiizal
+namespace LunarVeilLegacy.NPCs.Bosses.Veiizal
 {
 
     public class Veiizal : ModNPC
@@ -68,7 +68,7 @@ namespace Stellamod.NPCs.Bosses.Veiizal
             NPC.defense = 11;
             NPC.lifeMax = 13000;
             NPC.scale = 0.9f;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/VoidDead1") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidDead1") with { PitchVariance = 0.1f };
             NPC.value = 60f;
             NPC.knockBackResist = 0f;
             NPC.boss = true;
@@ -76,7 +76,7 @@ namespace Stellamod.NPCs.Bosses.Veiizal
             NPC.noTileCollide = true;
             NPC.npcSlots = 10f;
             //Music = MusicLoader.GetMusicSlot(Mod, "Assets/Music/VampireDance");
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
             NPC.BossBar = GetInstance<VerliaBossBar>();
             NPC.aiStyle = 0;
 
@@ -288,22 +288,22 @@ namespace Stellamod.NPCs.Bosses.Veiizal
                             int Sound = Main.rand.Next(0, 3);
                             if (Sound == 0)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen1"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen1"), NPC.position);
                             }
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen2"), NPC.position);
                             }
                             if (Sound == 2)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen3"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen3"), NPC.position);
                             }
                             State = 1;
                         }
                         if (NPC.ai[0] == 120)
                         {
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 1212f, 82f);
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__UShot1"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__UShot1"), NPC.position);
                             State = 2;
                             if (NPC.Center.X >= player.Center.X)
                             {
@@ -378,15 +378,15 @@ namespace Stellamod.NPCs.Bosses.Veiizal
                             int Sound = Main.rand.Next(0, 3);
                             if (Sound == 0)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen1"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen1"), NPC.position);
                             }
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen2"), NPC.position);
                             }
                             if (Sound == 2)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen3"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen3"), NPC.position);
                             }
                             State = 3;
                         }
@@ -443,11 +443,11 @@ namespace Stellamod.NPCs.Bosses.Veiizal
                                 int Sound = Main.rand.Next(1, 3);
                                 if (Sound == 1)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__MG1"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__MG1"), NPC.position);
                                 }
                                 if (Sound == 2)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__MG2"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__MG2"), NPC.position);
                                 }
                                 if (NPC.Center.X >= player.Center.X)
                                 {
@@ -491,17 +491,17 @@ namespace Stellamod.NPCs.Bosses.Veiizal
                             int Sound = Main.rand.Next(0, 3);
                             if (Sound == 0)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen1"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen1"), NPC.position);
                             }
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen2"), NPC.position);
                             }
                             if (Sound == 2)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__Uopen3"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__Uopen3"), NPC.position);
                             }
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__MG3"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__MG3"), NPC.position);
                             State = 3;
                         }
                         if (NPC.ai[0] == 80)
@@ -529,11 +529,11 @@ namespace Stellamod.NPCs.Bosses.Veiizal
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__USpawn1"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__USpawn1"), NPC.position);
                             }
                             if (Sound == 2)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veiizal__USpawn2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veiizal__USpawn2"), NPC.position);
                             }
                             NPC.NewNPC(entitySource, (int)player.Center.X + Main.rand.Next(-50, 50), (int)NPC.Center.Y, ModContent.NPCType<Zapwarn>());
                             NPC.NewNPC(entitySource, (int)player.Center.X + Main.rand.Next(-600, 600), (int)NPC.Center.Y, ModContent.NPCType<Zapwarn>());

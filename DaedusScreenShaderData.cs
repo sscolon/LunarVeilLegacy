@@ -1,8 +1,8 @@
-using Stellamod.WorldG;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.Graphics.Shaders;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     public class DaedusScreenShaderData : ScreenShaderData
 	{

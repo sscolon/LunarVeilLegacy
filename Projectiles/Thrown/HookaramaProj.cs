@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     internal class HookaramaProj : ModProjectile
     {
@@ -44,14 +44,14 @@ namespace Stellamod.Projectiles.Thrown
                 //Sound
                 if (Main.rand.NextBool(2))
                 {
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeProg");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeProg");
                     soundStyle.PitchVariance = 0.15f;
                     soundStyle.Pitch = 0.75f;
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
                 }
                 else
                 {
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeProg2");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeProg2");
                     soundStyle.PitchVariance = 0.15f;
                     soundStyle.Pitch = 0.75f;
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
@@ -109,13 +109,13 @@ namespace Stellamod.Projectiles.Thrown
         {
             if (Main.rand.NextBool(2))
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2");
                 soundStyle.PitchVariance = 0.15f;
                 SoundEngine.PlaySound(soundStyle, target.position);
             }
             else
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit");
                 soundStyle.PitchVariance = 0.15f;
                 SoundEngine.PlaySound(soundStyle, target.position);
             }

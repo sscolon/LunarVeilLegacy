@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Accessories.Wings;
+using LunarVeilLegacy.Items.Accessories.Wings;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Wings
+namespace LunarVeilLegacy.Projectiles.Wings
 {
     internal class GothinWingsProj : WingDefaultProjectile
     {

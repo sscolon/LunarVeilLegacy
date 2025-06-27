@@ -4,7 +4,7 @@ using ParticleLibrary;
 using Terraria;
 
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
     public class IceyParticle : Particle
 	{

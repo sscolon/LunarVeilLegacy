@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Audio;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterPulsingProj : GunHolsterProjectile
     {
@@ -42,11 +42,11 @@ namespace Stellamod.Projectiles.GunHolster
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MiniPistol"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol"), Projectile.position);
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MiniPistol3"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol3"), Projectile.position);
             }
         }
     }

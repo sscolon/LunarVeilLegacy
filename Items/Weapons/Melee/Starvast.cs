@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class Starvast : ClassSwapItem
     {
@@ -50,11 +50,11 @@ namespace Stellamod.Items.Weapons.Melee
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj2"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj2"));
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj3"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj3"));
             }
 
             if(dir == -1)

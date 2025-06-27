@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks
 {
 
     public class Train1 : ModNPC
@@ -324,7 +324,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             if (timer == 1)
             {
                 NPC.spriteDirection *= -1;
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
 
             if (timer == 3)
@@ -347,7 +347,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             Player player = Main.player[NPC.target];
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
 
             if (timer == 50)
@@ -363,7 +363,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             timer++;
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
 
             if (timer == 50)
@@ -379,7 +379,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             timer++;
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
 
             if (timer == 50)
@@ -397,7 +397,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             Player player = Main.player[NPC.target];
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
             if (timer == 20)
             {
@@ -421,7 +421,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             Player player = Main.player[NPC.target];
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
             if (timer == 20)
             {
@@ -445,7 +445,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             float speed = 25f;
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
             if (timer < 3)
             {
@@ -479,7 +479,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             float speed = 25f;
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
             if (timer < 3)
             {
@@ -513,7 +513,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             float speed = 25f;
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
             if (timer < 3)
             {
@@ -550,7 +550,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             float speed = 25f;
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
             if (timer < 3)
             {
@@ -590,7 +590,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
             Player player = Main.player[NPC.target];
             if (timer == 1)
             {
-                // SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Veridash1"));
+                // SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Veridash1"));
             }
             if (timer < 30)
             {

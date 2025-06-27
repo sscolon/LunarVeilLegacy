@@ -1,8 +1,8 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Powders;
-using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Powders;
+using LunarVeilLegacy.Tiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Items.Weapons.PowdersItem
+namespace LunarVeilLegacy.Items.Weapons.PowdersItem
 {
     internal class FrostedPowder : ModItem
 	{
@@ -38,7 +38,7 @@ namespace Stellamod.Items.Weapons.PowdersItem
 			Item.autoReuse = true;
 			Item.shootSpeed = 12f;
 			Item.crit = 2;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/iceshake");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/iceshake");
 		}
 
 

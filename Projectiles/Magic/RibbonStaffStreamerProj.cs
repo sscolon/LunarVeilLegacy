@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Gores;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class RibbonStaffStreamerProj : ModProjectile,
         IPixelPrimitiveDrawer

@@ -1,19 +1,19 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Melee.Greatswords;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.Fenix.Projectiles;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
-using Stellamod.Utilis;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
+using LunarVeilLegacy.Utilis;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -24,7 +24,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
 
-namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
+namespace LunarVeilLegacy.NPCs.Event.GreenSun.Dulacrowe
 {
     public class Tulacrowe : ModNPC
     {
@@ -69,7 +69,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
             NPC.defense = 80; // The amount of defense that this npc has
             NPC.lifeMax = 4510; // The amount of health that this npc has
             NPC.HitSound = SoundID.NPCHit1; // The sound the NPC will make when being hit.
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
             NPC.value = 500f; // How many copper coins the NPC will drop when killed.
             NPC.knockBackResist = 0.2f;
             NPC.noGravity = true;
@@ -236,7 +236,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
             timer++;
             if (timer >= 23)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"), NPC.position);
                 State = ActionState.Summon;
                 ResetTimers();
 
@@ -262,11 +262,11 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
                 // We apply an initial velocity the first tick we are in the Jump frame. Remember that -Y is up.
                 NPC.velocity *= 0f;
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GoldPrice2") { Pitch = Main.rand.NextFloat(-10f, 10f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GoldPrice2") { Pitch = Main.rand.NextFloat(-10f, 10f) }, NPC.Center);
                 switch (Main.rand.Next(4))
                 {
                     case 0:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RibbonStaffBoom1"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RibbonStaffBoom1"), NPC.position);
                         float numberProjectiles = 20;
                         float rotation = MathHelper.ToRadians(10);
 
@@ -282,7 +282,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
 
                         break;
                     case 1:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SoftSummon"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon"), NPC.position);
                         if (StellaMultiplayer.IsHost)
                         {
                             float speedYa = NPC.velocity.Y * Main.rand.Next(-1, -1) * 0.0f + Main.rand.Next(-4, -4) * 0f;
@@ -290,7 +290,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
                         }
                         break;
                     case 2:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RibbonStaffBoom1"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RibbonStaffBoom1"), NPC.position);
                         if (StellaMultiplayer.IsHost)
                         {
                             float num = 64;
@@ -305,7 +305,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
                         }
                         break;
                     case 3:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RibbonStaffBoom1"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RibbonStaffBoom1"), NPC.position);
                         float numberProjectiles2 = 6;
                         float rotation2 = MathHelper.ToRadians(50);
 

@@ -1,10 +1,10 @@
-using Stellamod.Items.Ores;
+using LunarVeilLegacy.Items.Ores;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Armors.HeavyMetal
+namespace LunarVeilLegacy.Items.Armors.HeavyMetal
 {
     [AutoloadEquip(EquipType.Body)]
     public class HeavyMetalBody : ModItem

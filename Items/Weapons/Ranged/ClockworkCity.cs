@@ -1,15 +1,15 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
 	public class ClockworkCity : ClassSwapItem
     {
@@ -33,7 +33,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.knockBack = 6;
 			Item.value = Item.sellPrice(0, 0, 20, 0);
 			Item.rare = ItemRarityID.LightRed;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/ClockworkCity3");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/ClockworkCity3");
             Item.autoReuse = true;
 			Item.shootSpeed = 50f;
 			Item.shoot = ModContent.ProjectileType<ClockworkBomb>();

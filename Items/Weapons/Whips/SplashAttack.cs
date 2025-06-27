@@ -1,13 +1,13 @@
-﻿using Stellamod.Buffs.Whipfx;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Whips;
+﻿using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Whips;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Whips
+namespace LunarVeilLegacy.Items.Weapons.Whips
 {
     internal class SplashAttack : ModItem
     {

@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.UI.Dialogue;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Dialogue;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS
 {
     public class StartGoth : ModNPC
 	{
@@ -213,7 +213,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                 }
                 else
                 {
-                    Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(),
+                    LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(),
                         (byte)MessageType.StartDialogue,
                         (int)DialogueType.Start_Goth).Send(-1);
                 }

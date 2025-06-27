@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Summons.Orbs;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Summons.Orbs;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon.Orbs
+namespace LunarVeilLegacy.Items.Weapons.Summon.Orbs
 {
     internal class TheActualMoon : ModItem
     {

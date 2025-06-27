@@ -2,9 +2,9 @@
 using Microsoft.Xna.Framework.Graphics;
 using Mono.Cecil;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     internal class PolarisHold : ModProjectile
     {
@@ -126,7 +126,7 @@ namespace Stellamod.Projectiles.Gun
                     d.noGravity = true;
                 }
 
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/StormDragon_WaveCharge");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_WaveCharge");
                 soundStyle.PitchVariance = 0.15f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
             }
@@ -177,7 +177,7 @@ namespace Stellamod.Projectiles.Gun
             FireTimer++;
             if(FireTimer == 1)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/StormDragon_Wave");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_Wave");
                 soundStyle.PitchVariance = 0.15f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
 

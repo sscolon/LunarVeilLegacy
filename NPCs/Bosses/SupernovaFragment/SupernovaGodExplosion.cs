@@ -1,8 +1,8 @@
 
 using Microsoft.Xna.Framework;
-using Stellamod.Effects;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Effects;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.SupernovaFragment
+namespace LunarVeilLegacy.NPCs.Bosses.SupernovaFragment
 {
     public class SupernovaGodExplosion : ModProjectile
     {

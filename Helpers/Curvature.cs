@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public class Curvature
 	{

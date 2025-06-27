@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Ambient
+namespace LunarVeilLegacy.Projectiles.Ambient
 {
     public class CrystalRay : ModProjectile
 	{

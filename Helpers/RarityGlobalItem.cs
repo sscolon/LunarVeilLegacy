@@ -1,8 +1,8 @@
-﻿using Stellamod.Items;
+﻿using LunarVeilLegacy.Items;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public class CustomRarityGlobalItem : GlobalItem
     { 

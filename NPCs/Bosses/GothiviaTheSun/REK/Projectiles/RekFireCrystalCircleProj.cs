@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
 {
     internal class RekFireCrystalCircleProj : ModProjectile,
         IPixelPrimitiveDrawer

@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
 
-namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles
 {
     public class Angelu : ModProjectile
     {
@@ -57,7 +57,7 @@ namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
             var entitySource = Projectile.GetSource_FromThis();
             NPC.NewNPC(entitySource, (int)Projectile.Center.X, (int)Projectile.Center.Y - 200, ModContent.NPCType<STARBOMBERLASERWARN>());
             NPC.NewNPC(entitySource, (int)Projectile.Center.X, (int)Projectile.Center.Y - 600, ModContent.NPCType<STARBOMBERLASERWARN>());
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 
             SoundEngine.PlaySound(SoundID.DD2_ExplosiveTrapExplode, Projectile.Center);
             for (int i = 0; i < 7; i++)

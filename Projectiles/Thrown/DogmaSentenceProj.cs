@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     internal abstract class DogmaSentenceProj : ModProjectile
     {

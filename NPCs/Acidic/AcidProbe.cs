@@ -2,13 +2,13 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.DropRules;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.Utilis;
+using LunarVeilLegacy.DropRules;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.Utilis;
 using System;
 using System.IO;
 using Terraria;
@@ -19,7 +19,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Acidic
+namespace LunarVeilLegacy.NPCs.Acidic
 {
 
     public class AcidProbe : ModNPC
@@ -53,7 +53,7 @@ namespace Stellamod.NPCs.Acidic
             NPC.defense = 14;
             NPC.lifeMax = 130;
             NPC.HitSound = SoundID.NPCHit42;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/AcidProbeDeath") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/AcidProbeDeath") with { PitchVariance = 0.1f };
             NPC.value = 30f;
             NPC.buffImmune[BuffID.Poisoned] = true;
             NPC.buffImmune[BuffID.Venom] = true;
@@ -183,7 +183,7 @@ namespace Stellamod.NPCs.Acidic
 
             if (Timer == 300)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AcidProbe1"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AcidProbe1"), NPC.position);
                 RotSpeed = 0.3f;
                 NPC.ai[3] = 35;
             }
@@ -208,7 +208,7 @@ namespace Stellamod.NPCs.Acidic
 
                     Dust.NewDustPerfect(NPC.Center, ModContent.DustType<Dusts.GlowDust>(), new Vector2(0, 0), 125, new Color(150, 80, 40), 1);
                     Dust.NewDustPerfect(NPC.Center, ModContent.DustType<Dusts.TSmokeDust>(), Vector2.UnitY * -2 + offset.RotatedByRandom(spread), 150, ColorFunctions.AcidFlame * 0.5f, Main.rand.NextFloat(0.5f, 1));
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AcidProbe3"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AcidProbe3"), NPC.position);
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 512f, 4f);
         
                     SoundEngine.PlaySound(SoundID.Item8, NPC.position);
@@ -223,7 +223,7 @@ namespace Stellamod.NPCs.Acidic
             }
             if (Timer == 450)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AcidProbe2"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AcidProbe2"), NPC.position);
                 RotSpeed = 0.1f;
                 Timer = 2;
                 NPC.ai[3] = 15;

@@ -1,5 +1,5 @@
-﻿using Stellamod.Brooches;
-using Stellamod.Buffs.Charms;
+﻿using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Buffs.Charms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +11,9 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Items.Accessories.Brooches
+namespace LunarVeilLegacy.Items.Accessories.Brooches
 {
     internal class WoodyBroochA : ModItem
     {

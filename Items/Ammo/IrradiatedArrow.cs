@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Projectiles.Ammo;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Projectiles.Ammo;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Ammo
+namespace LunarVeilLegacy.Items.Ammo
 {
     internal class IrradiatedArrow : ModItem
     {

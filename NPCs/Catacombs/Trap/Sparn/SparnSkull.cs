@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Trap.Sparn
+namespace LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn
 {
     internal class SparnSkull : ModProjectile
     {
@@ -83,7 +83,7 @@ namespace Stellamod.NPCs.Catacombs.Trap.Sparn
         public override void OnKill(int timeLeft)
         {
             base.OnKill(timeLeft);
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/GhostExcalibur1"));
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/GhostExcalibur1"));
             int p = Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, Vector2.Zero,
                 ModContent.ProjectileType<JungleBoom>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
             Projectile projectile = Main.projectile[p];

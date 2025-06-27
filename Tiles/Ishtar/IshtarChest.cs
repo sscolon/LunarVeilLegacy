@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Placeable.Ishtar;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Placeable.Ishtar;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -13,7 +13,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Ishtar
+namespace LunarVeilLegacy.Tiles.Ishtar
 {
 	public class IshtarChest : ModTile
 	{

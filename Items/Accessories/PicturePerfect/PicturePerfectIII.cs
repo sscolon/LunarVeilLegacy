@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.PicturePerfect
+namespace LunarVeilLegacy.Items.Accessories.PicturePerfect
 {
     public class PicturePerfectIII : ModItem
 	{

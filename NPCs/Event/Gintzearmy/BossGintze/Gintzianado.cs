@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
+namespace LunarVeilLegacy.NPCs.Event.Gintzearmy.BossGintze
 {
     public class Gintzianado : ModProjectile
 	{

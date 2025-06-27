@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviLaserBoom : ModProjectile
     {

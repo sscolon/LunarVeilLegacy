@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Projectiles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviCometProj : ModProjectile
     {
@@ -79,7 +79,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
                 Projectile.velocity += velocityOffset;
                 HasBounced = true;
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SoftSummon2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon2"), Projectile.position);
                 Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X, Projectile.position.Y, 0, 0,
                      ModContent.ProjectileType<AlcadizBombExplosion>(), (int)(Projectile.damage * 1.5f), 0f, Projectile.owner, 0f, 0f);
                 Projectile.netUpdate = true;

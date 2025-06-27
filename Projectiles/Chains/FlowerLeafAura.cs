@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Armors.Flower;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Armors.Flower;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Chains
+namespace LunarVeilLegacy.Projectiles.Chains
 {
     internal class FlowerLeafAura : ModProjectile
     {

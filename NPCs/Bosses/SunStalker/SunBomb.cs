@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 
 
-namespace Stellamod.NPCs.Bosses.SunStalker
+namespace LunarVeilLegacy.NPCs.Bosses.SunStalker
 {
     internal class SunBomb : ModProjectile
     {
@@ -28,7 +28,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
         public override void OnKill(int timeLeft)
         {
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 1024f, 54f);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Bomb_Explode"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb_Explode"), Projectile.position);
             for (int i = 0; i < 50; i++)
             {
                 int num = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.GoldCoin, 0f, -2f, 0, default(Color), 1.5f);
@@ -57,8 +57,8 @@ namespace Stellamod.NPCs.Bosses.SunStalker
             }
             var EntitySource = Projectile.GetSource_Death();
 
-            int Gore1 = ModContent.Find<ModGore>("Stellamod/Rock1").Type;
-            int Gore2 = ModContent.Find<ModGore>("Stellamod/Rock2").Type;
+            int Gore1 = ModContent.Find<ModGore>("LunarVeilLegacy/Rock1").Type;
+            int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/Rock2").Type;
             Gore.NewGore(EntitySource, Projectile.position, Projectile.velocity, Gore1);
             Gore.NewGore(EntitySource, Projectile.position, Projectile.velocity, Gore2);
         }

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Sniper
+namespace LunarVeilLegacy.Projectiles.Crossbows.Sniper
 {
     public class MorrowedCrossbowBolt : ModProjectile
 	{

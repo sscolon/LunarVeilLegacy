@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Players
+namespace LunarVeilLegacy.Items.Accessories.Players
 {
     public class ImmunityPlayer : ModPlayer
 	{

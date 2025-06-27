@@ -2,8 +2,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
 using System;
 using Terraria;
 using Terraria.GameContent;
@@ -13,7 +13,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Overworld.ShadeSlime
+namespace LunarVeilLegacy.NPCs.Overworld.ShadeSlime
 {
 
     public class ShadeSlime : ModNPC

@@ -5,7 +5,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     internal class ScreenShaderSystem : ModSystem
     {

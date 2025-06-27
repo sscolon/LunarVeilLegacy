@@ -1,8 +1,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Thrown;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Thrown;
 using System;
 using Terraria;
 using Terraria.GameContent;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     /*
 	 * This minion shows a few mandatory things that make it behave properly. 

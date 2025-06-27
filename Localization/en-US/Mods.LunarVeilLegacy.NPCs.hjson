@@ -205,7 +205,7 @@ SunStalkerDeath.DisplayName: Sun Stalker Death
 
 SunStalker: {
 	DisplayName: Sun Stalker
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/SunClaw] at an altar in the desert.
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/SunClaw] at an altar in the desert.
 	Bestiary: Former flyer and born where all big birds were born, in the cinderspark.
 }
 
@@ -246,7 +246,7 @@ JackDeath.DisplayName: Jack Death
 
 Jack: {
 	DisplayName: Jack
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/WanderingEssence] at a post in the Fabled Castle to the right at night.
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/WanderingEssence] at a post in the Fabled Castle to the right at night.
 	Bestiary: A scarecrow reanimated by the passion of wandering flames, exploring out of the veil.
 }
 
@@ -254,7 +254,7 @@ IrradiatedNestDeath.DisplayName: Irradiated Nest Death
 
 IrradiatedNest: {
 	DisplayName: Irradiated Nest
-	BossChecklistIntegration.SpawnInfo: Buy a [i:Stellamod/EDR] from Gia and use it in the virulent acid or find an Unknown Signal."
+	BossChecklistIntegration.SpawnInfo: Buy a [i:LunarVeilLegacy/EDR] from Gia and use it in the virulent acid or find an Unknown Signal."
 	Bestiary: A abomination housing the eggs for what seems to be a mechanical bird, born from the acid and a creation of Gia.
 	Bestiary2: Irradiated Nest
 }
@@ -385,33 +385,33 @@ TericGramNPC.DisplayName: Teric Gram
 
 Sparn: {
 	DisplayName: Sparn
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Trapped Catacombs, it may appear...
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Trapped Catacombs, it may appear...
 }
 
 WaterJellyfish: {
 	DisplayName: Water Jellyfish
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Water Catacombs, it may appear...
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Water Catacombs, it may appear...
 }
 
 PandorasFlamebox: {
 	DisplayName: Pandora's Flamebox
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Fire Catacombs, it may appear...
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Fire Catacombs, it may appear...
 }
 
 Cogwork: {
 	DisplayName: Cogwork
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Trapped or Water Catacombs, it may appear...
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Trapped or Water Catacombs, it may appear...
 }
 
 BlazingSerpentHead: {
 	DisplayName: Blazing Serpent
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/CursedShard] at an altar in the Fire Catacombs, it may appear...
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/CursedShard] at an altar in the Fire Catacombs, it may appear...
 	Bestiary: Burining with passion I guess.
 }
 
 StarrVeriplant: {
 	DisplayName: Stone Guardian
-	BossChecklistIntegration.SpawnInfo: Interact with the Old Guard's Shrine. After using the [i:Stellamod/AnotherRock] in your Starter bag.
+	BossChecklistIntegration.SpawnInfo: Interact with the Old Guard's Shrine. After using the [i:LunarVeilLegacy/AnotherRock] in your Starter bag.
 	Bestiary: A beloved magical stone guardian, protected the natural life and would petrify anyone who disturbs it.
 }
 
@@ -424,13 +424,13 @@ Sylia: {
 
 VerliaB: {
 	DisplayName: Verlia Of the Moon
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/MoonflameLantern] at a shrine in the Cathedral over the ice biome!
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/MoonflameLantern] at a shrine in the Cathedral over the ice biome!
 	Bestiary: Verlia, The Empress of the Stars and moon, Vixyl's sister and a master magic swordswoman.
 }
 
 SingularityFragment: {
 	DisplayName: Singularity Fragment
-	BossChecklistIntegration.SpawnInfo: Use a [i:Stellamod/VoidKey] at an altar, in the Aurelus, deep in the ice.
+	BossChecklistIntegration.SpawnInfo: Use a [i:LunarVeilLegacy/VoidKey] at an altar, in the Aurelus, deep in the ice.
 	Bestiary: A powerful gift that was given to Cozmire, yet was stolen away by Fenix to seal away Verlia.
 	Bestiary2: Singularity Fragment
 }
@@ -598,7 +598,7 @@ Gambit: {
 	DisplayName: Gambit
 
 	TownNPCMood: {
-		Content: "{$Mods.Stellamod.TownNPCMood.Gambit.Content}"
+		Content: "{$Mods.LunarVeilLegacy.TownNPCMood.Gambit.Content}"
 		NoHome: I really dont have a house
 		FarFromHome: Spiderman far from home
 		LoveSpace: I really like this space
@@ -608,9 +608,9 @@ Gambit: {
 		LikeBiome: This is cool
 		DislikeBiome: I dont like this biome
 		LoveNPC: I loveeee you
-		LikeNPC: "{$Mods.Stellamod.TownNPCMood.Gambit.LikeNPC}"
-		DislikeNPC: "{$Mods.Stellamod.TownNPCMood.Gambit.DislikeNPC}"
-		HateNPC: "{$Mods.Stellamod.TownNPCMood.Gambit.HateNPC}"
+		LikeNPC: "{$Mods.LunarVeilLegacy.TownNPCMood.Gambit.LikeNPC}"
+		DislikeNPC: "{$Mods.LunarVeilLegacy.TownNPCMood.Gambit.DislikeNPC}"
+		HateNPC: "{$Mods.LunarVeilLegacy.TownNPCMood.Gambit.HateNPC}"
 		LikeNPC_Princess: I like {NPCName}.
 		Princess_LovesNPC: I like {NPCName}.
 	}
@@ -971,7 +971,7 @@ IrradiaSpikeBox.DisplayName: Irradia Spike Box
 
 Irradia: {
 	DisplayName: Irradia
-	BossChecklistIntegration.SpawnInfo: Give Irradia a [i:Stellamod/ManifestedBravery] at a bottom of the Govheil Castle, underneath the Virulent.
+	BossChecklistIntegration.SpawnInfo: Give Irradia a [i:LunarVeilLegacy/ManifestedBravery] at a bottom of the Govheil Castle, underneath the Virulent.
 	Bestiary: The most committed protector of the Govhiel. She just wishes to see her friend's and village again.
 	Bestiary2: Irradia N Havoc
 }

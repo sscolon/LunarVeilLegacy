@@ -5,11 +5,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
 
 
-namespace Stellamod.Projectiles.IgniterExplosions.Stein
+namespace LunarVeilLegacy.Projectiles.IgniterExplosions.Stein
 {
 	public class Hulthit2 : ModProjectile
 	{

@@ -4,7 +4,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Ambient
+namespace LunarVeilLegacy.Tiles.Ambient
 {
     internal class TreeOver3 : ModTile
     {

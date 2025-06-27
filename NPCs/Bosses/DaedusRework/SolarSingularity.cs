@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System.IO;
 using Terraria;
 using Terraria.GameContent.Bestiary;
@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.DaedusRework
+namespace LunarVeilLegacy.NPCs.Bosses.DaedusRework
 {
 
     public class SolarSingularity : ModNPC

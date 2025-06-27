@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Jack
+namespace LunarVeilLegacy.NPCs.Bosses.Jack
 {
     public class MossBall : ModProjectile
     {

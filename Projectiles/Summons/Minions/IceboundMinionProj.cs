@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Bow;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Bow;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
 
     /*
@@ -230,7 +230,7 @@ namespace Stellamod.Projectiles.Summons.Minions
             Projectile.velocity = Projectile.velocity.RotatedByRandom(MathHelper.TwoPi);
             if (Main.rand.NextBool(16))
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterStorm"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterStorm"), Projectile.position);
                 Vector2 velocity = Main.rand.NextVector2Circular(2, 2);
                 Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, velocity, 
                     ModContent.ProjectileType<WinterboundArrowFlake>(), Projectile.damage / 2, 1, Projectile.owner);

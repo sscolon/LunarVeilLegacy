@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Sniper
+namespace LunarVeilLegacy.Projectiles.Crossbows.Sniper
 {
     public class DelfaCircle : ModProjectile
 	{

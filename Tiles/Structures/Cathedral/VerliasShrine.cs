@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Placeable.Cathedral;
-using Stellamod.NPCs.Bosses.Verlia;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Placeable.Cathedral;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
 using System;
 using Terraria;
 using Terraria.DataStructures;
@@ -15,7 +15,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Structures.Cathedral
+namespace LunarVeilLegacy.Tiles.Structures.Cathedral
 {
 
     public class VerliasShrine : ModTile
@@ -203,7 +203,7 @@ namespace Stellamod.Tiles.Structures.Cathedral
 
 			if (tile == null || !tile.HasTile) { return false; }
 
-			Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Particles/GradientPillar").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/GradientPillar").Value;
 
 			Vector2 offScreen = new Vector2(Main.offScreenRange);
 			Vector2 globalPosition = p.ToWorldCoordinates(0f, 0f);

@@ -2,14 +2,14 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Mage.Stein;
-using Stellamod.NPCs.Bosses.Jack;
-using Stellamod.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.NPCs.Bosses.Jack;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
 using System;
 using System.IO;
 using Terraria;
@@ -20,7 +20,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.SupernovaFragment
+namespace LunarVeilLegacy.NPCs.Bosses.SupernovaFragment
 {
     [AutoloadBossHead]
     public class SupernovaFragment : ModNPC
@@ -54,7 +54,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
             NPCID.Sets.MPAllowedEnemies[NPC.type] = true;
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/SupernovaFragment/SupernovaFragmentBestiary";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/SupernovaFragment/SupernovaFragmentBestiary";
             drawModifiers.PortraitScale = 1f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -74,7 +74,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
             NPC.defense = 52;
             NPC.lifeMax = 61000;
             NPC.scale = 0.9f;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/VoidDead1") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidDead1") with { PitchVariance = 0.1f };
             NPC.value = 60f;
             NPC.knockBackResist = 0f;
             NPC.boss = true;
@@ -82,7 +82,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
             NPC.noTileCollide = true;
             NPC.npcSlots = 10f;
             Music = MusicLoader.GetMusicSlot(Mod, "Assets/Music/SupernovaFragment");
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
             NPC.BossBar = GetInstance<SUPBossBar>();
             NPC.aiStyle = 0;
         }
@@ -328,7 +328,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                     if (NPC.scale == 0)
                     {
                         Main.LocalPlayer.GetModPlayer<MyPlayer>().FocusOn(NPC.Center, 8f);
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
                         AITimer = 1;
                     }
                     if (AITimer >= 1)
@@ -352,7 +352,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
 
                             }
 
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1212f, 62f);
                             for (int i = 0; i < 14; i++)
                             {
@@ -409,7 +409,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                             if (SingularityPhaze == 1 && SingularityOrbs == 0)
                             {
                                 NPC.life = NPC.lifeMax / 2;
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
                                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1212f, 62f);
                                 for (int i = 0; i < 14; i++)
                                 {
@@ -462,7 +462,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
 
             if (AITimer == 50 || AITimer == 150)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Shot"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Shot"), NPC.position);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1212f, 62f);
                 if (StellaMultiplayer.IsHost)
                 {
@@ -482,7 +482,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
             }
             if (AITimer == 100 || AITimer == 200)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Shot1"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Shot1"), NPC.position);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1212f, 62f);
                 if (StellaMultiplayer.IsHost)
                 {
@@ -560,11 +560,11 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Sun_Shot1"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Sun_Shot1"), NPC.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Sun_Shot2"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Sun_Shot2"), NPC.position);
                 }
                 float offsetRandom = Main.rand.Next(0, 50);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 124f);
@@ -805,7 +805,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                 {
                     if (StellaMultiplayer.IsHost)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Charge"));
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Charge"));
                     }
                 }
                 if (AITimer == 150)
@@ -832,7 +832,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                 if (AITimer <= 2)
                 {
                     NPC.damage = 0;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
                 }
                 if (!TP)
                 {
@@ -841,7 +841,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                     if (NPC.scale <= 0)
                     {
                         NPC.scale = 0;
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPIn"), NPC.position);
                         TP = true;
                         NPC.velocity.Y = 0;
                         NPC.position = TargetPlayer.Center;
@@ -868,7 +868,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                         }
 
                         SingularityPhaze = 1;
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb_Explode"), NPC.position);
                         Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1212f, 62f);
                         for (int i = 0; i < 14; i++)
                         {
@@ -985,7 +985,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
                     NPC.DelBuff(buffIndex);
                 }
             
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_TPOut"), NPC.position);
                 Dead = true;
             }
             NPC.velocity.Y += 0.1f;

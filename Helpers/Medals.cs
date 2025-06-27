@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria.GameContent.UI;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public class Medals : CustomCurrencySingleCoin
 	{

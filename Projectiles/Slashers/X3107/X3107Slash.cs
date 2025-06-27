@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.X3107
+namespace LunarVeilLegacy.Projectiles.Slashers.X3107
 {
     public class X3107Slash : ModProjectile
     {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.NPCs.Bosses.DreadMire;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.NPCs.Bosses.Fenix.Projectiles;
-using Stellamod.Projectiles.Crossbows;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles;
+using LunarVeilLegacy.Projectiles.Crossbows;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Spears
+namespace LunarVeilLegacy.Projectiles.Spears
 {
     public class VeiizalsUmbrellaProjOpen : ModProjectile
     {
@@ -57,7 +57,7 @@ namespace Stellamod.Projectiles.Spears
             {
                 // Our timer has finished, do something here:
                 // Main.PlaySound, Dust.NewDust, Projectile.NewProjectile, etc. Up to you.		
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/MorrowSalfi"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/MorrowSalfi"));
                 Timer = 0;
             }
 
@@ -88,7 +88,7 @@ namespace Stellamod.Projectiles.Spears
                 float speedX = Projectile.velocity.X * 10;
                 float speedY = Projectile.velocity.Y * 7;
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CrossbowPull"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CrossbowPull"));
             }
 
             if (Timer == 80)

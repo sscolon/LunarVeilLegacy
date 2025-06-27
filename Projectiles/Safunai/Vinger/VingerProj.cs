@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Safunai.Vinger
+namespace LunarVeilLegacy.Projectiles.Safunai.Vinger
 {
     public class VingerProj : ModProjectile
 	{
@@ -142,7 +142,7 @@ namespace Stellamod.Projectiles.Safunai.Vinger
             {
                 Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X, Projectile.position.Y, speedX, speedY, ProjectileID.SpikyBall, (int)(Projectile.damage * 1.5), 0f, Projectile.owner, 0f, 0f);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 32f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Vinger2"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Vinger2"));
                 for (int i = 0; i < 14; i++)
                 {
                     Dust.NewDustPerfect(target.Center, ModContent.DustType<GlowDust>(), (Vector2.One * Main.rand.Next(1, 5)).RotatedByRandom(19.0), 0, Color.Purple, 1f).noGravity = true;
@@ -155,7 +155,7 @@ namespace Stellamod.Projectiles.Safunai.Vinger
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Vinger"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Vinger"));
                 ShakeModSystem.Shake = 4;
                 for (int i = 0; i < 4; i++)
                 {

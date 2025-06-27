@@ -1,9 +1,9 @@
-﻿using Stellamod.Assets.Biomes;
+﻿using LunarVeilLegacy.Assets.Biomes;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Skies
+namespace LunarVeilLegacy.Skies
 {
     public class GovheilSkyPlayer : ModPlayer
     {

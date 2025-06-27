@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     internal class XScissorMiracleProj : ModProjectile
     {
         private bool _init;
-        public override string Texture => "Stellamod/Items/Weapons/Melee/XScissorMiracle";
+        public override string Texture => "LunarVeilLegacy/Items/Weapons/Melee/XScissorMiracle";
 
         ref float Dir => ref Projectile.ai[0];
         ref float Speed => ref Main.player[Projectile.owner].GetModPlayer<XScissorComboPlayer>().speed;
@@ -149,7 +149,7 @@ namespace Stellamod.Projectiles.Swords
                     ModContent.DustType<GunFlash>(), newColor: ColorFunctions.MiracleVoid, Scale: 0.8f);
             }
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/VoidHit");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHit");
             soundStyle.PitchVariance = 0.15f;
             soundStyle.Pitch = 0.75f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
@@ -196,8 +196,8 @@ namespace Stellamod.Projectiles.Swords
         {
             Main.spriteBatch.End();
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/VortexTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhiteTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/VortexTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhiteTrail").Value;
 
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 

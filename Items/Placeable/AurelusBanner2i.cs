@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
     public class AurelusBanner2i : ModItem
 	{

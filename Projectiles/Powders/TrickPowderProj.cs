@@ -1,10 +1,10 @@
-﻿using Stellamod.Buffs;
-using Stellamod.Buffs.Dusteffects;
+﻿using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Dusteffects;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Powders
+namespace LunarVeilLegacy.Projectiles.Powders
 {
     public class TrickPowderProj : ModProjectile
 	{

@@ -1,13 +1,13 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Crossbows.Ultras;
-using Stellamod.Projectiles.Magic;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Crossbows.Ultras;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 
     public class Bincle : ClassSwapItem

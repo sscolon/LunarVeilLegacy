@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
-namespace Stellamod.Items.Materials.Tech
+namespace LunarVeilLegacy.Items.Materials.Tech
 {
     public class UnknownCircuitry : ModItem
     {

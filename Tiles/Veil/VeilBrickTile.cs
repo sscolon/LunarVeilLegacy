@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Veil
+namespace LunarVeilLegacy.Tiles.Veil
 {
 	public class VeilBrickTile : ModTile
 	{

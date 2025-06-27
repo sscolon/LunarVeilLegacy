@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -9,20 +9,20 @@ using System;
 using System.Collections.Generic;
 using Terraria.ModLoader;
 using System.IO;
-using Stellamod.Dusts;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.Items.Accessories.Players;
-using Stellamod.Projectiles.IgniterExplosions.Stein;
-using Stellamod.Items.Weapons.Mage.Stein;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Visual;
-using Stellamod.NPCs.Bosses.Caeva;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Items.Accessories.Players;
+using LunarVeilLegacy.Projectiles.IgniterExplosions.Stein;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Visual;
+using LunarVeilLegacy.NPCs.Bosses.Caeva;
+using LunarVeilLegacy.Buffs;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
 {
     internal class RazorSuns : ModProjectile
     {
@@ -154,7 +154,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
                     float scale = Main.rand.NextFloat(0.3f, 0.5f);
                     ParticleManager.NewParticle<BoreParticle>(Projectile.Center, velocity, Color.White, scale);
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 5f) }, Projectile.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 5f) }, Projectile.Center);
 
                     Vector2 directionToProjectile = Projectile.Center.DirectionTo(p.Center);
                     p.velocity = directionToProjectile * 16;
@@ -258,10 +258,10 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
         {
             Main.spriteBatch.End();
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
-            var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
-            var TrailTex4 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
 

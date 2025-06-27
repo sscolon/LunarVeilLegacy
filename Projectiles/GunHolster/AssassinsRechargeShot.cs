@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 
 using System;
 
 using Terraria.Audio;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class AssassinsRechargeShot : ModProjectile
     {
@@ -63,7 +63,7 @@ namespace Stellamod.Projectiles.GunHolster
         }
         public override void PostDraw(Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             if (Main.rand.NextBool(5))
             {
                 int dustnumber = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.GoldCoin, 0f, 0f, 150, Color.White, 1f);
@@ -104,7 +104,7 @@ namespace Stellamod.Projectiles.GunHolster
                 ParticleManager.NewParticle(Projectile.Center, speed * 10, ParticleManager.NewInstance<MoonTrailParticle>(), Color.DarkRed, Main.rand.NextFloat(0.2f, 0.8f));
             }
 
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Suckler"));
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Suckler"));
             float speedXa = -Projectile.velocity.X * Main.rand.NextFloat(.4f, .7f) + Main.rand.NextFloat(-8f, 8f);
             float speedYa = -Projectile.velocity.Y * Main.rand.Next(0, 0) * 0.01f + Main.rand.Next(-20, 21) * 0.0f;
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXa, Projectile.position.Y + speedYa, speedXa * 0, speedYa * 0, ModContent.ProjectileType<KaBoomKaev>(), (int)(Projectile.damage * 2), 0f, Projectile.owner, 0f, 0f);
@@ -145,7 +145,7 @@ namespace Stellamod.Projectiles.GunHolster
                 ParticleManager.NewParticle(Projectile.Center, speed * 10, ParticleManager.NewInstance<MoonTrailParticle>(), Color.DarkRed, Main.rand.NextFloat(0.2f, 0.8f));
             }
 
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Suckler"));
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Suckler"));
             float speedXa = -Projectile.velocity.X * Main.rand.NextFloat(.4f, .7f) + Main.rand.NextFloat(-8f, 8f);
             float speedYa = -Projectile.velocity.Y * Main.rand.Next(0, 0) * 0.01f + Main.rand.Next(-20, 21) * 0.0f;
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXa, Projectile.position.Y + speedYa, speedXa * 0, speedYa * 0, ModContent.ProjectileType<KaBoomKaev>(), (int)(Projectile.damage * 2), 0f, Projectile.owner, 0f, 0f);

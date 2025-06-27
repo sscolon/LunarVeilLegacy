@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Graphics.Capture;
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     // Shows setting up two basic biomes. For a more complicated example, please request.
     public class FableBiome : ModBiome
@@ -13,8 +13,8 @@ namespace Stellamod.Assets.Biomes
 		
 
 		// Select all the scenery
-		public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("Stellamod/CathedralWaterStyle"); // Sets a water style for when inside this biome
-		public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("Stellamod/FabledBackgroundStyle");
+		public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("LunarVeilLegacy/CathedralWaterStyle"); // Sets a water style for when inside this biome
+		public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("LunarVeilLegacy/FabledBackgroundStyle");
 		public override CaptureBiome.TileColorStyle TileColorStyle => CaptureBiome.TileColorStyle.Normal;
 
 		// Select Music

@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Accessories.Catacombs;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Thrown;
+using LunarVeilLegacy.Items.Accessories.Catacombs;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Thrown;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     internal class TreasureBoxFire : ModItem
     {

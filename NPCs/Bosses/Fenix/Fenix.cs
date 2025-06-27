@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Igniter;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.NPCs.Bosses.Fenix.Projectiles;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Igniter;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,7 +24,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace Stellamod.NPCs.Bosses.Fenix
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
 	public class Fenix : ModNPC
@@ -110,7 +110,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 
 			// Influences how the NPC looks in the Bestiary
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-			drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/Fenix/FenixPreview";
+			drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/Fenix/FenixPreview";
 			drawModifiers.PortraitScale = 0.8f; // Portrait refers to the full picture when clicking on the icon in the bestiary
 			drawModifiers.PortraitPositionYOverride = 0f;
 			NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -245,7 +245,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
             {
 				Vector2 drawPosition = NPC.Center - screenPos;
 				Vector2 origin = new Vector2(144, 82);
-				Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Fenix/FenixGravWings").Value;
+				Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Fenix/FenixGravWings").Value;
 				int wingFrameSpeed = 1;
 				int wingFrameCount = 30;
 				spriteBatch.Draw(syliaWingsTexture, drawPosition,
@@ -856,7 +856,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 			if (timer > 1)
 			{
 				NPC.alpha = 0;
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixReady"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixReady"), NPC.position);
 			}
 
 			if (timer > 70)
@@ -1005,7 +1005,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 					}
 				}
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
 			}
 
 			if (timer == 36)
@@ -1021,7 +1021,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
                         Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<CrileShot>(), 40, 1, Main.myPlayer, 0, 0);
 					}
 				}
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash3"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash3"));
 			}
 
 			if (timer > 64)
@@ -1069,7 +1069,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 				}
 
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash3"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash3"));
 			}
 
 			if (timer == 36)
@@ -1086,7 +1086,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 					}
 				}
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
 			}
 
 
@@ -1120,7 +1120,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
                             Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<CrileShot>(), 40, 1, Main.myPlayer, 0, 0);
 						}
 					}
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
 				}
 
 
@@ -1156,7 +1156,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
                             Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<CrileShot>(), 40, 1, Main.myPlayer, 0, 0);
 						}
 					}
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash3"));
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash3"));
 				}
 
 				if (NPC.life < NPC.lifeMax / 2)
@@ -1193,7 +1193,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 						}
 
 					}
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash2"));
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash2"));
 				}
 
 				if (NPC.life < NPC.lifeMax / 2)
@@ -1254,7 +1254,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
                         }
 
                         Wingies = true;
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixLaugh"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixLaugh"), NPC.position);
 					}
 
                     ResetTimers();
@@ -1332,7 +1332,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 			HomeY = -230f;
 			if (timer == 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixNeNe"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixNeNe"), NPC.position);
 			}
 
 			if (Goth == 30)
@@ -1344,7 +1344,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb * 2, speedYb * 2, ModContent.ProjectileType<FoxRusher>(), 0, 0f, Main.myPlayer, 0f, 0);
 				}
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FrostBringer"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FrostBringer"), NPC.position);
 
 
 			}
@@ -1358,7 +1358,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb * 2, speedYb * 2, ModContent.ProjectileType<FoxRusher>(), 0, 0f, Main.myPlayer, 0f, 0);
 				}
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FrostBringer"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FrostBringer"), NPC.position);
 			}
 
 			if (Goth == 330)
@@ -1370,7 +1370,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb * 2, speedYb * 2, ModContent.ProjectileType<FoxRusher>(), 0, 0f, Main.myPlayer, 0f, 0);
 				}
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FrostBringer"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FrostBringer"), NPC.position);
 			}
 
 			if (timer < 320)
@@ -1435,7 +1435,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 
 			if (timer == 1)
             {
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixFun"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixFun"), NPC.position);
 			}
 
 			if (timer > 35)
@@ -1472,7 +1472,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 
 			if (timer == 30)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSummonGrav"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSummonGrav"), NPC.position);
 				var entitySource = NPC.GetSource_FromThis();
 				if (StellaMultiplayer.IsHost)
 				{
@@ -1507,11 +1507,11 @@ namespace Stellamod.NPCs.Bosses.Fenix
 						Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y - 40, 0, speedYa * 0, ModContent.ProjectileType<SpawnFen>(), 0, 0f, Owner: Main.myPlayer);
 					}
 					Wingies = true;
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixLaugh"), NPC.position);
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixLaugh"), NPC.position);
 				}
 
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixNeNe"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixNeNe"), NPC.position);
 
 
 
@@ -1519,7 +1519,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 
 			if (timer == 60)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashCharge"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashCharge"), NPC.position);
 				if (StellaMultiplayer.IsHost)
 				{
 					float speedXb = NPC.velocity.X * Main.rand.NextFloat(-1f, 1f) + Main.rand.NextFloat(0f, 0f);
@@ -1552,7 +1552,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 
 			if (timer == 140)
             {
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixLaugh"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixLaugh"), NPC.position);
 			}
 
 			if (timer < 30 && NPC.HasValidTarget)
@@ -1582,7 +1582,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 					}
 				}
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Astalaiya1"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Astalaiya1"));
 				Grimber = 0;
 			}
 
@@ -1639,7 +1639,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 			float ai1 = NPC.whoAmI;
 			if (timer == 30)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashCharge"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashCharge"), NPC.position);
 				var entitySource = NPC.GetSource_FromThis();
 				if (StellaMultiplayer.IsHost)
 				{
@@ -1676,7 +1676,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 
 			if (timer == 30)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashCharge"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashCharge"), NPC.position);
 				if (StellaMultiplayer.IsHost)
 				{
 					float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(0f, 0f);
@@ -1710,7 +1710,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 			
 			if (timer == 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSwordsDance2"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSwordsDance2"), NPC.position);
 				NPC.alpha = 255;
 				if (StellaMultiplayer.IsHost)
 				{
@@ -2010,7 +2010,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 
 			if (timer == 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSwordsDance1"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSwordsDance1"), NPC.position);
 				NPC.alpha = 255;
 				if (StellaMultiplayer.IsHost)
 				{
@@ -2304,7 +2304,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 			}
 			if (timer == 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordHoldVerlia"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"), NPC.position);
 				NPC.alpha = 255;
 
 				if (StellaMultiplayer.IsHost)
@@ -2482,7 +2482,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
                         }
 
 						Wingies = true;
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixLaugh"), NPC.position);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixLaugh"), NPC.position);
 					}
 
                     ResetTimers();

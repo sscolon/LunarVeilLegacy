@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.Audio;
-using Stellamod.Projectiles;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Materials;
-using Stellamod.Buffs.Minions;
-using Stellamod.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     internal class BucketScrapper : ModItem
     {

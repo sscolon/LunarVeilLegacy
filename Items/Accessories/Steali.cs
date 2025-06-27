@@ -1,10 +1,10 @@
-﻿using Stellamod.Items.Accessories.Players;
+﻿using LunarVeilLegacy.Items.Accessories.Players;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     [AutoloadEquip(EquipType.Waist)] // Load the spritesheet you create as a shield for the player when it is equipped.
 	public class Steali : ModItem

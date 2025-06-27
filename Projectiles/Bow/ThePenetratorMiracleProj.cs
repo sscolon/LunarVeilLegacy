@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class ThePenetratorMiracleProj : ModProjectile
     {
-        public override string Texture => "Stellamod/Items/Weapons/Ranged/PenetratorMiracle";
+        public override string Texture => "LunarVeilLegacy/Items/Weapons/Ranged/PenetratorMiracle";
         Vector2 HoldOffset;
         ref float Timer => ref Projectile.ai[0];
         ref float Rotation => ref Projectile.ai[1];
@@ -35,7 +35,7 @@ namespace Stellamod.Projectiles.Bow
             if(Timer == 1)
             {
                 HoldOffset = Main.rand.NextVector2CircularEdge(48, 48);
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/CrossbowPull");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/CrossbowPull");
                 soundStyle.PitchVariance = 0.15f;
                 soundStyle.Pitch = -0.75f;
                 SoundEngine.PlaySound(soundStyle);
@@ -59,7 +59,7 @@ namespace Stellamod.Projectiles.Bow
             Projectile.rotation = Rotation;
             if (Timer == 44)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/SoftSummon");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon");
                 soundStyle.PitchVariance = 0.15f;
                 soundStyle.Pitch = -0.75f;
                 SoundEngine.PlaySound(soundStyle);
@@ -71,7 +71,7 @@ namespace Stellamod.Projectiles.Bow
                 Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, velocity,
                     ModContent.ProjectileType<ThePenetratorMiracleArrowProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                 
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2"); 
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2"); 
                 soundStyle.PitchVariance = 0.15f;
                 soundStyle.Volume = 0.5f;
                 soundStyle.Pitch = 0.75f;

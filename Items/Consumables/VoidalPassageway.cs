@@ -1,4 +1,4 @@
-﻿using Stellamod.NPCs.Bosses.INest;
+﻿using LunarVeilLegacy.NPCs.Bosses.INest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.NPCs.Bosses.SupernovaFragment;
+using LunarVeilLegacy.NPCs.Bosses.SupernovaFragment;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     internal class VoidalPassageway : ModItem
     {

@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs.Charms
+namespace LunarVeilLegacy.Buffs.Charms
 {
 	public class MagicalBroo : ModBuff
 	{

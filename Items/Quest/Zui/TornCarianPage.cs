@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.Zui
+namespace LunarVeilLegacy.Items.Quest.Zui
 {
     internal class TornCarianPage : ModItem
     {

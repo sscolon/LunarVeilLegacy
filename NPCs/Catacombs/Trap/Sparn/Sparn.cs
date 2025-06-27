@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Trap.Sparn
+namespace LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn
 {
 	[AutoloadBossHead]
     internal class Sparn : ModNPC
@@ -281,7 +281,7 @@ namespace Stellamod.NPCs.Catacombs.Trap.Sparn
 			Vector2 nodeSpawnPosition3 = target.Center + new Vector2(distance, distance);
 			Vector2 nodeSpawnPosition4 = target.Center + new Vector2(-distance, distance);
 
-			SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia1"));
+			SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia1"));
 			DustBurst(nodeSpawnPosition1);
 			DustBurst(nodeSpawnPosition2);
 			DustBurst(nodeSpawnPosition3);

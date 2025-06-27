@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Summons
+namespace LunarVeilLegacy.Projectiles.Summons
 {
 
     public class VoltuxPortal : ModProjectile
@@ -107,7 +107,7 @@ namespace Stellamod.Projectiles.Summons
         public override void Load()
         { // This is called once on mod (re)load when this piece of content is being loaded.
           // This is the path to the texture that we'll use for the hook's chain. Make sure to update it.
-            VorTexture = Request<Texture2D>("Stellamod/Assets/Effects/VoxTexture");
+            VorTexture = Request<Texture2D>("LunarVeilLegacy/Assets/Effects/VoxTexture");
         }
   
         public override void Unload()

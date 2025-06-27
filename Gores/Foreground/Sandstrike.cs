@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 
-namespace Stellamod.Gores.Foreground
+namespace LunarVeilLegacy.Gores.Foreground
 {
 
 

@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Brooches;
+using LunarVeilLegacy.Brooches;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Items.Flasks;
+using LunarVeilLegacy.Items.Flasks;
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
 	public class Genesis : ModBuff
 	{

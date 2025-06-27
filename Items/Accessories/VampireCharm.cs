@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Brooches;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
 using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     public class VampireCritPlayer : ModPlayer
     {

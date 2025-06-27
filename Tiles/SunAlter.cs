@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.SunStalker;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.SunStalker;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -10,7 +10,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     internal class SunAlter : ModTile
     {

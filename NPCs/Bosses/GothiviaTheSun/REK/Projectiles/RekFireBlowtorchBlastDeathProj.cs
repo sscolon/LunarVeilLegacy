@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Visual;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Visual;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
 {
     internal class RekFireBlowtorchBlastDeathProj : ModProjectile
     {

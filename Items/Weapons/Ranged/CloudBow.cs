@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 
 {
     public class CloudBow : ModItem

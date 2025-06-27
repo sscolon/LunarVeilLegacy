@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.singularityFragment
+namespace LunarVeilLegacy.NPCs.Bosses.singularityFragment
 {
 
     public class SingularityOrb : ModNPC
@@ -143,8 +143,8 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
             NPC.dontCountMe = false;
             NPC.dontTakeDamage = false;
             NPC.lifeMax = 200;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/VoidDead2") with { PitchVariance = 0.1f };
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidDead2") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
         }
         public override void HitEffect(NPC.HitInfo hit)
         {
@@ -157,7 +157,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
             }
             if (NPC.life <= 0)
             {
-                global::Stellamod.NPCs.Bosses.singularityFragment.SingularityFragment.SingularityOrbs -= 1;
+                global::LunarVeilLegacy.NPCs.Bosses.singularityFragment.SingularityFragment.SingularityOrbs -= 1;
                 for (int i = 0; i < 20; i++)
                 {
                     int num = Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.SomethingRed, 0f, -2f, 0, default(Color), .8f);

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Arrows;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Arrows;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     internal class KnivedQuiverPlayer : ModPlayer
     {

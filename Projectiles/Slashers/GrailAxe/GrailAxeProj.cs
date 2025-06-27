@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.GrailAxe
+namespace LunarVeilLegacy.Projectiles.Slashers.GrailAxe
 {
     public class GrailAxeProj : ModProjectile
     {

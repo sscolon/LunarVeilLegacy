@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.UI.Systems
+namespace LunarVeilLegacy.UI.Systems
 {
     // Here is a class dedicated to showcasing projectile modifications
     public class ProjectileModifications : GlobalProjectile

@@ -1,11 +1,11 @@
-﻿using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class AbandonedMinorSummon : ModNPC
     {

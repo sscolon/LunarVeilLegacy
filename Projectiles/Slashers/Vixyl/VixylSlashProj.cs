@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Vixyl
+namespace LunarVeilLegacy.Projectiles.Slashers.Vixyl
 {
     internal class VixylSlashProj : ModProjectile
     {

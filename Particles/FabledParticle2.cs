@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
 using Terraria;
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
     public class FabledParticle2 : Particle
 	{

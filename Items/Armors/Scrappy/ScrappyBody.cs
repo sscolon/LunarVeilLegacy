@@ -1,4 +1,4 @@
-﻿using Stellamod.Items.Materials;
+﻿using LunarVeilLegacy.Items.Materials;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Materials.Tech;
 
-namespace Stellamod.Items.Armors.Scrappy
+namespace LunarVeilLegacy.Items.Armors.Scrappy
 {
     [AutoloadEquip(EquipType.Body)]
     internal class ScrappyBody : ModItem

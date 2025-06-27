@@ -1,12 +1,12 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Assets.Biomes;
+using LunarVeilLegacy.Assets.Biomes;
 using System;
 using Terraria;
 using Terraria.DataStructures;
 
-namespace Stellamod.Utilis
+namespace LunarVeilLegacy.Utilis
 {
     public static class Utilities
     {

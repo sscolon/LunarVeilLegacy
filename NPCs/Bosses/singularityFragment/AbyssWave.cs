@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.singularityFragment
+namespace LunarVeilLegacy.NPCs.Bosses.singularityFragment
 {
     public class AbyssWave : ModProjectile
     {

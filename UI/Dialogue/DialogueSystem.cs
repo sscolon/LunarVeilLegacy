@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace Stellamod.UI.Dialogue
+namespace LunarVeilLegacy.UI.Dialogue
 {
     [Autoload(Side = ModSide.Client)]
     internal class DialogueSystem : ModSystem

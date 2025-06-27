@@ -2,9 +2,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.NPCs.Catacombs;
-using Stellamod.NPCs.Event.GreenSun.Dulacrowe;
-using Stellamod.Utilis;
+using LunarVeilLegacy.NPCs.Catacombs;
+using LunarVeilLegacy.NPCs.Event.GreenSun.Dulacrowe;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -13,7 +13,7 @@ using Terraria.ModLoader;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.INest.IEagle
+namespace LunarVeilLegacy.NPCs.Bosses.INest.IEagle
 {
     [AutoloadBossHead]
     public class Irradieagle : ModNPC
@@ -178,7 +178,7 @@ namespace Stellamod.NPCs.Bosses.INest.IEagle
                             if (NPC.ai[0] == 40 || NPC.ai[0] == 80)
                             {
                                 DrugRidus = 50;
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Wave"));
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Wave"));
                                 var entitySource = NPC.GetSource_FromThis();
                                 targetPos = player.Center;
                                 DrugRidus = 60;
@@ -201,7 +201,7 @@ namespace Stellamod.NPCs.Bosses.INest.IEagle
                             if (NPC.ai[0] == 50)
                             {
                                 DrugRidus = 70;
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Wave"));
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Wave"));
                                 var entitySource = NPC.GetSource_FromThis();
                                 targetPos = player.Center;
                                 DrugRidus = 60;
@@ -234,7 +234,7 @@ namespace Stellamod.NPCs.Bosses.INest.IEagle
                             if (NPC.ai[0] % 8 == 0)
                             {
                                 DrugRidus = 20;
-                                //SoundEngine.PlaySound(new SoundStyle("Stellamod/Sounds/Custom/Npc/AcidProbe3"), NPC.position);
+                                //SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Sounds/Custom/Npc/AcidProbe3"), NPC.position);
                                 targetPos = player.Center;
                                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 512f, 32f);
                                 Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
@@ -273,7 +273,7 @@ namespace Stellamod.NPCs.Bosses.INest.IEagle
                         }
                         if (NPC.ai[0] == 20)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Spawn"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Spawn"), NPC.position);
                         }
                         if (NPC.ai[0] == 100)
                         {
@@ -293,11 +293,11 @@ namespace Stellamod.NPCs.Bosses.INest.IEagle
                                 int Sound = Main.rand.Next(1, 3);
                                 if (Sound == 1)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Flare1"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Flare1"), NPC.position);
                                 }
                                 else
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Flare2"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Flare2"), NPC.position);
                                 }
                                 targetPos = player.Center;
                                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 512f, 32f);
@@ -351,7 +351,7 @@ namespace Stellamod.NPCs.Bosses.INest.IEagle
  
                         if (NPC.ai[0] == 10)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Dash"));
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Dash"));
                         }
 
                         if (NPC.ai[0] >= 10)

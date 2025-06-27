@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.GameContent.Animations;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
 {
     internal class RekFireCrystal : ModNPC
     {
@@ -55,7 +55,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
             Timer++;
             if(Timer == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekSummon"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekSummon"), NPC.position);
             }
 
             float frequency = 0.2f;
@@ -140,7 +140,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
             if(Timer < 540)
             {
                 float progress = Timer / 540f;
-                Texture2D lineTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+                Texture2D lineTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
                 Color lineDrawColor = (Color)GetLineAlpha(drawColor);
                 lineDrawColor *= progress;
 

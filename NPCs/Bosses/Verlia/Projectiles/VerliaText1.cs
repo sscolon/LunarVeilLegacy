@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles
 {
     public class VerliaText1 : ModProjectile
 	{

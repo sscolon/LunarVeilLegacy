@@ -1,10 +1,10 @@
-﻿using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
+﻿using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class Ebistar : ClassSwapItem
 	{

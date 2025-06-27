@@ -5,11 +5,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
 
 
-namespace Stellamod.Items.Armors.Jianxin
+namespace LunarVeilLegacy.Items.Armors.Jianxin
 {
 	public class DragonsSurround : ModProjectile
 	{

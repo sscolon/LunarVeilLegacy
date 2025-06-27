@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class IceWalker : ModItem
     {
@@ -53,7 +53,7 @@ namespace Stellamod.Items.Weapons.Ranged
             if (WinterboundArrow >= 3)
             {
                 WinterboundArrow = 0;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterboundArrow"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterboundArrow"), player.position);
                 type = ModContent.ProjectileType<WinterboundArrow>();
             }
         }

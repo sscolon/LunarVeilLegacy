@@ -1,10 +1,10 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Harvesting
+namespace LunarVeilLegacy.Items.Harvesting
 {
     internal class AlcadizMetal : ModItem
 	{

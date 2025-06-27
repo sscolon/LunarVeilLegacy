@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -10,7 +10,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Spears
+namespace LunarVeilLegacy.Projectiles.Spears
 {
     internal class TheIrradiaspearP : ModProjectile
     {
@@ -131,7 +131,7 @@ namespace Stellamod.Projectiles.Spears
 
             if (Timer == ChargeTime)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Teleport");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Teleport");
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
 
                 FlashTimer = 1;
@@ -178,7 +178,7 @@ namespace Stellamod.Projectiles.Spears
             if(Timer == 1 && MaxCharge)
             {
                 //Throw Sound
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Egg_Shot");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Egg_Shot");
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
 
                 //Rocket Boost
@@ -289,7 +289,7 @@ namespace Stellamod.Projectiles.Spears
             if (MaxCharge)
             {
                 //Big impact sound
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Wave");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Wave");
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
 
                 HitStunTimer = 15;

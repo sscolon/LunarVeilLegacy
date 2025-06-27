@@ -1,14 +1,14 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class FungalFlaceBall : ModProjectile
     {
@@ -52,11 +52,11 @@ namespace Stellamod.Projectiles.Magic
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FungalFlaceBall1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FungalFlaceBall1"), Projectile.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FungalFlaceBall2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FungalFlaceBall2"), Projectile.position);
                 }
             }
             Projectile.ai[1]++;
@@ -114,11 +114,11 @@ namespace Stellamod.Projectiles.Magic
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FungalFlaceBall3"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FungalFlaceBall3"), Projectile.position);
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FungalFlaceBall4"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FungalFlaceBall4"), Projectile.position);
             }
 
         }

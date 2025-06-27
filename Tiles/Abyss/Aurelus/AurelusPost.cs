@@ -7,7 +7,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Abyss.Aurelus
+namespace LunarVeilLegacy.Tiles.Abyss.Aurelus
 {
     internal class AurelusPost : ModTile
     {

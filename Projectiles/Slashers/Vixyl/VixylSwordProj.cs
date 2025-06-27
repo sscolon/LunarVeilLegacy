@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Vixyl
+namespace LunarVeilLegacy.Projectiles.Slashers.Vixyl
 {
     internal class VixylSwordProj : ModProjectile
     {
         private bool _init;
-        public override string Texture => "Stellamod/Items/Weapons/Melee/Vixyl";
+        public override string Texture => "LunarVeilLegacy/Items/Weapons/Melee/Vixyl";
 
         ref float Dir => ref Projectile.ai[0];
 
@@ -140,7 +140,7 @@ namespace Stellamod.Projectiles.Slashers.Vixyl
         public override bool PreDraw(ref Color lightColor)
         {
             Main.spriteBatch.End();
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StarTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StarTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
 

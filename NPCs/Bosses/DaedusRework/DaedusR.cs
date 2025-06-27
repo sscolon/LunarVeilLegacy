@@ -1,14 +1,14 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Thrown;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Thrown;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -20,7 +20,7 @@ using Terraria.ModLoader;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.DaedusRework
+namespace LunarVeilLegacy.NPCs.Bosses.DaedusRework
 {
     [AutoloadBossHead]
     public class DaedusR : ModNPC
@@ -53,7 +53,7 @@ namespace Stellamod.NPCs.Bosses.DaedusRework
             // Influences how the NPC looks in the Bestiary
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
             {
-                CustomTexturePath = "Stellamod/NPCs/Bosses/DaedusRework/DaedusBestiary",
+                CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/DaedusRework/DaedusBestiary",
                 PortraitScale = 0.8f, // Portrait refers to the full picture when clicking on the icon in the bestiary
                 PortraitPositionYOverride = 0f,
             };
@@ -107,7 +107,7 @@ namespace Stellamod.NPCs.Bosses.DaedusRework
             NPC.defense = 10;
             NPC.lifeMax = 2600;
             NPC.HitSound = SoundID.NPCHit1;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/StormDragon_Bomb");
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_Bomb");
             NPC.knockBackResist = 0f;
             NPC.noGravity = true;
             NPC.noTileCollide = true;

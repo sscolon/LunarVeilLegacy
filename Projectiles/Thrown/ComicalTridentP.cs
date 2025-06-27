@@ -1,14 +1,14 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     public class ComicalTridentP : ModProjectile
     {
@@ -94,7 +94,7 @@ namespace Stellamod.Projectiles.Thrown
 
             Projectile.NewProjectile(Projectile.GetSource_FromThis(),Projectile.Center, Vector2.Zero, 
                 ModContent.ProjectileType<FunBoom>(), (int)(Projectile.damage * 1.5), 0f, Projectile.owner, 0f, 0f);
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ComicBoom"));
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ComicBoom"));
         }
 
     }

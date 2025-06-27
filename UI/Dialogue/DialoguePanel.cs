@@ -5,7 +5,7 @@ using Terraria.GameContent.UI.Elements;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace Stellamod.UI.Dialogue
+namespace LunarVeilLegacy.UI.Dialogue
 {
     internal class DialoguePanel : UIState
     {
@@ -27,13 +27,13 @@ namespace Stellamod.UI.Dialogue
             UIPanel.BorderColor = Color.Transparent;
             Append(UIPanel);
 
-            Box = new UIImage(ModContent.Request<Texture2D>("Stellamod/UI/Dialogue/DialogueBox"));
+            Box = new UIImage(ModContent.Request<Texture2D>("LunarVeilLegacy/UI/Dialogue/DialogueBox"));
             Box.Color = Color.White * 0.66f;
             Box.Width.Set(701, 0);
             Box.Height.Set(200, 0);
             UIPanel.Append(Box);
 
-            Portrait = new UIImage(ModContent.Request<Texture2D>("Stellamod/UI/Dialogue/ExampleDialoguePortrait"));
+            Portrait = new UIImage(ModContent.Request<Texture2D>("LunarVeilLegacy/UI/Dialogue/ExampleDialoguePortrait"));
             Portrait.Top.Set(25, 0);
             Portrait.Left.Set(16, 0);
             Portrait.PaddingRight = (701 / 2) - 32;

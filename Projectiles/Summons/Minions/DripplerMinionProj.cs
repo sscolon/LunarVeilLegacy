@@ -1,4 +1,4 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +8,10 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Buffs.Minions;
+using LunarVeilLegacy.Buffs.Minions;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     /*
              * This minion shows a few mandatory things that make it behave properly. 

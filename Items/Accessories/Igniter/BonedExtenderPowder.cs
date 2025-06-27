@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Tiles;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Tiles;
 using System.Collections.Generic;
 
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Accessories.Igniter
+namespace LunarVeilLegacy.Items.Accessories.Igniter
 {
 	public class BonedExtenderPowder : ModItem
 	{

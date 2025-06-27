@@ -2,12 +2,12 @@
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Dusts;
 using Terraria.Audio;
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     internal class OrionProj : ModProjectile
     {
@@ -67,10 +67,10 @@ namespace Stellamod.Projectiles.Thrown
             switch (Main.rand.Next(2))
             {
                 case 0:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/M38F30Bomb1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/M38F30Bomb1"), Projectile.position);
                     break;
                 case 1:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/M38F30Bomb2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/M38F30Bomb2"), Projectile.position);
                     break;
             }
         }

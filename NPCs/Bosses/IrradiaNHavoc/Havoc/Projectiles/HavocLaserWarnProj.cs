@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using Terraria.Audio;
 using Terraria.GameContent.Animations;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles
 {
     internal class HavocLaserWarnProj : ModProjectile
     {
@@ -48,7 +48,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles
         public override bool PreDraw(ref Color lightColor)
         {
             float alpha = Timer / LifeTime;
-            Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Color drawColor = (Color)GetAlpha(lightColor);
             drawColor *= alpha;
 
@@ -68,7 +68,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles
 
         public override void OnKill(int timeLeft)
         {
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/StormDragon_Wave");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_Wave");
             SoundEngine.PlaySound(soundStyle, Projectile.position);
             int type = ModContent.ProjectileType<HavocLaserSmallProj>();
             int damage = Projectile.damage;

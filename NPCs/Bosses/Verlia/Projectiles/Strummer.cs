@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles
 {
     public class Strummer : ModProjectile
 	{

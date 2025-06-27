@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Materials;
-using Stellamod.Tiles.Acid;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Tiles.Acid;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Fable
+namespace LunarVeilLegacy.Tiles.Fable
 {
     class FableTree : ModTree
     {
@@ -22,9 +22,9 @@ namespace Stellamod.Tiles.Fable
         public override void SetStaticDefaults() => GrowsOnTileId = new int[] { ModContent.TileType<CatagrassBlock>() };
         public override int CreateDust() => 22;
         public override int DropWood() => ModContent.ItemType<OvermorrowWood>();
-        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("Stellamod/Tiles/Fable/FableTree");
-        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/Fable/FableTree_Top");
-        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/Fable/FableTree_Branches");
+        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Fable/FableTree");
+        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Fable/FableTree_Top");
+        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Fable/FableTree_Branches");
 
         public override int SaplingGrowthType(ref int style)
         {

@@ -1,9 +1,9 @@
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Leather
+namespace LunarVeilLegacy.Items.Armors.Leather
 {
     [AutoloadEquip(EquipType.Legs)]
     public class LeatherLegs : ModItem

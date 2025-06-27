@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
 
-namespace Stellamod.NPCs.Bosses.singularityFragment
+namespace LunarVeilLegacy.NPCs.Bosses.singularityFragment
 {
     public class Voidling : ModNPC
     {
@@ -40,8 +40,8 @@ namespace Stellamod.NPCs.Bosses.singularityFragment
             NPC.lavaImmune = false;
             NPC.alpha = 0;
             NPC.dontTakeDamage = false;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/NPCHit/VoidHit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/NPCKilled/VoidDead2") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/NPCHit/VoidHit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/NPCKilled/VoidDead2") with { PitchVariance = 0.1f };
         }
 
         public override void HitEffect(NPC.HitInfo hit)

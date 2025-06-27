@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     internal class GlobalBuffEdits : GlobalBuff
     {

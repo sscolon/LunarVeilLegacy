@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     internal class ChromaCutter : ModItem
     {
@@ -178,10 +178,10 @@ namespace Stellamod.Items.Weapons.Summon
                     switch (Main.rand.Next(0, 2))
                     {
                         case 0:
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeProg"), player.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeProg"), player.position);
                             break;
                         case 1:
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeProg2"), player.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeProg2"), player.position);
                             break;
                     }
 

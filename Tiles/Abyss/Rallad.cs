@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Abyss
+namespace LunarVeilLegacy.Tiles.Abyss
 {
 	public class Rallad : ModTile
 	{

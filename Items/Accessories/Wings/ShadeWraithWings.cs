@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Materials;
+﻿using LunarVeilLegacy.Items.Materials;
 using System.Linq;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Wings
+namespace LunarVeilLegacy.Items.Accessories.Wings
 {
     [AutoloadEquip(EquipType.Wings)]
 	public class ShadeWraithWings : ModItem

@@ -2,11 +2,11 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
     public class ChromaSlash : Particle
     {
@@ -51,8 +51,8 @@ namespace Stellamod.Particles
             }
 
 
-            Texture2D tex3 = Request<Texture2D>("Stellamod/Particles/ChromaSlash").Value;
-            Texture2D tex4 = Request<Texture2D>("Stellamod/Particles/ChromaSlashOpp").Value;
+            Texture2D tex3 = Request<Texture2D>("LunarVeilLegacy/Particles/ChromaSlash").Value;
+            Texture2D tex4 = Request<Texture2D>("LunarVeilLegacy/Particles/ChromaSlashOpp").Value;
 
             float alpha = timeLeft <= 20 ? 1f - 1f / 20f * (20 - timeLeft) : 1f;
             if (alpha < 0f) alpha = 0f;

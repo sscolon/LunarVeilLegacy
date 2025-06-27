@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Projectiles.Ammo;
-using Stellamod.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles.Ammo;
+using LunarVeilLegacy.Items.Materials.Tech;
 
-namespace Stellamod.Items.Ammo
+namespace LunarVeilLegacy.Items.Ammo
 {
     internal class DriveRound : ModItem
     {

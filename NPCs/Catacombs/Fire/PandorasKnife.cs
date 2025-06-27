@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Fire
+namespace LunarVeilLegacy.NPCs.Catacombs.Fire
 {
 	public class PandorasKnife : ModNPC
 	{

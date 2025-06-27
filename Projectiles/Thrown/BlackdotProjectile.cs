@@ -1,10 +1,10 @@
 ﻿
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     public class BlackdotProjectile : ModProjectile
 	{

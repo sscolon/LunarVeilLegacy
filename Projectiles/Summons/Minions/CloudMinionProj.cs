@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     public class CloudMinionProj : ModProjectile
     {
@@ -135,7 +135,7 @@ namespace Stellamod.Projectiles.Summons.Minions
                         ModContent.ProjectileType<ClimateIceProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
 
                     AttackTimer = 0;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer1"), Projectile.position);
                 }
             }
         }

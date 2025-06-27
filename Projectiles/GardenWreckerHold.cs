@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class GardenWreckerHold : ModProjectile
     {
@@ -54,7 +54,7 @@ namespace Stellamod.Projectiles
 			{
 				// Our timer has finished, do something here:
 				// Main.PlaySound, Dust.NewDust, Projectile.NewProjectile, etc. Up to you.
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/MorrowSalfi"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/MorrowSalfi"));
 				Timer = 0;
 			}
 

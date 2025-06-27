@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Projectiles.StringnNeedles.Alcadiz;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Projectiles.StringnNeedles.Alcadiz;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.StringnNeedles.Verl
+namespace LunarVeilLegacy.Projectiles.StringnNeedles.Verl
 {
     public class StringNNeedleVerlia : ModProjectile
 	{
@@ -45,7 +45,7 @@ namespace Stellamod.Projectiles.StringnNeedles.Verl
 				// Main.PlaySound, Dust.NewDust, Projectile.NewProjectile, etc. Up to you.
 				ShakeModSystem.Shake = 8;
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MorrowSalfi"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MorrowSalfi"));
 				Timer = 0;
 			}
 			Player player = Main.player[Projectile.owner];

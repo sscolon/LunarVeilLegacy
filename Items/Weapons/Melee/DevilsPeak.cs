@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class DevilsPeak : ClassSwapItem
     {

@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
 
     internal class DreadVomit : ModProjectile
@@ -49,15 +49,15 @@ namespace Stellamod.Projectiles.Magic
                 int Sound = Main.rand.Next(1, 4);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/DMHeart__Vomit2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/DMHeart__Vomit2"), Projectile.position);
                 }
                 if (Sound == 2)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/DMHeart__Vomit3"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/DMHeart__Vomit3"), Projectile.position);
                 }
                 if (Sound == 3)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/DMHeart__Vomit1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/DMHeart__Vomit1"), Projectile.position);
 
                 }
                 Spin = Main.rand.Next(0, 2);

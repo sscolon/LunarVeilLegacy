@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
     public class VirulentPlating : ModItem
     {

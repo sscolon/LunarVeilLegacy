@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.DreadMire
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire
 {
     public class DreadMireMagic : ModProjectile
     {

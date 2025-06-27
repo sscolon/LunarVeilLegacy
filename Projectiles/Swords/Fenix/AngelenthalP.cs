@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords.Fenix
+namespace LunarVeilLegacy.Projectiles.Swords.Fenix
 {
 	public class AngelenthalP : ModProjectile
 	{

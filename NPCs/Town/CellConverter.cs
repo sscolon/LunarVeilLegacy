@@ -1,30 +1,30 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Vanity.Gia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Quest.BORDOC;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Melee.Safunais;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.Items.Weapons.Whips;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Vanity.Gia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Quest.BORDOC;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Melee.Safunais;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.Items.Weapons.Whips;
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
@@ -38,7 +38,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 using Terraria.Utilities;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
 	// [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
 
@@ -239,7 +239,7 @@ namespace Stellamod.NPCs.Town
 					NetMessage.SendData(MessageID.SyncItem);
 
 					//Effects
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Converted"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Converted"));
 					CombatText.NewText(NPC.getRect(), Color.White, LangText.Chat(this, "Special0"), true, false);
 					Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 1024f, 16f);
                     for (int i = 0; i < 4; i++)
@@ -259,7 +259,7 @@ namespace Stellamod.NPCs.Town
                 } 
 				else if (Main.LocalPlayer.HasItem(ModContent.ItemType<ScrapToken>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Converted")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Converted")); // Reforge/Anvil sound
 
 					Main.npcChatText = LangText.Chat(this, "Special1");
 

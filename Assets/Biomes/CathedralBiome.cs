@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Graphics.Capture;
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     // Shows setting up two basic biomes. For a more complicated example, please request.
     public class CathedralBiome : ModBiome
@@ -13,8 +13,8 @@ namespace Stellamod.Assets.Biomes
 
 		public override SceneEffectPriority Priority => SceneEffectPriority.BossLow;
 		// Select all the scenery
-		public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("Stellamod/CathedralWaterStyle"); // Sets a water style for when inside this biome
-		public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("Stellamod/CathedralBackgroundStyle");
+		public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("LunarVeilLegacy/CathedralWaterStyle"); // Sets a water style for when inside this biome
+		public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("LunarVeilLegacy/CathedralBackgroundStyle");
 		public override CaptureBiome.TileColorStyle TileColorStyle => CaptureBiome.TileColorStyle.Normal;
 
 		// Select Music
@@ -38,10 +38,10 @@ namespace Stellamod.Assets.Biomes
 		public override void SpecialVisuals(Player player, bool isActive)
 		{
 
-			//   if (!SkyManager.Instance["Stellamod:NaxtrinSky"].IsActive() && isActive)
-		//		SkyManager.Instance.Activate("Stellamod:NaxtrinSky", player.Center);
-		//	if (SkyManager.Instance["Stellamod:NaxtrinSky"].IsActive() && !isActive)
-		//		SkyManager.Instance.Deactivate("Stellamod:NaxtrinSky");
+			//   if (!SkyManager.Instance["LunarVeilLegacy:NaxtrinSky"].IsActive() && isActive)
+		//		SkyManager.Instance.Activate("LunarVeilLegacy:NaxtrinSky", player.Center);
+		//	if (SkyManager.Instance["LunarVeilLegacy:NaxtrinSky"].IsActive() && !isActive)
+		//		SkyManager.Instance.Deactivate("LunarVeilLegacy:NaxtrinSky");
 		}
 		// Calculate when the biome is active.
 		public override bool IsBiomeActive(Player player)

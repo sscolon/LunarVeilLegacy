@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
 using Terraria.Audio;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviScaleProj : ModProjectile
     {
@@ -56,7 +56,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
         {
             //Spawn item
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 2212f, 12f);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SoftSummon2"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon2"), Projectile.position);
             if (Main.myPlayer == Projectile.owner)
             {
                 int itemIndex = Item.NewItem(Projectile.GetSource_FromThis(), Projectile.getRect(),

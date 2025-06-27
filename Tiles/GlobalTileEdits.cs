@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     internal class GlobalTileEdits : GlobalTile
     {

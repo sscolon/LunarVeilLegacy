@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Spears
+namespace LunarVeilLegacy.Projectiles.Spears
 {
     internal class SiriusProj : ModProjectile
     {
@@ -113,23 +113,23 @@ namespace Stellamod.Projectiles.Spears
             if(ExplodingTimer == 1)
             {
                 //Play charging up sound
-                SoundStyle summonSoundStyle = new SoundStyle("Stellamod/Assets/Sounds/RisingSummon");
+                SoundStyle summonSoundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RisingSummon");
                 SoundEngine.PlaySound(summonSoundStyle, Projectile.position);
             }
 
             ExplodingTimer++;
             if (ExplodingTimer >= Exploding_Time)
             {
-                SoundStyle summonSoundStyle = new SoundStyle("Stellamod/Assets/Sounds/RisingSummon");
+                SoundStyle summonSoundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RisingSummon");
                 SoundEngine.FindActiveSound(summonSoundStyle)?.Stop();
 
                 switch (Main.rand.Next(2))
                 {
                     case 0:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/M38F30Bomb1"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/M38F30Bomb1"), Projectile.position);
                         break;
                     case 1:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/M38F30Bomb2"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/M38F30Bomb2"), Projectile.position);
                         break;
                 }
 

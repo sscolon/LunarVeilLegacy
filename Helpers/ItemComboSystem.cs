@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     internal interface IComboSystem
     {

@@ -1,8 +1,8 @@
-﻿using Stellamod.Tiles.Structures.AlcadizNGovheil;
+﻿using LunarVeilLegacy.Tiles.Structures.AlcadizNGovheil;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable.Govheil
+namespace LunarVeilLegacy.Items.Placeable.Govheil
 {
     public class GovheilBoreI : ModItem
 	{

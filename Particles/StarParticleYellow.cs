@@ -5,7 +5,7 @@ using Terraria;
 using static Terraria.ModLoader.ModContent;
 
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
 	public class StarParticleYellow : Particle
 	{

@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.Merena
+namespace LunarVeilLegacy.Items.Quest.Merena
 {
     internal class MakeUltimateScroll : ModItem
     {

@@ -1,13 +1,13 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
 using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks
 {
     public class RekGreek1 : ModProjectile
     {  
@@ -59,7 +59,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
                         ModContent.ProjectileType<SummonSpawnEffect>(), 0, 0f, Owner: Projectile.owner);
                 }
                 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Jack_Throw"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Jack_Throw"));
                 Timer = 0;
             }
 

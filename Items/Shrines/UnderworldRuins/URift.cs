@@ -1,10 +1,10 @@
-﻿using Stellamod.Tiles.Structures.UnderworldRuins;
+﻿using LunarVeilLegacy.Tiles.Structures.UnderworldRuins;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Shrines.UnderworldRuins
+namespace LunarVeilLegacy.Items.Shrines.UnderworldRuins
 {
     public class URift : ModItem
 	{

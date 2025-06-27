@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using System;
 using System.IO;
 using Terraria;
@@ -14,7 +14,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Orbs
+namespace LunarVeilLegacy.Projectiles.Summons.Orbs
 {
     internal class SineSireProj : OrbProjectile
     {
@@ -380,9 +380,9 @@ namespace Stellamod.Projectiles.Summons.Orbs
                 new Vector3(3, 3, 3), 0);
 
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhiteTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/CausticTrail").Value;
-            var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WaterTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhiteTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/CausticTrail").Value;
+            var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WaterTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
             float width = 64;

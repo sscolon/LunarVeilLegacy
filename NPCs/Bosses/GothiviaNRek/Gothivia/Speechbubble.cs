@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaNRek.Gothivia
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Gothivia
 {
     public class Speechbubble : ModProjectile
 	{

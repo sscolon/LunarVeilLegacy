@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Placeable.Cathedral;
-using Stellamod.NPCs.Bosses.Jack;
-using Stellamod.NPCs.Bosses.Sylia;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Placeable.Cathedral;
+using LunarVeilLegacy.NPCs.Bosses.Jack;
+using LunarVeilLegacy.NPCs.Bosses.Sylia;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.DataStructures;
@@ -17,7 +17,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Structures.UnderworldRuins
+namespace LunarVeilLegacy.Tiles.Structures.UnderworldRuins
 {
 
     public class UnstableRift : ModTile

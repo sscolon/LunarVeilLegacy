@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Structures.Cathedral
+namespace LunarVeilLegacy.Tiles.Structures.Cathedral
 {
     public class Crystal2 : ModTile
 	{

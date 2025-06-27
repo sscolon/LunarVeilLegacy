@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged.GunSwapping
+namespace LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping
 {
     internal class GunPlayer : ModPlayer
     {
@@ -108,7 +108,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
             var leftHand = new TooltipLine(Mod, "left", "");
             var rightHand = new TooltipLine(Mod, "right", "");
 
-            const string Base_Path = "Stellamod/Items/Weapons/Ranged/GunSwapping/";
+            const string Base_Path = "LunarVeilLegacy/Items/Weapons/Ranged/GunSwapping/";
             if (gunPlayer.LeftHand != -1)
             {
                 string textureName = gunPlayer.LeftHandItem.Name.ToString().Replace("_", "");
@@ -161,7 +161,7 @@ namespace Stellamod.Items.Weapons.Ranged.GunSwapping
         public override bool PreDrawInInventory(SpriteBatch spriteBatch, Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale)
         {
             GunPlayer gunPlayer = Main.LocalPlayer.GetModPlayer<GunPlayer>();
-            const string Base_Path = "Stellamod/Items/Weapons/Ranged/GunSwapping/";
+            const string Base_Path = "LunarVeilLegacy/Items/Weapons/Ranged/GunSwapping/";
 
             if(gunPlayer.LeftHand != -1)
             {

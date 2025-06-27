@@ -2,15 +2,15 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.DropRules;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.SupernovaFragment;
-using Stellamod.NPCs.Overworld.ShadowWraith;
-using Stellamod.Utilis;
+using LunarVeilLegacy.DropRules;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.SupernovaFragment;
+using LunarVeilLegacy.NPCs.Overworld.ShadowWraith;
+using LunarVeilLegacy.Utilis;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -20,7 +20,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Abyssal
+namespace LunarVeilLegacy.NPCs.Abyssal
 {
 
     public class AbysmLunatic : ModNPC

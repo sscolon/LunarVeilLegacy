@@ -1,24 +1,24 @@
-﻿using Stellamod.Buffs.Dusteffects;
-using Stellamod.DropRules;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Special.MinerLogs;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee.Safunais;
-using Stellamod.Items.Weapons.PowdersItem;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Ranged.Crossbows;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Acidic;
+﻿using LunarVeilLegacy.Buffs.Dusteffects;
+using LunarVeilLegacy.DropRules;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Special.MinerLogs;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee.Safunais;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Ranged.Crossbows;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Acidic;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Global
+namespace LunarVeilLegacy.NPCs.Global
 {
     public class NPCPreHEdits : GlobalNPC
 	{

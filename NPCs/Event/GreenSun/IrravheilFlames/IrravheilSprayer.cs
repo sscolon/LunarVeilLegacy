@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee.Greatswords;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.Fenix.Projectiles;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Gun;
-using Stellamod.UI.Systems;
-using Stellamod.Utilis;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.UI.Systems;
+using LunarVeilLegacy.Utilis;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -26,7 +26,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
 
-namespace Stellamod.NPCs.Event.GreenSun.IrravheilFlames
+namespace LunarVeilLegacy.NPCs.Event.GreenSun.IrravheilFlames
 {
     public class IrravheilSprayer : ModNPC
     {
@@ -71,7 +71,7 @@ namespace Stellamod.NPCs.Event.GreenSun.IrravheilFlames
             NPC.defense = 50; // The amount of defense that this npc has
             NPC.lifeMax = 1510; // The amount of health that this npc has
             NPC.HitSound = SoundID.NPCHit1; // The sound the NPC will make when being hit.
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
             NPC.value = 500f; // How many copper coins the NPC will drop when killed.
             NPC.knockBackResist = 0.4f;
             NPC.noGravity = false;
@@ -251,7 +251,7 @@ namespace Stellamod.NPCs.Event.GreenSun.IrravheilFlames
             timer++;
             if (timer >= 30)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"), NPC.position);
                 State = ActionState.Attack;
                 ResetTimers();
 

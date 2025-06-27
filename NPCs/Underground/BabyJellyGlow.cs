@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
 using System;
 using System.IO;
 using Terraria;
@@ -14,7 +14,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class BabyJellyGlow : ModNPC
     {
@@ -58,7 +58,7 @@ namespace Stellamod.NPCs.Underground
             NPC.lifeMax = 66;
             NPC.knockBackResist = 0;
             NPC.HitSound = SoundID.NPCHit25; // The sound the NPC will make when being hit.
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
             NPC.aiStyle = -1;
         }
 

@@ -1,9 +1,9 @@
-﻿using Stellamod.Items.Materials;
+﻿using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     internal class SawtoothNecklace : ModItem
     {

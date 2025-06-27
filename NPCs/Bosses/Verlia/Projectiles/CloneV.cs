@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -8,7 +8,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles
 {
     public class CloneV : ModNPC
 	{
@@ -50,7 +50,7 @@ namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
 			NPC.defense = 0; // The amount of defense that this npc has
 			NPC.lifeMax = 120; // The amount of health that this npc has
 			NPC.HitSound = SoundID.NPCHit1; // The sound the NPC will make when being hit.
-			NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+			NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
 			NPC.knockBackResist = 0f;
 			NPC.noTileCollide = true;
 			NPC.noGravity = true;
@@ -139,7 +139,7 @@ namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
                     NPC.NewNPC(NPC.GetSource_FromThis(), (int)NPC.Center.X, (int)NPC.Center.Y - 30, ModContent.NPCType<GhostCharger>());
                 }
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Upp"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Upp"));
 			}
 
 			if (timer == 39)

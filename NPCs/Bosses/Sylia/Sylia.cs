@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Wings;
-using Stellamod.Items.Armors.Miracle;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Wings;
+using LunarVeilLegacy.Items.Armors.Miracle;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Particles;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -17,7 +17,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     public class SyliaSkyPlayer : ModPlayer
     {
@@ -38,19 +38,19 @@ namespace Stellamod.NPCs.Bosses.Sylia
 
 		private void ActivateSyliaSky()
 		{
-			if (!SkyManager.Instance["Stellamod:SyliaSky"].IsActive())
+			if (!SkyManager.Instance["LunarVeilLegacy:SyliaSky"].IsActive())
 			{
 				Vector2 targetCenter = Player.Center;
-				SkyManager.Instance.Activate("Stellamod:SyliaSky", targetCenter);
+				SkyManager.Instance.Activate("LunarVeilLegacy:SyliaSky", targetCenter);
 			}
 		}
 
 		private void DeActivateSyliaSky()
 		{
-			if (SkyManager.Instance["Stellamod:SyliaSky"].IsActive())
+			if (SkyManager.Instance["LunarVeilLegacy:SyliaSky"].IsActive())
 			{
 				Vector2 targetCenter = Player.Center;
-				SkyManager.Instance.Deactivate("Stellamod:SyliaSky", targetCenter);
+				SkyManager.Instance.Deactivate("LunarVeilLegacy:SyliaSky", targetCenter);
 			}
 		}
 	}
@@ -121,7 +121,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
 			Main.npcFrameCount[Type] = 30;
 			NPCID.Sets.MPAllowedEnemies[NPC.type] = true;
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-			drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/Sylia/SyliaPreview";
+			drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/Sylia/SyliaPreview";
 			drawModifiers.PortraitScale = 0.8f; // Portrait refers to the full picture when clicking on the icon in the bestiary
 			drawModifiers.PortraitPositionYOverride = 0f;
 			NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);

@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown.Jugglers
+namespace LunarVeilLegacy.Projectiles.Thrown.Jugglers
 {
     internal class FlinchMachineExplosionProj : ModProjectile
     {
@@ -32,7 +32,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
 
         public override bool PreDraw(ref Color lightColor)
         {
-            var texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Skull");
+            var texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Skull");
 
             float progress = Timer / LifeTime;
             float easedProgress = Easing.OutExpo(progress);

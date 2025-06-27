@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
 using Terraria;
 using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 using SteelSeries.GameSense;
 
-namespace Stellamod.Particles.Sparkles
+namespace LunarVeilLegacy.Particles.Sparkles
 {
     public class DefaultSparkle : RaritySparkle
     {
@@ -20,7 +20,7 @@ namespace Stellamod.Particles.Sparkles
             Position = position;
             Velocity = velocity;
             DrawColor = Color.Lerp(Color.LightBlue, Color.LightCyan, Main.rand.NextFloat(1f));
-            Texture = ModContent.Request<Texture2D>("Stellamod/Particles/Sparkles/BaseRaritySparkleTexture").Value;
+            Texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/Sparkles/BaseRaritySparkleTexture").Value;
             BaseFrame = null;
         }
     }

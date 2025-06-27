@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -13,7 +13,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     public class UnderworldRift : ModNPC
     {
@@ -203,7 +203,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
             float width = 43;
             float height = 126;
             Vector2 origin = new Vector2(width / 2, height / 2);
-            Texture2D tex = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Sylia/UnderworldRiftPortal").Value;
+            Texture2D tex = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Sylia/UnderworldRiftPortal").Value;
             int frameSpeed = 1;
             int frameCount = 60;
             spriteBatch.Draw(tex, drawPosition,

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Harvesting;
-using Stellamod.Projectiles.StringnNeedles.Alcadiz;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Projectiles.StringnNeedles.Alcadiz;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     public class AlcadizDagger : ModItem
 	{

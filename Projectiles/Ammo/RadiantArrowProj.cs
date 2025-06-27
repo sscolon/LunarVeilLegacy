@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Zui.Projectiles;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Ammo
+namespace LunarVeilLegacy.Projectiles.Ammo
 {
     internal class RadiantArrowProj : ModProjectile, IPixelPrimitiveDrawer
     {
@@ -61,7 +61,7 @@ namespace Stellamod.Projectiles.Ammo
                     d.noGravity = true;
                 }
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SoftSummon2") { PitchVariance = 0.15f }, Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon2") { PitchVariance = 0.15f }, Projectile.position);
             }
 
             if (Homing_Timer > 45)

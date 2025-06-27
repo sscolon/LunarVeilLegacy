@@ -1,7 +1,7 @@
-﻿using Stellamod.Tiles.Furniture;
+﻿using LunarVeilLegacy.Tiles.Furniture;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
     public class DaedusBossRel : BossRelicItem { public override int TileType => ModContent.TileType<DaedusBossRelic>(); }
     public class DreadBossRel : BossRelicItem { public override int TileType => ModContent.TileType<DreadBossRelic>(); }

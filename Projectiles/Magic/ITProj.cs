@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Projectiles.Spears;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.Spears;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
 
     internal class ITProj : ModProjectile
@@ -43,13 +43,13 @@ namespace Stellamod.Projectiles.Magic
             Projectile.ai[1]++;
             if (!Moved && Projectile.ai[1] >= 0)
             {
-                SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/IrradiatedNest_Fall"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/IrradiatedNest_Fall"), Projectile.position);
                 Projectile.spriteDirection = Projectile.direction;
                 Moved = true;
             }
             if (Projectile.ai[1] == 30)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/ITBeep");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/ITBeep");
                 //Between -1 and 1f
                 soundStyle.Pitch = 0.8f;
                 SoundEngine.PlaySound(soundStyle);
@@ -57,7 +57,7 @@ namespace Stellamod.Projectiles.Magic
             }
             if (Projectile.ai[1] == 60)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/ITBeep");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/ITBeep");
                 //Between -1 and 1f
                 soundStyle.Pitch = 0.9f;
                 SoundEngine.PlaySound(soundStyle);
@@ -65,7 +65,7 @@ namespace Stellamod.Projectiles.Magic
             }
             if (Projectile.ai[1] == 90)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/ITBeep");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/ITBeep");
                 //Between -1 and 1f
                 soundStyle.Pitch = 1f;
                 SoundEngine.PlaySound(soundStyle);
@@ -118,7 +118,7 @@ namespace Stellamod.Projectiles.Magic
                 {
                     if(Projectile.ai[1] <= 100)
                     {
-                        SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ITPrimer"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ITPrimer"), Projectile.position);
                         Projectile.ai[1] = 111;
                     }
                 }
@@ -135,15 +135,15 @@ namespace Stellamod.Projectiles.Magic
             int S1 = Main.rand.Next(0, 3);
             if (S1 == 0)
             {
-                SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/ITBomb1"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/ITBomb1"), Projectile.position);
             }
             if (S1 == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/ITBomb2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/ITBomb2"), Projectile.position);
             }
             if (S1 == 2)
             {
-                SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/ITBomb3"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/ITBomb3"), Projectile.position);
             }
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 2048f, 16f);
         }

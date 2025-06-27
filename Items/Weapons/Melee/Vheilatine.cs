@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Slashers.Vheilatine;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Slashers.Vheilatine;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class Vheilatine : ClassSwapItem
     {

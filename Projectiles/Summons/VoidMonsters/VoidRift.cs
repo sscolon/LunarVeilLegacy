@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.VoidMonsters
+namespace LunarVeilLegacy.Projectiles.Summons.VoidMonsters
 {
     public class VoidRift : ModProjectile
     {
@@ -131,7 +131,7 @@ namespace Stellamod.Projectiles.Summons.VoidMonsters
                 p.layer = Particle.Layer.BeforeProjectiles;
             }
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SyliaRiftClose"));
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SyliaRiftClose"));
         }
     }
 }

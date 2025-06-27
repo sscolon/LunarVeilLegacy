@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System.Security.Cryptography.Pkcs;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Projectiles
 {
     internal class IrradiaAxeProj : ModProjectile
     {
@@ -69,7 +69,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
                         ModContent.ProjectileType<IrradiaAxeLaserProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                     Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center - velocityRotated * 1200, velocityRotated,
                         ModContent.ProjectileType<IrradiaAxeLaserProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Axing") { Pitch = Main.rand.NextFloat(-1f, 1f) });
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Axing") { Pitch = Main.rand.NextFloat(-1f, 1f) });
                     Timer2 = 1;
                     AlphaTimer = 0;
                 } else
@@ -80,7 +80,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
                         ModContent.ProjectileType<IrradiaAxeLaserProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                     Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center - velocityRotated * 1200, velocityRotated,
                         ModContent.ProjectileType<IrradiaAxeLaserProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Axing") { Pitch = Main.rand.NextFloat(-1f, 1f) });
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Axing") { Pitch = Main.rand.NextFloat(-1f, 1f) });
                     Timer2 = 0;
                     AlphaTimer = 0;
                 }
@@ -132,7 +132,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
 
 
 
-            Texture2D lineTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D lineTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Color drawColor = (Color)GetLineAlpha(lightColor);
             drawColor *= AlphaTimer;
 

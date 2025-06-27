@@ -1,10 +1,10 @@
-﻿using Stellamod.Tiles.Structures.AlcadizNGovheil;
+﻿using LunarVeilLegacy.Tiles.Structures.AlcadizNGovheil;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Shrines.GovheilNAlca
+namespace LunarVeilLegacy.Items.Shrines.GovheilNAlca
 {
     public class RestingGroundsI : ModItem
 	{

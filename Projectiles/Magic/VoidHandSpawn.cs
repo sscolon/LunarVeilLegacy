@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class VoidHandSpawn : ModProjectile
     {
@@ -63,11 +63,11 @@ namespace Stellamod.Projectiles.Magic
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VoidHand3"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHand3"), Projectile.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VoidHand2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHand2"), Projectile.position);
                 }
             }
             if (Projectile.ai[0] == 20)
@@ -85,7 +85,7 @@ namespace Stellamod.Projectiles.Magic
             Projectile.ai[1]++;
             if (!Moved && Projectile.ai[1] >= 0)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VoidHand"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHand"), Projectile.position);
                 OldVelotcity = Projectile.velocity;
 
                 Moved = true;

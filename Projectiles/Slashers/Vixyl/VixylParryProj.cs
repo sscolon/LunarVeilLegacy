@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Vixyl
+namespace LunarVeilLegacy.Projectiles.Slashers.Vixyl
 {
     internal class VixylParryProj : ModProjectile
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles
 {
 	public class SpawnFen : ModProjectile
 	{

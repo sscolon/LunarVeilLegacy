@@ -1,14 +1,14 @@
-﻿using Stellamod.Projectiles.Powders;
+﻿using LunarVeilLegacy.Projectiles.Powders;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Tiles;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Tiles;
 
-namespace Stellamod.Items.Weapons.PowdersItem
+namespace LunarVeilLegacy.Items.Weapons.PowdersItem
 {
 	internal class SpiritPowder : ModItem
 	{

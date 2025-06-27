@@ -1,10 +1,10 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Dusts;
-using Stellamod.Projectiles.Paint;
-using Stellamod.Projectiles.Visual;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Projectiles.Paint;
+using LunarVeilLegacy.Projectiles.Visual;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Whips
+namespace LunarVeilLegacy.Projectiles.Whips
 {
     internal class SplashAttackProj : ModProjectile
     {

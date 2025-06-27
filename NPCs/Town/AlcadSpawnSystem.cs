@@ -2,25 +2,25 @@
 using Terraria.ModLoader.IO;
 using Microsoft.Xna.Framework;
 using Terraria;
-using Stellamod.NPCs.RoyalCapital;
-using Stellamod.NPCs.Bosses.Fenix;
+using LunarVeilLegacy.NPCs.RoyalCapital;
+using LunarVeilLegacy.NPCs.Bosses.Fenix;
 using System.IO;
-using Stellamod.NPCs.Bosses.Sylia;
+using LunarVeilLegacy.NPCs.Bosses.Sylia;
 using Terraria.ID;
-using Stellamod.NPCs.Bosses.Zui;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.NPCs.Bosses.Niivi;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.DreadMire.Monolith;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Irradia;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS;
-using Stellamod.WorldG;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.REK;
-using Stellamod.NPCs.Bosses.Ereshkigal;
+using LunarVeilLegacy.NPCs.Bosses.Zui;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.NPCs.Bosses.Niivi;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Monolith;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Irradia;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS;
+using LunarVeilLegacy.WorldG;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK;
+using LunarVeilLegacy.NPCs.Bosses.Ereshkigal;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     internal class AlcadSpawnSystem : ModSystem
     {

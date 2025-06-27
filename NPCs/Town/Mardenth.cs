@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Igniter;
-using Stellamod.Items.Armors.Vanity.Gia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Melee.Greatswords;
-using Stellamod.Items.Weapons.Melee.Safunais;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Whips;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Igniter;
+using LunarVeilLegacy.Items.Armors.Vanity.Gia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords;
+using LunarVeilLegacy.Items.Weapons.Melee.Safunais;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Whips;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -28,12 +28,12 @@ using Terraria.ModLoader;
 using Terraria.Utilities;
 using Terraria.DataStructures;
 using Terraria.GameContent.ItemDropRules;
-using Stellamod.Buffs;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.Items.Armors.Mardenths;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.Items.Armors.Mardenths;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
 	// [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
 
@@ -285,7 +285,7 @@ namespace Stellamod.NPCs.Town
 				Player player = Main.LocalPlayer;
 				WeightedRandom<string> chat = new WeightedRandom<string>();
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2"));
 
 				//-----------------------------------------------------------------------------------------------	
 				Main.npcChatText = Main.npcChatText = LangText.Chat(this, "Special" + Main.rand.Next(1,11));

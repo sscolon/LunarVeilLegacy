@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Sylia.Projectiles;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     public partial class Sylia
     {
@@ -34,7 +34,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
    
 
                 DrawMagicCircle = true;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SyliaTransition"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SyliaTransition"));
                 for (int i = 0; i < Main.maxProjectiles; i++)
                 {
                     if (Main.projectile[i].type == ModContent.ProjectileType<VoidBeamBarrier>())

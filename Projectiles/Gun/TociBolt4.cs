@@ -1,12 +1,12 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     public class TociBolt4 : ModProjectile
 	{
@@ -18,7 +18,7 @@ namespace Stellamod.Projectiles.Gun
             set => Projectile.ai[0] = value;
         }
 
-        private string FrostTexture => "Stellamod/Particles/RainbowParticle3";
+        private string FrostTexture => "LunarVeilLegacy/Particles/RainbowParticle3";
         private float LifeTime = 90;
         private float MaxScale = 0.75f;
 

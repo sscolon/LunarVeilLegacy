@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     public class CathedralWaterfallStyle : ModWaterfallStyle
 	{

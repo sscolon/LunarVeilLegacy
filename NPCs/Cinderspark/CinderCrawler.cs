@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.Projectiles;
 using System;
 using System.IO;
 using Terraria;
@@ -16,7 +16,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Cinderspark
+namespace LunarVeilLegacy.NPCs.Cinderspark
 {
     // These three class showcase usage of the WormHead, WormBody and WormTail classes from Worm.cs
     internal class CinderCrawlerHead : WormHead
@@ -51,8 +51,8 @@ namespace Stellamod.NPCs.Cinderspark
             NPC.noGravity = true;
             NPC.aiStyle = -1;
             NPC.lavaImmune = true;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
         }
 
         public override void OnHitPlayer(Player target, Player.HurtInfo info)

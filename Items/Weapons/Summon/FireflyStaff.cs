@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -9,7 +9,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     public class FireflyStaff : ModItem
     {

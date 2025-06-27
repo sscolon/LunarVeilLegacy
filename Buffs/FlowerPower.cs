@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     internal class FlowerPower : ModBuff
     {

@@ -1,6 +1,6 @@
 ﻿using Terraria.Graphics.Shaders;
 
-namespace Stellamod.Skies
+namespace LunarVeilLegacy.Skies
 {
     //basically just a general screenshader for all of the mod's screen tints
     public class StellaScreenShader : ScreenShaderData

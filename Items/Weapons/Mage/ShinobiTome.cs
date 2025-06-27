@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     public class ShinobiTome : ModItem
 	{
@@ -29,7 +29,7 @@ namespace Stellamod.Items.Weapons.Mage
 			Item.knockBack = 6;
 			Item.value = 10000;
             Item.rare = ItemRarityID.Blue;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/SwordThrow");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordThrow");
             Item.autoReuse = true;
 			Item.shoot = ProjectileType<ShinobiKnife>();
 			Item.shootSpeed = 16f;

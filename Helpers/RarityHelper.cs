@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Particles.Sparkles;
+using LunarVeilLegacy.Particles.Sparkles;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     internal class RarityHelper
     {

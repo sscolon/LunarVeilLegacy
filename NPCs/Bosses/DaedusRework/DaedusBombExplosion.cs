@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.DaedusRework
+namespace LunarVeilLegacy.NPCs.Bosses.DaedusRework
 {
     public class DaedusBombExplosion : ModProjectile
     {

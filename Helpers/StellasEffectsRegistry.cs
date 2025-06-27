@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Skies;
+using LunarVeilLegacy.Skies;
 using Terraria;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 
-namespace Stellamod.Helpers.Separate
+namespace LunarVeilLegacy.Helpers.Separate
 {
     public static class StellasEffectsRegistry
     {
@@ -16,18 +16,18 @@ namespace Stellamod.Helpers.Separate
             internal set;
         }
 
-       // public static MiscShaderData UnderwaterRayShader => GameShaders.Misc["Stellamod:UnderwaterRays"];
+       // public static MiscShaderData UnderwaterRayShader => GameShaders.Misc["LunarVeilLegacy:UnderwaterRays"];
              #endregion
 
         #region Screen Shaders
-        public static Filter BloomShader => Filters.Scene["Stellamod:Bloom"];
+        public static Filter BloomShader => Filters.Scene["LunarVeilLegacy:Bloom"];
     
         #endregion
 
         #region Methods
         public static void LoadEffects()
         {
-            var assets = Stellamod.Instance.Assets;
+            var assets = LunarVeilLegacy.Instance.Assets;
 
           
             LoadScreenShaders(assets);
@@ -42,8 +42,8 @@ namespace Stellamod.Helpers.Separate
          
 
             // Flower of the ocean sky.
-            Filters.Scene["Stellamod:GovheilSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.2f, 0.5f).UseOpacity(0.53f), EffectPriority.High);
-            SkyManager.Instance["Stellamod:GovheilSky"] = new GovheilSky();
+            Filters.Scene["LunarVeilLegacy:GovheilSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.2f, 0.5f).UseOpacity(0.53f), EffectPriority.High);
+            SkyManager.Instance["LunarVeilLegacy:GovheilSky"] = new GovheilSky();
 
             // Fireball shader.
      

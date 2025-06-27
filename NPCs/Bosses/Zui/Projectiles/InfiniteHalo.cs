@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Zui.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles
 {
 	public class InfiniteHalo : ModProjectile
 	{

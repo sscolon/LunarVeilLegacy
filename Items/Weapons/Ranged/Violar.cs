@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class Violar : ClassSwapItem
     {
@@ -51,7 +51,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.useAnimation = 100;
 			Item.useStyle = ItemUseStyleID.Guitar;
 			Item.autoReuse = true;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/violar");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/violar");
 
 			// Weapon Properties
 			Item.DamageType = DamageClass.Ranged;

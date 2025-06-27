@@ -2,8 +2,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoMod.Core.Utils;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -13,7 +13,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.Veiizal
+namespace LunarVeilLegacy.NPCs.Bosses.Veiizal
 {
     internal class Veiizallighting : ModProjectile
     {

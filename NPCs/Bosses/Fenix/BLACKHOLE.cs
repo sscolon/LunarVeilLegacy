@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Fenix
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix
 {
 	public class BLACKHOLE : ModProjectile
 	{

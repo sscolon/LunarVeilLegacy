@@ -1,14 +1,14 @@
-﻿using Stellamod.Projectiles.Powders;
+﻿using LunarVeilLegacy.Projectiles.Powders;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
-using Stellamod.Tiles;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Tiles;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Weapons.PowdersItem
+namespace LunarVeilLegacy.Items.Weapons.PowdersItem
 {
 	internal class PoisonedPowder : ModItem
 	{

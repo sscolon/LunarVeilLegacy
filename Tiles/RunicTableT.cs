@@ -5,7 +5,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     public class RunicTableT : ModTile
     {

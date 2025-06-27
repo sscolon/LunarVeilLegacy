@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.NPCs.Illuria;
-using Stellamod.NPCs.RoyalCapital;
+using LunarVeilLegacy.NPCs.Illuria;
+using LunarVeilLegacy.NPCs.RoyalCapital;
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     internal class IllurianGuardSpawnSystem : ModSystem
     {

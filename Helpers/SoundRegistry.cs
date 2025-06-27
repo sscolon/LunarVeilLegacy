@@ -1,10 +1,10 @@
 ﻿using Terraria.Audio;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     internal static class SoundRegistry
     {
-        private static string Path => "Stellamod/Assets/Sounds/";
+        private static string Path => "LunarVeilLegacy/Assets/Sounds/";
         public static SoundStyle JugglerHit => new SoundStyle($"{Path}JugglerHit");
         public static SoundStyle JugglerHitMax => new SoundStyle($"{Path}JugglerHitMax");
         public static SoundStyle BeeBuzz1 => new SoundStyle($"{Path}BeeBuzz1");

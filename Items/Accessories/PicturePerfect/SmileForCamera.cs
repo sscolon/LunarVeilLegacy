@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Accessories.PicturePerfect
+namespace LunarVeilLegacy.Items.Accessories.PicturePerfect
 {
     public class CameraMinBuff : ModBuff
 	{

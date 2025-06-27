@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class AquariusSlashMini : ModProjectile
     {

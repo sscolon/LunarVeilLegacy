@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Effects;
-using Stellamod.Trails;
+using LunarVeilLegacy.Effects;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Fire.BlazingSerpent
+namespace LunarVeilLegacy.NPCs.Catacombs.Fire.BlazingSerpent
 {
     public class HeatBeam : ModProjectile, IPixelPrimitiveDrawer
     {

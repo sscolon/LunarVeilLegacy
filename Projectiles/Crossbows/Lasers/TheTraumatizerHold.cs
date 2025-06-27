@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Mono.Cecil;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Lasers
+namespace LunarVeilLegacy.Projectiles.Crossbows.Lasers
 {
 	public class TheTraumatizerHold : ModProjectile
     {
@@ -51,7 +51,7 @@ namespace Stellamod.Projectiles.Crossbows.Lasers
 
 			if(Timer % 10 == 0)
 			{
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/TraumatizerLaserFire") with { PitchVariance = 0.1f }, Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/TraumatizerLaserFire") with { PitchVariance = 0.1f }, Projectile.position);
                 Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position + Projectile.velocity.SafeNormalize(Vector2.Zero) * 25, Projectile.velocity, 
 					ModContent.ProjectileType<TraumatizingRay>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 1);
             }
@@ -85,7 +85,7 @@ namespace Stellamod.Projectiles.Crossbows.Lasers
 
 			if (Timer < 3)
 			{
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/TraumatizerLaserStart"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/TraumatizerLaserStart"));
             }
 
 			if (Timer > 1)

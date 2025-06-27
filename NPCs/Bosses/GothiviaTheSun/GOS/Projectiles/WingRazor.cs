@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -9,12 +9,12 @@ using System;
 using System.Collections.Generic;
 using Terraria.ModLoader;
 using System.IO;
-using Stellamod.Dusts;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
 
 
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
 {
     internal class WingRazor : ModProjectile
     {
@@ -138,7 +138,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
 
             }
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothExplode") { Pitch = Main.rand.NextFloat(-5f, 5f) }, Projectile.Center);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothExplode") { Pitch = Main.rand.NextFloat(-5f, 5f) }, Projectile.Center);
             var EntitySource = Projectile.GetSource_FromThis();
             float num = 8;
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 32f);
@@ -203,10 +203,10 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
         {
             Main.spriteBatch.End();
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
-            var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
-            var TrailTex4 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
+            var TrailTex4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/DirnTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
 

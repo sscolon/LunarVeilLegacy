@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Cinderspark
+namespace LunarVeilLegacy.NPCs.Cinderspark
 {
     internal class CharredSoul : ModNPC
     {

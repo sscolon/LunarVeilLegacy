@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.INest
+namespace LunarVeilLegacy.NPCs.Bosses.INest
 {
     public class AcidicZap : ModProjectile
     {
@@ -91,9 +91,9 @@ namespace Stellamod.NPCs.Bosses.INest
 			WarnPos.Y = Projectile.Center.Y;
 			if (OnGround)
             {
-                Texture2D texture2D4 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_56").Value;
+                Texture2D texture2D4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_56").Value;
                 Main.spriteBatch.Draw(texture2D4, (Projectile.Center - Main.screenPosition), null, new Color((int)(30f * alphaCounter), (int)(30f * alphaCounter), (int)(30f * alphaCounter), 0), Projectile.rotation, new Vector2(171, 51), 0.4f * (alphaCounter + 0.6f), SpriteEffects.None, 0f);
-                Texture2D texture2D5 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_48").Value;
+                Texture2D texture2D5 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_48").Value;
                 Main.spriteBatch.Draw(texture2D5, (Projectile.Center - Main.screenPosition), null, new Color((int)(10.5f * alphaCounter), (int)(30.5f * alphaCounter), (int)(22f * alphaCounter), 0), Projectile.rotation, new Vector2(15, 514), 0.6f * (alphaCounter + 0.2f), SpriteEffects.None, 0f);
             }
 

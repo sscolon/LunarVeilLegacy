@@ -1,4 +1,4 @@
-﻿using Stellamod.Projectiles.Powders;
+﻿using LunarVeilLegacy.Projectiles.Powders;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Items.Weapons.PowdersItem
+namespace LunarVeilLegacy.Items.Weapons.PowdersItem
 {
     internal class LenaSongPowder : ModItem
 	{
@@ -36,7 +36,7 @@ namespace Stellamod.Items.Weapons.PowdersItem
 			Item.autoReuse = true;
 			Item.shootSpeed = 20f;
 			Item.crit = 51;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/Lenabee");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Lenabee");
 			Item.sellPrice(1, 50, 0, 0);
 		
 		}

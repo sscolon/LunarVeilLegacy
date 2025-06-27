@@ -1,6 +1,6 @@
-﻿using Stellamod.Helpers;
-using Stellamod.UI.Dialogue;
-using Stellamod.UI.Scripture;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Dialogue;
+using LunarVeilLegacy.UI.Scripture;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Special
+namespace LunarVeilLegacy.Items.Special
 {
     internal class ExampleDialogueItem : ModItem
     {

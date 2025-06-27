@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles
 {
     public class VoidBolt : ModProjectile
     {

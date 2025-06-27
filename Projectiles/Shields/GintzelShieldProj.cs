@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Shields
+namespace LunarVeilLegacy.Projectiles.Shields
 {
     public class GintzelShieldProj : ModProjectile
     {

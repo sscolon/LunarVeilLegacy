@@ -1,13 +1,13 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     public class DeathShotBomb : ModProjectile
     {
@@ -48,11 +48,11 @@ namespace Stellamod.Projectiles.Gun
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/DeathShotBomb"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/DeathShotBomb"), Projectile.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/DeathShotBomb2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/DeathShotBomb2"), Projectile.position);
                 }
                 for (int i = 0; i < 14; i++)
                 {
@@ -93,7 +93,7 @@ namespace Stellamod.Projectiles.Gun
         {
             alphaPos.X = Projectile.Center.X;
             alphaPos.Y = Projectile.Center.Y - alphaCounter2;
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/Skull").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Skull").Value;
             Main.spriteBatch.Draw(texture2D4, alphaPos - Main.screenPosition, null, new Color((int)(65f * alphaCounter), (int)(15f * alphaCounter), (int)(15f * alphaCounter), 0), Projectile.rotation, new Vector2(24, 24), 0.4f * (alphaCounter3 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, alphaPos - Main.screenPosition, null, new Color((int)(65f * alphaCounter), (int)(15f * alphaCounter), (int)(15f * alphaCounter), 0), Projectile.rotation, new Vector2(24, 24), 0.4f * (alphaCounter3 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, alphaPos - Main.screenPosition, null, new Color((int)(65f * alphaCounter), (int)(15f * alphaCounter), (int)(15f * alphaCounter), 0), Projectile.rotation, new Vector2(24, 24), 0.4f * (alphaCounter3 + 0.6f), SpriteEffects.None, 0f);

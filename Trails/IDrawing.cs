@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
 
-namespace Stellamod.Trails
+namespace LunarVeilLegacy.Trails
 {
     public interface IDrawing
     {

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Test
+namespace LunarVeilLegacy.Projectiles.Test
 {
     internal class ExampleShaderOrbProjectile : ModProjectile
     {
@@ -37,7 +37,7 @@ namespace Stellamod.Projectiles.Test
 
         public override bool PreDraw(ref Color lightColor)
         {
-            var texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/ZuiEffect");
+            var texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/ZuiEffect");
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 drawSize = texture.Size();

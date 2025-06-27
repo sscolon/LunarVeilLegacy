@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class BlackEyeLaserProj  : ModProjectile
     {
@@ -42,7 +42,7 @@ namespace Stellamod.Projectiles.Magic
             BeamLength = targetBeamLength;
             if (Time == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekLaser2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekLaser2"), Projectile.position);
             }
             float maxDetectDistance = 2400;
             NPC npc = NPCHelper.FindClosestNPC(Projectile.position, maxDetectDistance);

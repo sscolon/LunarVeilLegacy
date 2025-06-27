@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.DropRules;
-using Stellamod.Items.Accessories.Wings;
-using Stellamod.Items.Weapons.Summon;
+using LunarVeilLegacy.DropRules;
+using LunarVeilLegacy.Items.Accessories.Wings;
+using LunarVeilLegacy.Items.Weapons.Summon;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Desert
+namespace LunarVeilLegacy.NPCs.Desert
 {
     internal class BabySwarmer : ModNPC
     {

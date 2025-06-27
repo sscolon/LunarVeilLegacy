@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Projectiles.Ammo;
+using LunarVeilLegacy.Projectiles.Ammo;
 
-namespace Stellamod.Items.Ammo
+namespace LunarVeilLegacy.Items.Ammo
 {
     internal class TitaniumBullet : ModItem
     {

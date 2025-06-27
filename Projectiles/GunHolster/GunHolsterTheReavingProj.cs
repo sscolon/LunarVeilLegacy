@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterTheReavingProj : GunHolsterProjectile
     {
@@ -43,11 +43,11 @@ namespace Stellamod.Projectiles.GunHolster
             player.PickAmmo(player.HeldItem, out int projToShoot, out float speed, out int damage, out float knockBack, out int useAmmoItemId, true);
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), position, direction * 8, projToShoot, Projectile.damage, Projectile.knockBack, Projectile.owner);
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 16f);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/gun1"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/gun1"), Projectile.position);
 
 
             float rot = direction.ToRotation();
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MiniPistol3"));
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol3"));
 
             Vector2 offset = new Vector2(2, -0.1f * player.direction).RotatedBy(rot);
             for (int k = 0; k < 15; k++)

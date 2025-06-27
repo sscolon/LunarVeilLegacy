@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Catacombs
+namespace LunarVeilLegacy.Items.Accessories.Catacombs
 {
     internal class SpikedEmblemPlayer : ModPlayer
     {

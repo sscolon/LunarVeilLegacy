@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class RibbonStaffStart : ModProjectile
     {
@@ -52,7 +52,7 @@ namespace Stellamod.Projectiles.Magic
         {
             if (!target.HasBuff(BuffType))
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RibbonStaffWrap1");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RibbonStaffWrap1");
                 soundStyle.PitchVariance = 0.15f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
 

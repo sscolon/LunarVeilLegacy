@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterRavestBlastRightProj : GunHolsterProjectile
     {
@@ -41,7 +41,7 @@ namespace Stellamod.Projectiles.GunHolster
             player.PickAmmo(player.HeldItem, out int projToShoot, out float speed, out int damage, out float knockBack, out int useAmmoItemId, true);
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), position, direction * 8, ModContent.ProjectileType<RavestblastProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GunRaving");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GunRaving");
             soundStyle.PitchVariance = 0.5f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
         }

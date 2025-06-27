@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class AlcadBombProj : ModProjectile
     {
@@ -161,7 +161,7 @@ namespace Stellamod.Projectiles.Magic
                         Color.White, 1);
                 }
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/STARGROP"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/STARGROP"));
             }
 
             //1 Second Build Up

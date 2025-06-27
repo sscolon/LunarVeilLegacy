@@ -1,10 +1,10 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     public class OvermorrowWallblock : ModWall
 	{

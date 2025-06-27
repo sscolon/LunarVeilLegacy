@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Vanity.Gothivia;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Mage.Stein;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.NPCs.Bosses.GothiviaNRek.Gothivia;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Irradia;
-using Stellamod.NPCs.Bosses.SupernovaFragment;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Vanity.Gothivia;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Gothivia;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Irradia;
+using LunarVeilLegacy.NPCs.Bosses.SupernovaFragment;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Creative;
@@ -20,7 +20,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     public class SupernovaBag : ModItem
     {

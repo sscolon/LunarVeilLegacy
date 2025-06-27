@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Brooches;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.NPCs.Town;
-using Stellamod.Tiles;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.NPCs.Town;
+using LunarVeilLegacy.Tiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
 	public class BottleOfGrail : ModItem
 	{

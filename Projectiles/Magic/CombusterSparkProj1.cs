@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class CombusterSparkProj1 : ModProjectile
     {
@@ -33,12 +33,12 @@ namespace Stellamod.Projectiles.Magic
             {
                 Player owner = Main.player[Projectile.owner];
                 Dust.QuickDustLine(Projectile.Center, owner.Center, 32, Color.Orange);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CombusterSnap") with { PitchVariance = 0.15f });
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CombusterSnap") with { PitchVariance = 0.15f });
             }
 
             if(ai_Timer == 45)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CombusterReady"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CombusterReady"));
             }
 
             if (ai_Timer % 4 == 0)

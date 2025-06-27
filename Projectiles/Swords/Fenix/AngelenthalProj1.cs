@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords.Fenix
+namespace LunarVeilLegacy.Projectiles.Swords.Fenix
 {
     public class AngelenthalProj1 : ModProjectile
     {
@@ -78,7 +78,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             {
                 Projectile p = Projectile.NewProjectileDirect(Projectile.GetSource_FromThis(), Projectile.position, Projectile.velocity * 0, ModContent.ProjectileType<AngelenthalP>(), Projectile.damage * 1, 0f, Projectile.owner, 0f, 0f);
                 p.rotation = direction.ToRotation();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Projectile.position);
 
 
             }
@@ -87,7 +87,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             {
                 Projectile p = Projectile.NewProjectileDirect(Projectile.GetSource_FromThis(), Projectile.position, Projectile.velocity * 0, ModContent.ProjectileType<AngelenthalP3>(), Projectile.damage * 1, 0f, Projectile.owner, 0f, 0f);
                 p.rotation = direction.ToRotation();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Projectile.position);
 
             }
 
@@ -95,7 +95,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             {
                 Projectile p = Projectile.NewProjectileDirect(Projectile.GetSource_FromThis(), Projectile.position, Projectile.velocity * 0, ModContent.ProjectileType<AngelenthalP>(), Projectile.damage * 1, 0f, Projectile.owner, 0f, 0f);
                 p.rotation = direction.ToRotation();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Projectile.position);
 
 
             }
@@ -104,7 +104,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             {
                 Projectile p = Projectile.NewProjectileDirect(Projectile.GetSource_FromThis(), Projectile.position, Projectile.velocity * 0, ModContent.ProjectileType<AngelenthalP3>(), Projectile.damage * 1, 0f, Projectile.owner, 0f, 0f);
                 p.rotation = direction.ToRotation();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Projectile.position);
 
 
             }
@@ -113,7 +113,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             {
                 Projectile p = Projectile.NewProjectileDirect(Projectile.GetSource_FromThis(), Projectile.position, Projectile.velocity * 0, ModContent.ProjectileType<AngelenthalP>(), Projectile.damage * 1, 0f, Projectile.owner, 0f, 0f);
                 p.rotation = direction.ToRotation();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Projectile.position);
 
 
 
@@ -123,7 +123,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             {
                 Projectile p = Projectile.NewProjectileDirect(Projectile.GetSource_FromThis(), Projectile.position, Projectile.velocity * 0, ModContent.ProjectileType<AngelenthalP3>(), Projectile.damage * 1, 0f, Projectile.owner, 0f, 0f);
                 p.rotation = direction.ToRotation();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Projectile.position);
 
 
             }
@@ -132,7 +132,7 @@ namespace Stellamod.Projectiles.Swords.Fenix
             {
                 Projectile p = Projectile.NewProjectileDirect(Projectile.GetSource_FromThis(), Projectile.position, Projectile.velocity * 0, ModContent.ProjectileType<AngelenthalP2>(), Projectile.damage * 2, 0f, Projectile.owner, 0f, 0f);
                 p.rotation = direction.ToRotation();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia2"), Projectile.position);
 
 
 

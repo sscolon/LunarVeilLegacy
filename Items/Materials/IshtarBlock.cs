@@ -1,11 +1,11 @@
 ﻿
-using Stellamod.Tiles.Ishtar;
+using LunarVeilLegacy.Tiles.Ishtar;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
 	public class IshtarBlock : ModItem
 	{

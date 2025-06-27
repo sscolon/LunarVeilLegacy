@@ -2,14 +2,14 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords.Altride
+namespace LunarVeilLegacy.Projectiles.Swords.Altride
 {
     internal class Altride5 : ModProjectile
     {
@@ -47,7 +47,7 @@ namespace Stellamod.Projectiles.Swords.Altride
             if (Projectile.ai[1] == 1)
             {
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
 
                 for (int j = 0; j < 10; j++)
                 {
@@ -71,11 +71,11 @@ namespace Stellamod.Projectiles.Swords.Altride
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FungalFlaceBall1"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FungalFlaceBall1"), Projectile.position);
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FungalFlaceBall2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FungalFlaceBall2"), Projectile.position);
             }
 
             for (int i = 0; i < 7; i++)

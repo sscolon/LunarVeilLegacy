@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs.Charms
+namespace LunarVeilLegacy.Buffs.Charms
 {
     public class Spragald : ModBuff
 	{

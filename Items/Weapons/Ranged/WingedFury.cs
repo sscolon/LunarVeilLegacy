@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class WingedFury : ModItem
     {
@@ -43,7 +43,7 @@ namespace Stellamod.Items.Weapons.Ranged
         {
             if (Main.rand.NextBool(2))
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/HeatFeather"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/HeatFeather"), player.position);
                 Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<HeatArrow>(), damage, knockback, player.whoAmI);
             }
 

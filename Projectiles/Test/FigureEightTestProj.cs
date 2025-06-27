@@ -2,7 +2,7 @@
 using System;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Test
+namespace LunarVeilLegacy.Projectiles.Test
 {
     internal class FigureEightTestProj : ModProjectile
     {

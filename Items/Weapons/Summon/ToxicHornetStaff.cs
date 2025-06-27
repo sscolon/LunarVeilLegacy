@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     internal class ToxicHornetStaff : ModItem
     {

@@ -1,9 +1,9 @@
-﻿using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     internal class CustomConditions
     {

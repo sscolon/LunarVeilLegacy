@@ -7,12 +7,12 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Buffs;
-using Stellamod.Projectiles.Magic;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Projectiles.Magic;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     internal class LunarPlayer : ModPlayer
     {

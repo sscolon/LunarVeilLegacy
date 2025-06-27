@@ -1,8 +1,8 @@
-﻿using Stellamod.Projectiles.Thrown;
+﻿using LunarVeilLegacy.Projectiles.Thrown;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     internal class Hookarama : ClassSwapItem
     {

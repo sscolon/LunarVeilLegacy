@@ -6,7 +6,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace Stellamod.Skies
+namespace LunarVeilLegacy.Skies
 {
     public class GreenMoonSky : CustomSky
 	{

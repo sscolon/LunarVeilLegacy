@@ -1,24 +1,24 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Slashers;
-using Stellamod.Projectiles.Slashers.ThefirstAurora;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Slashers;
+using LunarVeilLegacy.Projectiles.Slashers.ThefirstAurora;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-using Stellamod.Projectiles.Safunai.Alcarish;
+using LunarVeilLegacy.Projectiles.Safunai.Alcarish;
 using System.Collections.Generic;
 using System.IO;
 
 
-namespace Stellamod.Items.Weapons.Melee.Greatswords
+namespace LunarVeilLegacy.Items.Weapons.Melee.Greatswords
 {
     public class TheFirstAurora : ModItem
     {
@@ -98,7 +98,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords
 
             }
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Swinger") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Swinger") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
             AttackCounter = -AttackCounter;
             Projectile.NewProjectile(source, position, velocity, type, damage * 3, knockback, player.whoAmI, 1, dir);
            // Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<AuroranBullet>(), damage * 2, knockback, player.whoAmI, 1, dir);

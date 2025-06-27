@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using Terraria.ModLoader.Config;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
 	public class LunarVeilServerConfig : ModConfig
 	{

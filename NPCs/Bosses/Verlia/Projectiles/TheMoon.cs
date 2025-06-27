@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles
 {
     public class TheMoon : ModProjectile
 	{
@@ -63,7 +63,7 @@ namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
 							ModContent.ProjectileType<MoonOut>(), Projectile.damage, 0f, Owner: Projectile.owner);
                     }
 					
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Starexplosion"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Starexplosion"));
 				}
 			}
 			if (Projectile.timeLeft <= 180)

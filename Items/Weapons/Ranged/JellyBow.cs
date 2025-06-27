@@ -1,12 +1,12 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class JellyBow : ModItem
 	{

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public static class SummonHelper
     {

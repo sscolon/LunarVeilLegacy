@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.IshNYire
+namespace LunarVeilLegacy.Projectiles.Slashers.IshNYire
 {
 	public class VireProj : ModProjectile
 	{
@@ -104,7 +104,7 @@ namespace Stellamod.Projectiles.Slashers.IshNYire
 		{
 
 			ShakeModSystem.Shake = 4;
-			SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowExp"));
+			SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowExp"));
 			float speedX = Projectile.velocity.X * Main.rand.NextFloat(.2f, .3f) + Main.rand.NextFloat(-4f, 4f);
 			float speedY = Projectile.velocity.Y * Main.rand.Next(20, 35) * 0.01f + Main.rand.Next(-10, 11) * 0.2f;
 
@@ -129,7 +129,7 @@ namespace Stellamod.Projectiles.Slashers.IshNYire
 				target.SimpleStrikeNPC(Projectile.damage * 15, 1, crit: false, Projectile.knockBack);
 
 				Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 32f);
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Vinger2"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Vinger2"));
 
 				for (int i = 0; i < 14; i++)
 				{
@@ -143,7 +143,7 @@ namespace Stellamod.Projectiles.Slashers.IshNYire
 			}
 			else
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Vinger"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Vinger"));
 				ShakeModSystem.Shake = 4;
 				for (int i = 0; i < 14; i++)
 				{
@@ -191,10 +191,10 @@ namespace Stellamod.Projectiles.Slashers.IshNYire
 		{
 			Main.spriteBatch.End();
 
-			var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhispyTrail").Value;
-			var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhispyTrail").Value;
-			var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WaterTrail").Value;
-			var TrailTex4 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WaterTrail").Value;
+			var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhispyTrail").Value;
+			var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhispyTrail").Value;
+			var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WaterTrail").Value;
+			var TrailTex4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WaterTrail").Value;
 			Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
 

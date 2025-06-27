@@ -6,7 +6,7 @@ using System.Linq;
 using Terraria;
 using Terraria.Graphics.Shaders;
 
-namespace Stellamod.Trails
+namespace LunarVeilLegacy.Trails
 {
     public class PrimitiveTrail
     {

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace Stellamod.UI.Scripture
+namespace LunarVeilLegacy.UI.Scripture
 {
     public class ScripturePlayer : ModPlayer 
     {

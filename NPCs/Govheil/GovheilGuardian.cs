@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
@@ -17,7 +17,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Govheil
+namespace LunarVeilLegacy.NPCs.Govheil
 {
 	public class GovheilGuardian : ModNPC
 	{
@@ -57,7 +57,7 @@ namespace Stellamod.NPCs.Govheil
 			NPC.defense = 13; // The amount of defense that this npc has
 			NPC.lifeMax = 810; // The amount of health that this npc has
 			NPC.HitSound = SoundID.NPCHit1; // The sound the NPC will make when being hit.
-			NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+			NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
 			NPC.value = 500f; // How many copper coins the NPC will drop when killed.
 			NPC.knockBackResist = 0f;
 			NPC.noGravity = true;
@@ -195,7 +195,7 @@ namespace Stellamod.NPCs.Govheil
 						NPC.velocity = new Vector2(NPC.direction * 2, -0.1f);
 						break;
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CorsageRune1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CorsageRune1"));
 				ShakeModSystem.Shake = 8;
 				// Finally, iterate through itemsToAdd and actually create the Item instances and add to the chest.item array
 

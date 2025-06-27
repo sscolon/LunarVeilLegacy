@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Water.WaterCogwork
+namespace LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork
 {
     internal class WaterSplitBomb : ModProjectile
     {
@@ -52,11 +52,11 @@ namespace Stellamod.NPCs.Catacombs.Water.WaterCogwork
         {
             if (Main.rand.NextBool(2))
             {
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/DeathShotBomb"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/DeathShotBomb"));
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/DeathShotBomb2"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/DeathShotBomb2"));
             }
 
             if(Main.myPlayer == Projectile.owner)

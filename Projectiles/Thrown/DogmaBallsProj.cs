@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Dusts;
-using Stellamod.Gores;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     internal class DogmaBallsProj : ModProjectile
     {

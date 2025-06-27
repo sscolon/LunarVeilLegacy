@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Placeable.Cathedral
+namespace LunarVeilLegacy.Items.Placeable.Cathedral
 {
     public class CathediteGrassWall : ModItem
 	{

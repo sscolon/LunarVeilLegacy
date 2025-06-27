@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Tiles;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace Stellamod.Items.Accessories.Runes
+namespace LunarVeilLegacy.Items.Accessories.Runes
 {
     internal class RuneOfWind : ModItem
     {

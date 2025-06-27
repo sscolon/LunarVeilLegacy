@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using System.IO;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     // ExampleCustomSwingSword is an example of a sword with a custom swing using a held projectile
     // This is great if you want to make melee weapons with complex swing behaviour
@@ -31,7 +31,7 @@ namespace Stellamod.Projectiles.Swords
 		// We define timing functions for each stage, taking into account melee attack speed
 		// Note that you can change this to suit the need of your projectile
 		private float execTime => 16f / Owner.GetTotalAttackSpeed(Projectile.DamageType);
-		public override string Texture => "Stellamod/Items/Weapons/Melee/IronHook"; // Use texture of item as projectile texture
+		public override string Texture => "LunarVeilLegacy/Items/Weapons/Melee/IronHook"; // Use texture of item as projectile texture
 		private Player Owner => Main.player[Projectile.owner];
 
 		public override void SetStaticDefaults()

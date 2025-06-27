@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items
+namespace LunarVeilLegacy.Items
 {
     internal class GlobalItemEdits : GlobalItem
     {

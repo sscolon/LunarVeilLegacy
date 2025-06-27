@@ -1,11 +1,11 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     internal class ZuiQuestSystem : ModSystem
     {
@@ -78,7 +78,7 @@ namespace Stellamod.NPCs.Town
         {
             if(Main.netMode != NetmodeID.SinglePlayer)
             {
-                Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(), (byte)MessageType.CompleteZuiQuest).Send(-1);
+                LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(), (byte)MessageType.CompleteZuiQuest).Send(-1);
             }
         }
     }

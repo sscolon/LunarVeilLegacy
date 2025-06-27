@@ -1,12 +1,12 @@
-﻿using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     public class MoonflameLantern : ModItem
 	{

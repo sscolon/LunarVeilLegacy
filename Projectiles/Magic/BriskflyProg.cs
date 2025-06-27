@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class BriskflyProg : ModProjectile
     {
@@ -47,7 +47,7 @@ namespace Stellamod.Projectiles.Magic
             if (!Sounded)
             {
                 int Type = Main.rand.Next(1, 5);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Briskfly"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Briskfly"));
                 Sounded = true;
             }
 

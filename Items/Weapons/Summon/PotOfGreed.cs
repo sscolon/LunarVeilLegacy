@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Summons.Sentries;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Summons.Sentries;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -16,7 +16,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     public class PotOfGreed : ModItem
     {
@@ -70,7 +70,7 @@ namespace Stellamod.Items.Weapons.Summon
             else if (_attackStyle == 0)
             {
                 Item.damage = 100;
-                Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/RipperSlashTelegraph");
+                Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RipperSlashTelegraph");
                 Item.DamageType = DamageClass.Summon;
 				Item.knockBack = 3;
                 Item.useTime = 36;
@@ -130,13 +130,13 @@ namespace Stellamod.Items.Weapons.Summon
                 switch (sound)
                 {
                     case 0:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia1"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia1"), player.position);
                         break;
                     case 1:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia2"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia2"), player.position);
                         break;
                     case 2:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia3"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia3"), player.position);
                         break;
                 }
 
@@ -151,7 +151,7 @@ namespace Stellamod.Items.Weapons.Summon
             DrawHelper.DrawGlowInInventory(Item, spriteBatch, position, Color.Purple);
             if (_attackStyle == 1)
             {
-                Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Summon/PotOfGreedMiracle").Value;
+                Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Summon/PotOfGreedMiracle").Value;
                 Vector2 size = new Vector2(28, 42);
                 Vector2 drawOrigin = size / 2;
                 spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, drawOrigin, scale, SpriteEffects.None, 0);

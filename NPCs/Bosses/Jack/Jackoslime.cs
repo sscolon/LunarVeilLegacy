@@ -2,15 +2,15 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Assets.Biomes;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Bosses.Jack
+namespace LunarVeilLegacy.NPCs.Bosses.Jack
 {
 
     public class Jackoslime : ModNPC

@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.Crossbows
+namespace LunarVeilLegacy.Projectiles.Crossbows
 {
     public class WoodenCrossbowBolt : ModProjectile
     {

@@ -1,6 +1,6 @@
 ﻿using Terraria;
 
-namespace Stellamod.Brooches
+namespace LunarVeilLegacy.Brooches
 {
     public class BurningGBrooch : BroochDefaultProjectile
 	{

@@ -1,6 +1,6 @@
 ﻿using Terraria.UI;
 
-namespace Stellamod.UI.Panels
+namespace LunarVeilLegacy.UI.Panels
 {
     public class HarvestButton : UIState
 	{
@@ -13,7 +13,7 @@ namespace Stellamod.UI.Panels
 			Width.Set(48, 0f);
 			Left.Set(0, 0.6f);
 
-			harvestButton = new UIImageButton(ModContent.Request<Texture2D>("Stellamod/UI/Panels/buttonharvest"));
+			harvestButton = new UIImageButton(ModContent.Request<Texture2D>("LunarVeilLegacy/UI/Panels/buttonharvest"));
 			harvestButton.Left.Set(0, 0.6f);
 			harvestButton.Top.Set(-96, 1f);
 			harvestButton.Width.Set(96f, 0f);
@@ -42,7 +42,7 @@ namespace Stellamod.UI.Panels
 				if (closestNpc.active && closestNpc.HasBuff<Harvester>())
 				{
 					closestNpc.StrikeNPC(9999, 1, 1, false, false, true);
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/clickk"));
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/clickk"));
 				}
 			}
 			

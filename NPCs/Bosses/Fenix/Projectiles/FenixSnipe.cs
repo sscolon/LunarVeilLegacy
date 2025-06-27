@@ -2,17 +2,17 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.NPCs.Bosses.Caeva;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.NPCs.Bosses.Jack;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.NPCs.Bosses.Caeva;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.NPCs.Bosses.Jack;
+using LunarVeilLegacy.Utilis;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -24,7 +24,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles
 {
 
     public class FenixSnipe : ModNPC

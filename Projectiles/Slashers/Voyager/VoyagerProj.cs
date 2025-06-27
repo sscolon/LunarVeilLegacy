@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Voyager
+namespace LunarVeilLegacy.Projectiles.Slashers.Voyager
 {
     public class VoyagerProj : ModProjectile
     {

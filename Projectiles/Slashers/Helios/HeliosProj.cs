@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Helios
+namespace LunarVeilLegacy.Projectiles.Slashers.Helios
 {
     public class HeliosProj : ModProjectile
     {

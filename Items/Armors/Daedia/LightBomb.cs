@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Armors.Daedia
+namespace LunarVeilLegacy.Items.Armors.Daedia
 {
     public class LightBomb : ModProjectile
 	{

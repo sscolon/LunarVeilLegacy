@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Slashers.Voyager;
-using Stellamod.Projectiles.Swords.Altride;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Slashers.Voyager;
+using LunarVeilLegacy.Projectiles.Swords.Altride;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent;
@@ -14,7 +14,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
 	public class EverneanSlicer : ClassSwapItem
 	{

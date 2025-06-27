@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Wings;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Wings;
 using System.Linq;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Wings
+namespace LunarVeilLegacy.Items.Accessories.Wings
 {
     [AutoloadEquip(EquipType.Wings)]
 	public class AntlionWings : ModItem

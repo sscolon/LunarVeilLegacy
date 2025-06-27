@@ -1,10 +1,10 @@
-﻿using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles;
+﻿using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     public class RazorBragett : ClassSwapItem
     {

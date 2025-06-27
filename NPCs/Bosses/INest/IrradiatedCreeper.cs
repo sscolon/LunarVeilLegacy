@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.NPCs.Bosses.INest
+namespace LunarVeilLegacy.NPCs.Bosses.INest
 {
 
     public class IrradiatedCreeper : ModNPC

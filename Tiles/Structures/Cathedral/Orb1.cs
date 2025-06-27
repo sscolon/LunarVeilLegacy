@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -10,7 +10,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Structures.Cathedral
+namespace LunarVeilLegacy.Tiles.Structures.Cathedral
 {
     public class Orb1 : ModTile
     {
@@ -70,7 +70,7 @@ namespace Stellamod.Tiles.Structures.Cathedral
 
             if (tile == null || !tile.HasTile) { return false; }
 
-            Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Particles/GradientPillar").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/GradientPillar").Value;
 
             Vector2 offScreen = new Vector2(Main.offScreenRange);
             Vector2 globalPosition = p.ToWorldCoordinates(0f, 0f);

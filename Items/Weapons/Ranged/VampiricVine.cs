@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Bow;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
 	public class VampiricVine : ModItem
 	{
@@ -28,7 +28,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.knockBack = 4;
 			Item.value = Item.sellPrice(0, 0, 20, 0);
 			Item.rare = ItemRarityID.LightRed;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/ArchariliteEnergyShot2");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/ArchariliteEnergyShot2");
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 20f;

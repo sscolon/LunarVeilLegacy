@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Overworld.ShadowWraith
+namespace LunarVeilLegacy.NPCs.Overworld.ShadowWraith
 {
     internal class ShadowFlare : ModProjectile
     {

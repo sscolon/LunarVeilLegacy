@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.AcidArmour
+namespace LunarVeilLegacy.Items.Armors.AcidArmour
 {
     internal class AcidAuraProj : ModProjectile
     {
@@ -82,7 +82,7 @@ namespace Stellamod.Items.Armors.AcidArmour
 
         public override bool PreDraw(ref Color lightColor)
         {
-            string texture = "Stellamod/Effects/Masks/Extra_67";
+            string texture = "LunarVeilLegacy/Effects/Masks/Extra_67";
             Texture2D maskTexture = ModContent.Request<Texture2D>(texture).Value;
 
             Vector2 textureSize = maskTexture.Size();

@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -15,7 +15,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Harvesting.Morrow
+namespace LunarVeilLegacy.NPCs.Harvesting.Morrow
 {
 
     public class PearledGold : ModNPC
@@ -45,7 +45,7 @@ namespace Stellamod.NPCs.Harvesting.Morrow
             if(NPC.life <= 0)
             {
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 16f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Harv1"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Harv1"));
                 CombatText.NewText(NPC.getRect(), Color.Orange, LangText.Misc("PearledGold"), true, false);
             }
         }

@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.Jack
+namespace LunarVeilLegacy.NPCs.Bosses.Jack
 {
 
     public class JackDeath : ModNPC
@@ -139,7 +139,7 @@ namespace Stellamod.NPCs.Bosses.Jack
                 {
                     var EntitySource = NPC.GetSource_Death();
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 128f);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Death2"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Death2"), NPC.position);
                     for (int i = 0; i < 14; i++)
                     {
                         Dust.NewDustPerfect(base.NPC.Center, DustID.Torch, (Vector2.One * Main.rand.Next(1, 12)).RotatedByRandom(19.0), 0, default(Color), 4f).noGravity = true;
@@ -164,7 +164,7 @@ namespace Stellamod.NPCs.Bosses.Jack
                         Dust.NewDustPerfect(base.NPC.Center, DustID.Torch, (Vector2.One * Main.rand.Next(1, 12)).RotatedByRandom(10.0), 0, default(Color), 1f).noGravity = false;
                     }
 
-                    int Gore2 = ModContent.Find<ModGore>("Stellamod/Jack1").Type;
+                    int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/Jack1").Type;
                     Gore.NewGore(EntitySource, NPC.position, NPC.velocity, Gore2);
                     if (StellaMultiplayer.IsHost)
                     {

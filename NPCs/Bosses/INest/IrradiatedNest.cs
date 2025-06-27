@@ -2,21 +2,21 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Vanity.Verlia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Melee.Spears;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.INest.IEagle;
-using Stellamod.NPCs.Catacombs;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Vanity.Verlia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Melee.Spears;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.INest.IEagle;
+using LunarVeilLegacy.NPCs.Catacombs;
+using LunarVeilLegacy.Utilis;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
@@ -27,7 +27,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.INest
+namespace LunarVeilLegacy.NPCs.Bosses.INest
 {
     [AutoloadBossHead]
     public class IrradiatedNest : ModNPC
@@ -49,7 +49,7 @@ namespace Stellamod.NPCs.Bosses.INest
 
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/INest/IrradiatedNestBestiary";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/INest/IrradiatedNestBestiary";
             drawModifiers.PortraitScale = 1f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -351,7 +351,7 @@ namespace Stellamod.NPCs.Bosses.INest
                 if (NPC.ai[3] == 730 - 150)
                 {
                     DrugRidus = 50;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_ComuicationRay"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_ComuicationRay"));
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 512f);
                     Utilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y, 0, -10, ModContent.ProjectileType<CommunicationRay>(), 50, 0f, -1, 0, NPC.whoAmI);
 
@@ -359,7 +359,7 @@ namespace Stellamod.NPCs.Bosses.INest
                 if (NPC.ai[3] == 780 - 150)
                 {
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Comuicating"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Comuicating"));
 
                 }
                 if (NPC.ai[3] == 820 - 150)
@@ -396,7 +396,7 @@ namespace Stellamod.NPCs.Bosses.INest
             {
                 Spawned = true;
                 NPC.ai[2] = 1;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Land"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Land"));
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 512f);
                 NPC.alpha = 0;
             }
@@ -479,7 +479,7 @@ namespace Stellamod.NPCs.Bosses.INest
                                 var entitySource = NPC.GetSource_FromThis();
                                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 512f, 32f);
                                 int EggForce = Main.rand.Next(-10, 10 + 1);
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Egg_Shot"));
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Egg_Shot"));
                                 if (StellaMultiplayer.IsHost)
                                 {
                                     Projectile.NewProjectile(entitySource, NPC.Center, new Vector2(EggForce, -5), Mod.Find<ModProjectile>("AEgg").Type, NPC.damage / 9, 0);
@@ -501,7 +501,7 @@ namespace Stellamod.NPCs.Bosses.INest
                         if (NPC.ai[0] == 50)
                         {
 
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Missile_Shots"));
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Missile_Shots"));
                         }
                         if (NPC.ai[0] == 20)
                         {

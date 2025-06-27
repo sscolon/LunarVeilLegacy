@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Zui.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles
 {
     internal class GoldenChildren : ModProjectile, IPixelPrimitiveDrawer
     {

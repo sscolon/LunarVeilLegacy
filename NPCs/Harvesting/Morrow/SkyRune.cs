@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Harvesting.Morrow
+namespace LunarVeilLegacy.NPCs.Harvesting.Morrow
 {
 
     public class SkyRune : ModNPC
@@ -31,7 +31,7 @@ namespace Stellamod.NPCs.Harvesting.Morrow
             if(NPC.life <= 0)
             {
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 16f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Harv1"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Harv1"));
                 CombatText.NewText(NPC.getRect(), Color.LightBlue, LangText.Misc("SkyRune"), true, false);
             }
         }

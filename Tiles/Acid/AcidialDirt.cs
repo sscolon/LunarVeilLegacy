@@ -6,7 +6,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Tiles.Acid
+namespace LunarVeilLegacy.Tiles.Acid
 {
     public class AcidialDirt : ModTile
     {

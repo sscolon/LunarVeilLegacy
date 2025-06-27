@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     internal class TheMarksman : ClassSwapItem
     {
@@ -33,7 +33,7 @@ namespace Stellamod.Items.Weapons.Mage
             Item.DamageType = DamageClass.Magic;
             Item.value = Item.buyPrice(gold: 15);
             Item.rare = ItemRarityID.Green;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/StormDragon_LightingZap");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_LightingZap");
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<MarksmanLightningProj>();
             Item.shootSpeed = 15f;

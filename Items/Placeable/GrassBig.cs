@@ -1,7 +1,7 @@
 ﻿using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
     public class GrassBig : ModItem
 	{

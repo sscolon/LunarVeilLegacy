@@ -1,20 +1,20 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Chains;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Chains;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria.Audio;
-using Stellamod.Projectiles.Arrows;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Projectiles.Arrows;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Items.Armors.Flower
+namespace LunarVeilLegacy.Items.Armors.Flower
 {
     // The AutoloadEquip attribute automatically attaches an equip texture to this item.
     // Providing the EquipType.Head value here will result in TML expecting a X_Head.png file to be placed next to the item's main texture.
@@ -106,7 +106,7 @@ namespace Stellamod.Items.Armors.Flower
 		{
 			if (type == ProjectileID.WoodenArrowFriendly && hasQuiver)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordThrow"), position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordThrow"), position);
 				type = ModContent.ProjectileType<FlowerArrow>();
 				damage += 2;
 				velocity *= 2f;

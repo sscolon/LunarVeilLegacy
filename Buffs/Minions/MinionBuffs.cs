@@ -1,13 +1,13 @@
-﻿using Stellamod.Items.Weapons.Summon;
-using Stellamod.Projectiles.Summons.Minions;
-using Stellamod.Projectiles.Summons.Sentries;
-using Stellamod.Projectiles.Summons.Orbs;
+﻿using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Projectiles.Summons.Sentries;
+using LunarVeilLegacy.Projectiles.Summons.Orbs;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Buffs.Minions
+namespace LunarVeilLegacy.Buffs.Minions
 {
     internal abstract class MinionBuff<T> : ModBuff where T : ModProjectile
     {

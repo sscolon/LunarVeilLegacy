@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.NPCs.Catacombs.Trap.Cogwork;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Cogwork;
+using LunarVeilLegacy.WorldG;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -18,7 +18,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     public class Rustwork : ModNPC
     {
@@ -59,8 +59,8 @@ namespace Stellamod.NPCs.Underground
             NPC.damage = 40; // The amount of damage that this npc deals
             NPC.defense = 12; // The amount of defense that this npc has
             NPC.lifeMax = 300; // The amount of health that this npc has
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
             NPC.value = 50f; // How many copper coins the NPC will drop when killed.
             NPC.knockBackResist = 0.4f;
 
@@ -165,7 +165,7 @@ namespace Stellamod.NPCs.Underground
                 }
             }
 
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Morrowpes"));
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Morrowpes"));
         }
 
 

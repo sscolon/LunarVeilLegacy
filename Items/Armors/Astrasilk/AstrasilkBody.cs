@@ -1,9 +1,9 @@
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Astrasilk
+namespace LunarVeilLegacy.Items.Armors.Astrasilk
 {
     [AutoloadEquip(EquipType.Body)]
     public class AstrasilkBody : ModItem

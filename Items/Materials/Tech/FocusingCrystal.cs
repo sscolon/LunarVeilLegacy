@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials.Tech
+namespace LunarVeilLegacy.Items.Materials.Tech
 {
     internal class FocusingCrystal : ModItem
     {

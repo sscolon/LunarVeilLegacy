@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Summons.MiracleSoul;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Summons.MiracleSoul;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     public class MiraclePlayer : ModPlayer
     {
@@ -70,7 +70,7 @@ namespace Stellamod.Buffs
                 Projectile.NewProjectile(Player.GetSource_FromThis(),
                     target.Center, velocity, ModContent.ProjectileType<MiracleSoulCollectibleProj>(), 0, 0, Player.whoAmI);
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ArcaneExplode"), target.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ArcaneExplode"), target.position);
             }
         }
 

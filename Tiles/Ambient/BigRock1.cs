@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-namespace Stellamod.Tiles.Ambient
+namespace LunarVeilLegacy.Tiles.Ambient
 {
     public class BigRock1 : ModTile
 	{

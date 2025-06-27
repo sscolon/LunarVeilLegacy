@@ -1,10 +1,10 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Tiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Runes
+namespace LunarVeilLegacy.Items.Accessories.Runes
 {
     internal class RuneOfShade : ModItem
     {

@@ -2,9 +2,9 @@
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Paint
+namespace LunarVeilLegacy.Projectiles.Paint
 {
     public class PhotobombShot : ModProjectile
     {

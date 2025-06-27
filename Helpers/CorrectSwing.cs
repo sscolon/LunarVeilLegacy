@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public class CorrectSwing : ModPlayer
     {

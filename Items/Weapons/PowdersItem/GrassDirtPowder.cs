@@ -1,5 +1,5 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Projectiles.Powders;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Projectiles.Powders;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Items.Weapons.PowdersItem
+namespace LunarVeilLegacy.Items.Weapons.PowdersItem
 {
     internal class GrassDirtPowder : ModItem
 	{
@@ -35,7 +35,7 @@ namespace Stellamod.Items.Weapons.PowdersItem
 			Item.autoReuse = true;
 			Item.shootSpeed = 6f;
 			Item.crit = 51;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/Lenabee");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Lenabee");
 		}
 
 		public override void AddRecipes()

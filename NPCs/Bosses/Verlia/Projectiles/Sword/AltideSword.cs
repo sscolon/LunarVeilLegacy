@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles.Sword
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles.Sword
 {
     public class AltideSword : ModProjectile
     {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.REK;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     internal class GothivianPlayer : ModPlayer
     {

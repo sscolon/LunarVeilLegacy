@@ -6,7 +6,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Ishtar
+namespace LunarVeilLegacy.Tiles.Ishtar
 {
     internal class IshtarWeb4 : ModTile
     {

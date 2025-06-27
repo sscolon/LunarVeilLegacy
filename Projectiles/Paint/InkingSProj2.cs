@@ -5,15 +5,15 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Dusts;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.Items.Accessories.Players;
+using LunarVeilLegacy.Items.Accessories.Players;
 
-namespace Stellamod.Projectiles.Paint
+namespace LunarVeilLegacy.Projectiles.Paint
 {
 	public class InkingSProj2 : ModProjectile
 	{

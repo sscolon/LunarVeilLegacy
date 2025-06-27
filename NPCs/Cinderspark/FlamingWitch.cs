@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Cinderspark
+namespace LunarVeilLegacy.NPCs.Cinderspark
 {
     internal class FlamingWitch : ModNPC
     {
@@ -36,7 +36,7 @@ namespace Stellamod.NPCs.Cinderspark
             NPC.npcSlots = 1;
             NPC.lavaImmune = true;
             NPC.HitSound = SoundID.NPCHit1;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
         }
 
         private bool CanMove()

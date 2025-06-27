@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Nails
+namespace LunarVeilLegacy.Projectiles.Nails
 {
     public class EnergizedNailProj : ModProjectile
 	{
@@ -117,7 +117,7 @@ namespace Stellamod.Projectiles.Nails
 			Main.dust[dust].scale = 1.2f;
 			ShakeModSystem.Shake = 5;
 
-			SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Zaped"));
+			SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Zaped"));
 			
 		}
 		public override void DrawBehind(int index, List<int> behindNPCsAndTiles, List<int> behindNPCs, List<int> behindProjectiles, List<int> overPlayers, List<int> overWiresUI)

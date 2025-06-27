@@ -1,20 +1,20 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
 	public class STARBULLING : ModProjectile
 	{
@@ -120,7 +120,7 @@ namespace Stellamod.Projectiles.GunHolster
 		public override bool OnTileCollide(Vector2 oldVelocity)
 		{
 			Projectile.Kill();
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STAREXPULSION"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STAREXPULSION"));
 			for (int j = 0; j < 10; j++)
 			{
 				Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);

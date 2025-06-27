@@ -1,8 +1,8 @@
-﻿using Stellamod.Dusts;
+﻿using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Paint
+namespace LunarVeilLegacy.Projectiles.Paint
 {
     public class Paintdroplet : ModProjectile
 	{

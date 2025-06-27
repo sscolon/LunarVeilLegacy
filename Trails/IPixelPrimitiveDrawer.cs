@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 
-namespace Stellamod.Trails
+namespace LunarVeilLegacy.Trails
 {
     public interface IPixelPrimitiveDrawer
     {

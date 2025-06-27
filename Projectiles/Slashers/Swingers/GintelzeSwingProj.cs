@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Projectiles.Visual;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.Visual;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Test
+namespace LunarVeilLegacy.Projectiles.Test
 {
     internal class GintelzeSwingProj : ModProjectile
     {
@@ -21,7 +21,7 @@ namespace Stellamod.Projectiles.Test
 
         //AI
 
-        public override string Texture => "Stellamod/Items/Weapons/Melee/Gintelze";
+        public override string Texture => "LunarVeilLegacy/Items/Weapons/Melee/Gintelze";
         private ref float Timer => ref Projectile.ai[0];
         private ref float Dir => ref Projectile.ai[1];
         private Player Owner => Main.player[Projectile.owner];
@@ -124,7 +124,7 @@ namespace Stellamod.Projectiles.Test
 
         
 
-            Texture2D tipSlashTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/TerraTrail").Value;
+            Texture2D tipSlashTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/TerraTrail").Value;
             if (SwordSlash == null)
             {
                 SwordSlash = new TrailRenderer(tipSlashTexture, TrailRenderer.DefaultPass, 

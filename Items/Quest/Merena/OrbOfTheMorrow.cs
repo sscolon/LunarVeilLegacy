@@ -1,17 +1,17 @@
 ﻿
-using Stellamod.Items.Armors.Vanity.Gothivia;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Quest.BORDOC;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Thrown;
+using LunarVeilLegacy.Items.Armors.Vanity.Gothivia;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Quest.BORDOC;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Thrown;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.Merena
+namespace LunarVeilLegacy.Items.Quest.Merena
 {
     internal class OrbOfTheMorrow : ModItem
     {

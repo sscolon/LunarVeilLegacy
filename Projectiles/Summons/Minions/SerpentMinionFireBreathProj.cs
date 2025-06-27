@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Niivi.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     internal class SerpentMinionFireBreathProj : ModProjectile
     {
@@ -23,7 +23,7 @@ namespace Stellamod.Projectiles.Summons.Minions
             set => Projectile.ai[0] = value;
         }
 
-        private string FrostTexture => "Stellamod/Effects/Masks/ZuiEffect";
+        private string FrostTexture => "LunarVeilLegacy/Effects/Masks/ZuiEffect";
         private float LifeTime = 150;
         private float MaxScale = 1f;
 

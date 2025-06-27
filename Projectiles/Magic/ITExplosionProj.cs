@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +14,10 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.Audio;
-using Stellamod.UI.Systems;
-using Stellamod.Buffs;
+using LunarVeilLegacy.UI.Systems;
+using LunarVeilLegacy.Buffs;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class ITExplosionProj : ModProjectile,
         IPixelPrimitiveDrawer

@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class WinterboundArrow : ModProjectile
     {
@@ -46,7 +46,7 @@ namespace Stellamod.Projectiles.Bow
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 512f, 32f);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterboundArrowHit"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterboundArrowHit"), Projectile.position);
             var EntitySource = Projectile.GetSource_Death();
             for (int i = 0; i < 50; i++)
             {

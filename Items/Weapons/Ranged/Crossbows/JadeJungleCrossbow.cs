@@ -1,12 +1,12 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Crossbows.Sniper;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Crossbows.Sniper;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged.Crossbows
+namespace LunarVeilLegacy.Items.Weapons.Ranged.Crossbows
 {
 
     public class JadeJungleCrossbow : ModItem

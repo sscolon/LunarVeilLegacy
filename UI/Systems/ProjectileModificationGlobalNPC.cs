@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace Stellamod.UI.Systems
+namespace LunarVeilLegacy.UI.Systems
 {
     // This is a class for functionality related to ExampleProjectileModifications.
     public class ProjectileModificationGlobalNPC : GlobalNPC

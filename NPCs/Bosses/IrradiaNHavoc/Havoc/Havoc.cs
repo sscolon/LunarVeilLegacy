@@ -2,10 +2,10 @@
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc
 {
     internal class HavocSegment
     {
@@ -89,7 +89,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
         Vector2 ChargeDirection;
 
         //Textures
-        public const string BaseTexturePath = "Stellamod/NPCs/Bosses/IrradiaNHavoc/Havoc/";
+        public const string BaseTexturePath = "LunarVeilLegacy/NPCs/Bosses/IrradiaNHavoc/Havoc/";
         private HavocSegment Head => Segments[0];
         private HavocSegment BodyFront => Segments[1];
         private HavocSegment BodyMiddle => Segments[2];
@@ -312,7 +312,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
             {
                 if (Timer == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/HavocCharge"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/HavocCharge"), NPC.position);
                     NPC.TargetClosest();
                 }
 
@@ -342,7 +342,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
 
                 if (Timer == 151)
                 {
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RekRoar");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekRoar");
                     SoundEngine.PlaySound(soundStyle, NPC.position);
                 }
                 NPC.velocity = ChargeDirection * 40;
@@ -472,7 +472,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
 
                 if(Timer == 1)
                 {
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/StormDragon_WaveCharge");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_WaveCharge");
                     SoundEngine.PlaySound(soundStyle, NPC.position);
 
 
@@ -552,7 +552,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
                 Timer++;
                 if(Timer == 1)
                 {
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_Charge2");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_Charge2");
                     SoundEngine.PlaySound(soundStyle, NPC.position);
                 }
 
@@ -587,7 +587,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
                 NPC.velocity *= 0.98f;
                 if(Timer == 1)
                 {
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/SingularityFragment_LAZER");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SingularityFragment_LAZER");
                     SoundEngine.PlaySound(soundStyle, NPC.position);
 
         
@@ -745,7 +745,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc
                 return false;
             if (State == ActionState.Charge)
             {
-                Texture2D warningTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/IrradiaNHavoc/Havoc/Projectiles/HavocWarnChargeProj").Value;
+                Texture2D warningTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/IrradiaNHavoc/Havoc/Projectiles/HavocWarnChargeProj").Value;
                 Player target = Main.player[NPC.target];
                 Vector2 drawPosition = target.Center - screenPos;
                 Vector2 drawOffset = new Vector2(0, -16);

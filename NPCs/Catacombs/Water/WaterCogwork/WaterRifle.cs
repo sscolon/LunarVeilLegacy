@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Water.WaterCogwork
+namespace LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork
 {
     internal class WaterRifle : ModNPC
     {
@@ -123,11 +123,11 @@ namespace Stellamod.NPCs.Catacombs.Water.WaterCogwork
                 Vector2 velocity = NPC.Center.DirectionTo(player.Center) * 15;
                 if (Main.rand.NextBool(2))
                 {
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/DeathShot"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/DeathShot"));
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/DeathShot2"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/DeathShot2"));
                 }
     
                 int count = 48;

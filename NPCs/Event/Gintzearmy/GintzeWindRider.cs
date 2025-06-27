@@ -1,10 +1,10 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Accessories.Foods;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Ores;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Items.Accessories.Foods;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.WorldG;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -14,7 +14,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Event.Gintzearmy
+namespace LunarVeilLegacy.NPCs.Event.Gintzearmy
 {
 
     public class GintzeWindRider : ModNPC
@@ -47,8 +47,8 @@ namespace Stellamod.NPCs.Event.Gintzearmy
             NPC.lavaImmune = false;
             NPC.alpha = 0;
             NPC.dontTakeDamage = false;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Slashers.Voyager;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Slashers.Voyager;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 	public class BlossomingScissor : ClassSwapItem
 	{

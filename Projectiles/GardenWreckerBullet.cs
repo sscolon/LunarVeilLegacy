@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class GardenWreckerBullet : ModProjectile
 	{
@@ -90,7 +90,7 @@ namespace Stellamod.Projectiles
 			float speedYa = -Projectile.velocity.Y * Main.rand.Next(0, 0) * 0.01f + Main.rand.Next(-20, 21) * 0.0f;
 			Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXa, Projectile.position.Y + speedYa, speedXa * 0, speedYa * 0, ProjectileID.DaybreakExplosion, Projectile.damage * 0, 0f, Projectile.owner, 0f, 0f);
 			Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedXa, Projectile.position.Y + speedYa, speedXa * 0, speedYa * 0, ModContent.ProjectileType<SkullShotKaboom>(), (int)(Projectile.damage * 1.1), 0f, Projectile.owner, 0f, 0f);
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/flameup"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/flameup"));
 
 
 			

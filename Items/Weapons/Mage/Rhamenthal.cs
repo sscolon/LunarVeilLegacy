@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged.Crossbows;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Magic;
-using Stellamod.Projectiles.Slashers.Voyager;
-using Stellamod.Projectiles.Swords.Altride;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged.Crossbows;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Slashers.Voyager;
+using LunarVeilLegacy.Projectiles.Swords.Altride;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent;
@@ -17,7 +17,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 	public class Rhamenthal : ClassSwapItem
 	{

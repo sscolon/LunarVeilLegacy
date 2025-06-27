@@ -1,10 +1,10 @@
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Swords;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Swords;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     public class CleanestCleaverProg : ModProjectile
     {
@@ -49,18 +49,18 @@ namespace Stellamod.Projectiles.Thrown
                     {
                         if (Bloody == 3)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CleanestCleaver3"), Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CleanestCleaver3"), Projectile.position);
                         }
                         else
                         {
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CleanestCleaver1"), Projectile.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CleanestCleaver1"), Projectile.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CleanestCleaver2"), Projectile.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CleanestCleaver2"), Projectile.position);
                             }
                         }
                         Sound = true;
@@ -140,7 +140,7 @@ namespace Stellamod.Projectiles.Thrown
         {
             if (Bloody == 3)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CleanestCleaver4"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CleanestCleaver4"), Projectile.position);
                 Projectile.Kill();
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 63f);
                 SoundEngine.PlaySound(SoundID.Dig, Projectile.Center);
@@ -159,11 +159,11 @@ namespace Stellamod.Projectiles.Thrown
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CleanestCleaver6"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CleanestCleaver6"), Projectile.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CleanestCleaver5"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CleanestCleaver5"), Projectile.position);
                 }
                 for (int i = 0; i < 20; i++)
                 {

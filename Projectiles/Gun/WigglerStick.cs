@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     internal class WigglerStick : ModProjectile
     {
@@ -61,13 +61,13 @@ namespace Stellamod.Projectiles.Gun
                 detonationTimer--;
                 if(detonationTimer == 10)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CombusterReady"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CombusterReady"));
                 }
 
                 if(detonationTimer < 0)
                 {
                     ShakeModSystem.Shake = 3;
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Kaboom"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Kaboom"));
                     Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, Vector2.Zero,
                         ModContent.ProjectileType<KaBoomBlue>(), Projectile.damage * 3, Projectile.knockBack, Projectile.owner);
                     Projectile.Kill();

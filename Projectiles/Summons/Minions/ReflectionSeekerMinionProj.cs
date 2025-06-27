@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs.Minions;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Ammo;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Ammo;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Threading;
 using Terraria;
@@ -15,7 +15,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     public class ReflectionSeekerMinionProj : ModProjectile
     {
@@ -320,7 +320,7 @@ namespace Stellamod.Projectiles.Summons.Minions
                     Vector2 bulletVelocity = Projectile.Center.DirectionTo(targetCenter) * 52;
                     Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, bulletVelocity,
                         ModContent.ProjectileType<EldritchBolt>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Laserlock") { Pitch = Main.rand.NextFloat(-5f, 5f) }, Projectile.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Laserlock") { Pitch = Main.rand.NextFloat(-5f, 5f) }, Projectile.Center);
 
 
 
@@ -710,9 +710,9 @@ namespace Stellamod.Projectiles.Summons.Minions
         {
 
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StarTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StringTrail").Value;
-            var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/CrystalTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StarTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StringTrail").Value;
+            var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/CrystalTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
             if (SwordSlash == null)
             {
@@ -825,7 +825,7 @@ namespace Stellamod.Projectiles.Summons.Minions
 
             var drawData = new DrawData(playerRT, Vector2.Zero, Color.White);
             var playerOwner = Main.player[Projectile.owner];
-            GameShaders.Misc["Stellamod:SilhouetteShader"].Apply(drawData);
+            GameShaders.Misc["LunarVeilLegacy:SilhouetteShader"].Apply(drawData);
             if (playerOwner.cMinion != 0)
             {
                 GameShaders.Armor.ApplySecondary(playerOwner.cMinion, Projectile, drawData);

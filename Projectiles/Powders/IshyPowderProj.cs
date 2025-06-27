@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Dusteffects;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Dusteffects;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Powders
+namespace LunarVeilLegacy.Projectiles.Powders
 {
 	public class IshyPowderProj : ModProjectile
 	{

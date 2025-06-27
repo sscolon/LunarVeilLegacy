@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Magical
+namespace LunarVeilLegacy.Projectiles.Crossbows.Magical
 {
     public class DesertCrossbowHold : ModProjectile
     {
@@ -48,7 +48,7 @@ namespace Stellamod.Projectiles.Crossbows.Magical
 				// Our timer has finished, do something here:
 				// Main.PlaySound, Dust.NewDust, Projectile.NewProjectile, etc. Up to you.
 			
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/MorrowSalfi"), Projectile.position);
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/MorrowSalfi"), Projectile.position);
 				Timer = 0;
 			}
 
@@ -78,7 +78,7 @@ namespace Stellamod.Projectiles.Crossbows.Magical
 				float speedX = Projectile.velocity.X * 10;
 				float speedY = Projectile.velocity.Y * 7;
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CrossbowPull"), Projectile.position);
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CrossbowPull"), Projectile.position);
 				Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedX, Projectile.position.Y + speedY, speedX, speedY, ModContent.ProjectileType<MeltaCircle>(), Projectile.damage * 1, 0f, Projectile.owner, 0f, 0f);
 			}
 
@@ -86,7 +86,7 @@ namespace Stellamod.Projectiles.Crossbows.Magical
 			if (Timer == 30)
 			{
 				ShakeModSystem.Shake = 8; 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/MorrowSalfi"), Projectile.position);
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/MorrowSalfi"), Projectile.position);
 			}
 
 

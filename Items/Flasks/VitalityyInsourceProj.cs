@@ -1,6 +1,6 @@
 ﻿using Terraria;
 
-namespace Stellamod.Items.Flasks
+namespace LunarVeilLegacy.Items.Flasks
 {
     public class VitalityInsourceProj : InsourceDefaultProjectile
     {

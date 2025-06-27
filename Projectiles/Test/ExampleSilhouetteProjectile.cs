@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Test
+namespace LunarVeilLegacy.Projectiles.Test
 {
     internal class ExampleSilhouetteProjectile : ModProjectile
     {

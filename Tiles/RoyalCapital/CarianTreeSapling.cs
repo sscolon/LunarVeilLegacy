@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.RoyalCapital
+namespace LunarVeilLegacy.Tiles.RoyalCapital
 {
     public class CarianTreeSapling : ModTile
 	{

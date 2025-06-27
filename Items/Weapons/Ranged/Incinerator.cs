@@ -1,6 +1,6 @@
-﻿using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
+﻿using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +10,9 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Gun;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class Incinerator : ClassSwapItem
     {

@@ -4,13 +4,13 @@ using Terraria;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     public class IshtarBiome : ModBiome
     {
         //public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("SpiritMod/Biomes/SpiritUgBgStyle");
-        public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("Stellamod/IshtarBackgroundStyle");
-        public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("Stellamod/IshtarWaterStyle");
+        public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("LunarVeilLegacy/IshtarBackgroundStyle");
+        public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("LunarVeilLegacy/IshtarWaterStyle");
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/Ishtar");
         public override SceneEffectPriority Priority => SceneEffectPriority.BiomeHigh;
         public override string BestiaryIcon => base.BestiaryIcon;

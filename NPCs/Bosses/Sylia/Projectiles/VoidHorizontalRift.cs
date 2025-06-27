@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles
 {
     public class VoidHorizontalRift : ModProjectile
     {
@@ -143,7 +143,7 @@ namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
                 p.layer = Particle.Layer.BeforeProjectiles;
             }
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/SyliaRiftClose");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SyliaRiftClose");
             soundStyle.PitchVariance = 0.5f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
         }

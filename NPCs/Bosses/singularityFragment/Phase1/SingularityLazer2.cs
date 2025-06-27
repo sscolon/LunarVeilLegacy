@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.singularityFragment.Phase1
+namespace LunarVeilLegacy.NPCs.Bosses.singularityFragment.Phase1
 {
     internal class SingularityLazer2 : ModNPC
     {
@@ -62,7 +62,7 @@ namespace Stellamod.NPCs.Bosses.singularityFragment.Phase1
         private float counter = 6;
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/NPCs/Bosses/singularityFragment/Phase1/SingularityLazerFX2").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/singularityFragment/Phase1/SingularityLazerFX2").Value;
             Main.spriteBatch.Draw(texture2D4, NPC.Center - Main.screenPosition, null, new Color((int)(35f * alphaCounter), (int)(15f * alphaCounter), (int)(55f * alphaCounter), 0), -NPC.rotation, new Vector2(244, 244), 0.25f * (counter + 0.3f), SpriteEffects.None, 0f);
             return true;
         }

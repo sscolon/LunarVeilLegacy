@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Players;
-using Stellamod.Projectiles.Summons.VoidMonsters;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Players;
+using LunarVeilLegacy.Projectiles.Summons.VoidMonsters;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
 	public class LittleScissorDashPlayer : ModPlayer
 	{
@@ -157,7 +157,7 @@ namespace Stellamod.Items.Accessories
 					ModContent.ProjectileType<LittleScissorVoidBolt>(), 54, 1, owner: Player.whoAmI);
 
 				//Scale with all damage classe
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SyliaRiftClose"), Player.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SyliaRiftClose"), Player.position);
 				_riftCounter = 10;
 			}
 		}

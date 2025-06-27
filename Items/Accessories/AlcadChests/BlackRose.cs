@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.AlcadChests
+namespace LunarVeilLegacy.Items.Accessories.AlcadChests
 {
     internal class BlackRose : ModItem
     {

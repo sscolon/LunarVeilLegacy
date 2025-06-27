@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Desert.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Desert.Projectiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Desert
+namespace LunarVeilLegacy.NPCs.Desert
 {
     internal class DustNadoSpawner : ModNPC
     {

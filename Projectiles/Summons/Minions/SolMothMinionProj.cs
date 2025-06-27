@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +13,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
+using LunarVeilLegacy.Buffs.Minions;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     /*
             * This minion shows a few mandatory things that make it behave properly. 
@@ -87,7 +87,7 @@ namespace Stellamod.Projectiles.Summons.Minions
 
         public override void PostDraw(Color lightColor)
         {
-            Texture2D texture2D4 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(HuntrianColorX * 1), (int)(HuntrianColorY * 1), (int)(HuntrianColorZ * 1), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(HuntrianColorX * 1), (int)(HuntrianColorY * 1), (int)(HuntrianColorZ * 1), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(HuntrianColorX * 1), (int)(HuntrianColorY * 1), (int)(HuntrianColorZ * 1), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
@@ -112,7 +112,7 @@ namespace Stellamod.Projectiles.Summons.Minions
                 Timer++;
                 if (Timer == 1)
                 {
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/SoftSummon");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon");
                     soundStyle.PitchVariance = 0.15f;
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
                     for (int i = 0; i < 5; i++)
@@ -135,7 +135,7 @@ namespace Stellamod.Projectiles.Summons.Minions
                         Projectile.netUpdate = true;
                     }
 
-                    SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/SoftSummon2");
+                    SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SoftSummon2");
                     soundStyle.PitchVariance = 0.15f;
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
                     Dust.QuickDustLine(Projectile.Center, targetCenter, 50, Color.Goldenrod);

@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     class MorrowValswaProj : SlasherProj
 	{

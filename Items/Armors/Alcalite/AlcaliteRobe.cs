@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Alcalite
+namespace LunarVeilLegacy.Items.Armors.Alcalite
 {
     [AutoloadEquip(EquipType.Body)]
     internal class AlcaliteRobe : ModItem

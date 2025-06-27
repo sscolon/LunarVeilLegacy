@@ -1,9 +1,9 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Ishtar
+namespace LunarVeilLegacy.NPCs.Ishtar
 {
     internal class StalkerSpawner : ModNPC
     {

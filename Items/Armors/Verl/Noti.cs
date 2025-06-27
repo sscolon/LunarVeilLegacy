@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Verl
+namespace LunarVeilLegacy.Items.Armors.Verl
 {
     public class Noti : ModProjectile
 	{

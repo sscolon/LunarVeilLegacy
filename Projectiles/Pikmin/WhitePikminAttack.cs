@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Pikmin
+namespace LunarVeilLegacy.Projectiles.Pikmin
 {
     internal class WhitePikminAttack : ModProjectile
     {
@@ -68,23 +68,23 @@ namespace Stellamod.Projectiles.Pikmin
                 switch (Main.rand.Next(5))
                 {
                     case 0:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Pikminhit1") with { Volume = 0.4f });
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Pikminhit1") with { Volume = 0.4f });
                         break;
 
                     case 1:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Pikminhit2") with { Volume = 0.4f });
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Pikminhit2") with { Volume = 0.4f });
                         break;
 
                     case 2:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Pikminhit3") with { Volume = 0.4f });
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Pikminhit3") with { Volume = 0.4f });
                         break;
 
                     case 3:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Pikminhit4") with { Volume = 0.4f });
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Pikminhit4") with { Volume = 0.4f });
                         break;
 
                     case 4:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Pikminhit5") with { Volume = 0.4f });
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Pikminhit5") with { Volume = 0.4f });
                         break;
 
                 }

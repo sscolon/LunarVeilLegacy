@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Projectiles
 {
     public class IrradiaBuilds : ModProjectile
     {

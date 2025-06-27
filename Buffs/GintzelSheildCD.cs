@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     public class GintzelSheildCD : ModBuff
 	{

@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.GothiviaNRek.Gothivia;
-using Stellamod.NPCs.Bosses.GothiviaNRek.Reks;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Gothivia;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.ObjectInteractions;
@@ -15,7 +15,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Structures.AlcadizNGovheil
+namespace LunarVeilLegacy.Tiles.Structures.AlcadizNGovheil
 
 {
     public class Gothiv : ModTile

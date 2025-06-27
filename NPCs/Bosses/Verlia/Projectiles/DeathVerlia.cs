@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles
 {
 	public class DeathVerlia : ModNPC
 	{
@@ -172,7 +172,7 @@ namespace Stellamod.NPCs.Bosses.Verlia.Projectiles
 			{
 				int index = NPC.NewNPC(NPC.GetSource_FromThis(), (int)NPC.Center.X, (int)NPC.Center.Y - 30, ModContent.NPCType<GhostCharger>());
 				NPC minionNPC = Main.npc[index];
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Upp"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Upp"));
 			}
 
 			if (timer == 39)

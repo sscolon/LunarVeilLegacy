@@ -1,9 +1,9 @@
-using Stellamod.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
 using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     public class VerliaScreenShaderData : ScreenShaderData
     {

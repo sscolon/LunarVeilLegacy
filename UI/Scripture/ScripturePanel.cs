@@ -3,7 +3,7 @@ using Terraria.GameContent.UI.Elements;
 using Terraria.UI;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Stellamod.UI.Scripture
+namespace LunarVeilLegacy.UI.Scripture
 {
     public class ScripturePanel : UIState
     {

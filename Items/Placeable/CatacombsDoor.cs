@@ -1,10 +1,10 @@
 ﻿
 
-using Stellamod.Tiles.Catacombs;
+using LunarVeilLegacy.Tiles.Catacombs;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
 	public class CatacombsDoor : ModItem
 	{

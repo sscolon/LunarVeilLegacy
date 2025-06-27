@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class PoyaProj : ModProjectile
     {
@@ -57,18 +57,18 @@ namespace Stellamod.Projectiles.Magic
                 {
                     Projectile.NewProjectile(EntitySource, Projectile.Center, StartVelocity, 
                         ModContent.ProjectileType<Poyashot2>(), Projectile.damage * 4, 1, Projectile.owner, 0, 0);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/bloodlamp"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/bloodlamp"), Projectile.position);
                 }
                 else
                 {
                     int Sound = Main.rand.Next(1, 2);
                     if (Sound == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/bloodlamp"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/bloodlamp"), Projectile.position);
                     }
                     else
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/bloodlamp"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/bloodlamp"), Projectile.position);
                     }
                     if (Main.netMode != NetmodeID.MultiplayerClient)
                         Projectile.NewProjectile(EntitySource, Projectile.Center.X, Projectile.Center.Y, StartVelocity.X, StartVelocity.Y, ModContent.ProjectileType<Poyashot>(), Projectile.damage, 1, Main.myPlayer, 0, 0);

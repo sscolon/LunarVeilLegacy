@@ -1,15 +1,15 @@
 ﻿
 
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     public class EDR : ModItem
     {
@@ -74,11 +74,11 @@ namespace Stellamod.Items.Consumables
                 int TextToSpawn = Main.rand.Next(1, 8 + 1);
 
                 CombatText.NewText(new Rectangle((int)player.position.X, (int)player.position.Y, player.width, player.height), new Color(152, 208, 113, 44), LangText.Misc("EDR." + TextToSpawn));
-                // SoundEngine.PlaySound(new SoundStyle("Stellamod/Sounds/Button"));
+                // SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Sounds/Button"));
             }
             else
             {
-               // SoundEngine.PlaySound(new SoundStyle("Stellamod/Sounds/Button"));
+               // SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Sounds/Button"));
                 CombatText.NewText(new Rectangle((int)player.position.X, (int)player.position.Y, player.width, player.height), new Color(152, 208, 113, 44), LangText.Misc("EDR.9"));
 
                 return false;

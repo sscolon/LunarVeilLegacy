@@ -1,14 +1,14 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     public class X3144 : ModItem
 	{
@@ -54,7 +54,7 @@ namespace Stellamod.Items.Weapons.Summon
 		{
 			// This is needed so the buff that keeps your minion alive and allows you to despawn it properly applies
 			player.AddBuff(Item.buffType, 2);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GSummon"), player.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GSummon"), player.position);
             // Here you can change where the minion is spawned. Most vanilla minions spawn at the cursor position.
             position = Main.MouseWorld;
 			return true;

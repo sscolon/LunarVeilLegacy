@@ -4,7 +4,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Furniture
+namespace LunarVeilLegacy.Tiles.Furniture
 {
     public class GothivPainting : ModTile
 	{

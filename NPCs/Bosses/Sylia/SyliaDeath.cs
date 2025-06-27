@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria.Audio;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using ReLogic.Utilities;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     internal class SyliaDeath : ModNPC
     {        
@@ -69,7 +69,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
             //Draw the Wings
             Vector2 drawPosition = NPC.Center - screenPos;
             Vector2 origin = new Vector2(48, 48);
-            Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Sylia/SyliaWings").Value;
+            Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Sylia/SyliaWings").Value;
             int wingFrameSpeed = 2;
             int wingFrameCount = 10;
             spriteBatch.Draw(syliaWingsTexture, drawPosition,
@@ -90,7 +90,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
             Timer++;
             if(Timer == 1)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RisingSummon");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RisingSummon");
                 soundStyle.Pitch = -0.75f;
                 slotId = SoundEngine.PlaySound(soundStyle);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().FocusOn(NPC.Center, 9f);
@@ -109,7 +109,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
                 //Stop the sound
                 SoundEngine.TryGetActiveSound(slotId, out ActiveSound? result);
                 result?.Stop();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SyliaTransition") { PitchVariance = 0.15f, Pitch = -0.75f }, NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SyliaTransition") { PitchVariance = 0.15f, Pitch = -0.75f }, NPC.position);
                 NPC.active = false;
             }
         }

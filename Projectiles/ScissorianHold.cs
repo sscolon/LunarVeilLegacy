@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Magic;
 using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class ScissorianHold : ModProjectile
     {
@@ -75,15 +75,15 @@ namespace Stellamod.Projectiles
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Binding_Abyss_Rune_SoulStar"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Rune_SoulStar"));
 						break;
 
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Binding_Abyss_Rune"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Rune"));
 						break;
 
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/FrostBringer"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/FrostBringer"));
 						break;
 
 				}
@@ -100,15 +100,15 @@ namespace Stellamod.Projectiles
 				switch (Main.rand.Next(3))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Crysalizer3"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Crysalizer3"));
 						break;
 
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/WinterStorm2"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/WinterStorm2"));
 						break;
 
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/FrostBringer"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/FrostBringer"));
 						break;
 
 				}

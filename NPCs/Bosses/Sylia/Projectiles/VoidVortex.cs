@@ -2,14 +2,14 @@
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles
 {
     internal class VoidVortex : ModProjectile
     {
@@ -122,7 +122,7 @@ namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
 		public override void Load()
 		{ // This is called once on mod (re)load when this piece of content is being loaded.
 		  // This is the path to the texture that we'll use for the hook's chain. Make sure to update it.
-			VorTexture = ModContent.Request<Texture2D>("Stellamod/Assets/Effects/VoxTexture");
+			VorTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Effects/VoxTexture");
 		}
 
 		public override void Unload()

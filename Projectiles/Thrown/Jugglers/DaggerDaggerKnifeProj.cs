@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown.Jugglers
+namespace LunarVeilLegacy.Projectiles.Thrown.Jugglers
 {
     internal class DaggerDaggerKnifeProj : ModProjectile
     {

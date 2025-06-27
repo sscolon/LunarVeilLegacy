@@ -8,11 +8,11 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
-using Stellamod.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Items.Materials.Tech;
 using Terraria.GameContent.ItemDropRules;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class RustedBomber : ModNPC
     {
@@ -29,7 +29,7 @@ namespace Stellamod.NPCs.Underground
             NPC.damage = 51;
             NPC.defense = 12;
             NPC.lifeMax = 70;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
             NPC.DeathSound = SoundID.NPCDeath14;
             NPC.value = 63f;
             NPC.knockBackResist = 0f;

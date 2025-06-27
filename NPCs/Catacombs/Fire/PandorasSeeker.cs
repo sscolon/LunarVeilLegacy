@@ -1,6 +1,6 @@
-﻿using Stellamod.Assets.Biomes;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
+﻿using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
@@ -9,17 +9,17 @@ using Terraria.ModLoader.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Accessories;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.Utilis;
 using System;
 using Terraria.Audio;
 using Terraria.GameContent;
 
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 
-namespace Stellamod.NPCs.Catacombs.Fire
+namespace LunarVeilLegacy.NPCs.Catacombs.Fire
 {
 	public class PandorasSeeker : ModNPC
 	{

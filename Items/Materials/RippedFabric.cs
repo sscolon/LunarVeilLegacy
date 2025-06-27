@@ -1,13 +1,13 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
     internal class RippedFabric : ModItem
 	{

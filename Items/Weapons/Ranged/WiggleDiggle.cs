@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Gores;
-using Stellamod.Items.Materials;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class WiggleDiggle : ClassSwapItem
     {
@@ -45,7 +45,7 @@ namespace Stellamod.Items.Weapons.Ranged
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/ConfettiShot1");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/ConfettiShot1");
             soundStyle.PitchVariance = 0.3f;
             soundStyle.Volume = 0.8f;
             SoundEngine.PlaySound(soundStyle, position);

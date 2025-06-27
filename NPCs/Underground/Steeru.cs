@@ -8,15 +8,15 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
-using Stellamod.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Items.Materials.Tech;
 using Terraria.GameContent.ItemDropRules;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
 using Terraria.ModLoader.Utilities;
-using Stellamod.Assets.Biomes;
+using LunarVeilLegacy.Assets.Biomes;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class Steeru : ModNPC
     {
@@ -44,7 +44,7 @@ namespace Stellamod.NPCs.Underground
             NPC.damage = 60;
             NPC.defense = 12;
             NPC.lifeMax = 190;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
             NPC.DeathSound = SoundID.NPCDeath14;
             NPC.value = 563f;
             NPC.knockBackResist = .1f;
@@ -162,7 +162,7 @@ namespace Stellamod.NPCs.Underground
             }
 
             //Draw Eye
-            texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Underground/SteeruEye").Value;
+            texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Underground/SteeruEye").Value;
             drawOrigin = texture.Size() / 2;
             float yHoveringEye = VectorHelper.Osc(0, hoverRange, speed: 3);
             float xHoveringEye = VectorHelper.Osc(-hoverRange/2, hoverRange/2, speed: 3);

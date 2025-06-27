@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Projectiles
 {
     public class NoderElectric : ModProjectile
     {
@@ -36,7 +36,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, Vector2.Zero,
                     ModContent.ProjectileType<IrradiaCombustionBoom>(), 0, Projectile.knockBack, Projectile.owner);
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Built"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Built"), Projectile.position);
 
             if (StellaMultiplayer.IsHost)
             {

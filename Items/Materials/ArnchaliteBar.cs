@@ -1,11 +1,11 @@
 ﻿
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
     internal class ArnchaliteBar : ModItem
     {

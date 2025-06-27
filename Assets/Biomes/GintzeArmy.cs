@@ -1,9 +1,9 @@
 ﻿
-using Stellamod.WorldG;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     internal class GintzeArmy : ModSceneEffect
     {

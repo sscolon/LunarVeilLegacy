@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee.Shields;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.NPCs.Event.Gintzearmy.BossGintze;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee.Shields;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.NPCs.Event.Gintzearmy.BossGintze;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Creative;
@@ -15,7 +15,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     public class GintziaBossBag : ModItem
 	{

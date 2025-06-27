@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Jack;
-using Stellamod.UI.Dialogue;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Jack;
+using LunarVeilLegacy.UI.Dialogue;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.Zui.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles
 {
 
     public class ZuiDeath : ModNPC
@@ -145,7 +145,7 @@ namespace Stellamod.NPCs.Bosses.Zui.Projectiles
                         CombatText.NewText(NPC.getRect(), Color.Gold, LangText.Misc("ZuiDeath.2"), true, false);
                         var EntitySource = NPC.GetSource_Death();
                         Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 90f);
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer4"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer4"), NPC.position);
                         for (int i = 0; i < 14; i++)
                         {
                             Dust.NewDustPerfect(base.NPC.Center, DustID.GoldCoin, (Vector2.One * Main.rand.Next(1, 12)).RotatedByRandom(19.0), 0, default(Color), 4f).noGravity = true;
@@ -170,7 +170,7 @@ namespace Stellamod.NPCs.Bosses.Zui.Projectiles
                             Dust.NewDustPerfect(base.NPC.Center, DustID.GoldFlame, (Vector2.One * Main.rand.Next(1, 12)).RotatedByRandom(10.0), 0, default(Color), 1f).noGravity = false;
                         }
 
-                        int Gore2 = ModContent.Find<ModGore>("Stellamod/ZuiHat").Type;
+                        int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/ZuiHat").Type;
                         Gore.NewGore(EntitySource, NPC.position, NPC.velocity, Gore2);
                         Utilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y, 0, 0, ModContent.ProjectileType<ZuiSpawnEffect>(), 0, 0f, -1, 0, NPC.whoAmI);
                         NPC.active = false;

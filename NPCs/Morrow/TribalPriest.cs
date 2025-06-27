@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
@@ -18,7 +18,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Morrow
+namespace LunarVeilLegacy.NPCs.Morrow
 {
     public class TribalPriest : ModNPC
 	{
@@ -58,7 +58,7 @@ namespace Stellamod.NPCs.Morrow
 			NPC.defense = 2; // The amount of defense that this npc has
 			NPC.lifeMax = 200; // The amount of health that this npc has
 			NPC.HitSound = SoundID.NPCHit1; // The sound the NPC will make when being hit.
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
             NPC.value = 500f; // How many copper coins the NPC will drop when killed.
 			NPC.knockBackResist = 0f;
 			NPC.noGravity = true;
@@ -202,7 +202,7 @@ namespace Stellamod.NPCs.Morrow
 						break;
 				}
 				NPC.netUpdate = true;
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Slapin"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Slapin"));
 				ShakeModSystem.Shake = 4;
 				// Finally, iterate through itemsToAdd and actually create the Item instances and add to the chest.item array
 
@@ -234,7 +234,7 @@ namespace Stellamod.NPCs.Morrow
 		public override void HitEffect(NPC.HitInfo hit)
 		{
 
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Morrowpes"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Morrowpes"));
 
 			for (int i = 0; i < 5; i++)
 			{

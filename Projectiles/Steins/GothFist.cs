@@ -6,19 +6,19 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System.IO;
-using Stellamod.Dusts;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.Items.Accessories.Players;
+using LunarVeilLegacy.Items.Accessories.Players;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions.Stein;
-using Stellamod.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions.Stein;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
 
-namespace Stellamod.Projectiles.Steins
+namespace LunarVeilLegacy.Projectiles.Steins
 {
 	public class GothFist : ModProjectile
 	{
@@ -161,39 +161,39 @@ namespace Stellamod.Projectiles.Steins
 				player.velocity = Projectile.DirectionTo(oldMouseWorld) * -17f;
 				bounced = true;
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SteinGoth") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SteinGoth") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 				switch (Main.rand.Next(7))
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GoldenSlice1") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GoldenSlice1") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GoldenSlice2") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GoldenSlice2") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GoldenSlice3") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GoldenSlice3") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 
 						break;
 
 					case 3:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SteinIk") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SteinIk") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 
 						break;
 
 					case 4:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SteinHulting") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SteinHulting") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 
 						break;
 
 					case 5:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SteinShading") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SteinShading") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 
 						break;
 
 					case 6:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SteinVolting") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SteinVolting") { Pitch = Main.rand.NextFloat(-0.5f, 0.5f) });
 
 						break;
 
@@ -208,15 +208,15 @@ namespace Stellamod.Projectiles.Steins
 				{
 					case 0:
 					
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Steinhit1"), Projectile.Center);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Steinhit1"), Projectile.Center);
 						break;
 					case 1:
 			
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Steinhit2"), Projectile.Center);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Steinhit2"), Projectile.Center);
 						break;
 					case 2:
 			
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Steinhit3"), Projectile.Center);
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Steinhit3"), Projectile.Center);
 						break;
 
 				}
@@ -554,10 +554,10 @@ namespace Stellamod.Projectiles.Steins
 		{
 			Main.spriteBatch.End();
 
-			var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/SkiTrail").Value;
-			var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WaterTrail").Value;
-			var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WaterTrail").Value;
-			var TrailTex4 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/SkiTrail").Value;
+			var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/SkiTrail").Value;
+			var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WaterTrail").Value;
+			var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WaterTrail").Value;
+			var TrailTex4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/SkiTrail").Value;
 			Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
 
 

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     internal class ClimateIceProj : ModProjectile
     {
@@ -68,7 +68,7 @@ namespace Stellamod.Projectiles.Summons.Minions
         public override void OnKill(int timeLeft)
         {
             //Explosion
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer3"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer3"), Projectile.position);
 
             int count = Main.rand.Next(10, 30);
             for (int j = 0; j < count; j++)

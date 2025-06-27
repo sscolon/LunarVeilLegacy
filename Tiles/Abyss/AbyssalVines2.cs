@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Abyss
+namespace LunarVeilLegacy.Tiles.Abyss
 {
     [TileTag(TileTags.VineSway)]
     public class AbyssalVines2 : ModTile

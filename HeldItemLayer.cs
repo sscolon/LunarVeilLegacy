@@ -3,7 +3,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     internal class HeldItemLayer : PlayerDrawLayer
     {

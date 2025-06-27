@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER
 {
 	public class STARBOMBERGUN2 : ModProjectile
 	{

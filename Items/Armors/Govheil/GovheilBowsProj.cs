@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Armors.Govheil
+namespace LunarVeilLegacy.Items.Armors.Govheil
 {
     public class GovheilBowsProj : ModProjectile
 	{
@@ -139,16 +139,16 @@ namespace Stellamod.Items.Armors.Govheil
 
 		public override bool PreDraw(ref Color lightColor)
 		{
-			Texture2D texture2D4 = Request<Texture2D>("Stellamod/Trails/DimLight").Value;
+			Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Trails/DimLight").Value;
 			Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(90f * alphaCounter), (int)(90f * alphaCounter), (int)(90f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (alphaCounter + 0.6f), SpriteEffects.None, 0f);
 
-			Texture2D texture2D5 = Request<Texture2D>("Stellamod/Trails/DimLight").Value;
+			Texture2D texture2D5 = Request<Texture2D>("LunarVeilLegacy/Trails/DimLight").Value;
 			Main.spriteBatch.Draw(texture2D5, Projectile.Center - Main.screenPosition, null, new Color((int)(90f * alphaCounter), (int)(45f * alphaCounter), (int)(170f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (alphaCounter + 1.6f), SpriteEffects.None, 0f);
 
-			Texture2D texture2D6 = Request<Texture2D>("Stellamod/Trails/DimLight").Value;
+			Texture2D texture2D6 = Request<Texture2D>("LunarVeilLegacy/Trails/DimLight").Value;
 			Main.spriteBatch.Draw(texture2D6, Projectile.Center - Main.screenPosition, null, new Color((int)(90f * alphaCounter), (int)(90f * alphaCounter), (int)(90f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (alphaCounter + 0.3f), SpriteEffects.None, 0f);
 
-			Texture2D texture2D7 = Request<Texture2D>("Stellamod/Trails/DimLight").Value;
+			Texture2D texture2D7 = Request<Texture2D>("LunarVeilLegacy/Trails/DimLight").Value;
 			Main.spriteBatch.Draw(texture2D7, Projectile.Center - Main.screenPosition, null, new Color((int)(45f * alphaCounter), (int)(103f * alphaCounter), (int)(103f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (alphaCounter + 0.2f), SpriteEffects.None, 0f);
 			return false;
 		}

@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.DreadMire
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire
 {
     internal class DreadSineSkull : ModProjectile
     {

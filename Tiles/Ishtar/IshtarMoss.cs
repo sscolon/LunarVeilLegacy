@@ -6,7 +6,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Tiles.Ishtar
+namespace LunarVeilLegacy.Tiles.Ishtar
 {
     public class IshtarMoss : ModTile
     {

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using Terraria;
 
-namespace Stellamod.Helpers.Mathin
+namespace LunarVeilLegacy.Helpers.Mathin
 {
     public static partial class MathExtension
     {

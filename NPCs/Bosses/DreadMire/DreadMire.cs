@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.Utilis;
 using System;
 using System.IO;
 using Terraria;
@@ -21,7 +21,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.DreadMire
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire
 {
     [AutoloadBossHead]
     public class DreadMire : ModNPC
@@ -253,7 +253,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                 NPC.ai[0]++;
                 if (NPC.ai[0] >= 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Spawn1"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Spawn1"), NPC.position);
                     NPC.velocity.Y -= 10f;
                     NPC.alpha = 255;
                     NPC.ai[0] = 0;
@@ -333,7 +333,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                             }
                             if (NPC.ai[0] == 100)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Spawn2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Spawn2"), NPC.position);
                                 var entitySource = NPC.GetSource_FromThis();
                                 if (StellaMultiplayer.IsHost)
                                 {
@@ -419,7 +419,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                                     NPC.netUpdate = true;
                                 }
   
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_TP_In"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_TP_In"), NPC.position);
                           
                             }
                             if (p3)
@@ -470,11 +470,11 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_BoneSpawn1"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_BoneSpawn1"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_BoneSpawn2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_BoneSpawn2"), NPC.position);
                             }
                             Vector2 Vdirection = Vector2.Normalize(NPC.Center - Main.player[NPC.target].Center) * 8.5f;
                             Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
@@ -500,7 +500,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                                 NPC.NewNPC(entitySource, (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<DreadMirePentagramSmall>());
                             }
                       
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
                             NPC.ai[0] = 0;
                             NPC.ai[1] = 0;
                             NPC.ai[3] = 1;
@@ -522,7 +522,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                         NPC.ai[0]++;
                         if (NPC.ai[0] == 10)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Fire1"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Fire1"), NPC.position);
                             if (p3)
                             {
     
@@ -592,7 +592,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                                 NPC.NewNPC(entitySource, (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<DreadMirePentagramSmall>());
                             }
            
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
                             NPC.ai[0] = 0;
                             NPC.ai[1] = 0;
                             NPC.ai[3] = 1;
@@ -621,11 +621,11 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                                 int Sound = Main.rand.Next(1, 3);
                                 if (Sound == 1)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
                                 }
                                 else
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
                                 }
 
                                 if (StellaMultiplayer.IsHost)
@@ -645,11 +645,11 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                                 int Sound = Main.rand.Next(1, 3);
                                 if (Sound == 1)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
                                 }
                                 else
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Pentagram_Skull1"), NPC.position);
                                 }
                                 Vector2 RockPos;
                                 RockPos.Y = Main.rand.NextFloat(NPC.Center.Y + 100, NPC.Center.Y - 100 + 1);
@@ -664,7 +664,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
 
                         if (NPC.ai[0] == 10)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_Pentagram"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_Pentagram"), NPC.position);
                             if (StellaMultiplayer.IsHost)
                             {
                                 var entitySource = NPC.GetSource_FromThis();
@@ -679,7 +679,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                                 NPC.NewNPC(entitySource, (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<DreadMirePentagramSmall>());
                             }
 
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
                             NPC.ai[0] = 0;
                             NPC.ai[1] = 0;
                             NPC.ai[3] = 1;
@@ -693,7 +693,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                         if (NPC.ai[0] == 25)
                         {
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 124f);
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__Dash"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__Dash"), NPC.position);
                             Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
                             NPC.alpha = 255;
                             SoundEngine.PlaySound(SoundID.Item8, NPC.position);
@@ -707,7 +707,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                         }
                         if (NPC.ai[0] == 10)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__PreDash"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__PreDash"), NPC.position);
                             Vector2 Vdirection = Vector2.Normalize(NPC.Center - Main.player[NPC.target].Center) * 8.5f;
                             Movement(targetPos, (Vdirection.X * 170), (Vdirection.Y * 170), 0.05f);
 
@@ -795,7 +795,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                         }
                         if (NPC.ai[0] >= 61)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
                             NPC.ai[0] = 0;
                             NPC.ai[1] = 0;
                             NPC.ai[3] = 1;
@@ -824,7 +824,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                         if (NPC.ai[0] == 130)
                         {
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 124f);
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire__FinalBeam"));
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire__FinalBeam"));
                             if (StellaMultiplayer.IsHost)
                             {
                                 Utilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y - 900, 0, 10,
@@ -839,11 +839,11 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                                 int Sound = Main.rand.Next(1, 3);
                                 if (Sound == 1)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ShadeHand"));
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ShadeHand"));
                                 }
                                 else
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ShadeHand2"));
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ShadeHand2"));
                                 }
 
                                 var entitySource = NPC.GetSource_FromThis();
@@ -872,7 +872,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
                         }
                         if (NPC.ai[0] >= 650)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dreadmire_TP_Out"), NPC.position);
                             NPC.ai[0] = 0;
                             NPC.ai[1] = 0;
                             NPC.ai[3] = 1;

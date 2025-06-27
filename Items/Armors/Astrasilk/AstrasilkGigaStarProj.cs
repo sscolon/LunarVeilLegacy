@@ -1,5 +1,5 @@
-﻿using Stellamod.Dusts;
-using Stellamod.Projectiles.IgniterExplosions;
+﻿using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +10,10 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 
-namespace Stellamod.Items.Armors.Astrasilk
+namespace LunarVeilLegacy.Items.Armors.Astrasilk
 {
     internal class AstrasilkGigaStarProj : ModProjectile
     {
@@ -64,10 +64,10 @@ namespace Stellamod.Items.Armors.Astrasilk
             switch (Main.rand.Next(2))
             {
                 case 0:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/M38F30Bomb1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/M38F30Bomb1"), Projectile.position);
                     break;
                 case 1:
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/M38F30Bomb2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/M38F30Bomb2"), Projectile.position);
                     break;
             }
 

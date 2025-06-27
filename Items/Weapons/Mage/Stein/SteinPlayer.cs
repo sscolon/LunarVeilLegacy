@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage.Stein
+namespace LunarVeilLegacy.Items.Weapons.Mage.Stein
 {
 	public class SteinPlayer : ModPlayer
 	{

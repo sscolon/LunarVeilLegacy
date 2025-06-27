@@ -5,8 +5,8 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-using Stellamod.Dusts;
-using Stellamod.Items.Weapons.PowdersItem;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Items.Weapons.PowdersItem;
 
 using Terraria.DataStructures;
 using Terraria.GameContent.ObjectInteractions;
@@ -15,7 +15,7 @@ using Terraria.ID;
 
 
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
     public class VeilScripture : ModTile
     {

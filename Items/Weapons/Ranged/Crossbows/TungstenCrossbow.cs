@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Crossbows.Gemmed;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Crossbows.Gemmed;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged.Crossbows
+namespace LunarVeilLegacy.Items.Weapons.Ranged.Crossbows
 {
 
     public class TungstenCrossbow : ModItem

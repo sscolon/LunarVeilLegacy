@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
@@ -8,7 +8,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Structures
+namespace LunarVeilLegacy.Tiles.Structures
 {
     public class LogS : ModTile
 	{

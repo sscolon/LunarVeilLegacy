@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterMintyBlastProj : GunHolsterProjectile
     {
@@ -46,7 +46,7 @@ namespace Stellamod.Projectiles.GunHolster
 
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 2f);
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/GunLaser");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GunLaser");
             soundStyle.PitchVariance = 0.5f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.IgniterExplosions
+namespace LunarVeilLegacy.Projectiles.IgniterExplosions
 {
 	public class SpiritualBoom : ModProjectile
 	{

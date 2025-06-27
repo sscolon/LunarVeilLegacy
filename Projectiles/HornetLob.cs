@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class HornetLob : ModProjectile
 	{
@@ -72,7 +72,7 @@ namespace Stellamod.Projectiles
 			float speedXa = -Projectile.velocity.X * Main.rand.NextFloat(.4f, .7f) + Main.rand.NextFloat(-8f, 8f);
 			float speedYa = -Projectile.velocity.Y * Main.rand.Next(0, 0) * 0.01f + Main.rand.Next(-20, 21) * 0.0f;
 			Projectile.NewProjectile(Projectile.GetSource_FromThis(), target.position.X + speedXa + 30, target.position.Y + speedYa, speedXa * 0, speedYa * 0, ModContent.ProjectileType<HornetKaboom>(), (int)(Projectile.damage * 1.2), 0f, Projectile.owner, 0f, 0f);
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/flameup"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/flameup"));
 			
 		}
 
@@ -90,7 +90,7 @@ namespace Stellamod.Projectiles
 			float speedX = Projectile.velocity.X * Main.rand.NextFloat(.3f, .3f) + Main.rand.NextFloat(4f, 4f);
 			float speedY = Projectile.velocity.Y * Main.rand.Next(-1, -1) * 0.0f + Main.rand.Next(-4, -4) * 0f;
 			Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedX + 30, Projectile.position.Y + speedY, speedX * 0, speedY * 0, ModContent.ProjectileType<HornetKaboom>(), (int)(Projectile.damage * 1.2), 0f, Projectile.owner, 0f, 0f);
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/flameup"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/flameup"));
 			Projectile.Kill();
 			return false;
 		}

@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Voyager
+namespace LunarVeilLegacy.Projectiles.Slashers.Voyager
 {
     public class InkBullet1 : ModProjectile
 	{

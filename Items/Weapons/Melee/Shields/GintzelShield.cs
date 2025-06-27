@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Shields;
+using LunarVeilLegacy.Projectiles.Shields;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Shields
+namespace LunarVeilLegacy.Items.Weapons.Melee.Shields
 {
     internal class GintzelShield : ModItem
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Summons.VoidMonsters;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Summons.VoidMonsters;
+using LunarVeilLegacy.Projectiles.Swords;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +13,9 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Buffs.Minions;
+using LunarVeilLegacy.Buffs.Minions;
 
-namespace Stellamod.Projectiles.Summons.Sentries
+namespace LunarVeilLegacy.Projectiles.Summons.Sentries
 {
     public class XScissorMinionProj : ModProjectile
     {

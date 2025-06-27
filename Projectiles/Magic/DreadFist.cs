@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     public class DreadFist : ModProjectile
     {
@@ -38,7 +38,7 @@ namespace Stellamod.Projectiles.Magic
             if (!Moved && Projectile.ai[1] >= 0)
             {
                 SoundEngine.PlaySound(SoundID.DD2_BetsyFireballShot, Projectile.position);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SkyrageShasherEle"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SkyrageShasherEle"), Projectile.position);
                 Projectile.spriteDirection = Projectile.direction;
                 Projectile.rotation = Projectile.velocity.ToRotation() + 1.57f + 3.14f;
                 for (int j = 0; j < 10; j++)

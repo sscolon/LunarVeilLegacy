@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Chains;
+using LunarVeilLegacy.Projectiles.Chains;
 
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     internal class SupernovaChained : ModBuff
     {  

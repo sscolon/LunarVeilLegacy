@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Spears
+namespace LunarVeilLegacy.Projectiles.Spears
 {
     internal class GladiatorSpearProg : ModProjectile
     {
@@ -56,18 +56,18 @@ namespace Stellamod.Projectiles.Spears
                 if (Main.rand.NextBool(8))
                 {
                     Projectile.NewProjectile(EntitySource, Projectile.Center.X, Projectile.Center.Y, StartVelocity.X, StartVelocity.Y, ModContent.ProjectileType<GladiatorSpearMirageProgRed>(), 40, 1, Projectile.owner, 0, 0);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GladiatorMirageRed"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GladiatorMirageRed"), Projectile.position);
                 }
                 else
                 {
                     int Sound = Main.rand.Next(1, 3);
                     if (Sound == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GladiatorMirage1"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GladiatorMirage1"), Projectile.position);
                     }
                     else
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GladiatorMirage2"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GladiatorMirage2"), Projectile.position);
                     }
                     Projectile.NewProjectile(EntitySource, Projectile.Center.X, Projectile.Center.Y, StartVelocity.X, StartVelocity.Y, ModContent.ProjectileType<GladiatorSpearMirageProg>(), 10, 1,Projectile.owner, 0, 0);
                 }

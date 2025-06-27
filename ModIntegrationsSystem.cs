@@ -1,28 +1,28 @@
-﻿using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
-using Stellamod.NPCs.Bosses.Sylia;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.NPCs.Bosses.Sylia;
 using System;
-using Stellamod.NPCs.Bosses.Jack;
+using LunarVeilLegacy.NPCs.Bosses.Jack;
 using System.Collections.Generic;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Stellamod.NPCs.Bosses.STARBOMBER;
-using Stellamod.NPCs.Bosses.Fenix;
-using Stellamod.NPCs.Catacombs.Fire;
-using Stellamod.NPCs.Catacombs.Fire.BlazingSerpent;
-using Stellamod.NPCs.Catacombs.Trap.Cogwork;
-using Stellamod.NPCs.Catacombs.Trap.Sparn;
-using Stellamod.NPCs.Catacombs.Water.WaterJellyfish;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER;
+using LunarVeilLegacy.NPCs.Bosses.Fenix;
+using LunarVeilLegacy.NPCs.Catacombs.Fire;
+using LunarVeilLegacy.NPCs.Catacombs.Fire.BlazingSerpent;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Cogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterJellyfish;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.NPCs.Bosses.Zui;
-using Stellamod.NPCs.Bosses.Niivi;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.REK;
-using Stellamod.NPCs.Bosses.SupernovaFragment;
-using Stellamod.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.Zui;
+using LunarVeilLegacy.NPCs.Bosses.Niivi;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK;
+using LunarVeilLegacy.NPCs.Bosses.SupernovaFragment;
+using LunarVeilLegacy.Items.Consumables;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     // Showcases using Mod.Call of other mods to facilitate mod integration/compatibility/support
     // Mod.Call is explained here https://github.com/tModLoader/tModLoader/wiki/Expert-Cross-Mod-Content#call-aka-modcall-intermediate
@@ -72,7 +72,7 @@ namespace Stellamod
 			// The item used to summon the boss with (if available)
 			int summonItem = ModContent.ItemType<Items.Consumables.WanderingEssence>();
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Jack/JackBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Jack/JackBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -120,7 +120,7 @@ namespace Stellamod
 			};
            
 			Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/DaedusRework/DaedusBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/DaedusRework/DaedusBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -160,7 +160,7 @@ namespace Stellamod
 
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/DreadMire/DreadMireBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/DreadMire/DreadMireBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -223,7 +223,7 @@ namespace Stellamod
 			int summonItem4 = ModContent.ItemType<Items.Consumables.WanderingEssence>();
            
 			Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Event/Gintzearmy/BossGintze/GintziaPreview").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Event/Gintzearmy/BossGintze/GintziaPreview").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -270,7 +270,7 @@ namespace Stellamod
 
 			// The item used to summon the boss with (if available)
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/SunStalker/SunStalkerBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/SunStalker/SunStalkerBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -327,7 +327,7 @@ namespace Stellamod
 
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/INest/IrradiatedNestBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/INest/IrradiatedNestBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -382,7 +382,7 @@ namespace Stellamod
 			};
           
 			Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/singularityFragment/SingularityFragmentBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/singularityFragment/SingularityFragmentBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -432,7 +432,7 @@ namespace Stellamod
 			};
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Verlia/VerliaPreview").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Verlia/VerliaPreview").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -494,7 +494,7 @@ namespace Stellamod
 
             // The boss does not have a custom despawn message, so we omit it
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/GothiviaTheSun/GOS/GothiviaBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/GOS/GothiviaBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -547,7 +547,7 @@ namespace Stellamod
             int summonItem8 = ModContent.ItemType<Items.Materials.ManifestedBravery>();
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/IrradiaNHavoc/Irradia/IrradiaBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/IrradiaNHavoc/Irradia/IrradiaBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -593,7 +593,7 @@ namespace Stellamod
 			Func<bool> downed = () => DownedBossSystem.downedSyliaBoss;
            
 			Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Sylia/SyliaPreview").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Sylia/SyliaPreview").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -634,7 +634,7 @@ namespace Stellamod
 			int summonItem8 = ModContent.ItemType<Items.Consumables.CursedShard>();
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/STARBOMBER/STARBOMBERPreview").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/STARBOMBER/STARBOMBERPreview").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -676,7 +676,7 @@ namespace Stellamod
 
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Fenix/FenixPreview").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Fenix/FenixPreview").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -720,7 +720,7 @@ namespace Stellamod
 
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Zui/ZuiBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Zui/ZuiBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -794,7 +794,7 @@ namespace Stellamod
 			int summonItem8 = ModContent.ItemType<Items.Consumables.CursedShard>();
 
 			Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-				Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Catacombs/Fire/BlazingSerpent/BlazingSerpentPreview").Value;
+				Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Catacombs/Fire/BlazingSerpent/BlazingSerpentPreview").Value;
 				Vector2 centered = new Vector2(
 					rect.X + (rect.Width / 2) - (texture.Width / 2), 
 					rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -962,7 +962,7 @@ namespace Stellamod
 
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Niivi/NiiviPreview").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Niivi/NiiviPreview").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -1002,7 +1002,7 @@ namespace Stellamod
 
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/GothiviaTheSun/REK/RekBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/REK/RekBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));
@@ -1044,7 +1044,7 @@ namespace Stellamod
 
 
             Action<SpriteBatch, Rectangle, Color> customPortait = (SpriteBatch spriteBatch, Rectangle rect, Color color) => {
-                Texture2D texture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/SupernovaFragment/SupernovaFragmentBestiary").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/SupernovaFragment/SupernovaFragmentBestiary").Value;
                 Vector2 centered = new Vector2(
                     rect.X + (rect.Width / 2) - (texture.Width / 2),
                     rect.Y + (rect.Height / 2) - (texture.Height / 2));

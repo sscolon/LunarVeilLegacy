@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class CogBomber : ModItem
     {
@@ -24,7 +24,7 @@ namespace Stellamod.Items.Weapons.Ranged
             Item.knockBack = 6;
             Item.value = Item.buyPrice(0, 15, 0, 0);
             Item.rare = ItemRarityID.LightRed;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/gun1");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/gun1");
             Item.autoReuse = true;
             Item.shootSpeed = 12f;
             Item.shoot = ModContent.ProjectileType<CogBomb>();

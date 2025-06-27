@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles.Gun;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class TheWiggler : ModItem
     {
@@ -58,7 +58,7 @@ namespace Stellamod.Items.Weapons.Ranged
                         {
                             p.ai[1] = Main.rand.NextFloat(30, 90);
                             p.ai[2] = 1;
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/clickk"));
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/clickk"));
                         }
                     }
                 }
@@ -71,13 +71,13 @@ namespace Stellamod.Items.Weapons.Ranged
             {
                 default:
                 case 0:
-                    soundPath = "Stellamod/Assets/Sounds/WigglerShot";
+                    soundPath = "LunarVeilLegacy/Assets/Sounds/WigglerShot";
                     break;
                 case 1:
-                    soundPath = "Stellamod/Assets/Sounds/WigglerShot2";
+                    soundPath = "LunarVeilLegacy/Assets/Sounds/WigglerShot2";
                     break;
                 case 2:
-                    soundPath = "Stellamod/Assets/Sounds/WigglerShot3";
+                    soundPath = "LunarVeilLegacy/Assets/Sounds/WigglerShot3";
                     break;
             }
 

@@ -1,10 +1,10 @@
-﻿using Stellamod.Projectiles.Whips;
+﻿using LunarVeilLegacy.Projectiles.Whips;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Whips
+namespace LunarVeilLegacy.Items.Weapons.Whips
 {
     public class DesertWhip : ModItem
 	{

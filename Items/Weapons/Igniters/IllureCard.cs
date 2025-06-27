@@ -1,19 +1,19 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.IgniterEx;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.IgniterEx;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Brooches;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Items.Weapons.Igniters
+namespace LunarVeilLegacy.Items.Weapons.Igniters
 {
 	internal class IllureCard : ModItem
 	{
@@ -38,7 +38,7 @@ namespace Stellamod.Items.Weapons.Igniters
 			Item.DamageType = DamageClass.Magic;
 			Item.value = 200;
 			Item.rare = ItemRarityID.Pink;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/clickk");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/clickk");
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<IgniterStart>();
 			Item.autoReuse = true;

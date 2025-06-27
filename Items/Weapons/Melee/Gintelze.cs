@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Niivi.Projectiles;
-using Stellamod.NPCs.Catacombs.Trap.Sparn;
-using Stellamod.NPCs.Catacombs.Water.WaterCogwork;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Chains;
-using Stellamod.Projectiles.Gun;
-using Stellamod.Projectiles.Test;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Chains;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Test;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -15,7 +15,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class Gintelze : ClassSwapItem
     {
@@ -47,7 +47,7 @@ namespace Stellamod.Items.Weapons.Melee
             Item.useAnimation = 10;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.autoReuse = true;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/Laserlock2");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Laserlock2");
 
             // Weapon Properties
             Item.DamageType = DamageClass.Ranged;

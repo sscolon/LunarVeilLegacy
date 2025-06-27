@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
-using Stellamod.NPCs.Bosses.Zui.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.UI.Dialogue
+namespace LunarVeilLegacy.UI.Dialogue
 {
     internal class ZuiBeatDialogue : Dialogue
     {
@@ -21,9 +21,9 @@ namespace Stellamod.UI.Dialogue
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/ZuiDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/ZuiDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("ZuiDialogue6"));
                     break;
                 case 1:

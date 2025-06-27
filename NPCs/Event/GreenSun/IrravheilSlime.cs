@@ -2,11 +2,11 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Materials;
-using Stellamod.NPCs.Event.GreenSun.IrravheilFlames;
-using Stellamod.Utilis;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.NPCs.Event.GreenSun.IrravheilFlames;
+using LunarVeilLegacy.Utilis;
+using LunarVeilLegacy.WorldG;
 using System;
 using System.IO;
 using Terraria;
@@ -15,7 +15,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Event.GreenSun
+namespace LunarVeilLegacy.NPCs.Event.GreenSun
 {
     public class IrravheilSlime : ModNPC
     {

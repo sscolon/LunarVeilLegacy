@@ -1,9 +1,9 @@
 ﻿
-using Stellamod.WorldG;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     internal class AuroreanStars : ModSceneEffect
     {
@@ -11,11 +11,11 @@ namespace Stellamod.Assets.Biomes
         public override SceneEffectPriority Priority => SceneEffectPriority.Event;
         public override bool IsSceneEffectActive(Player player) => 
             EventWorld.Aurorean && (player.ZoneOverworldHeight || player.ZoneSkyHeight);
-        public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("Stellamod/StarbloomBackgroundStyle");
+        public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("LunarVeilLegacy/StarbloomBackgroundStyle");
 
         public override void SpecialVisuals(Player player, bool isActive)
         {
-            player.ManageSpecialBiomeVisuals("Stellamod:Starbloom", isActive, player.Center);
+            player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Starbloom", isActive, player.Center);
 
         }
     }

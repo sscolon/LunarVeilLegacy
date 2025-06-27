@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.INest.IEagle
+namespace LunarVeilLegacy.NPCs.Bosses.INest.IEagle
 {
     public class AcidBlast : ModProjectile
     {

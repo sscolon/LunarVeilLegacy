@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 
     public class FurihaMKIII : ClassSwapItem

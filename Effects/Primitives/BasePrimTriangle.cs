@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Stellamod.Effects.Primitives
+namespace LunarVeilLegacy.Effects.Primitives
 {
     public struct BasePrimTriangle : IVertexType
     {

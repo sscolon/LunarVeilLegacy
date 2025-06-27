@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class FrostBringer : ModItem
     {
@@ -50,7 +50,7 @@ namespace Stellamod.Items.Weapons.Melee
             WinterboundArrow += 1;
             if (WinterboundArrow >= 5)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FrostBringer"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FrostBringer"), player.position);
                 WinterboundArrow = 0;
                 type = ModContent.ProjectileType<FrostWaveBig>();
             }

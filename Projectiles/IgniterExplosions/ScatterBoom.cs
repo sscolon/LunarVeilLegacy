@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.IgniterExplosions
+namespace LunarVeilLegacy.Projectiles.IgniterExplosions
 {
 	public class ScatterBoom : ModProjectile
 	{

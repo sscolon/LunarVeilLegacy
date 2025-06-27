@@ -1,22 +1,22 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Accessories.Igniter;
-using Stellamod.Items.Armors.Vanity.Aimacra;
-using Stellamod.Items.Armors.Vanity.Gia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Thrown.Jugglers;
-using Stellamod.Items.Weapons.Whips;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Accessories.Igniter;
+using LunarVeilLegacy.Items.Armors.Vanity.Aimacra;
+using LunarVeilLegacy.Items.Armors.Vanity.Gia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Thrown.Jugglers;
+using LunarVeilLegacy.Items.Weapons.Whips;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -28,7 +28,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
 	// [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
 	[AutoloadHead]
@@ -265,7 +265,7 @@ namespace Stellamod.NPCs.Town
 				Player player = Main.LocalPlayer;
 				WeightedRandom<string> chat = new WeightedRandom<string>();
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2"));
 
 				//-----------------------------------------------------------------------------------------------	
 				Main.npcChatText = LangText.Chat(this, "Special" + Main.rand.Next(1,11));
@@ -321,157 +321,157 @@ namespace Stellamod.NPCs.Town
 				{
 					shopCustomPrice = Item.sellPrice(copper: 2)
 				})
-                .Add(new Item(ModContent.ItemType<DaggerDagger>()) { shopCustomPrice = 100, shopSpecialCurrency = Stellamod.MedalCurrencyID }, CustomConditions.PostFenix)
+                .Add(new Item(ModContent.ItemType<DaggerDagger>()) { shopCustomPrice = 100, shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID }, CustomConditions.PostFenix)
                 .Add(new Item(ModContent.ItemType<DiariBroochA>())
 				{
 					shopCustomPrice = 1,
-					shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+					shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 				})
 
 				.Add(new Item(ModContent.ItemType<SlimeBroochA>())
 				{
 					shopCustomPrice = 3,
-					shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+					shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 				})
 
 					.Add(new Item(ModContent.ItemType<AimacraWig>())
 					{
 						shopCustomPrice = 5,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.BattlePotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.WormholePotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.CalmingPotion)
 					{
 						shopCustomPrice = 2,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.CratePotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.GreaterManaPotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.BuilderPotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 					
 					.Add(new Item(ItemID.GravitationPotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.LifeforcePotion)
 					{
 						shopCustomPrice = 3,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.RagePotion)
 					{
 						shopCustomPrice = 3,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 
 					.Add(new Item(ItemID.GillsPotion)
 					{
 						shopCustomPrice = 2,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.FlipperPotion)
 					{
 						shopCustomPrice = 2,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.ManaRegenerationPotion)
 					{
 						shopCustomPrice = 2,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.NightOwlPotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.SpelunkerPotion)
 					{
 						shopCustomPrice = 3,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.ThornsPotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.LovePotion)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.PadThai)
 					{
 						shopCustomPrice = 1,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.ClimbingClaws)
 					{
 						shopCustomPrice = 3,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.ShoeSpikes)
 					{
 						shopCustomPrice = 3,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.Aglet)
 					{
 						shopCustomPrice = 3,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 					.Add(new Item(ItemID.AnkletoftheWind)
 					{
 						shopCustomPrice = 10,
-						shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+						shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
 					})
 
 
                      .Add(new Item(ModContent.ItemType<IllurineBrew>())
                      {
                          shopCustomPrice = 3,
-                         shopSpecialCurrency = Stellamod.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
+                         shopSpecialCurrency = LunarVeilLegacy.MedalCurrencyID // omit this line if shopCustomPrice should be in regular coins.
                      })
 
 
@@ -538,14 +538,14 @@ namespace Stellamod.NPCs.Town
 		public Asset<Texture2D> GetTextureNPCShouldUse(NPC npc)
 		{
 			if (npc.IsABestiaryIconDummy && !npc.ForcePartyHatOn)
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Aimacra");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Aimacra");
 
 			if (npc.altTexture == 1)
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Aimacra_Party");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Aimacra_Party");
 
-			return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Aimacra");
+			return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Aimacra");
 		}
 
-		public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("Stellamod/NPCs/Town/Aimacra_Head");
+		public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("LunarVeilLegacy/NPCs/Town/Aimacra_Head");
 	}
 }

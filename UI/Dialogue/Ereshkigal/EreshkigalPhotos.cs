@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.UI.Dialogue
+namespace LunarVeilLegacy.UI.Dialogue
 {
     internal class EreshkigalPhotos : Dialogue
     {
@@ -20,30 +20,30 @@ namespace Stellamod.UI.Dialogue
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/EreshkigalDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/EreshkigalDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("EreshTalk1"));
                     break;
 
                 case 1:
                     //Set the texture of the portrait
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("EreshTalk2"));
                     break;
 
                 case 2:
                     //Set the texture of the portrait
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("EreshTalk3"));
                     break;
 
                 case 3:
                     //Set the texture of the portrait
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("EreshTalk4"));
                     break;
             }

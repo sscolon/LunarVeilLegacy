@@ -1,14 +1,14 @@
 
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Overworld.IvythornSlime
+namespace LunarVeilLegacy.NPCs.Overworld.IvythornSlime
 {
 
     public class IvythornSlime : ModNPC

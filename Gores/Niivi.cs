@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace Stellamod.Gores
+namespace LunarVeilLegacy.Gores
 {
     internal abstract class NiiviGore : ModGore { }
     internal class Niivi1 : NiiviGore { }

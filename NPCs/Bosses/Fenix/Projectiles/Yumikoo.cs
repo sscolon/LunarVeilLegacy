@@ -2,16 +2,16 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles
 {
 	public class Yumikoo : ModProjectile
 	{

@@ -4,11 +4,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     public class AcidWaterStyle : ModWaterStyle
     {
-        public override int ChooseWaterfallStyle() => ModContent.Find<ModWaterfallStyle>("Stellamod/AcidWaterfallStyle").Slot;
+        public override int ChooseWaterfallStyle() => ModContent.Find<ModWaterfallStyle>("LunarVeilLegacy/AcidWaterfallStyle").Slot;
         public override int GetSplashDust() => DustID.DungeonGreen;
         public override int GetDropletGore() => GoreID.WaterDripJungle;
         public override Color BiomeHairColor() => Color.Green;

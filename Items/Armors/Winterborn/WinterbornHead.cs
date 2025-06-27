@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Winterborn
+namespace LunarVeilLegacy.Items.Armors.Winterborn
 {
     internal class WinterbornPlayer : ModPlayer
     {

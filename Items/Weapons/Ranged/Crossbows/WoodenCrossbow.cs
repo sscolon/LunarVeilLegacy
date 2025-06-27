@@ -1,11 +1,11 @@
-﻿using Stellamod.Projectiles.Crossbows;
-using Stellamod.Projectiles.Spears;
+﻿using LunarVeilLegacy.Projectiles.Crossbows;
+using LunarVeilLegacy.Projectiles.Spears;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged.Crossbows
+namespace LunarVeilLegacy.Items.Weapons.Ranged.Crossbows
 {
 
     public class WoodenCrossbow : ModItem

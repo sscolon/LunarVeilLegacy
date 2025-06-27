@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Skies;
+using LunarVeilLegacy.Skies;
 using Terraria;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     internal static class ShaderRegistry
     {
@@ -16,33 +16,33 @@ namespace Stellamod.Helpers
         public static string VampKnives_Light_Beam_Vertex_Shader => "VampKnives:LightBeamVertexShader";
         
         public static string VampKnives_Fire => "VampKnives:Fire";
-        public static string StellamodFireWhiteShader => "VampKnives:FireWhite";
+        public static string LunarVeilLegacyFireWhiteShader => "VampKnives:FireWhite";
 
 
-        private static string Silhouette_Shader => "Stellamod:SilhouetteShader";
+        private static string Silhouette_Shader => "LunarVeilLegacy:SilhouetteShader";
 
-        public static string Screen_Black => "Stellamod:Black";
-        public static string Screen_Tint => "Stellamod:Tint";
-        public static string Screen_NormalDistortion => "Stellamod:NormalDistortion";
-        public static string Screen_Vignette => "Stellamod:Vignette";
+        public static string Screen_Black => "LunarVeilLegacy:Black";
+        public static string Screen_Tint => "LunarVeilLegacy:Tint";
+        public static string Screen_NormalDistortion => "LunarVeilLegacy:NormalDistortion";
+        public static string Screen_Vignette => "LunarVeilLegacy:Vignette";
 
         //SHADERING
-        private static string GlowingDustShader => "Stellamod:GlowingDust";
+        private static string GlowingDustShader => "LunarVeilLegacy:GlowingDust";
         public static MiscShaderData MiscGlowingDust => GameShaders.Misc[GlowingDustShader];
 
-        private static string FireWhitePixelShaderName => "Stellamod:FireWhitePixelShader";
+        private static string FireWhitePixelShaderName => "LunarVeilLegacy:FireWhitePixelShader";
         public static MiscShaderData MiscFireWhitePixelShader => GameShaders.Misc[FireWhitePixelShaderName];
 
-        private static string TestPixelShaderName => "Stellamod:TestPixelShader";
+        private static string TestPixelShaderName => "LunarVeilLegacy:TestPixelShader";
         public static MiscShaderData MiscTestPixelShader => GameShaders.Misc[TestPixelShaderName];
 
-        private static string SilShaderName => "Stellamod:SilShader";
+        private static string SilShaderName => "LunarVeilLegacy:SilShader";
         public static MiscShaderData MiscSilPixelShader => GameShaders.Misc[SilShaderName];
 
-        private static string DistortionShaderName => "Stellamod:DistortionShader";
+        private static string DistortionShaderName => "LunarVeilLegacy:DistortionShader";
         public static MiscShaderData MiscDistortionShader => GameShaders.Misc[DistortionShaderName];
 
-        public static AssetRepository Assets => Stellamod.Instance.Assets;
+        public static AssetRepository Assets => LunarVeilLegacy.Instance.Assets;
 
         private static void RegisterMiscShader(string name, string path, string pass)
         {
@@ -54,11 +54,11 @@ namespace Stellamod.Helpers
         {
             if (!Main.dedServ)
             {
-                Filters.Scene["Stellamod:VeilSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0f, 0f, 0f).UseOpacity(0f), EffectPriority.VeryHigh);
-                SkyManager.Instance["Stellamod:VeilSky"] = new AuroranSky();
+                Filters.Scene["LunarVeilLegacy:VeilSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0f, 0f, 0f).UseOpacity(0f), EffectPriority.VeryHigh);
+                SkyManager.Instance["LunarVeilLegacy:VeilSky"] = new AuroranSky();
 
-                Filters.Scene["Stellamod:GreenSunSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.VeryHigh);
-                SkyManager.Instance["Stellamod:GreenSunSky"] = new GreenSunSky();
+                Filters.Scene["LunarVeilLegacy:GreenSunSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.VeryHigh);
+                SkyManager.Instance["LunarVeilLegacy:GreenSunSky"] = new GreenSunSky();
             }
 
             Ref<Effect> BasicTrailRef = new(Assets.Request<Effect>("Effects/Primitives/BasicTrailShader", AssetRequestMode.ImmediateLoad).Value);
@@ -66,7 +66,7 @@ namespace Stellamod.Helpers
             GameShaders.Misc[ShaderRegistry.VampKnives_Basic_Trail] = new MiscShaderData(BasicTrailRef, "TrailPass");
             GameShaders.Misc[ShaderRegistry.VampKnives_Lightning_Trail] = new MiscShaderData(LightningTrailRef, "TrailPass");
 
-            Asset<Effect> shader2 = ModContent.Request<Effect>("Stellamod/Trails/SilhouetteShader", AssetRequestMode.ImmediateLoad);
+            Asset<Effect> shader2 = ModContent.Request<Effect>("LunarVeilLegacy/Trails/SilhouetteShader", AssetRequestMode.ImmediateLoad);
             GameShaders.Misc[ShaderRegistry.Silhouette_Shader] = new MiscShaderData(new Ref<Effect>(shader2.Value), "SilhouettePass");
 
             Ref<Effect> genericLaserShader = new(Assets.Request<Effect>("Effects/Primitives/GenericLaserShader", AssetRequestMode.ImmediateLoad).Value);
@@ -81,7 +81,7 @@ namespace Stellamod.Helpers
             GameShaders.Misc[ShaderRegistry.VampKnives_Fire] = new MiscShaderData(shadowflameShader, "TrailPass");
 
             Ref<Effect> whiteflameShader = new(Assets.Request<Effect>("Effects/Whiteflame", AssetRequestMode.ImmediateLoad).Value);
-            GameShaders.Misc[ShaderRegistry.StellamodFireWhiteShader] = new MiscShaderData(whiteflameShader, "TrailPass");
+            GameShaders.Misc[ShaderRegistry.LunarVeilLegacyFireWhiteShader] = new MiscShaderData(whiteflameShader, "TrailPass");
 
             Asset<Effect> glowingDustShader = Assets.Request<Effect>("Effects/GlowingDust");
             GameShaders.Misc[ShaderRegistry.GlowingDustShader] = new MiscShaderData(glowingDustShader, "GlowingDustPass");
@@ -111,20 +111,20 @@ namespace Stellamod.Helpers
             RegisterMiscShader(DistortionShaderName, "Effects/NormalDistortion", "ScreenPass");
 
             //Skies
-            SkyManager.Instance["Stellamod:NaxtrinSky"] = new NaxtrinSky();
-            SkyManager.Instance["Stellamod:NaxtrinSky"].Load();
+            SkyManager.Instance["LunarVeilLegacy:NaxtrinSky"] = new NaxtrinSky();
+            SkyManager.Instance["LunarVeilLegacy:NaxtrinSky"].Load();
 
-            SkyManager.Instance["Stellamod:NaxtrinSky2"] = new NaxtrinSky2();
-            SkyManager.Instance["Stellamod:NaxtrinSky2"].Load();
+            SkyManager.Instance["LunarVeilLegacy:NaxtrinSky2"] = new NaxtrinSky2();
+            SkyManager.Instance["LunarVeilLegacy:NaxtrinSky2"].Load();
 
-            SkyManager.Instance["Stellamod:AlcadSky"] = new NaxtrinSky3();
-            SkyManager.Instance["Stellamod:AlcadSky"].Load();
+            SkyManager.Instance["LunarVeilLegacy:AlcadSky"] = new NaxtrinSky3();
+            SkyManager.Instance["LunarVeilLegacy:AlcadSky"].Load();
 
-            SkyManager.Instance["Stellamod:SyliaSky"] = new SyliaSky();
-            SkyManager.Instance["Stellamod:SyliaSky"].Load();
+            SkyManager.Instance["LunarVeilLegacy:SyliaSky"] = new SyliaSky();
+            SkyManager.Instance["LunarVeilLegacy:SyliaSky"].Load();
 
-            SkyManager.Instance["Stellamod:VillageSky"] = new VillageSky();
-            SkyManager.Instance["Stellamod:VillageSky"].Load();
+            SkyManager.Instance["LunarVeilLegacy:VillageSky"] = new VillageSky();
+            SkyManager.Instance["LunarVeilLegacy:VillageSky"].Load();
         }
     }
 }

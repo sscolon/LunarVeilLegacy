@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Vheilatine
+namespace LunarVeilLegacy.Projectiles.Slashers.Vheilatine
 {
     public class VheilatineProj : ModProjectile
     {

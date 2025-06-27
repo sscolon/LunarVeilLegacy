@@ -3,11 +3,11 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.Particles;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -22,7 +22,7 @@ using static Terraria.ModLoader.ModContent;
 
 
 
-namespace Stellamod.NPCs.Grave
+namespace LunarVeilLegacy.NPCs.Grave
 {
 
     public class GraveShard : ModNPC
@@ -100,11 +100,11 @@ namespace Stellamod.NPCs.Grave
             {
                 var EntitySource = NPC.GetSource_Death();
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 2048f, 128f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/BloodCystDeath"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/BloodCystDeath"));
                 var entitySource = NPC.GetSource_FromThis();
-                int Gore1 = ModContent.Find<ModGore>("Stellamod/DreadMonolith1").Type;
-                int Gore2 = ModContent.Find<ModGore>("Stellamod/DreadMonolith2").Type;
-                int Gore3 = ModContent.Find<ModGore>("Stellamod/DreadMonolith3").Type;
+                int Gore1 = ModContent.Find<ModGore>("LunarVeilLegacy/DreadMonolith1").Type;
+                int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/DreadMonolith2").Type;
+                int Gore3 = ModContent.Find<ModGore>("LunarVeilLegacy/DreadMonolith3").Type;
                 Gore.NewGore(entitySource, NPC.position, NPC.velocity, Gore1);
                 Gore.NewGore(entitySource, NPC.position, NPC.velocity, Gore2);
                 Gore.NewGore(entitySource, NPC.position, NPC.velocity, Gore3);

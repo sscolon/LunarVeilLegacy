@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Items.Ores;
-using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Tiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
     internal class Starrdew : ModItem
 	{

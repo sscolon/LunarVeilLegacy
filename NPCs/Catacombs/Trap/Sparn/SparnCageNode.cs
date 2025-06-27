@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Trap.Sparn
+namespace LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn
 {
     internal class SparnCageNode : ModProjectile
     {
@@ -66,7 +66,7 @@ namespace Stellamod.NPCs.Catacombs.Trap.Sparn
         {
 
             Texture2D chainTex = ModContent.Request<Texture2D>(Texture + "_Chain").Value;
-            Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
 
             Curvature curve = new Curvature(new Vector2[] { _targetCenter, projBottom });
             int numPoints = 30;
@@ -128,7 +128,7 @@ namespace Stellamod.NPCs.Catacombs.Trap.Sparn
 
         public override void OnKill(int timeLeft)
         {
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSheethe"));
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSheethe"));
             for (int i = 0; i < 16; i++)
             {
                 Vector2 speed = Main.rand.NextVector2CircularEdge(4f, 4f);

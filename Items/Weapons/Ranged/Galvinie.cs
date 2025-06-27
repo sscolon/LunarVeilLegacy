@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class Galvinie : ModItem
     {
@@ -45,20 +45,20 @@ namespace Stellamod.Items.Weapons.Ranged
             if (WinterboundArrow >= 3)
             {
                 WinterboundArrow = 0;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MorrowSong"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MorrowSong"), player.position);
                 type = ModContent.ProjectileType<GalvinieArrow1>();
                 Projectile.NewProjectile(source, position.X, position.Y, velocity.X, velocity.Y, type, damage, knockback, player.whoAmI);
             }
             if (WinterboundArrow == 2)
             {
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MorrowSong2"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MorrowSong2"), player.position);
                 type = ModContent.ProjectileType<GalvinieArrow1>();
                 Projectile.NewProjectile(source, position.X, position.Y, velocity.X, velocity.Y, type, damage, knockback, player.whoAmI);
             }
             if (WinterboundArrow == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MorrowSong3"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MorrowSong3"), player.position);
                 type = ModContent.ProjectileType<GalvinieArrow1>();
                 Projectile.NewProjectile(source, position.X, position.Y, velocity.X, velocity.Y, type, damage, knockback, player.whoAmI);
             }

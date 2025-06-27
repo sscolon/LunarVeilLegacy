@@ -5,7 +5,7 @@ using Terraria.DataStructures;
 using Terraria.GameInput;
 using Terraria.ModLoader;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     // See Common/Systems/KeybindSystem for keybind registration.
     public class ComboSystem : ModPlayer

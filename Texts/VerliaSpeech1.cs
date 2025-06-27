@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Texts
+namespace LunarVeilLegacy.Texts
 {
 	public class VerliaSpeech1 : ModProjectile
 	{

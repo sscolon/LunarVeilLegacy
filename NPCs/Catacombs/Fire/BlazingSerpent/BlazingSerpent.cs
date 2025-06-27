@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
 using System.IO;
 using Terraria;
 using Terraria.GameContent.Bestiary;
@@ -9,7 +9,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Fire.BlazingSerpent
+namespace LunarVeilLegacy.NPCs.Catacombs.Fire.BlazingSerpent
 {
 	// These three class showcase usage of the WormHead, WormBody and WormTail classes from Worm.cs
 	[AutoloadBossHead]

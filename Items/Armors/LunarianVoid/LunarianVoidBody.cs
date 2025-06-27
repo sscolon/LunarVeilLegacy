@@ -1,9 +1,9 @@
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Armors.LunarianVoid
+namespace LunarVeilLegacy.Items.Armors.LunarianVoid
 {
     [AutoloadEquip(EquipType.Body)]
     public class LunarianVoidBody : ModItem

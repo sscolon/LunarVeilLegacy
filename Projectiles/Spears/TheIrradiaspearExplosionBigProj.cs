@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Terraria.Audio;
 
-namespace Stellamod.Projectiles.Spears
+namespace LunarVeilLegacy.Projectiles.Spears
 {
     internal class TheIrradiaspearExplosionBigProj : ModProjectile,
         IPixelPrimitiveDrawer
@@ -79,7 +79,7 @@ namespace Stellamod.Projectiles.Spears
             Timer++;
             if(Timer == 1)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/IrradiatedNest_Missile_Land");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/IrradiatedNest_Missile_Land");
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
             }
 

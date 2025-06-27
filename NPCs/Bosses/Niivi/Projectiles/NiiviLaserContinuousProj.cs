@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -11,7 +11,7 @@ using Terraria.Audio;
 using Terraria.ModLoader;
 using static tModPorter.ProgressUpdate;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviLaserContinuousProj : ModProjectile
     {

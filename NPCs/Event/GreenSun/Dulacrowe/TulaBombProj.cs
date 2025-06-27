@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
+namespace LunarVeilLegacy.NPCs.Event.GreenSun.Dulacrowe
 {
     internal class TulacBombProj : ModProjectile
     {
@@ -124,7 +124,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024, 16);
 
                 screenShaderSystem.TintScreen(Color.White, 0.3f, timer: 15);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StarFlower1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StarFlower1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
                 float num = 4;
                 for (float i = 0; i < num; i++)
                 {
@@ -143,7 +143,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
             if(Timer == 240)
             {
                 //   SoundEngine.PlaySound(SoundRegistry.Niivi_PrimGrow1, Projectile.position);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StarFlower1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StarFlower1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024, 16);
 
                 screenShaderSystem.TintScreen(Color.White, 0.3f, timer: 15);
@@ -168,7 +168,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
                 SwapColor = true;
                 //   SoundEngine.PlaySound(SoundRegistry.Niivi_PrimGrow2, Projectile.position);
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StarFlower1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StarFlower1") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024, 16);
 
                 screenShaderSystem.TintScreen(Color.White, 0.3f, timer: 15);
@@ -263,7 +263,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
 
         public override bool PreDraw(ref Color lightColor)
         {
-            var texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/GreenSunEffect2");
+            var texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/GreenSunEffect2");
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 drawSize = texture.Size();
@@ -331,7 +331,7 @@ namespace Stellamod.NPCs.Event.GreenSun.Dulacrowe
         public override void OnKill(int timeLeft)
         {
             base.OnKill(timeLeft);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekShockwave") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekShockwave") { Pitch = Main.rand.NextFloat(-10f, 10f) }, Projectile.Center);
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 4000, 80);
             float num = 16;
             for(float i = 0; i < num; i++)

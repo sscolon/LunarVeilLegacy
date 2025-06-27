@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.VanillaReworks
+namespace LunarVeilLegacy.NPCs.Bosses.VanillaReworks
 {
     public class Retinazer : GlobalNPC
     {

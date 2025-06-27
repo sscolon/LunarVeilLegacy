@@ -2,20 +2,20 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.UI.Systems;
 using Terraria.Audio;
 using Terraria.ID;
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
 
-namespace Stellamod.NPCs.Illuria
+namespace LunarVeilLegacy.NPCs.Illuria
 {
 	public class HoloBuster : ModProjectile
 	{

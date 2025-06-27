@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -8,7 +8,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class AssassinsSlash : ModItem
     {
@@ -85,7 +85,7 @@ namespace Stellamod.Items.Weapons.Melee
 
             if(Hits == 2)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashCharge"), player.position);              
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashCharge"), player.position);              
                 Hits = 3;
             }
             player.GetModPlayer<MyPlayer>().AssassinsSlashnpc = target;

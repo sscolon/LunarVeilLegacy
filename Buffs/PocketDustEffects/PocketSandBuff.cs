@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs.PocketDustEffects
+namespace LunarVeilLegacy.Buffs.PocketDustEffects
 {
     public class PocketSandBuff : ModBuff
 	{

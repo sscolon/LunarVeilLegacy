@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Gores;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.IgniterExplosions
+namespace LunarVeilLegacy.Projectiles.IgniterExplosions
 {
     internal class RibbonBoom : ModProjectile
     {

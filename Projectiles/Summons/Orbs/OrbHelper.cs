@@ -1,4 +1,4 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.Summons.Orbs
+namespace LunarVeilLegacy.Projectiles.Summons.Orbs
 {
     internal static class OrbHelper
     {

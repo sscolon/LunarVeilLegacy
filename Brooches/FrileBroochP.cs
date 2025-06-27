@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Brooches
+namespace LunarVeilLegacy.Brooches
 {
     public class FrileBroochP : ModProjectile
 	{

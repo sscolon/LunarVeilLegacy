@@ -1,9 +1,9 @@
-﻿using Stellamod.Tiles.Abyss.Aurelus;
-using Stellamod.Tiles.Catacombs;
+﻿using LunarVeilLegacy.Tiles.Abyss.Aurelus;
+using LunarVeilLegacy.Tiles.Catacombs;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
     public class CatacombsSummoni : ModItem
 	{

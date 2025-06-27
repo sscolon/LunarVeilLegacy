@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.NPCs.Bosses.Niivi.Projectiles;
-using Stellamod.NPCs.Town;
-using Stellamod.Particles;
+using LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles;
+using LunarVeilLegacy.NPCs.Town;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi
 {
     internal partial class NiiviRoaming : ModNPC
     {

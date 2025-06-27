@@ -6,7 +6,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 using static Terraria.Main;
 
-namespace Stellamod.Skies
+namespace LunarVeilLegacy.Skies
 {
     public class GreenSunSky : CustomSky
     {
@@ -52,8 +52,8 @@ namespace Stellamod.Skies
 
             if (maxDepth >= 3.40282347E+38f && minDepth < 3.40282347E+38f)
             {
-                Texture2D Tex = ModContent.Request<Texture2D>("Stellamod/Assets/Effects/SkyGradient1").Value;
-                Texture2D Tex2 = ModContent.Request<Texture2D>("Stellamod/Assets/Effects/GreenSunSky").Value;
+                Texture2D Tex = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Effects/SkyGradient1").Value;
+                Texture2D Tex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Effects/GreenSunSky").Value;
 
                 spriteBatch.Draw(Tex, new Rectangle(0, 0 - (int)screenPosition.Y, screenWidth, 3000), null, Color.SpringGreen * Intensity * 0.5f, 0, Vector2.Zero, SpriteEffects.None, 0);
                 for (int i = 0; i < 2; i++)

@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     public class FrostSwProj2 : ModProjectile
 	{

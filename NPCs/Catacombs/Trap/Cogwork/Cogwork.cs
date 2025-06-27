@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Catacombs.Trap.Cogwork
+namespace LunarVeilLegacy.NPCs.Catacombs.Trap.Cogwork
 {
     [AutoloadBossHead]
     internal class Cogwork : ModNPC
@@ -245,7 +245,7 @@ namespace Stellamod.NPCs.Catacombs.Trap.Cogwork
                     if(ai_Counter % 26 == 11)
                     {
                         WheelSparks(Vector2.Zero);
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SkyrageShasher"));
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SkyrageShasher"));
                     }
                     if(ai_Counter > 52)
                     {

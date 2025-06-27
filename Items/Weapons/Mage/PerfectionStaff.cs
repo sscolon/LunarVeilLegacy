@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Magic;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     public class PerfectionStaff : ClassSwapItem
     {
@@ -71,7 +71,7 @@ namespace Stellamod.Items.Weapons.Mage
             Item.knockBack = 3; // Sets the Item's knockback. Note that projectiles shot by this weapon will use its and the used ammunition's knockback added together.
             Item.value = 10000; // how much the Item sells for (measured in copper)
             Item.rare = ItemRarityID.Orange; // the color that the Item's name will be in-game
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GhostExcalibur1"); // The sound that this Item plays when used.
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GhostExcalibur1"); // The sound that this Item plays when used.
             Item.shoot = ModContent.ProjectileType<PerfectionProj>();
             Item.shootSpeed = 2f; // the speed of the projectile (measured in pixels per frame)
             Item.channel = true;

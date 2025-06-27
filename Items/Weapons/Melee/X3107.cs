@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Slashers;
-using Stellamod.Projectiles.Slashers.ArchariliteRaysword;
-using Stellamod.Projectiles.Slashers.X3107;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Slashers;
+using LunarVeilLegacy.Projectiles.Slashers.ArchariliteRaysword;
+using LunarVeilLegacy.Projectiles.Slashers.X3107;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -11,7 +11,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class X3107 : ModItem
     {

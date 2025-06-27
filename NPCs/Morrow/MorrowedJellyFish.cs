@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Morrow
+namespace LunarVeilLegacy.NPCs.Morrow
 {
     public class MorrowedJellyFish : ModNPC
 	{
@@ -52,7 +52,7 @@ namespace Stellamod.NPCs.Morrow
 			NPC.defense = 15; // The amount of defense that this npc has
 			NPC.lifeMax = 1500; // The amount of health that this npc has
 			NPC.HitSound = SoundID.NPCHit1; // The sound the NPC will make when being hit.
-			NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+			NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
 			NPC.value = 5000f; // How many copper coins the NPC will drop when killed.
 			NPC.knockBackResist = 0f;
 			
@@ -211,7 +211,7 @@ namespace Stellamod.NPCs.Morrow
 		public override void HitEffect(NPC.HitInfo hit)
 		{
 
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Morrowpes"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Morrowpes"));
 
 			
 		}

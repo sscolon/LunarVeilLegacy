@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Projectiles
 {
     internal class IrradiaElectricBoxConnectorProj : ModProjectile
     {
@@ -45,7 +45,7 @@ namespace Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles
 
            if (Ty == 2)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ElectricShuffle"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ElectricShuffle"), Projectile.position);
             }
 
 

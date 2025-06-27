@@ -1,20 +1,20 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Armors.Vanity.Verlia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.StarrVeriplant.Projectiles;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles.Sword;
-using Stellamod.NPCs.Projectiles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Armors.Vanity.Verlia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles.Sword;
+using LunarVeilLegacy.NPCs.Projectiles;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -27,7 +27,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static ParticleLibrary.Particle;
 
-namespace Stellamod.NPCs.Bosses.Verlia
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
 	public class VerliaB : ModNPC
@@ -136,7 +136,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 
 			// Influences how the NPC looks in the Bestiary
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-			drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/Verlia/VerliaPreview";
+			drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/Verlia/VerliaPreview";
 			drawModifiers.PortraitScale = 0.8f; // Portrait refers to the full picture when clicking on the icon in the bestiary
 			drawModifiers.PortraitPositionYOverride = 0f;
 			NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -681,7 +681,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
             {
                 if (StellaMultiplayer.IsHost)
                     GeneralStellaUtilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y + 1000, 0, -10, ModContent.ProjectileType<VRay>(), 600, 0f, -1, 0, NPC.whoAmI);
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AbsoluteDistillence"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AbsoluteDistillence"));
 			}
 						
 			if (timer == 110)
@@ -715,7 +715,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 				{
 					if (StellaMultiplayer.IsHost)
 					{
-						SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SoftSummon"));
+						SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SoftSummon"));
 						float speedX = NPC.velocity.X * Main.rand.NextFloat(.3f, .3f) + Main.rand.NextFloat(4f, 4f);
 						float speedY = NPC.velocity.Y * Main.rand.Next(-1, -1) * 0.0f + Main.rand.Next(-4, -4) * 0f;
 						Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedX + 60, NPC.position.Y + speedY - 130, speedX - 2 * 2, speedY - 2 * 2,
@@ -777,7 +777,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 							ModContent.ProjectileType<Sword2F>(), 9, 0f, Owner: Main.myPlayer);
 					}
 
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Huhhuh"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Huhhuh"));
 				}
 			}
 				
@@ -805,7 +805,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 						ModContent.ProjectileType<Sigil>(), 0, 0f, Owner: Main.myPlayer);
                 }
 			
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/StarCharge"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/StarCharge"));
 			}
 			if (timer > 5)
 			{
@@ -841,7 +841,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			timer++;
 			if (timer == 2)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SoftSummon"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SoftSummon"));
 				if (StellaMultiplayer.IsHost)
 				{
                     float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(0f, 0f);
@@ -887,8 +887,8 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			timer++;
 			if (timer == 2)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SoftSummon"));
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Moaning"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SoftSummon"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Moaning"));
 				if (StellaMultiplayer.IsHost)
 				{
                     float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(0f, 0f);
@@ -915,7 +915,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
                             ModContent.ProjectileType<SineSword>(), 29, 0f, Owner: Main.myPlayer);
                     }
 
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
                 }
 
                 if (timer == 30)
@@ -933,7 +933,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 							ModContent.ProjectileType<SineSword>(), 27, 0f, Owner: Main.myPlayer);
                     }
                    
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
                 }
 
                 if (timer == 50)
@@ -951,7 +951,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 							ModContent.ProjectileType<SineSword>(), 23, 0f, Owner: Main.myPlayer);
                     }
                    
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
                 }
             }
 
@@ -971,7 +971,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			if (timer == 50)
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/VerliaSONATO"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/VerliaSONATO"));
 			}
 			if (timer == 200)
 			{
@@ -1000,7 +1000,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			if (timer == 50)
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/VerliaSONATO"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/VerliaSONATO"));
 			}
 			float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(-4f, -4f);
 			float speedXa = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(4f, 4f);
@@ -1016,7 +1016,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
                 }
 
 			
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 150)
@@ -1029,7 +1029,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 
 
                    
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 200)
@@ -1040,7 +1040,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 						ModContent.ProjectileType<SineSword>(), 40, 0f, Owner: Main.myPlayer);
 				}
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 250)
@@ -1050,7 +1050,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 20, speedXb * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 23, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 300)
@@ -1060,7 +1060,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					int index2 = NPC.NewNPC(NPC.GetSource_FromThis(), (int)NPC.Center.X + 10, (int)NPC.Center.Y - 40, ModContent.NPCType<GhostCharger>());
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 40, speedXa * 1, speedYa - 1 * 0, ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 350)
@@ -1072,7 +1072,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa - 20, speedXb * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 400)
@@ -1082,7 +1082,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa - 100, speedXa * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 450)
@@ -1092,7 +1092,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 90, speedXb * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 50, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 			if (timer == 500)
 			{
@@ -1103,7 +1103,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 100, speedXa * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 275)
@@ -1117,7 +1117,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa - 100, speedXa * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 20, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 375)
@@ -1129,7 +1129,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa - 60, speedXb * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 50, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 225)
@@ -1141,7 +1141,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 190, speedXa * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 50, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 125)
@@ -1152,7 +1152,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 230, speedXb * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 40, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 325)
@@ -1167,7 +1167,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 140, speedXa * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 475)
@@ -1183,7 +1183,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa - 220, speedXb * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 400)
@@ -1195,7 +1195,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa - 120, speedXa * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 			if (timer == 425)
@@ -1209,7 +1209,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 190, speedXb * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 			if (timer == 175)
             {
@@ -1223,7 +1223,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 					Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXa, NPC.position.Y + speedYa + 200, speedXa * 1, speedYa - 1 * 0, 
 						ModContent.ProjectileType<SineSword>(), 30, 0f, Owner: Main.myPlayer);
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordThrow"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordThrow"));
 			}
 
 
@@ -1331,7 +1331,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 							ModContent.ProjectileType<Strummer>(), 20, 0f, Owner: Main.myPlayer);
                     }
 					
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Sadano"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Sadano"));
 
 					
 
@@ -1469,7 +1469,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
                             ModContent.ProjectileType<Strummer>(), 20, 0f, Owner: Main.myPlayer);
                     }
 
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Sadano"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Sadano"));
 
 
 
@@ -1575,7 +1575,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 						Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXb, NPC.position.Y + speedYb + 10, speedXb - 2 * 2, speedYb - 2 * 2,
 						ModContent.ProjectileType<FrostShot2>(), 40, 0f, Owner: Main.myPlayer);
 					}
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/FrostShot2"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/FrostShot2"));
 				}
 				
 				if (timer == 45)
@@ -1586,7 +1586,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
                             ModContent.ProjectileType<FrostShot2>(), 40, 0f, Owner: Main.myPlayer);
                     }
 
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/FrostShot3"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/FrostShot3"));
 				}
 			
 				if (timer == 65)
@@ -1596,7 +1596,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 						Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXb, NPC.position.Y + speedYb + 10, speedXb - 2 * 2, speedYb - 2 * 2,
 						ModContent.ProjectileType<FrostShot2>(), 40, 0f, Owner: Main.myPlayer);
 					}
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/FrostShot1"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/FrostShot1"));
 				}
 				
 				
@@ -1614,7 +1614,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 						Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.position.X + speedXb, NPC.position.Y + speedYb + 10, speedXb - 2 * 2, speedYb - 2 * 2,
 						ModContent.ProjectileType<FrostShot>(), 43, 0f, Owner: Main.myPlayer);
 					}
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/FrostShot1"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/FrostShot1"));
 				}
 				
 				
@@ -1626,7 +1626,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
                                 ModContent.ProjectileType<FrostShot>(), 43, 0f, Owner: Main.myPlayer);
                     }
 	
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/FrostShot3"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/FrostShot3"));
 				}
 				
 			}
@@ -1657,7 +1657,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			timer++;
 			if (timer == 5)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/VTeleportOut"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/VTeleportOut"));
 				if (NPC.life < NPC.lifeMax / 2)
 				{
 					if (StellaMultiplayer.IsHost)
@@ -1765,7 +1765,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			timer++;
 			if (timer == 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/VDisappear"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/VDisappear"));
 				
 			}
 			if (timer == 27)
@@ -1832,7 +1832,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			timer++;
 			if (timer == 5)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/VTeleportOut"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/VTeleportOut"));
 				
 			}
 				if (timer == 22)
@@ -1863,7 +1863,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 			timer++;
 			if (timer == 4)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordSheethe"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordSheethe"));
 
 			}
 				if (timer == 41)
@@ -1907,8 +1907,8 @@ namespace Stellamod.NPCs.Bosses.Verlia
                             ModContent.ProjectileType<SlashRight>(), 32, 0f, Owner: Main.myPlayer);
                     }
 
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Hyuh"));
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordSlice"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Hyuh"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordSlice"));
 				}
                 else
                 {
@@ -1920,8 +1920,8 @@ namespace Stellamod.NPCs.Bosses.Verlia
                             ModContent.ProjectileType<SlashLeft>(), 32, 0f, Owner: Main.myPlayer);
                     }
 
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Hyuh"));
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordSlice"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Hyuh"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordSlice"));
 				}
 				
 				
@@ -1981,8 +1981,8 @@ namespace Stellamod.NPCs.Bosses.Verlia
 						ModContent.ProjectileType<SlashHold>(), 160, 0f, Main.myPlayer, 0f, ai1);
                 }
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Moaning"));
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordHoldVerlia"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Moaning"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"));
 			}
 			if (timer < 30)
 			{
@@ -2054,7 +2054,7 @@ namespace Stellamod.NPCs.Bosses.Verlia
 		{
 			if (NPC.life <= 0)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Binding_Abyss_Spawn"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Spawn"), NPC.position);
 				Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 128f);
 				var entitySource = NPC.GetSource_FromThis();
 				NPC.NewNPC(entitySource, (int)NPC.Center.X + 00, (int)NPC.Center.Y + 0, ModContent.NPCType<DeathVerlia>());

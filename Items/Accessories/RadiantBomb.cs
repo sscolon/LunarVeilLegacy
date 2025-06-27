@@ -3,11 +3,11 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.singularityFragment.Phase1;
-using Stellamod.Projectiles.Summons;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment.Phase1;
+using LunarVeilLegacy.Projectiles.Summons;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -17,7 +17,7 @@ using static Terraria.ModLoader.ModContent;
 
 
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
 	public class RadiantBomb : ModProjectile
 	{
@@ -135,7 +135,7 @@ namespace Stellamod.Items.Accessories
 		float alphaCounter = 1;
 		public override bool PreDraw(ref Color lightColor)
 		{
-			Texture2D texture2D4 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+			Texture2D texture2D4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
 			Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(85f * alphaCounter), (int)(25f * alphaCounter), (int)(5f * alphaCounter), 0), Projectile.rotation, new Vector2(106 / 2, 106 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
 			Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(05f * alphaCounter), (int)(25f * alphaCounter), (int)(5f * alphaCounter), 0), Projectile.rotation, new Vector2(106 / 2, 106 / 2), 0.2f * (counter + 0.3f * 2), SpriteEffects.None, 0f);
 			

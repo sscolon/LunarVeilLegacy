@@ -4,7 +4,7 @@ using Terraria.Graphics.Capture;
 using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
 	// Shows setting up two basic biomes. For a more complicated example, please request.
 	public class XixVillage : ModBiome
@@ -16,7 +16,7 @@ namespace Stellamod.Assets.Biomes
 		 // Sets a water style for when inside this biome
 
 
-		public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("Stellamod/StarbloomBackgroundStyle");
+		public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("LunarVeilLegacy/StarbloomBackgroundStyle");
 		public override CaptureBiome.TileColorStyle TileColorStyle => CaptureBiome.TileColorStyle.Normal;
 
 		// Select Music
@@ -29,10 +29,10 @@ namespace Stellamod.Assets.Biomes
 		public override void SpecialVisuals(Player player, bool isActive)
 		{
 
-			if (!SkyManager.Instance["Stellamod:VillageSky"].IsActive() && isActive)
-				SkyManager.Instance.Activate("Stellamod:VillageSky", player.Center);
-			if (SkyManager.Instance["Stellamod:VillageSky"].IsActive() && !isActive)
-				SkyManager.Instance.Deactivate("Stellamod:VillageSky");
+			if (!SkyManager.Instance["LunarVeilLegacy:VillageSky"].IsActive() && isActive)
+				SkyManager.Instance.Activate("LunarVeilLegacy:VillageSky", player.Center);
+			if (SkyManager.Instance["LunarVeilLegacy:VillageSky"].IsActive() && !isActive)
+				SkyManager.Instance.Deactivate("LunarVeilLegacy:VillageSky");
 
 		}
 		*/

@@ -1,15 +1,15 @@
 ﻿
 
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     /*
 	 * This file contains all the code necessary for a minion

@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords.Altride
+namespace LunarVeilLegacy.Projectiles.Swords.Altride
 {
     internal class EverneanProj : ModProjectile
     {

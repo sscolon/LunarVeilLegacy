@@ -1,6 +1,6 @@
-﻿using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Thrown.Jugglers;
+﻿using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Thrown.Jugglers;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Global
+namespace LunarVeilLegacy.NPCs.Global
 {
     internal class NPCBagEdits : GlobalItem
     {

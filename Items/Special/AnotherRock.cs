@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Tiles;
+using LunarVeilLegacy.Tiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Special
+namespace LunarVeilLegacy.Items.Special
 {
     internal class AnotherRock : ModItem
     {

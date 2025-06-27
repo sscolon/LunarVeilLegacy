@@ -1,12 +1,12 @@
 
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     public class KilvierBONK : ModProjectile
     {

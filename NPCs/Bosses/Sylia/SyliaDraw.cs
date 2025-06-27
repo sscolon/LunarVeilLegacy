@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     public partial class Sylia
     {
         //Extra Textures
-        public const string BaseTexturePath = "Stellamod/NPCs/Bosses/Sylia/";
+        public const string BaseTexturePath = "LunarVeilLegacy/NPCs/Bosses/Sylia/";
         public Texture2D MagicCircleTexture => ModContent.Request<Texture2D>($"{BaseTexturePath}SyliaMagicCircle").Value;
         public Vector2 MagicCircleSize => new Vector2(512, 512);
 
@@ -170,7 +170,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
             //Draw the Wings
             Vector2 drawPosition = NPC.Center - screenPos;
             Vector2 origin = new Vector2(48, 48);
-            Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Sylia/SyliaWings").Value;
+            Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Sylia/SyliaWings").Value;
             int wingFrameSpeed = 2;
             int wingFrameCount = 10;
             spriteBatch.Draw(syliaWingsTexture, drawPosition,

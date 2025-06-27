@@ -159,97 +159,97 @@ Elegance: {
 }
 
 VoiddDust: {
-	Description: Mods.Stellamod.Buffs.VoiddDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.VoiddDust.Description
 	DisplayName: Voidd Dust
 }
 
 TrickDust: {
-	Description: Mods.Stellamod.Buffs.TrickDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.TrickDust.Description
 	DisplayName: Trick Dust
 }
 
 SongDust: {
-	Description: Mods.Stellamod.Buffs.SongDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.SongDust.Description
 	DisplayName: Song Dust
 }
 
 ShadeDust: {
-	Description: Mods.Stellamod.Buffs.ShadeDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.ShadeDust.Description
 	DisplayName: Shade Dust
 }
 
 KaevDust: {
-	Description: Mods.Stellamod.Buffs.KaevDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.KaevDust.Description
 	DisplayName: Kaev Dust
 }
 
 IceDust: {
-	Description: Mods.Stellamod.Buffs.IceDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.IceDust.Description
 	DisplayName: Ice Dust
 }
 
 GrassBuff: {
-	Description: Mods.Stellamod.Buffs.GrassBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.GrassBuff.Description
 	DisplayName: Grass Buff
 }
 
 GovheilDust: {
-	Description: Mods.Stellamod.Buffs.GovheilDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.GovheilDust.Description
 	DisplayName: Govheil Dust
 }
 
 FlowerBuff: {
-	Description: Mods.Stellamod.Buffs.FlowerBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.FlowerBuff.Description
 	DisplayName: Flower Buff
 }
 
 FlameDust: {
-	Description: Mods.Stellamod.Buffs.FlameDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.FlameDust.Description
 	DisplayName: Flame Dust
 }
 
 EXPtime4: {
-	Description: Mods.Stellamod.Buffs.EXPtime4.Description
+	Description: Mods.LunarVeilLegacy.Buffs.EXPtime4.Description
 	DisplayName: E X Ptime4
 }
 
 EXPtime3: {
-	Description: Mods.Stellamod.Buffs.EXPtime3.Description
+	Description: Mods.LunarVeilLegacy.Buffs.EXPtime3.Description
 	DisplayName: E X Ptime3
 }
 
 EXPtime2: {
-	Description: Mods.Stellamod.Buffs.EXPtime2.Description
+	Description: Mods.LunarVeilLegacy.Buffs.EXPtime2.Description
 	DisplayName: E X Ptime2
 }
 
 EXPtime: {
-	Description: Mods.Stellamod.Buffs.EXPtime.Description
+	Description: Mods.LunarVeilLegacy.Buffs.EXPtime.Description
 	DisplayName: E X Ptime
 }
 
 CrystalDust: {
-	Description: Mods.Stellamod.Buffs.CrystalDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.CrystalDust.Description
 	DisplayName: Crystal Dust
 }
 
 CoalBuff: {
-	Description: Mods.Stellamod.Buffs.CoalBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.CoalBuff.Description
 	DisplayName: Coal Buff
 }
 
 AlcadDust: {
-	Description: Mods.Stellamod.Buffs.AlcadDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.AlcadDust.Description
 	DisplayName: Alcad Dust
 }
 
 AivanDust: {
-	Description: Mods.Stellamod.Buffs.AivanDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.AivanDust.Description
 	DisplayName: Aivan Dust
 }
 
 Dusted: {
-	Description: Mods.Stellamod.Buffs.Dusted.Description
+	Description: Mods.LunarVeilLegacy.Buffs.Dusted.Description
 	DisplayName: Dusted
 }
 
@@ -359,7 +359,7 @@ AssassinsSlashBuff: {
 }
 
 ArcaneDust: {
-	Description: Mods.Stellamod.Buffs.ArcaneDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.ArcaneDust.Description
 	DisplayName: Arcane Dust
 }
 
@@ -374,7 +374,7 @@ AbyssalFlame: {
 }
 
 VehementMinionBuff: {
-	Description: Mods.Stellamod.Buffs.VehementBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.VehementBuff.Description
 	DisplayName: Vehement Buff
 }
 
@@ -489,22 +489,22 @@ UseIgniter: {
 }
 
 SpiritDust: {
-	Description: Mods.Stellamod.Buffs.SpiritDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.SpiritDust.Description
 	DisplayName: Spirit Dust
 }
 
 JungleDust: {
-	Description: Mods.Stellamod.Buffs.JungleDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.JungleDust.Description
 	DisplayName: Jungle Dust
 }
 
 EldritchDust: {
-	Description: Mods.Stellamod.Buffs.EldritchDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.EldritchDust.Description
 	DisplayName: Eldritch Dust
 }
 
 AgreviDust: {
-	Description: Mods.Stellamod.Buffs.AgreviDust.Description
+	Description: Mods.LunarVeilLegacy.Buffs.AgreviDust.Description
 	DisplayName: Agrevi Dust
 }
 
@@ -559,52 +559,52 @@ BucketScrapperMinionBuff: {
 }
 
 Zuid: {
-	Description: Mods.Stellamod.Buffs.Zuid.Description
+	Description: Mods.LunarVeilLegacy.Buffs.Zuid.Description
 	DisplayName: Zuid
 }
 
 VillagersB: {
-	Description: Mods.Stellamod.Buffs.VillagersB.Description
+	Description: Mods.LunarVeilLegacy.Buffs.VillagersB.Description
 	DisplayName: Villagers B
 }
 
 AmberB: {
-	Description: Mods.Stellamod.Buffs.AmberB.Description
+	Description: Mods.LunarVeilLegacy.Buffs.AmberB.Description
 	DisplayName: Amber B
 }
 
 SFBuff: {
-	Description: Mods.Stellamod.Buffs.SFBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.SFBuff.Description
 	DisplayName: S F Buff
 }
 
 AuroreanStarballDebuff: {
 	DisplayName: Aurorean Starball Debuff
-	Description: Mods.Stellamod.Buffs.AuroreanStarballDebuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.AuroreanStarballDebuff.Description
 }
 
 ReflectionSeekerBuff: {
 	DisplayName: Reflection Seeker Buff
-	Description: Mods.Stellamod.Buffs.ReflectionSeekerBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.ReflectionSeekerBuff.Description
 }
 
 TwinStarbombasDebuff: {
-	Description: Mods.Stellamod.Buffs.TwinStarbombasDebuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.TwinStarbombasDebuff.Description
 	DisplayName: Twin Starbombas Debuff
 }
 
 SupernovaChained: {
 	DisplayName: Supernova Chained
-	Description: Mods.Stellamod.Buffs.SupernovaChained.Description
+	Description: Mods.LunarVeilLegacy.Buffs.SupernovaChained.Description
 }
 
 ThePollinatorDebuff: {
-	Description: Mods.Stellamod.Buffs.ThePollinatorDebuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.ThePollinatorDebuff.Description
 	DisplayName: The Pollinator Debuff
 }
 
 BlackballDebuff: {
-	Description: Mods.Stellamod.Buffs.BlackballDebuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.BlackballDebuff.Description
 	DisplayName: Blackball Debuff
 }
 
@@ -629,7 +629,7 @@ IllurianB: {
 }
 
 FlowerPower: {
-	Description: Mods.Stellamod.Buffs.FlowerPower.Description
+	Description: Mods.LunarVeilLegacy.Buffs.FlowerPower.Description
 	DisplayName: Flower Power
 }
 
@@ -690,17 +690,17 @@ IlluBuff: {
 
 IshyBuff: {
 	DisplayName: Ishy Buff
-	Description: Mods.Stellamod.Buffs.IshyBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.IshyBuff.Description
 }
 
 MushyBuff: {
 	DisplayName: Mushy Buff
-	Description: Mods.Stellamod.Buffs.MushyBuff.Description
+	Description: Mods.LunarVeilLegacy.Buffs.MushyBuff.Description
 }
 
 RibbonWrapped: {
 	DisplayName: Ribbon Wrapped
-	Description: Mods.Stellamod.Buffs.RibbonWrapped.Description
+	Description: Mods.LunarVeilLegacy.Buffs.RibbonWrapped.Description
 }
 
 StarSuper: {
@@ -760,7 +760,7 @@ CentipedeMinionBuff: {
 
 MoonFlame: {
 	DisplayName: Moon Flame
-	Description: Mods.Stellamod.Buffs.MoonFlame.Description
+	Description: Mods.LunarVeilLegacy.Buffs.MoonFlame.Description
 }
 
 IridineNecklaceCDBuff: {
@@ -790,5 +790,5 @@ GothivianFlames: {
 
 HolyAnxiety: {
 	DisplayName: Holy Anxiety
-	Description: Mods.Stellamod.Buffs.HolyAnxiety.Description
+	Description: Mods.LunarVeilLegacy.Buffs.HolyAnxiety.Description
 }

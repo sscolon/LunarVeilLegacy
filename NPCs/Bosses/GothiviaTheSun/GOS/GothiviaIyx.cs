@@ -1,29 +1,29 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Accessories.Wings;
-using Stellamod.Items.Armors.Vanity.Gothivia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Mage.Stein;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.NPCs.Bosses.Fenix.Projectiles;
-using Stellamod.NPCs.Bosses.GothiviaNRek.Reks;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.REK;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Projectiles;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
-using Stellamod.NPCs.Bosses.Zui.Projectiles;
-using Stellamod.Projectiles.Visual;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Accessories.Wings;
+using LunarVeilLegacy.Items.Armors.Vanity.Gothivia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Mage.Stein;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles;
+using LunarVeilLegacy.Projectiles.Visual;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -37,7 +37,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
     public class GothiviaIyx : ModNPC
@@ -185,7 +185,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
             // Influences how the NPC looks in the Bestiary
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/GothiviaTheSun/GOS/GothiviaBestiary";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/GOS/GothiviaBestiary";
             drawModifiers.PortraitScale = 0.8f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -334,7 +334,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             {
                 Vector2 drawPosition = NPC.Center - screenPos;
                 Vector2 origin = new Vector2(83, 48);
-                Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/GothiviaTheSun/GOS/Gwings3Q").Value;
+                Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/GOS/Gwings3Q").Value;
                 int wingFrameSpeed = 1;
                 int wingFrameCount = 60;
                 spriteBatch.Draw(syliaWingsTexture, drawPosition,
@@ -348,7 +348,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             {
                 Vector2 drawPosition = NPC.Center - screenPos;
                 Vector2 origin = new Vector2(83, 48);
-                Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/GothiviaTheSun/GOS/Gwings4Q").Value;
+                Texture2D syliaWingsTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/GOS/Gwings4Q").Value;
                 int wingFrameSpeed = 1;
                 int wingFrameCount = 60;
                 spriteBatch.Draw(syliaWingsTexture, drawPosition,
@@ -846,7 +846,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
             if (timer == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/BindingBless1") { Pitch = Main.rand.NextFloat(-3f, 3f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/BindingBless1") { Pitch = Main.rand.NextFloat(-3f, 3f) }, NPC.Center);
 
                 if (StellaMultiplayer.IsHost)
                 {
@@ -880,7 +880,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             }
             if (timer == 120)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WavingGoth2") { Pitch = Main.rand.NextFloat(-3f, 3f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WavingGoth2") { Pitch = Main.rand.NextFloat(-3f, 3f) }, NPC.Center);
             }
 
             if (timer > 120 && timer < 500)
@@ -939,7 +939,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             float ai1 = NPC.whoAmI;
             if (timer == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothReact") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothReact") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 if (StellaMultiplayer.IsHost)
                 {
                     float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(0f, 0f);
@@ -1006,7 +1006,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
                 }
                 ShakeModSystem.Shake = 12;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothCarmody") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothCarmody") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 if (StellaMultiplayer.IsHost)
                 {
                     var entitySource = NPC.GetSource_FromThis();
@@ -1038,7 +1038,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             float ai1 = NPC.whoAmI;
             if (timer == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothReact") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothReact") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 if (StellaMultiplayer.IsHost)
                 {
                     float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(0f, 0f);
@@ -1104,7 +1104,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                     //     Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb - 2 * 0, speedYb - 2 * 0, ModContent.ProjectileType<BlinkingStar>(), NPC.damage, 0f, Main.myPlayer, 0f, ai1);
 
                 }
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothCarmody") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothCarmody") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 if (StellaMultiplayer.IsHost)
                 {
                     var entitySource = NPC.GetSource_FromThis();
@@ -1166,8 +1166,8 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
             if (timer == 51)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothKickSlap") { Pitch = Main.rand.NextFloat(-5f, 2f) }, NPC.Center);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 1f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothKickSlap") { Pitch = Main.rand.NextFloat(-5f, 2f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 1f) }, NPC.Center);
                 if (StellaMultiplayer.IsHost)
                 {
                     switch (Main.rand.Next(2))
@@ -1229,8 +1229,8 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
             if (timer == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothKickSlap") { Pitch = Main.rand.NextFloat(-5f, 2f) }, NPC.Center);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 1f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothKickSlap") { Pitch = Main.rand.NextFloat(-5f, 2f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 1f) }, NPC.Center);
                 if (StellaMultiplayer.IsHost)
                 {
                     switch (Main.rand.Next(2))
@@ -1292,8 +1292,8 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             {
 
                 ShakeModSystem.Shake = 8;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothKickSlap") { Pitch = Main.rand.NextFloat(-5f, 2f) }, NPC.Center);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 1f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothKickSlap") { Pitch = Main.rand.NextFloat(-5f, 2f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RazorClash") { Pitch = Main.rand.NextFloat(-5f, 1f) }, NPC.Center);
                 if (StellaMultiplayer.IsHost)
                 {
                     switch (Main.rand.Next(2))
@@ -1437,7 +1437,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             {
                 if (timer == 10)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/BindingBless1") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/BindingBless1") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 }
 
                 if (Wanger == 1)
@@ -1490,7 +1490,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
                 if (timer == 25)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/BlindingBless2") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/BlindingBless2") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 }
 
                 if (Wanger == 1)
@@ -1556,7 +1556,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
                 if (timer == 71)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RazorWing") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RazorWing") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
 
                     if (StellaMultiplayer.IsHost)
                     {
@@ -1676,7 +1676,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                     float speedYb = NPC.velocity.Y * Main.rand.Next(0, 0) * 0.0f + Main.rand.Next(0, 0) * 0f;
                     Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb - 2 * 0, speedYb - 2 * 0, ModContent.ProjectileType<GreenSunsSuckingProj>(), 24, 0f, Main.myPlayer, 0f, ai1);
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothSummon") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothSummon") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 }
 
                 if (StellaMultiplayer.IsHost)
@@ -1695,7 +1695,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
                
 
-                //SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+                //SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
 
 
 
@@ -1727,7 +1727,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                     float speedYb = NPC.velocity.Y * Main.rand.Next(0, 0) * 0.0f + Main.rand.Next(0, 0) * 0f;
                     Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb - 2 * 0, speedYb - 2 * 0, ModContent.ProjectileType<SunsSuckingProj>(), 24, 0f, Main.myPlayer, 0f, ai1);
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothSummon") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothSummon") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 }
 
                 if (StellaMultiplayer.IsHost)
@@ -1746,7 +1746,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
 
 
-                //SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+                //SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
 
 
 
@@ -1779,7 +1779,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                     float speedYb = NPC.velocity.Y * Main.rand.Next(0, 0) * 0.0f + Main.rand.Next(0, 0) * 0f;
                     Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb - 2 * 0, speedYb - 2 * 0, ModContent.ProjectileType<GreenSunsBoomProj>(), 24, 0f, Main.myPlayer, 0f, ai1);
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothSunLonger") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothSunLonger") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 }
 
                 if (StellaMultiplayer.IsHost)
@@ -1844,7 +1844,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                     float speedYb = NPC.velocity.Y * Main.rand.Next(0, 0) * 0.0f + Main.rand.Next(0, 0) * 0f;
                     Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb - 2 * 0, speedYb - 2 * 0, ModContent.ProjectileType<SunsBoomProj>(), 24, 0f, Main.myPlayer, 0f, ai1);
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothSunLonger") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothSunLonger") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
                 }
 
                 if (StellaMultiplayer.IsHost)
@@ -1896,7 +1896,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             {
                 ScreenShaderSystem shaderSystem = ModContent.GetInstance<ScreenShaderSystem>();
                 shaderSystem.VignetteScreen(2f, timer: 150);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothSummon") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothSummon") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
 
                 if (StellaMultiplayer.IsHost)
                 {
@@ -1925,7 +1925,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                 {
                     ScreenShaderSystem shaderSystem = ModContent.GetInstance<ScreenShaderSystem>();
                     shaderSystem.UnVignetteScreen();
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/DUAL2") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/DUAL2") { Pitch = Main.rand.NextFloat(-5f, 5f) }, NPC.Center);
 
                     Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
                    
@@ -1951,7 +1951,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
                 }
               
-                        //SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+                        //SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
                     
 
                 
@@ -2080,7 +2080,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             if (timer == 60)
             {
                 ShakeModSystem.Shake = 5;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothingBow") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothingBow") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
                 //
                 Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
                 if (StellaMultiplayer.IsHost)
@@ -2131,7 +2131,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
                 if (timer == 154)
                 {
                     ShakeModSystem.Shake = 5;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothingBow") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothingBow") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
 
                 Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
                 if (StellaMultiplayer.IsHost)
@@ -2176,7 +2176,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
                     }
 
-                    //SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+                    //SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
 
 
 
@@ -2186,7 +2186,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             if (timer == 248)
             {
                 ShakeModSystem.Shake = 5;
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GothingBow") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GothingBow") { Pitch = Main.rand.NextFloat(-1f, 1f) }, NPC.Center);
 
                 Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
                 if (StellaMultiplayer.IsHost)
@@ -2231,7 +2231,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
                 }
 
-                //SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/FenixSlash1"));
+                //SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/FenixSlash1"));
 
 
 
@@ -2402,7 +2402,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
             NPC.SetEventFlagCleared(ref DownedBossSystem.downedGothBoss, -1);
 
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Binding_Abyss_Spawn"), NPC.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Spawn"), NPC.position);
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 128f);
             var entitySource = NPC.GetSource_FromThis();
             if (StellaMultiplayer.IsHost)
@@ -2433,19 +2433,19 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS
 
         private void ActivateGothSky()
         {
-            if (!SkyManager.Instance["Stellamod:NaxtrinSky2"].IsActive())
+            if (!SkyManager.Instance["LunarVeilLegacy:NaxtrinSky2"].IsActive())
             {
                 Vector2 targetCenter = Player.Center;
-                SkyManager.Instance.Activate("Stellamod:NaxtrinSky2", targetCenter);
+                SkyManager.Instance.Activate("LunarVeilLegacy:NaxtrinSky2", targetCenter);
             }
         }
 
         private void DeActivateGothSky()
         {
-            if (SkyManager.Instance["Stellamod:NaxtrinSky2"].IsActive())
+            if (SkyManager.Instance["LunarVeilLegacy:NaxtrinSky2"].IsActive())
             {
                 Vector2 targetCenter = Player.Center;
-                SkyManager.Instance.Deactivate("Stellamod:NaxtrinSky2", targetCenter);
+                SkyManager.Instance.Deactivate("LunarVeilLegacy:NaxtrinSky2", targetCenter);
             }
         }
     }

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Materials;
-using Stellamod.Tiles.Acid;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Tiles.Acid;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.RoyalCapital
+namespace LunarVeilLegacy.Tiles.RoyalCapital
 {
     class CarianTree : ModTree
     {
@@ -22,9 +22,9 @@ namespace Stellamod.Tiles.RoyalCapital
         public override void SetStaticDefaults() => GrowsOnTileId = new int[] { ModContent.TileType<StarbloomDirt>() };
         public override int CreateDust() => 22;
         public override int DropWood() => ModContent.ItemType<CarianWood>();
-        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("Stellamod/Tiles/RoyalCapital/CarianTree");
-        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/RoyalCapital/CarianTree_Top");
-        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/RoyalCapital/CarianTree_Branches");
+        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/RoyalCapital/CarianTree");
+        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/RoyalCapital/CarianTree_Top");
+        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/RoyalCapital/CarianTree_Branches");
 
         public override int SaplingGrowthType(ref int style)
         {

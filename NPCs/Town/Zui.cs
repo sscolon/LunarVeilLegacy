@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Assets.Biomes;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Items.Quest.Zui;
-using Stellamod.Items.Weapons.Igniters;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Thrown;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Items.Quest.Zui;
+using LunarVeilLegacy.Items.Weapons.Igniters;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Thrown;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -17,21 +17,21 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
-using Stellamod.Items.Armors.Witchen;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Armors.Vanity.Solarian;
-using Stellamod.Items.Armors.Vanity.Azalean;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Zui;
-using Stellamod.Items.Armors.Vanity.Nyxia;
+using LunarVeilLegacy.Items.Armors.Witchen;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Armors.Vanity.Solarian;
+using LunarVeilLegacy.Items.Armors.Vanity.Azalean;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Zui;
+using LunarVeilLegacy.Items.Armors.Vanity.Nyxia;
 using Terraria.DataStructures;
-using Stellamod.Items.Ammo;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Ammo;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     // [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
     // [AutoloadHead]
@@ -210,7 +210,7 @@ namespace Stellamod.NPCs.Town
 
         private void Quest_NotCheckmarked()
         {
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special1");
 			var entitySource = NPC.GetSource_GiftOrReward();
 			Main.LocalPlayer.QuickSpawnItem(entitySource, ModContent.ItemType<EmptyFlowerBag>(), 1);
@@ -218,7 +218,7 @@ namespace Stellamod.NPCs.Town
 
 		private void Quest_NotCheckmarkedHardmode()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special2");
 			var entitySource = NPC.GetSource_GiftOrReward();
 			Main.LocalPlayer.QuickSpawnItem(entitySource, ModContent.ItemType<EmptyCollectorsBag>(), 1);
@@ -226,7 +226,7 @@ namespace Stellamod.NPCs.Town
 
 		private void Quest_1Complete()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special3");
 			var entitySource = NPC.GetSource_GiftOrReward();
 			if (Main.rand.NextBool(1))
@@ -267,7 +267,7 @@ namespace Stellamod.NPCs.Town
 
 		private void Quest_16Complete()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special4");
 			var entitySource = NPC.GetSource_GiftOrReward();
 			if (Main.rand.NextBool(1))
@@ -308,7 +308,7 @@ namespace Stellamod.NPCs.Town
 		}
 		private void Quest_3Complete()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special5");
 			//Setting all previous quests to be complete, so it's backwards compatible with the old version.
             int DesertRuneItemIndex = Main.LocalPlayer.FindItem(ModContent.ItemType<CompletedFlowerBag>());
@@ -323,7 +323,7 @@ namespace Stellamod.NPCs.Town
 
 		private void Quest_6Complete()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special6");
 
 			//Setting all previous quests to be complete, so it's backwards compatible with the old version.
@@ -333,7 +333,7 @@ namespace Stellamod.NPCs.Town
         }
 		private void Quest_10Complete()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special7");
 
             var entitySource = NPC.GetSource_GiftOrReward();
@@ -347,7 +347,7 @@ namespace Stellamod.NPCs.Town
 
 		private void Quest_20Complete()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special8");
 
 
@@ -363,7 +363,7 @@ namespace Stellamod.NPCs.Town
 
 		private void Quest_30Complete()
 		{
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 			Main.npcChatText = LangText.Chat(this, "Special9");
 			int DesertRuneItemIndex = Main.LocalPlayer.FindItem(ModContent.ItemType<CompletedCollectorsBag>());
 			Main.LocalPlayer.inventory[DesertRuneItemIndex].TurnToAir();
@@ -483,7 +483,7 @@ namespace Stellamod.NPCs.Town
 				/*
 				if (!Main.LocalPlayer.HasItem(ModContent.ItemType<TomeOfInfiniteSorcery>()) || !Main.LocalPlayer.HasItem(ModContent.ItemType<MakeMagicPaperC>()) || !Main.LocalPlayer.HasItem(ModContent.ItemType<Give100DustBagsC>()) || !Main.LocalPlayer.HasItem(ModContent.ItemType<KillVerliaC>()) || !Main.LocalPlayer.HasItem(ModContent.ItemType<ExploreMorrowedVillageC>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss2")); // Reforge/Anvil sound
 					Main.npcChatText = LangText.Chat(this, "Special11");
 
 					var entitySource = NPC.GetSource_GiftOrReward();

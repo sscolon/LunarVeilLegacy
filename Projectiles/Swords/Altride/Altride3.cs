@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords.Altride
+namespace LunarVeilLegacy.Projectiles.Swords.Altride
 {
     internal class Altride3 : ModProjectile
     {
@@ -45,7 +45,7 @@ namespace Stellamod.Projectiles.Swords.Altride
             if (Projectile.ai[1] == 1)
             {
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
 
                 for (int j = 0; j < 10; j++)
                 {
@@ -69,11 +69,11 @@ namespace Stellamod.Projectiles.Swords.Altride
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Astalaiya2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Astalaiya2"), Projectile.position);
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Astalaiya3"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Astalaiya3"), Projectile.position);
             }
 
             for (int i = 0; i < 14; i++)

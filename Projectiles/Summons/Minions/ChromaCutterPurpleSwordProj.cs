@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Swords;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Swords;
+using LunarVeilLegacy.Trails;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     internal class ChromaCutterPurpleSwordProj : ModProjectile
     {
@@ -120,7 +120,7 @@ namespace Stellamod.Projectiles.Summons.Minions
                     _velocity = Projectile.Center.DirectionTo(Main.MouseWorld) * 45;
                     Projectile.netUpdate = true;
                 }
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"), Projectile.position);
             }
             else if (ai_Counter < Freeze)
             {

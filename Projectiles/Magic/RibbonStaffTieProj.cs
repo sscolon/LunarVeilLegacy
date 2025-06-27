@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Gores;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Gores;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class RibbonStaffTieProj : ModProjectile
     {
@@ -81,7 +81,7 @@ namespace Stellamod.Projectiles.Magic
 
         public override void OnKill(int timeLeft)
         {
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RibbonStaffBoom1");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RibbonStaffBoom1");
             soundStyle.PitchVariance = 0.15f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
             for (int i = 0; i < 4; i++)

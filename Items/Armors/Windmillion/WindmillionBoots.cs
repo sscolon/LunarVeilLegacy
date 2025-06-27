@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using Terraria.ModLoader;
 using Terraria.ID;
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Armors.Windmillion
+namespace LunarVeilLegacy.Items.Armors.Windmillion
 {
     [AutoloadEquip(EquipType.Legs)]
     public class WindmillionBoots : ModItem

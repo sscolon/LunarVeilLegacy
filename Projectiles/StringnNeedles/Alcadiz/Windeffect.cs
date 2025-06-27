@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.StringnNeedles.Alcadiz
+namespace LunarVeilLegacy.Projectiles.StringnNeedles.Alcadiz
 {
     public class Windeffect : ModProjectile
 	{

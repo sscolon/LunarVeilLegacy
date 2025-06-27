@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using Terraria;
 
-namespace Stellamod.NPCs.Bosses.Niivi
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi
 {
     internal partial class Niivi
     {

@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Daedia
+namespace LunarVeilLegacy.Items.Armors.Daedia
 {
     // The AutoloadEquip attribute automatically attaches an equip texture to this item.
     // Providing the EquipType.Legs value here will result in TML expecting a X_Legs.png file to be placed next to the item's main texture.

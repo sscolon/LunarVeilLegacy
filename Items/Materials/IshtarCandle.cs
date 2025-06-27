@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Tiles.Ishtar;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Tiles.Ishtar;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
     internal class IshtarCandle : ModItem
     {

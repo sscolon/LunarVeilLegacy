@@ -1,11 +1,11 @@
-﻿using Stellamod.Tiles.ShrineBreakers.Govheil;
-using Stellamod.Tiles.ShrineBreakers.Underground;
+﻿using LunarVeilLegacy.Tiles.ShrineBreakers.Govheil;
+using LunarVeilLegacy.Tiles.ShrineBreakers.Underground;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Shrines.Underground
+namespace LunarVeilLegacy.Items.Shrines.Underground
 {
     public class ShrineBridgetI : ModItem
 	{

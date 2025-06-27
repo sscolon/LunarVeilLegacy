@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Structures
+namespace LunarVeilLegacy.Tiles.Structures
 {
     public class PotmedS : ModTile
 	{

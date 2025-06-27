@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Effects;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Crossbows.Gemmed;
-using Stellamod.Projectiles.Swords;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Effects;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Crossbows.Gemmed;
+using LunarVeilLegacy.Projectiles.Swords;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     public class ThePenetratorProj : ModProjectile
     {
@@ -70,7 +70,7 @@ namespace Stellamod.Projectiles.Thrown
                 case ActionState.Spin:
                     if(Timer == 0)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashCharge"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashCharge"), Projectile.position);
                     }
 
                     if(Timer < Charge_Time)
@@ -79,14 +79,14 @@ namespace Stellamod.Projectiles.Thrown
                         Speed += 0.005f;
                         if (Timer >= Charge_Time)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GladiatorMirage1"), Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GladiatorMirage1"), Projectile.position);
                         }
                     }
 
                     Sound++;
                     if (Sound % 15 == 0)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SkyrageShasher") { Pitch = SoundPitch }, Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SkyrageShasher") { Pitch = SoundPitch }, Projectile.position);
                         SoundPitch += 0.03f;
                     }
 
@@ -119,13 +119,13 @@ namespace Stellamod.Projectiles.Thrown
                             switch (Main.rand.Next(3))
                             {
                                 case 0:
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj2"), Projectile.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj2"), Projectile.position);
                                     break;
                                 case 1:
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj3"), Projectile.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj3"), Projectile.position);
                                     break;
                                 case 2:
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlashProj4"), Projectile.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlashProj4"), Projectile.position);
                                     break;
                             }
                         }
@@ -170,7 +170,7 @@ namespace Stellamod.Projectiles.Thrown
         public TrailRenderer Trail;
         public override bool PreDraw(ref Color lightColor)
         {
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StarTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StarTrail").Value;
 
             if (Trail == null)
             {
@@ -185,7 +185,7 @@ namespace Stellamod.Projectiles.Thrown
             Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive, Main.DefaultSamplerState, DepthStencilState.None, RasterizerState.CullNone, null, Main.GameViewMatrix.ZoomMatrix);
             
             Trail.Draw(Projectile.oldPos);
-            Texture2D spinTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Spiin").Value;
+            Texture2D spinTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Spiin").Value;
             for (int i = 0; i < 2; i++)
             {
                 Main.spriteBatch.Draw(spinTexture, Projectile.Center - Main.screenPosition, null,

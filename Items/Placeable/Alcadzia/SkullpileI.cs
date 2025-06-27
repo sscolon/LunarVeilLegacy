@@ -1,8 +1,8 @@
-﻿using Stellamod.Tiles.RoyalCapital;
+﻿using LunarVeilLegacy.Tiles.RoyalCapital;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable.Alcadzia
+namespace LunarVeilLegacy.Items.Placeable.Alcadzia
 {
     public class SkullpileI : ModItem
 	{

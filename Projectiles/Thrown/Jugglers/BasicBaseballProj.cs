@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown.Jugglers
+namespace LunarVeilLegacy.Projectiles.Thrown.Jugglers
 {
     internal class BasicBaseballProj : ModProjectile
     {
@@ -95,7 +95,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
                 CombatText numText = Main.combatText[combatText];
                 numText.lifeTime = 60;
 
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/JuggleCatch1");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/JuggleCatch1");
                 soundStyle.PitchVariance = 0.15f;
                 switch (Main.rand.Next(2))
                 {
@@ -104,7 +104,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
                         SoundEngine.PlaySound(soundStyle, Projectile.position);
                         break;
                     case 1:
-                        soundStyle = new SoundStyle("Stellamod/Assets/Sounds/JuggleCatch2");
+                        soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/JuggleCatch2");
                         SoundEngine.PlaySound(soundStyle, Projectile.position);
                         break;
                 }
@@ -118,7 +118,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
             Timer++;
             if(Timer >= 598)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dirt"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dirt"), Projectile.position);
                 Juggler.ResetJuggle();
                 Projectile.Kill();
             }
@@ -169,7 +169,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
                 SoundEngine.PlaySound(jugglerHitMax, Projectile.position);
             }
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
             for (int i = 0; i < 4; i++)
             {
                 //Get a random velocity

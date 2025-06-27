@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi
 {
     internal class NiiviBossBar : ModBossBar
     {

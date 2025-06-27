@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Dusts
+namespace LunarVeilLegacy.Dusts
 {
     public class BloodDust : ModDust
 	{

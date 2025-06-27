@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria.DataStructures;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 
-namespace Stellamod.NPCs.Bosses.Fenix
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix
 {
 	public class FoxRusher : ModProjectile
 	{
@@ -63,7 +63,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 				var entitySource = Projectile.GetSource_FromThis();
 				NPC.NewNPC(entitySource, (int)Projectile.Center.X, (int)Projectile.Center.Y - 200, ModContent.NPCType<STARBOMBERLASERWARN>());
 				NPC.NewNPC(entitySource, (int)Projectile.Center.X, (int)Projectile.Center.Y + 400, ModContent.NPCType<STARBOMBERLASERWARN>());
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 
 				Timer = 0;
 

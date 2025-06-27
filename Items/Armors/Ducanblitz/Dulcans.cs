@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Ducanblitz
+namespace LunarVeilLegacy.Items.Armors.Ducanblitz
 {
 	// - ModProjectile - the minion itself
 

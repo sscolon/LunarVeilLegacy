@@ -1,14 +1,14 @@
 ﻿using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.UI.Dialogue
+namespace LunarVeilLegacy.UI.Dialogue
 {
     internal abstract class Dialogue
     {
         public DialogueSystem DialogueSystem => ModContent.GetInstance<DialogueSystem>();
         public string GetLocalizedText(string title)
         {
-            return Language.GetText($"Mods.Stellamod.Dialogue.{title}").Value;
+            return Language.GetText($"Mods.LunarVeilLegacy.Dialogue.{title}").Value;
         }
 
         public virtual int Length { get; }

@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.RoyalCapital
+namespace LunarVeilLegacy.Tiles.RoyalCapital
 {
     [TileTag(TileTags.VineSway)]
     public class CarianVines : ModTile

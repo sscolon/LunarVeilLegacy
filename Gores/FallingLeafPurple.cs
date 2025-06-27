@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Stellamod.Gores
+namespace LunarVeilLegacy.Gores
 {
 	public class FallingLeafPurple : ModGore
 	{

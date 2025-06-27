@@ -2,20 +2,20 @@
 using Terraria;
 using Terraria.ModLoader;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
-using Stellamod.UI.Systems;
-using Stellamod.Buffs;
+using LunarVeilLegacy.UI.Systems;
+using LunarVeilLegacy.Buffs;
 
-namespace Stellamod.Projectiles.Crossbows.Eckasect
+namespace LunarVeilLegacy.Projectiles.Crossbows.Eckasect
 {
 	public class EckasectLiberatorBolt1 : ModProjectile
 	{

@@ -1,5 +1,5 @@
-﻿using Stellamod.Helpers;
-using Stellamod.Projectiles.Slashers.DelgrimsHammer;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Slashers.DelgrimsHammer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +11,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Slashers.Maelstrom;
-using Stellamod.Projectiles.Slashers.Chillrend;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Projectiles.Slashers.Maelstrom;
+using LunarVeilLegacy.Projectiles.Slashers.Chillrend;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Weapons.Melee.Greatswords
+namespace LunarVeilLegacy.Items.Weapons.Melee.Greatswords
 {
     internal class Chillrend : ModItem
     {
@@ -86,7 +86,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords
 
 
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwingyWind") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwingyWind") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
             AttackCounter = -AttackCounter;
             Projectile.NewProjectile(source, position, velocity, type, damage * 3, knockback, player.whoAmI, 1, dir);
             return false;

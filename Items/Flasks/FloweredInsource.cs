@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Brooches;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -10,7 +10,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Flasks
+namespace LunarVeilLegacy.Items.Flasks
 {
     public class FloweredInsource : ModItem
     {
@@ -41,7 +41,7 @@ namespace Stellamod.Items.Flasks
             Item.value = Item.buyPrice(0, 3, 3, 40);
             Item.rare = ItemRarityID.Green;
             Item.consumable = false;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 
         }
 

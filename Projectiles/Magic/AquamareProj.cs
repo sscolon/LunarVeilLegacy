@@ -4,18 +4,18 @@ using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.UI.Systems;
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
 	public class AquamareProj : ModProjectile
 	{

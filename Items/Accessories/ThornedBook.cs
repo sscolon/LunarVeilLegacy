@@ -1,11 +1,11 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Items.Ores;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Ores;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     public class ThornedBook : ModItem
 	{

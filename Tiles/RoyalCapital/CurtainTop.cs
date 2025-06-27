@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.RoyalCapital
+namespace LunarVeilLegacy.Tiles.RoyalCapital
 
 {
     public class CurtainTop : ModTile

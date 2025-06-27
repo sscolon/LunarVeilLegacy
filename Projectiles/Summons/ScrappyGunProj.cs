@@ -1,14 +1,14 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Armors.Scrappy;
-using Stellamod.Projectiles.Gun;
+using LunarVeilLegacy.Items.Armors.Scrappy;
+using LunarVeilLegacy.Projectiles.Gun;
 using Terraria.Audio;
 using Terraria.ID;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Stellamod.Projectiles.Summons
+namespace LunarVeilLegacy.Projectiles.Summons
 {
     internal class ScrappyGunProj  : ModProjectile
     {

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Spears;
+using LunarVeilLegacy.Projectiles.Spears;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Spears
+namespace LunarVeilLegacy.Items.Weapons.Melee.Spears
 {
     internal class StalkersTallon : ModItem
     {

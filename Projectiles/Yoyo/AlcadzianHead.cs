@@ -1,13 +1,13 @@
 ﻿
 using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Yoyo
+namespace LunarVeilLegacy.Projectiles.Yoyo
 {
 	public class AlcadzianHead : ModProjectile
 	{

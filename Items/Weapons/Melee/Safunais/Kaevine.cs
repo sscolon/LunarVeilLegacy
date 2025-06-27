@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Safunai.Halhurish;
-using Stellamod.Projectiles.Safunai.Kaevine;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Safunai.Halhurish;
+using LunarVeilLegacy.Projectiles.Safunai.Kaevine;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Safunais
+namespace LunarVeilLegacy.Items.Weapons.Melee.Safunais
 {
     public class Kaevine : ModItem
 	{

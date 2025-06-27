@@ -1,12 +1,12 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
 	public class GovheilPlatform : ModTile
 	{

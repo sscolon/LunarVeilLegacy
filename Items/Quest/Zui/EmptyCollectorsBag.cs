@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.Zui
+namespace LunarVeilLegacy.Items.Quest.Zui
 {
     internal class EmptyCollectorsBag : ModItem
     {

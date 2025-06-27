@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Shields;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Shields;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Shields
+namespace LunarVeilLegacy.Items.Weapons.Melee.Shields
 {
     internal class WoodShield : ModItem
     {

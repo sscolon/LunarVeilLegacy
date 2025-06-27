@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviThundercloudProj : ModProjectile
     {
@@ -44,7 +44,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
         public override bool PreDraw(ref Color lightColor)
         {
             float alpha = Timer / LifeTime;
-            Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Color drawColor = (Color)GetAlpha(lightColor);
             drawColor *= alpha;
 
@@ -64,7 +64,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
 
         public override void OnKill(int timeLeft)
         {
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/StormDragon_LightingZap");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/StormDragon_LightingZap");
             SoundEngine.PlaySound(soundStyle, Projectile.position);
 
             for(int i = 0; i < 7; i++)

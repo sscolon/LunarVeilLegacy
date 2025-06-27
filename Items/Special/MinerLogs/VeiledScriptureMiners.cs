@@ -1,15 +1,15 @@
-﻿using Stellamod.Helpers;
-using Stellamod.UI.Scripture;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Scripture;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Special.MinerLogs
+namespace LunarVeilLegacy.Items.Special.MinerLogs
 {
     internal abstract class VeiledScriptureMiner : ModItem
     {
-        public override string Texture => "Stellamod/Items/Special/MinerLogs/VeiledScriptureMiner1";
+        public override string Texture => "LunarVeilLegacy/Items/Special/MinerLogs/VeiledScriptureMiner1";
         public override void SetDefaults()
         {
             Item.width = 24;
@@ -31,7 +31,7 @@ namespace Stellamod.Items.Special.MinerLogs
         {
             ScriptureSystem scriptureSystem = ModContent.GetInstance<ScriptureSystem>();
             scriptureSystem.IsVisible = !scriptureSystem.IsVisible;
-            scriptureSystem.Panel.Popup.Texture = "Stellamod/UI/Scripture/MinerScripture";
+            scriptureSystem.Panel.Popup.Texture = "LunarVeilLegacy/UI/Scripture/MinerScripture";
 
             string localizedText = this.GetLocalization("Content").Value;
             scriptureSystem.Panel.Text.SetText(localizedText);

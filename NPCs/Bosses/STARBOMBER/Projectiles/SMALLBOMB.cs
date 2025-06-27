@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles
 {
 	public class SMALLBOMB : ModProjectile
 	{

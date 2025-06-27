@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterMsFreezeProj : GunHolsterProjectile
     {
@@ -48,7 +48,7 @@ namespace Stellamod.Projectiles.GunHolster
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), position, direction * 8, projToShoot, Projectile.damage, Projectile.knockBack, Projectile.owner);
 
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/HarmonicBlasphemy1");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/HarmonicBlasphemy1");
             soundStyle.PitchVariance = 0.5f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
 

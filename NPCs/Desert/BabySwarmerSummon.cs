@@ -1,10 +1,10 @@
-﻿using Stellamod.Helpers;
+﻿using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Desert
+namespace LunarVeilLegacy.NPCs.Desert
 {
     internal class BabySwarmerSummon : ModNPC
     {

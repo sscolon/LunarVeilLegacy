@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
 
     /// <summary>

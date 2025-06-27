@@ -3,7 +3,7 @@ using System;
 using Terraria;
 using Terraria.Utilities;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     internal static class ColorFunctions
     {

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Brooches;
-using Stellamod.Buffs.Charms;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Buffs.Charms;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Brooches
+namespace LunarVeilLegacy.Items.Accessories.Brooches
 {
 	public class MorrowedJelliesBroochA : ModItem
 	{

@@ -2,11 +2,11 @@
 using Terraria.ModLoader;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using ParticleLibrary;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     internal class LunarBand : ModItem
     { 

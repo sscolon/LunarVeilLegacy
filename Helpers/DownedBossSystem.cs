@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     // Acts as a container for "downed boss" flags.
     // Set a flag like this in your bosses OnKill hook:

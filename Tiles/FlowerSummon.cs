@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Placeable;
-using Stellamod.NPCs.Bosses.StarrVeriplant;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.ObjectInteractions;
@@ -12,7 +12,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles
+namespace LunarVeilLegacy.Tiles
 {
 
     public class FlowerSummon : ModTile

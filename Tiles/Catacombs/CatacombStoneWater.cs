@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Catacombs
+namespace LunarVeilLegacy.Tiles.Catacombs
 {
 	public class CatacombStoneWater : ModTile
 	{

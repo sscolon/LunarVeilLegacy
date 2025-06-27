@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Orbs
+namespace LunarVeilLegacy.Projectiles.Summons.Orbs
 {
     internal class TheActualMoonProj : OrbProjectile
     {
@@ -315,13 +315,13 @@ namespace Stellamod.Projectiles.Summons.Orbs
                     switch (Main.rand.Next(3))
                     {
                         case 0:
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Astalaiya1") { PitchVariance = 0.15f }, Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Astalaiya1") { PitchVariance = 0.15f }, Projectile.position);
                             break;
                         case 1:
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Astalaiya2") { PitchVariance = 0.15f }, Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Astalaiya2") { PitchVariance = 0.15f }, Projectile.position);
                             break;
                         case 2:
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Astalaiya3") { PitchVariance = 0.15f }, Projectile.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Astalaiya3") { PitchVariance = 0.15f }, Projectile.position);
                             break;
                     }
                     break;
@@ -335,7 +335,7 @@ namespace Stellamod.Projectiles.Summons.Orbs
                     target.SimpleStrikeNPC(Projectile.damage, hit.HitDirection);
 
                     //Funny Screenshake
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StarFlower3") { PitchVariance = 0.15f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StarFlower3") { PitchVariance = 0.15f }, Projectile.position);
                     break;
             }
         }
@@ -346,9 +346,9 @@ namespace Stellamod.Projectiles.Summons.Orbs
 
         public override bool PreDraw(ref Color lightColor)
         {
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StarTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StringTrail").Value;
-            var TrailTex3 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/CrystalTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StarTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StringTrail").Value;
+            var TrailTex3 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/CrystalTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
             if (SwordSlash == null)
             {

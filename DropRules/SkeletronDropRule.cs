@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.GameContent.ItemDropRules;
 
-namespace Stellamod.DropRules
+namespace LunarVeilLegacy.DropRules
 {
     public class SkeletronDropRule : IItemDropRuleCondition, IProvideItemConditionDescription
     {

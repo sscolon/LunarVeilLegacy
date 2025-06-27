@@ -1,10 +1,10 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Ammo;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Ammo;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Ammo
+namespace LunarVeilLegacy.Items.Ammo
 {
     internal class SpacialDistortionBullet : ModItem
     {

@@ -1,24 +1,24 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Catacombs.Fire.BlazingSerpent;
-using Stellamod.NPCs.Catacombs.Fire;
-using Stellamod.NPCs.Catacombs.Trap.Cogwork;
-using Stellamod.NPCs.Catacombs.Trap.Sparn;
-using Stellamod.NPCs.Catacombs.Water.WaterCogwork;
-using Stellamod.NPCs.Catacombs.Water.WaterJellyfish;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Catacombs.Fire.BlazingSerpent;
+using LunarVeilLegacy.NPCs.Catacombs.Fire;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Cogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterJellyfish;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System;
-using Stellamod.Tiles.Catacombs;
-using Stellamod.Dusts;
-using Stellamod.Texts;
+using LunarVeilLegacy.Tiles.Catacombs;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Texts;
 
-namespace Stellamod.NPCs.Bosses.Verlia
+namespace LunarVeilLegacy.NPCs.Bosses.Verlia
 {
     internal class VerliaDP : ModNPC
     {

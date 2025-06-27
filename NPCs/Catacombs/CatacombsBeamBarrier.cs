@@ -1,21 +1,21 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Catacombs.Fire.BlazingSerpent;
-using Stellamod.NPCs.Catacombs.Fire;
-using Stellamod.NPCs.Catacombs.Trap.Cogwork;
-using Stellamod.NPCs.Catacombs.Trap.Sparn;
-using Stellamod.NPCs.Catacombs.Water.WaterCogwork;
-using Stellamod.NPCs.Catacombs.Water.WaterJellyfish;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Catacombs.Fire.BlazingSerpent;
+using LunarVeilLegacy.NPCs.Catacombs.Fire;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Cogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterJellyfish;
+using LunarVeilLegacy.Trails;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
 
-namespace Stellamod.NPCs.Catacombs
+namespace LunarVeilLegacy.NPCs.Catacombs
 { 
     internal class CatacombsBeamBarrier : ModProjectile,
      IPixelPrimitiveDrawer

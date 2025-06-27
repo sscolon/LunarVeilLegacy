@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles
 {
     public class STARLINGBIG : ModNPC
 	{
@@ -186,7 +186,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
 
 
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARGROP"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARGROP"));
 
 
 				ShakeModSystem.Shake = 7;
@@ -225,7 +225,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
                 }
 
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARGROP"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARGROP"));
 
 
 
@@ -268,7 +268,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER.Projectiles
                         ModContent.ProjectileType<STARDREAM>(), 40, 0f, Owner: Main.myPlayer);
                 }
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARGROP"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARGROP"));
 				ShakeModSystem.Shake = 7;
 			}
 

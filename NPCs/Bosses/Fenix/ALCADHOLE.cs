@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Summons;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Summons;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Fenix
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix
 {
     public class ALCADHOLE : ModNPC
 	{
@@ -175,7 +175,7 @@ namespace Stellamod.NPCs.Bosses.Fenix
 					dab.noGravity = false;
 				}
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/STARGROP"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/STARGROP"));
 				if (Main.netMode != NetmodeID.Server && Terraria.Graphics.Effects.Filters.Scene["Shockwave"].IsActive())
 				{
 					Terraria.Graphics.Effects.Filters.Scene["Shockwave"].Deactivate();

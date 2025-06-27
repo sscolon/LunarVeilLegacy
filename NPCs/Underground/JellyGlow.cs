@@ -2,14 +2,14 @@
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
 using ReLogic.Content;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Special.MinerLogs;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Special.MinerLogs;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -18,7 +18,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class JellyGlow : ModNPC
     {
@@ -67,7 +67,7 @@ namespace Stellamod.NPCs.Underground
             NPC.scale = 2;
             NPC.noTileCollide = true;
             NPC.HitSound = SoundID.NPCHit25; // The sound the NPC will make when being hit.
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Morrowsc1");
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowsc1");
         }
 
      
@@ -246,7 +246,7 @@ namespace Stellamod.NPCs.Underground
 
 
 
-            Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Vector3 huntrianColorXyz = DrawHelper.HuntrianColorOscillate(
                     Color.Purple.ToVector3(),
                     Color.Violet.ToVector3(),

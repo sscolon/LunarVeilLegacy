@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     /// <summary>
     /// Class holding methods to save/load structs to binary .str files
@@ -16,7 +16,7 @@ namespace Stellamod.Helpers
     public static class StructureLoader
     {
         static Point? BottomLeft = null;
-        static Mod Mod = ModContent.GetInstance<Stellamod>();
+        static Mod Mod = ModContent.GetInstance<LunarVeilLegacy>();
 
         public static Rectangle ReadRectangle(string Path)
         {

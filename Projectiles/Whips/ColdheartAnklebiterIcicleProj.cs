@@ -1,5 +1,5 @@
 ﻿using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.Whips
+namespace LunarVeilLegacy.Projectiles.Whips
 {
     internal class ColdheartAnklebiterIcicleProj :ModProjectile
     {

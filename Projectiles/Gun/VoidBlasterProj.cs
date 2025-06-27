@@ -3,8 +3,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     public class VoidBlasterProj : ModProjectile
 	{
@@ -121,11 +121,11 @@ namespace Stellamod.Projectiles.Gun
                     int Sound = Main.rand.Next(1, 3);
                     if (Sound == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VoidBlasterExplosionBomb"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidBlasterExplosionBomb"), Projectile.position);
                     }
                     else
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VoidBlasterExplosionBomb2"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidBlasterExplosionBomb2"), Projectile.position);
                     }
                 }
                 else
@@ -139,11 +139,11 @@ namespace Stellamod.Projectiles.Gun
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VoidBlaster2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidBlaster2"), Projectile.position);
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/VoidBlaster1"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidBlaster1"), Projectile.position);
             }
         }
 

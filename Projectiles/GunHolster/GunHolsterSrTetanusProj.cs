@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterSrTetanusProj : GunHolsterProjectile
     {
@@ -47,7 +47,7 @@ namespace Stellamod.Projectiles.GunHolster
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), position, velocity,
                 ModContent.ProjectileType<SrTetanusProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/gun1"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/gun1"), Projectile.position);
         }
     }
 }

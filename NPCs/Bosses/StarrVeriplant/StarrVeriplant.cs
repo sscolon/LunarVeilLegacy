@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Placeable;
-using Stellamod.NPCs.Bosses.StarrVeriplant.Projectiles;
-using Stellamod.NPCs.Catacombs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant.Projectiles;
+using LunarVeilLegacy.NPCs.Catacombs;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,7 +16,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.StarrVeriplant
+namespace LunarVeilLegacy.NPCs.Bosses.StarrVeriplant
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
     public class StarrVeriplant : ModNPC
@@ -65,7 +65,7 @@ namespace Stellamod.NPCs.Bosses.StarrVeriplant
 			// Influences how the NPC looks in the Bestiary
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
 			{
-				CustomTexturePath = "Stellamod/NPCs/Bosses/StarrVeriplant/StarrPreview",
+				CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/StarrVeriplant/StarrPreview",
 				PortraitScale = 0.8f, // Portrait refers to the full picture when clicking on the icon in the bestiary
 				PortraitPositionYOverride = 0f,
 			};
@@ -80,8 +80,8 @@ namespace Stellamod.NPCs.Bosses.StarrVeriplant
 			NPC.damage = 25;
 			NPC.defense = 5;
 			NPC.lifeMax = 600;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
             NPC.knockBackResist = 0f;
 			NPC.noGravity = true;
 			NPC.value = Item.buyPrice(copper: 40);

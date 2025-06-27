@@ -1,5 +1,5 @@
-﻿using Stellamod.Helpers;
-using Stellamod.Projectiles.Thrown.Jugglers;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Thrown.Jugglers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 
-namespace Stellamod.Items.Weapons.Thrown.Jugglers
+namespace LunarVeilLegacy.Items.Weapons.Thrown.Jugglers
 {
     internal class FlinchMachine : ModItem
     {

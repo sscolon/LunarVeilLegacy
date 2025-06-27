@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.StarrVeriplant.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.StarrVeriplant.Projectiles
 {
     public class SpikeBullet : ModProjectile
 	{

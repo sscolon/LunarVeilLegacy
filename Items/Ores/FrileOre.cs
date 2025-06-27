@@ -4,7 +4,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Ores
+namespace LunarVeilLegacy.Items.Ores
 {
     public class FrileOre : ModItem
 	{

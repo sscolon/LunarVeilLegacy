@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Eckasect
+namespace LunarVeilLegacy.Projectiles.Crossbows.Eckasect
 {
 	public class EckasectExecutorHold : ModProjectile
 	{
@@ -72,7 +72,7 @@ namespace Stellamod.Projectiles.Crossbows.Eckasect
 
 			if (Timer < 3)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Executor1"), Projectile.position);
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Executor1"), Projectile.position);
 			}
 
 			if (Timer > 1)

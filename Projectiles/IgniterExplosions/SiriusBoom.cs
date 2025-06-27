@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.IgniterExplosions
+namespace LunarVeilLegacy.Projectiles.IgniterExplosions
 {
     internal class SiriusBoom : ModProjectile
     {

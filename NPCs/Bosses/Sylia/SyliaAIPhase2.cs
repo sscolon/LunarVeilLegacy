@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Sylia.Projectiles;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     public partial class Sylia
     {
@@ -171,7 +171,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
                 velocity = velocity.RotatedByRandom(MathHelper.PiOver4 / 4);
                 velocity *= 16;
 
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/AssassinsSlash");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsSlash");
                 soundStyle.Pitch = -0.5f;
                 soundStyle.PitchVariance = 0.15f;
                 soundStyle.Volume = 0.3f;

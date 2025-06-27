@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Acid
+namespace LunarVeilLegacy.Tiles.Acid
 {
     [TileTag(TileTags.VineSway)]
     public class AcidVines : ModTile

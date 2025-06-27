@@ -1,14 +1,14 @@
 using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Items.Armors.AcidArmour;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Armors.AcidArmour;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Buffs
+namespace LunarVeilLegacy.Buffs
 {
     public class AcidFlame : ModBuff
     {

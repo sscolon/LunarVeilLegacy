@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Projectiles.IgniterEx;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Projectiles.IgniterEx;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Brooches;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Weapons.Igniters
+namespace LunarVeilLegacy.Items.Weapons.Igniters
 {
     internal class TheSunAndMoonCard : ModItem
 	{
@@ -35,7 +35,7 @@ namespace Stellamod.Items.Weapons.Igniters
 			Item.DamageType = DamageClass.Magic;
 			Item.value = 200;
 			Item.rare = ItemRarityID.LightRed;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/clickk");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/clickk");
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<IgniterStart>();
 			Item.autoReuse = true;

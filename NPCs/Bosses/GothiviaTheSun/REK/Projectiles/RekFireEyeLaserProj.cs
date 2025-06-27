@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.UI.Systems;
-using Stellamod.Dusts;
+using LunarVeilLegacy.UI.Systems;
+using LunarVeilLegacy.Dusts;
 using Terraria.ID;
 using System.Threading;
 using Terraria.Audio;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
 {
     internal class RekFireEyeLaserProj : ModProjectile
     {
@@ -59,7 +59,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK.Projectiles
             }
             if(Time == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RekLaser2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RekLaser2"), Projectile.position);
             }
 
             Projectile.Center = Owner.Center;

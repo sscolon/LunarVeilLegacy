@@ -2,8 +2,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Particles;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Particles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Whips
+namespace LunarVeilLegacy.Projectiles.Whips
 {
     internal class ColdheartAnklebiterProj : ModProjectile
     {

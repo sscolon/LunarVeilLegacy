@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace Stellamod.Backgrounds
+namespace LunarVeilLegacy.Backgrounds
 {
     public class StarbloomBackgroundStyle : ModSurfaceBackgroundStyle
 	{
@@ -30,7 +30,7 @@ namespace Stellamod.Backgrounds
 
 		public override int ChooseFarTexture()
 		{
-			return BackgroundTextureLoader.GetBackgroundSlot("Stellamod/Assets/Textures/Backgrounds/Starbloomflat");
+			return BackgroundTextureLoader.GetBackgroundSlot("LunarVeilLegacy/Assets/Textures/Backgrounds/Starbloomflat");
 			
 		}
 
@@ -43,7 +43,7 @@ namespace Stellamod.Backgrounds
 			parallax = 0.3;
 			//b = 1400;
 
-			return BackgroundTextureLoader.GetBackgroundSlot("Stellamod/Assets/Textures/Backgrounds/StarbloomBiomeBackground");
+			return BackgroundTextureLoader.GetBackgroundSlot("LunarVeilLegacy/Assets/Textures/Backgrounds/StarbloomBiomeBackground");
 
 			
 		}

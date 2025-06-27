@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Projectiles.Bow;
-using Stellamod.Projectiles.Swords;
-using Stellamod.Projectiles.Thrown;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Swords;
+using LunarVeilLegacy.Projectiles.Thrown;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     internal class ThePenetrator : ModItem
     {
@@ -115,13 +115,13 @@ namespace Stellamod.Items.Weapons.Thrown
                 switch (sound)
                 {
                     case 0:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia1"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia1"), player.position);
                         break;
                     case 1:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia2"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia2"), player.position);
                         break;
                     case 2:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia3"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia3"), player.position);
                         break;
                 }
                 return false;
@@ -135,7 +135,7 @@ namespace Stellamod.Items.Weapons.Thrown
             DrawHelper.DrawGlowInInventory(Item, spriteBatch, position, Color.Purple);
             if (_attackStyle == 1)
             {
-                Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Ranged/PenetratorMiracle").Value;
+                Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Ranged/PenetratorMiracle").Value;
                 Vector2 size = new Vector2(52, 52);
                 Vector2 drawOrigin = size / 2;
                 spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, drawOrigin, scale, SpriteEffects.None, 0);

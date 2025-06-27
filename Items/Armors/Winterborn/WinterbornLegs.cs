@@ -1,9 +1,9 @@
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Winterborn
+namespace LunarVeilLegacy.Items.Armors.Winterborn
 {
     [AutoloadEquip(EquipType.Legs)]
     public class WinterbornLegs : ModItem

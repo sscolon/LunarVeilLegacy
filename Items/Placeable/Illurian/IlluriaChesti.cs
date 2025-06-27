@@ -1,11 +1,11 @@
-﻿using Stellamod.Tiles.Abyss.Aurelus;
-using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Tiles.Abyss.Aurelus;
+using LunarVeilLegacy.Tiles;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Tiles.Illuria;
+using LunarVeilLegacy.Tiles.Illuria;
 
-namespace Stellamod.Items.Placeable.Illurian
+namespace LunarVeilLegacy.Items.Placeable.Illurian
 {
 	public class IlluriaChesti : ModItem
 	{

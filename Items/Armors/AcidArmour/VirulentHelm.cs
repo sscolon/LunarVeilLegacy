@@ -1,13 +1,13 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Armors.AcidArmour
+namespace LunarVeilLegacy.Items.Armors.AcidArmour
 {
     internal class AcidPlayer : ModPlayer
     {

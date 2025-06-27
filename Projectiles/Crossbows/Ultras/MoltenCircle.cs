@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Ultras
+namespace LunarVeilLegacy.Projectiles.Crossbows.Ultras
 {
     public class MoltenCircle : ModProjectile
 	{

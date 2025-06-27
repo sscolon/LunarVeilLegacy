@@ -9,11 +9,11 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using Terraria.Audio;
 
-namespace Stellamod.Projectiles.Ammo
+namespace LunarVeilLegacy.Projectiles.Ammo
 {
     internal class EldritchBolt : ModProjectile,
         IPixelPrimitiveDrawer

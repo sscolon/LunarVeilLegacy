@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Igniter;
-using Stellamod.Items.Armors.Vanity.Gia;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Melee.Greatswords;
-using Stellamod.Items.Weapons.Melee.Safunais;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Whips;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Igniter;
+using LunarVeilLegacy.Items.Armors.Vanity.Gia;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords;
+using LunarVeilLegacy.Items.Weapons.Melee.Safunais;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Whips;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -28,10 +28,10 @@ using Terraria.ModLoader;
 using Terraria.Utilities;
 using Terraria.DataStructures;
 using Terraria.GameContent.ItemDropRules;
-using Stellamod.Buffs;
-using Stellamod.Items.Accessories.Brooches;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Accessories.Brooches;
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
 	// [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
 	[AutoloadBossHead]
@@ -291,7 +291,7 @@ namespace Stellamod.NPCs.Town
 				//-----------------------------------------------------------------------------------------------
 				if (Main.LocalPlayer.HasItem(ModContent.ItemType<DesertRuneI>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
 
 					Main.npcChatText = LangText.Chat(this, "Special1");
 
@@ -365,7 +365,7 @@ namespace Stellamod.NPCs.Town
 
 				if (Main.LocalPlayer.HasItem(ModContent.ItemType<SkyRuneI>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
 
 					Main.npcChatText = LangText.Chat(this, "Special2");
 
@@ -432,7 +432,7 @@ namespace Stellamod.NPCs.Town
 
 				if (Main.LocalPlayer.HasItem(ModContent.ItemType<IceRuneI>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
 
 					Main.npcChatText = LangText.Chat(this, "Special3");
 
@@ -523,7 +523,7 @@ namespace Stellamod.NPCs.Town
 
 				if (Main.LocalPlayer.HasItem(ModContent.ItemType<OverworldRuneI>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
 
 					Main.npcChatText = LangText.Chat(this, "Special4");
 
@@ -667,7 +667,7 @@ namespace Stellamod.NPCs.Town
 
 				if (Main.LocalPlayer.HasItem(ModContent.ItemType<OceanRuneI>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
 
 					Main.npcChatText = LangText.Chat(this, "Special5");
 
@@ -776,7 +776,7 @@ namespace Stellamod.NPCs.Town
 
 				if (Main.LocalPlayer.HasItem(ModContent.ItemType<JungleRuneI>()))
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Bliss1")); // Reforge/Anvil sound
 
 					Main.npcChatText = LangText.Chat(this, "Special6");
 
@@ -1036,14 +1036,14 @@ public class GiaPersonProfile : ITownNPCProfile
 		public Asset<Texture2D> GetTextureNPCShouldUse(NPC npc)
 		{
 			if (npc.IsABestiaryIconDummy && !npc.ForcePartyHatOn)
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Gia");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Gia");
 
 			if (npc.altTexture == 1)
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Gia_Party");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Gia_Party");
 
-			return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/Gia");
+			return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/Gia");
 		}
 
-		public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("Stellamod/NPCs/Town/Gia_Head");
+		public int GetHeadTextureIndex(NPC npc) => ModContent.GetModHeadSlot("LunarVeilLegacy/NPCs/Town/Gia_Head");
 	}
 }

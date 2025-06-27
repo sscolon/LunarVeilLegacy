@@ -1,15 +1,15 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles.Gun;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class XX4160 : ModItem
     {
@@ -57,14 +57,14 @@ namespace Stellamod.Items.Weapons.Ranged
                     Item.damage = 18;
                     Item.shootSpeed = 35f;
                     LAZERMode = false;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/XX41604"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/XX41604"));
                 }
                 else
                 {
                     Item.damage = 20;
                     Item.shootSpeed = 3f;
                     LAZERMode = true;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/XX41603"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/XX41603"));
                 }
             }
             else
@@ -92,11 +92,11 @@ namespace Stellamod.Items.Weapons.Ranged
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MiniPistol"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol"));
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MiniPistol3"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol3"));
             }
 
 
@@ -118,11 +118,11 @@ namespace Stellamod.Items.Weapons.Ranged
                 int Sound2 = Main.rand.Next(1, 3);
                 if (Sound2 == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/XX4160"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/XX4160"));
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/XX41602"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/XX41602"));
                 }
 
                 LAZERAlpha -= 4;
@@ -150,7 +150,7 @@ namespace Stellamod.Items.Weapons.Ranged
 
                     if(LAZERAlpha <= 7)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MiniPistol2"));
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MiniPistol2"));
                         player.AddBuff(ModContent.BuffType<Overheated>(), 1500);
                         Item.useTime = 105;
                         Item.useAnimation = 105;

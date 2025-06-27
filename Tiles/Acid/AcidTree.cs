@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Acid
+namespace LunarVeilLegacy.Tiles.Acid
 {
     class AcidTree : ModTree
     {
@@ -21,9 +21,9 @@ namespace Stellamod.Tiles.Acid
         public override void SetStaticDefaults() => GrowsOnTileId = new int[] { ModContent.TileType<AcidialDirt>() };
         public override int CreateDust() => 22;
         public override int DropWood() => ModContent.ItemType<VirulentPlating>();
-        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("Stellamod/Tiles/Acid/AcidTree");
-        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/Acid/AcidTree_Top");
-        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("Stellamod/Tiles/Acid/AcidTree_Branches");
+        public override Asset<Texture2D> GetTexture() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Acid/AcidTree");
+        public override Asset<Texture2D> GetTopTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Acid/AcidTree_Top");
+        public override Asset<Texture2D> GetBranchTextures() => ModContent.Request<Texture2D>("LunarVeilLegacy/Tiles/Acid/AcidTree_Branches");
 
         public override int SaplingGrowthType(ref int style)
         {

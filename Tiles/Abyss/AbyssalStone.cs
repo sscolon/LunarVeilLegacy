@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Abyss
+namespace LunarVeilLegacy.Tiles.Abyss
 {
     public class AbyssalStone : ModTile
     {

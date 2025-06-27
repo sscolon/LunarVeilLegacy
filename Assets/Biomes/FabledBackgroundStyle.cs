@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace Stellamod.Backgrounds
+namespace LunarVeilLegacy.Backgrounds
 {
     public class FabledBackgroundStyle : ModSurfaceBackgroundStyle
 	{
@@ -30,7 +30,7 @@ namespace Stellamod.Backgrounds
 
         public override int ChooseFarTexture()
 		{
-			return BackgroundTextureLoader.GetBackgroundSlot("Stellamod/Assets/Textures/Backgrounds/MarrowBiomeSurfaceMid");		
+			return BackgroundTextureLoader.GetBackgroundSlot("LunarVeilLegacy/Assets/Textures/Backgrounds/MarrowBiomeSurfaceMid");		
 		}
 
 		public override int ChooseCloseTexture(ref float scale, ref double parallax, ref float a, ref float b)
@@ -40,7 +40,7 @@ namespace Stellamod.Backgrounds
 			//B seems to be the y position
 			b -= 50*scale;
 
-			return BackgroundTextureLoader.GetBackgroundSlot("Stellamod/Assets/Textures/Backgrounds/FableBiomeBackground");	
+			return BackgroundTextureLoader.GetBackgroundSlot("LunarVeilLegacy/Assets/Textures/Backgrounds/FableBiomeBackground");	
 		}  
 	}
 }

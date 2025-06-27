@@ -1,9 +1,9 @@
-﻿using Stellamod.Tiles.Structures;
+﻿using LunarVeilLegacy.Tiles.Structures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
     public class StoneChesti : ModItem
 	{

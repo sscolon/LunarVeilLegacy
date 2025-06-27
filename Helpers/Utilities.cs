@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -14,7 +14,7 @@ using Terraria.ID;
 using Terraria.Localization;
 
 
-namespace Stellamod.Helpers.Separate
+namespace LunarVeilLegacy.Helpers.Separate
 {
     public static partial class Utilities
     {

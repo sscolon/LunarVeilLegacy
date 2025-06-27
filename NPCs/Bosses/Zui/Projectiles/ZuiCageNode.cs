@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Zui.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Zui.Projectiles
 {
     internal class ZuiCageNode : ModProjectile
     {
@@ -40,7 +40,7 @@ namespace Stellamod.NPCs.Bosses.Zui.Projectiles
         private void DrawChainCurve(SpriteBatch spriteBatch, Vector2 projBottom, Color lightColor, out Vector2[] chainPositions)
         {
             Texture2D chainTex = ModContent.Request<Texture2D>(Texture + "_Chain").Value;
-            Texture2D texture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
 
             Curvature curve = new Curvature(new Vector2[] { targetProjectile.Center, projBottom });
             int numPoints = 30;
@@ -104,7 +104,7 @@ namespace Stellamod.NPCs.Bosses.Zui.Projectiles
 
         public override void OnKill(int timeLeft)
         {
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSheethe"));
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSheethe"));
             for (int i = 0; i < 16; i++)
             {
                 Vector2 speed = Main.rand.NextVector2CircularEdge(4f, 4f);

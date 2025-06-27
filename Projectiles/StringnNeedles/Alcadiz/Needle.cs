@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.StringnNeedles.Alcadiz
+namespace LunarVeilLegacy.Projectiles.StringnNeedles.Alcadiz
 {
     public class Needle : ModProjectile
 	{
@@ -29,7 +29,7 @@ namespace Stellamod.Projectiles.StringnNeedles.Alcadiz
 		}
 		public override bool PreDraw(ref Color lightColor)
 		{
-			ProjectileExtras.DrawChain(Projectile.whoAmI, Main.player[Projectile.owner].MountedCenter, "Stellamod/Projectiles/StringnNeedles/Alcadiz/Needle_Chain");
+			ProjectileExtras.DrawChain(Projectile.whoAmI, Main.player[Projectile.owner].MountedCenter, "LunarVeilLegacy/Projectiles/StringnNeedles/Alcadiz/Needle_Chain");
 			ProjectileExtras.DrawAroundOrigin(Projectile.whoAmI, lightColor);
 			return false;
 		}

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Placeable;
+using LunarVeilLegacy.Items.Placeable;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Morrow
+namespace LunarVeilLegacy.NPCs.Morrow
 {
     public class AmethystBeetle : ModNPC
 	{

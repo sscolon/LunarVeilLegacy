@@ -1,10 +1,10 @@
-﻿using Stellamod.UI.Scripture;
+﻿using LunarVeilLegacy.UI.Scripture;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Stellamod.Helpers;
-namespace Stellamod.Items.Special
+using LunarVeilLegacy.Helpers;
+namespace LunarVeilLegacy.Items.Special
 {
     internal class VeiledScriptureCozmire : ModItem
     {
@@ -38,7 +38,7 @@ namespace Stellamod.Items.Special
         {
             ScriptureSystem scriptureSystem = ModContent.GetInstance<ScriptureSystem>();
             scriptureSystem.IsVisible = !scriptureSystem.IsVisible;
-            scriptureSystem.Panel.Popup.Texture = "Stellamod/UI/Scripture/ExampleScripture";
+            scriptureSystem.Panel.Popup.Texture = "LunarVeilLegacy/UI/Scripture/ExampleScripture";
 
             string localizedText = ContentText.Value;
             scriptureSystem.Panel.Text.SetText(localizedText);

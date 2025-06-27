@@ -2,12 +2,12 @@
 using Terraria;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria.Audio;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     internal class OrionStarProj : ModProjectile
     {

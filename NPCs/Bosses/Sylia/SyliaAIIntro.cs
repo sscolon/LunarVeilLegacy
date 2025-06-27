@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Sylia.Projectiles;
-using Stellamod.Particles;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     public partial class Sylia
     {
@@ -56,7 +56,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
 
                 telegraphPart1.rotation = MathHelper.ToRadians(-45);
                 telegraphPart2.rotation = MathHelper.ToRadians(45);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RipperSlashTelegraph"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RipperSlashTelegraph"));
             }
 
             //Until one big slash and she emerges

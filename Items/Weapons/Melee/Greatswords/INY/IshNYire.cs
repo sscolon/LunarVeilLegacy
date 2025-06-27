@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Safunai.Alcarish;
-using Stellamod.Projectiles.Slashers.IshNYire;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Safunai.Alcarish;
+using LunarVeilLegacy.Projectiles.Slashers.IshNYire;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -10,17 +10,17 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Crossbows.Eckasect;
-using Stellamod.Projectiles.Crossbows.Ultras;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Crossbows.Eckasect;
+using LunarVeilLegacy.Projectiles.Crossbows.Ultras;
 
 using Terraria.GameContent.Creative;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Magic;
 
-namespace Stellamod.Items.Weapons.Melee.Greatswords.INY
+namespace LunarVeilLegacy.Items.Weapons.Melee.Greatswords.INY
 {
 
 	internal class IshNYirePlayer : ModPlayer
@@ -119,7 +119,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords.INY
 					Item.shootSpeed = 1f;
 					Item.useAnimation = 30;
 					Item.useTime = 15;
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 					Item.channel = false;
 					return true;
 				}
@@ -145,7 +145,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords.INY
 					Item.useAnimation = 30;
 					Item.useTime = 15;
 
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 					Item.channel = false;
 					return true;
 				}
@@ -194,7 +194,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords.INY
 					Item.useAnimation = 20;
 					Item.useTime = 20;
 					Item.consumeAmmoOnLastShotOnly = true;
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 					//GallinLock2
 					return true;
 				}
@@ -220,7 +220,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords.INY
 					Item.useAnimation = 30;
 					Item.useTime = 30;
 					Item.consumeAmmoOnLastShotOnly = true;
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 					//GallinLock2
 					return true;
 				}
@@ -391,7 +391,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords.INY
 				if (player.HasBuff<YireShow>())
 				{
 					Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<YireProj>(), damage * 3, knockback, player.whoAmI, 1, dir);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwingyAr") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwingyAr") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
 
                     float numberProjectiles = 3;
 					float rotation = MathHelper.ToRadians(20);
@@ -503,34 +503,34 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords.INY
 
 			if (!player.HasBuff<VireShow>() && !player.HasBuff<IshShow>() && !player.HasBuff<YireShow>() && !player.HasBuff<ISHNYIREShow>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Melee/Greatswords/INY/Vire").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Melee/Greatswords/INY/Vire").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}
 			if (player.HasBuff<VireShow>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Melee/Greatswords/INY/Vire").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Melee/Greatswords/INY/Vire").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}
 
 			if (player.HasBuff<IshShow>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Melee/Greatswords/INY/Ish").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Melee/Greatswords/INY/Ish").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}
 
 			if (player.HasBuff<YireShow>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Melee/Greatswords/INY/Yire").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Melee/Greatswords/INY/Yire").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}
 
 			if (player.HasBuff<ISHNYIREShow>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Melee/Greatswords/INY/IshNYire").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Melee/Greatswords/INY/IshNYire").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}

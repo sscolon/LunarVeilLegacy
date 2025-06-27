@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Arrows;
+using LunarVeilLegacy.Projectiles.Arrows;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.AlcadChests
+namespace LunarVeilLegacy.Items.Accessories.AlcadChests
 {
     internal class AlcaricQuiverPlayer : ModPlayer
     {

@@ -1,4 +1,4 @@
-﻿using Stellamod.Projectiles;
+﻿using LunarVeilLegacy.Projectiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace Stellamod.NPCs
+namespace LunarVeilLegacy.NPCs
 {
     internal class TestLaserNPC : ModNPC
     {

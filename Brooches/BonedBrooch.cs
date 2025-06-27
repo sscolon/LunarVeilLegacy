@@ -1,7 +1,7 @@
-﻿using Stellamod.Items.Accessories.Brooches;
+﻿using LunarVeilLegacy.Items.Accessories.Brooches;
 using Terraria;
 
-namespace Stellamod.Brooches
+namespace LunarVeilLegacy.Brooches
 {
     public class BonedBrooch : BroochDefaultProjectile
     {

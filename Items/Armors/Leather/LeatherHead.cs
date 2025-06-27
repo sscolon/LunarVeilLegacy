@@ -1,11 +1,11 @@
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Armors.Leather
+namespace LunarVeilLegacy.Items.Armors.Leather
 {
     [AutoloadEquip(EquipType.Head)]
     public class LeatherHead : ModItem

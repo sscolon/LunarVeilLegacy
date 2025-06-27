@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria.ModLoader;
 
-namespace Stellamod.Gores
+namespace LunarVeilLegacy.Gores
 {
     internal abstract class FanGore : ModGore { }
     internal class Fan1 : FanGore { }

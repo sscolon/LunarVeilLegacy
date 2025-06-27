@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Gores;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.NPCs.Bosses.Niivi.Projectiles;
-using Stellamod.Particles;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles;
+using LunarVeilLegacy.Particles;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -19,7 +19,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi
 {
     internal class NiiviPlayer : ModPlayer
     {
@@ -40,10 +40,10 @@ namespace Stellamod.NPCs.Bosses.Niivi
 
         private void ActivateSkye()
         {
-            if (!SkyManager.Instance["Stellamod:NiiviSky"].IsActive())
+            if (!SkyManager.Instance["LunarVeilLegacy:NiiviSky"].IsActive())
             {
                 Vector2 targetCenter = Player.Center;
-                SkyManager.Instance.Activate("Stellamod:NiiviSky", targetCenter);
+                SkyManager.Instance.Activate("LunarVeilLegacy:NiiviSky", targetCenter);
                 Main.shimmerDarken = 0.1f;
                 Main.shimmerAlpha = 0.5f;
             }
@@ -52,10 +52,10 @@ namespace Stellamod.NPCs.Bosses.Niivi
 
         private void DeActivateSkye()
         {
-            if (SkyManager.Instance["Stellamod:NiiviSky"].IsActive())
+            if (SkyManager.Instance["LunarVeilLegacy:NiiviSky"].IsActive())
             {
                 Vector2 targetCenter = Player.Center;
-                SkyManager.Instance.Deactivate("Stellamod:NiiviSky", targetCenter);
+                SkyManager.Instance.Deactivate("LunarVeilLegacy:NiiviSky", targetCenter);
                 Main.shimmerDarken = 0f;
                 Main.shimmerAlpha = 0f;
             }
@@ -209,7 +209,7 @@ namespace Stellamod.NPCs.Bosses.Niivi
             NPCID.Sets.TrailCacheLength[Type] = Total_Segments;
             NPCID.Sets.TrailingMode[Type] = 2;
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/Niivi/NiiviPreview";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/Niivi/NiiviPreview";
             drawModifiers.PortraitScale = 0.8f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
         }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Charms;
-using Stellamod.NPCs.Town;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Buffs.Charms;
+using LunarVeilLegacy.NPCs.Town;
+using LunarVeilLegacy.Projectiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Flasks
+namespace LunarVeilLegacy.Items.Flasks
 {
     internal class FlaskPlayer : ModPlayer
     {

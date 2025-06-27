@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs.Whipfx
+namespace LunarVeilLegacy.Buffs.Whipfx
 {
     public class MorrowWhipDebuff : ModBuff
 	{

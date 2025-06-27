@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.NPCs.Catacombs.Water.WaterCogwork;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Catacombs
+namespace LunarVeilLegacy.Items.Accessories.Catacombs
 {
     internal class AquaticEmblemPlayer : ModPlayer
     {

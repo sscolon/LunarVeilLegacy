@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using ReLogic.OS.Windows;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Projectiles;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Utilis;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -14,7 +14,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.WorldG
+namespace LunarVeilLegacy.WorldG
 {
     public class EventWorld : ModSystem
     {
@@ -241,7 +241,7 @@ namespace Stellamod.WorldG
                 string message = "Gothivia has made a return, the skies enlighten and the sun burns bright.";
                 if (DownedBossSystem.downedIrradiaBoss)
                 {
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CHAOS"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CHAOS"));
                     NetworkText txt = NetworkText.FromLiteral(message);
                     ChatHelper.BroadcastChatMessage(txt, new Color(34, 121, 100));
                     GreenSun = true;
@@ -254,7 +254,7 @@ namespace Stellamod.WorldG
                 string message = "Chaos has plaged the ocean...";
                 if (NPC.downedMechBoss1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CHAOS"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CHAOS"));
                     NetworkText txt = NetworkText.FromLiteral(message);
                     ChatHelper.BroadcastChatMessage(txt, new Color(34, 121, 100));
                     ChaosD = true;
@@ -265,7 +265,7 @@ namespace Stellamod.WorldG
                 string message = "Chaos has plaged the dungeon...";
                 if (NPC.downedMechBoss3)
                 {
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CHAOS"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CHAOS"));
                     NetworkText txt = NetworkText.FromLiteral(message);
                     ChatHelper.BroadcastChatMessage(txt, new Color(34, 121, 100));
                     ChaosT = true;
@@ -276,7 +276,7 @@ namespace Stellamod.WorldG
                 string message = "Chaos has plaged the hell...";
                 if (NPC.downedMechBoss2)
                 {
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/CHAOS"));
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/CHAOS"));
                     NetworkText txt = NetworkText.FromLiteral(message);
                     ChatHelper.BroadcastChatMessage(txt, new Color(34, 121, 100));
                     ChaosP = true;

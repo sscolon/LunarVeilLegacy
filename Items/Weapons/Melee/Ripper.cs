@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Magic;
-using Stellamod.Projectiles.Swords;
-using Stellamod.Projectiles.Swords.Ripper;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Swords;
+using LunarVeilLegacy.Projectiles.Swords.Ripper;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -14,7 +14,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
 
 	public class Ripper : ModItem
@@ -112,13 +112,13 @@ namespace Stellamod.Items.Weapons.Melee
 				switch (sound)
 				{
 					case 0:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia1"), player.position);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia1"), player.position);
 						break;
 					case 1:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia2"), player.position);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia2"), player.position);
 						break;
 					case 2:
-						SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia3"), player.position);
+						SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia3"), player.position);
 						break;
 				}
                 return false;
@@ -132,7 +132,7 @@ namespace Stellamod.Items.Weapons.Melee
             DrawHelper.DrawGlowInInventory(Item, spriteBatch, position, Color.Purple);
             if (_attackStyle == 1)
 			{
-                Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Mage/SkyFractureMiracle").Value;
+                Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Mage/SkyFractureMiracle").Value;
 				Vector2 size = new Vector2(60, 68);
 				Vector2 drawOrigin = size / 2;
                 spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, drawOrigin, scale, SpriteEffects.None, 0);

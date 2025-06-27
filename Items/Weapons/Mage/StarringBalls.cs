@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 	public class StarringBalls : ClassSwapItem
     {

@@ -2,18 +2,18 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Buffs;
-using Stellamod.DropRules;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.DropRules;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Abyssal
+namespace LunarVeilLegacy.NPCs.Abyssal
 {
 
     public class AbyssalSlime : ModNPC

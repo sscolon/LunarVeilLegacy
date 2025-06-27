@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     internal class TwilitTome : ModItem
     {
@@ -45,13 +45,13 @@ namespace Stellamod.Items.Weapons.Mage
             Player player = Main.player[Main.myPlayer];
             if (Main.dayTime)
             {
-                Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Mage/TwilitTomeDay").Value;
+                Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Mage/TwilitTomeDay").Value;
                 spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
                 return false;
             }
             else
             {
-                Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Mage/TwilitTome").Value;
+                Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Mage/TwilitTome").Value;
                 spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
                 return false;
             }

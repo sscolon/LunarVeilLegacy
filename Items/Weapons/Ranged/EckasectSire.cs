@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Crossbows.Eckasect;
-using Stellamod.Projectiles.Crossbows.Ultras;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Crossbows.Eckasect;
+using LunarVeilLegacy.Projectiles.Crossbows.Ultras;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -16,7 +16,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
 
     public class EckasectSire : ModItem
@@ -82,7 +82,7 @@ namespace Stellamod.Items.Weapons.Ranged
         }
 	
 		
-		//Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Accessories/Brooches/AdvancedBroochesBackpack").Value;
+		//Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Accessories/Brooches/AdvancedBroochesBackpack").Value;
 	//	spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 
 	//	return false;
@@ -115,7 +115,7 @@ namespace Stellamod.Items.Weapons.Ranged
 					Item.useAnimation = 20;
 					Item.useTime = 20;
 					Item.consumeAmmoOnLastShotOnly = true;
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 
 					return true;
 				}
@@ -140,7 +140,7 @@ namespace Stellamod.Items.Weapons.Ranged
 					Item.useAnimation = 20;
 					Item.useTime = 20;
 					Item.consumeAmmoOnLastShotOnly = true;
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 
 					return true;
 				}
@@ -164,7 +164,7 @@ namespace Stellamod.Items.Weapons.Ranged
 					Item.useAnimation = 20;
 					Item.useTime = 20;
 					Item.consumeAmmoOnLastShotOnly = true;
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 
 					return true;
 				}
@@ -188,7 +188,7 @@ namespace Stellamod.Items.Weapons.Ranged
 					Item.useAnimation = 20;
 					Item.useTime = 20;
 					Item.consumeAmmoOnLastShotOnly = true;
-					Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/GallinLock2");
+					Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/GallinLock2");
 					//GallinLock2
 					return true;
 				}
@@ -211,27 +211,27 @@ namespace Stellamod.Items.Weapons.Ranged
 
 			if (!player.HasBuff<Genesis>() && !player.HasBuff<Liberator>() && !player.HasBuff<Executor>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Ranged/EckasectSire").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Ranged/EckasectSire").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}
 			if (player.HasBuff<Genesis>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Ranged/EckasectSire").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Ranged/EckasectSire").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}
 
 			if (player.HasBuff<Liberator>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Ranged/EckasectLiber").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Ranged/EckasectLiber").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}
 
 			if (player.HasBuff<Executor>())
 			{
-				Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Ranged/EckasectExe").Value;
+				Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Ranged/EckasectExe").Value;
 				spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0);
 				return false;
 			}

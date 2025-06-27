@@ -2,15 +2,15 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Newtonsoft.Json.Linq;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviFrostBreathProj : ModProjectile
     {
@@ -22,7 +22,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
             set => Projectile.ai[0] = value;
         }
 
-        private string FrostTexture => "Stellamod/Effects/Masks/ZuiEffect";
+        private string FrostTexture => "LunarVeilLegacy/Effects/Masks/ZuiEffect";
         private float LifeTime = 90;
         private float MaxScale = 1f;
 

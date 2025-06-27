@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
-using Stellamod.Projectiles.Summons;
-using Stellamod.Projectiles.Visual;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.Projectiles.Summons;
+using LunarVeilLegacy.Projectiles.Visual;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
 {
     public class CarmodyGreen : ModNPC
     {
@@ -227,7 +227,7 @@ namespace Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles
                     dab.noGravity = false;
                 }
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/STARGROP"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/STARGROP"));
                 if (Main.netMode != NetmodeID.Server && Terraria.Graphics.Effects.Filters.Scene["Shockwave"].IsActive())
                 {
                     Terraria.Graphics.Effects.Filters.Scene["Shockwave"].Deactivate();

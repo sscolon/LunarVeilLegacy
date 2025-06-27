@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Gun
+namespace LunarVeilLegacy.Projectiles.Gun
 {
     public class DeathShotBombFX : ModProjectile
     {
@@ -55,7 +55,7 @@ namespace Stellamod.Projectiles.Gun
         {
             alphaPos.X = Projectile.Center.X;
             alphaPos.Y = Projectile.Center.Y - alphaCounter2;
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             if(counter == 1)
             {
                 Main.spriteBatch.Draw(texture2D4, alphaPos - Main.screenPosition, null, new Color((int)(65f * alphaCounter), (int)(15f * alphaCounter), (int)(15f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.4f * (alphaCounter + 0.6f), SpriteEffects.None, 0f);

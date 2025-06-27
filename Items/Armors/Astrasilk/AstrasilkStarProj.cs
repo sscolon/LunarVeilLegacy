@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Astrasilk
+namespace LunarVeilLegacy.Items.Armors.Astrasilk
 {
     internal class AstrasilkStarProj : ModProjectile
     {

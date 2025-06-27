@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Charms;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Buffs.Charms;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Brooches
+namespace LunarVeilLegacy.Brooches
 {
     internal class BroochPlayer : ModPlayer
     {

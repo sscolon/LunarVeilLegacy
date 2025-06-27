@@ -3,11 +3,11 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
     public class SpinewBlue : Particle
     {
@@ -50,7 +50,7 @@ namespace Stellamod.Particles
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
 
-            Texture2D tex3 = Request<Texture2D>("Stellamod/Particles/spinbetter").Value;
+            Texture2D tex3 = Request<Texture2D>("LunarVeilLegacy/Particles/spinbetter").Value;
 
             float alpha = timeLeft <= 20 ? 1f - 1f / 20f * (20 - timeLeft) : 1f;
             if (alpha < 0f) alpha = 0f;

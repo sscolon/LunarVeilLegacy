@@ -1,16 +1,16 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Gores;
-using Stellamod.Trails;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Dusts;
+using LunarVeilLegacy.Dusts;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class GoldenBaha : ModProjectile
     {

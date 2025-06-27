@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Placeable;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Placeable;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -12,7 +12,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Abyss.Aurelus
+namespace LunarVeilLegacy.Tiles.Abyss.Aurelus
 {
     public class AurelusChest : ModTile
 	{

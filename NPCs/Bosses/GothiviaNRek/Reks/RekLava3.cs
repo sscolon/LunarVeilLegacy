@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaNRek.Reks
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks
 {
     public class RekLava3 : ModProjectile
     {

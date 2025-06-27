@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.SunStalker
+namespace LunarVeilLegacy.NPCs.Bosses.SunStalker
 {
     public class SunStalkerDeath : ModNPC
     {
@@ -104,13 +104,13 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             Main.dust[num].velocity = NPC.DirectionTo(Main.dust[num].position) * 6f;
                         }
                     }
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Death_1"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Death_1"), NPC.position);
                     Glow = true;
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 124f);
                 }
                 if (NPC.ai[0] == 80)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Death_2"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Death_2"), NPC.position);
                 }
                 if (NPC.ai[0] == 60)
                 {
@@ -145,12 +145,12 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                     {
                         Dust.NewDustPerfect(base.NPC.Center, DustID.CopperCoin, (Vector2.One * Main.rand.Next(4, 30)).RotatedByRandom(25.0), 0, default(Color), 2f).noGravity = false;
                     }
-                    int Gore1 = ModContent.Find<ModGore>("Stellamod/SunStalker1").Type;
-                    int Gore2 = ModContent.Find<ModGore>("Stellamod/SunStalker2").Type;
-                    int Gore3 = ModContent.Find<ModGore>("Stellamod/SunStalker3").Type;
-                    int Gore4 = ModContent.Find<ModGore>("Stellamod/SunStalker4").Type;
-                    int Gore5 = ModContent.Find<ModGore>("Stellamod/SunStalker5").Type;
-                    int Gore6 = ModContent.Find<ModGore>("Stellamod/SunStalker6").Type;
+                    int Gore1 = ModContent.Find<ModGore>("LunarVeilLegacy/SunStalker1").Type;
+                    int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/SunStalker2").Type;
+                    int Gore3 = ModContent.Find<ModGore>("LunarVeilLegacy/SunStalker3").Type;
+                    int Gore4 = ModContent.Find<ModGore>("LunarVeilLegacy/SunStalker4").Type;
+                    int Gore5 = ModContent.Find<ModGore>("LunarVeilLegacy/SunStalker5").Type;
+                    int Gore6 = ModContent.Find<ModGore>("LunarVeilLegacy/SunStalker6").Type;
                     Gore.NewGore(EntitySource, NPC.position, NPC.velocity, Gore1);
                     Gore.NewGore(EntitySource, NPC.position, NPC.velocity, Gore2);
                     Gore.NewGore(EntitySource, NPC.position, NPC.velocity, Gore3);
@@ -158,7 +158,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                     Gore.NewGore(EntitySource, NPC.position, NPC.velocity, Gore5);
                     Gore.NewGore(EntitySource, NPC.position, NPC.velocity, Gore6);
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 124f);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge_Full_Note"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge_Full_Note"), NPC.position);
                     NPC.life = 0;
                     for (int i = 0; i < 50; i++)
                     {

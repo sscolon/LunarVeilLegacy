@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.BORDOC
+namespace LunarVeilLegacy.Items.Quest.BORDOC
 {
     internal class RottenHeart : ModItem
     {

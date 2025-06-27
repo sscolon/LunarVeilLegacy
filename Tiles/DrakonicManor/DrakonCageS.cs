@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.DrakonicManor
+namespace LunarVeilLegacy.Tiles.DrakonicManor
 {
 	public class DrakonCageS : ModTile
 	{

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Ammo
+namespace LunarVeilLegacy.Projectiles.Ammo
 {
     internal class IrradiatedArrowRobot : ModProjectile
     {
@@ -53,11 +53,11 @@ namespace Stellamod.Projectiles.Ammo
                     int Sound = Main.rand.Next(1, 3);
                     if (Sound == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GraniteMagmum1") { PitchVariance=0.15f}, Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GraniteMagmum1") { PitchVariance=0.15f}, Projectile.position);
                     }
                     else
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GraniteMagmum2") { PitchVariance = 0.15f }, Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GraniteMagmum2") { PitchVariance = 0.15f }, Projectile.position);
                     }
                     Timer = 0;
                 }

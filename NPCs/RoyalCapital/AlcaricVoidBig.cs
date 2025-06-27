@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Assets.Biomes;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.RoyalCapital
+namespace LunarVeilLegacy.NPCs.RoyalCapital
 {
     public class AlcaricVoidBig : ModNPC
     {

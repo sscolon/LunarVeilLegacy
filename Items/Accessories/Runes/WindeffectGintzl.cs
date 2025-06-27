@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Runes
+namespace LunarVeilLegacy.Items.Accessories.Runes
 {
     public class WindeffectGintzl : ModProjectile
     {

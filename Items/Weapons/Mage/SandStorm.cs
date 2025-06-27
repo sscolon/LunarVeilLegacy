@@ -12,11 +12,11 @@ using Terraria;
 
 using Microsoft.Xna.Framework;
 
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Magic;
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Magic;
+using LunarVeilLegacy.Items.Harvesting;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
 	public class SandStorm : ClassSwapItem
     {

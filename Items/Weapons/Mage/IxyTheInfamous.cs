@@ -1,21 +1,21 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Magic;
-using Stellamod.Projectiles.Slashers;
-using Stellamod.Projectiles.Slashers.Ixy;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Slashers;
+using LunarVeilLegacy.Projectiles.Slashers.Ixy;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     public class IyxTheInfamous : ClassSwapItem
     {

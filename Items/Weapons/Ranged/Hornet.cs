@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class Hornet : ModItem
 	{
@@ -50,7 +50,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.useAnimation = 12;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.autoReuse = true;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/gun1");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/gun1");
 
 			// Weapon Properties
 			Item.DamageType = DamageClass.Ranged;

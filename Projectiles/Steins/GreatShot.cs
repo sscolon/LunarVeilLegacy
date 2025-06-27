@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Projectiles.IgniterExplosions.Stein;
+using LunarVeilLegacy.Projectiles.IgniterExplosions.Stein;
 
-namespace Stellamod.Projectiles.Steins
+namespace LunarVeilLegacy.Projectiles.Steins
 {
 	public class GreatShot : ModProjectile
 	{
@@ -57,7 +57,7 @@ namespace Stellamod.Projectiles.Steins
 			float speedYa = -Projectile.velocity.Y * Main.rand.Next(0, 0) * 0.01f + Main.rand.Next(-20, 21) * 0.0f;
 
 			Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X, Projectile.position.Y, speedXa * 0, speedYa * 0, ModContent.ProjectileType<AivanKaboom>(), (int)(Projectile.damage * 1.5f), 0f, Projectile.owner, 0f, 0f);
-			SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Starexplosion"), Projectile.position);
+			SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Starexplosion"), Projectile.position);
 		}
 
 		public override Color? GetAlpha(Color lightColor)
@@ -93,7 +93,7 @@ namespace Stellamod.Projectiles.Steins
 
 		public override void PostDraw(Color lightColor)
 		{
-			Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+			Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
 			Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(35f * alphaCounter), (int)(5f * alphaCounter), (int)(5f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
 			Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(45f * alphaCounter), (int)(5f * alphaCounter), (int)(5f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.17f * (7 + 0.6f), SpriteEffects.None, 0f);
 			Main.spriteBatch.Draw(texture2D4, Projectile.Center - Main.screenPosition, null, new Color((int)(45f * alphaCounter), (int)(5f * alphaCounter), (int)(5f * alphaCounter), 0), Projectile.rotation, new Vector2(32, 32), 0.07f * (7 + 0.6f), SpriteEffects.None, 0f);

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Thrown.Jugglers;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Thrown.Jugglers;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Thrown.Jugglers
+namespace LunarVeilLegacy.Items.Weapons.Thrown.Jugglers
 {
     internal class LilStinger : ModItem
     {

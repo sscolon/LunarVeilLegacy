@@ -7,7 +7,7 @@ using System.Reflection;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.ModLoader;
 
-namespace Stellamod.Trails;
+namespace LunarVeilLegacy.Trails;
 
 public sealed class BaseRenderTargetOverrider
 {

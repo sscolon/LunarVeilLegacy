@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     internal class BrackettThrough : ModProjectile
     {
@@ -83,12 +83,12 @@ namespace Stellamod.Projectiles
                 if (A == 0)
                 {
                     SoundEngine.PlaySound(SoundID.Zombie83, Projectile.position);
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Saw1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Saw1"), Projectile.position);
                 }
                 else
                 {
                     SoundEngine.PlaySound(SoundID.Zombie82, Projectile.position);
-                    SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Saw1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Saw1"), Projectile.position);
                 }
             }
 
@@ -131,11 +131,11 @@ namespace Stellamod.Projectiles
             int Sound = Main.rand.Next(1, 3);
             if (Sound == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"), Projectile.position);
             }
             else
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
             }
 
             for (int i = 0; i < 40; i++)
@@ -163,7 +163,7 @@ namespace Stellamod.Projectiles
 
 
 
-            Texture2D texture2D4 = Request<Texture2D>("Stellamod/Effects/Masks/Spiin").Value;
+            Texture2D texture2D4 = Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Spiin").Value;
             Main.spriteBatch.Draw(texture2D4, DrawOffset - Main.screenPosition, null, new Color((int)(35f * alphaCounter), (int)(25f * alphaCounter), (int)(05f * alphaCounter), 0), Projectile.rotation, new Vector2(200, 200), 0.07f * (5 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, DrawOffset - Main.screenPosition, null, new Color((int)(35f * alphaCounter), (int)(25f * alphaCounter), (int)(05f * alphaCounter), 0), Projectile.rotation, new Vector2(200, 200), 0.07f * (5 + 0.6f), SpriteEffects.None, 0f);
             Main.spriteBatch.Draw(texture2D4, DrawOffset - Main.screenPosition, null, new Color((int)(35f * alphaCounter), (int)(25f * alphaCounter), (int)(05f * alphaCounter), 0), Projectile.rotation, new Vector2(200, 200), 0.07f * (5 + 0.6f), SpriteEffects.None, 0f);

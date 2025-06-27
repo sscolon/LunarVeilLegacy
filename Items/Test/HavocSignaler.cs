@@ -1,4 +1,4 @@
-﻿using Stellamod.Projectiles.Test;
+﻿using LunarVeilLegacy.Projectiles.Test;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +10,10 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Havoc.Projectiles;
 
-namespace Stellamod.Items.Test
+namespace LunarVeilLegacy.Items.Test
 {
     internal class HavocSignaler : ModItem
     {
@@ -38,7 +38,7 @@ namespace Stellamod.Items.Test
             Item.useAnimation = 2;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.autoReuse = false;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/Balls");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Balls");
         }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)

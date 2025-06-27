@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown
+namespace LunarVeilLegacy.Projectiles.Thrown
 {
     public class GreyBricksP : ModProjectile
 	{
@@ -58,8 +58,8 @@ namespace Stellamod.Projectiles.Thrown
 		public override void OnKill(int timeLeft)
         {
             var EntitySource = Projectile.GetSource_Death();
-            int Gore1 = ModContent.Find<ModGore>("Stellamod/GreyBricks1").Type;
-            int Gore2 = ModContent.Find<ModGore>("Stellamod/GreyBricks2").Type;
+            int Gore1 = ModContent.Find<ModGore>("LunarVeilLegacy/GreyBricks1").Type;
+            int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/GreyBricks2").Type;
             Gore.NewGore(EntitySource, Projectile.position, Projectile.velocity, Gore1);
             Gore.NewGore(EntitySource, Projectile.position, Projectile.velocity, Gore2);
             for (int i = 0; i < 15; i++)

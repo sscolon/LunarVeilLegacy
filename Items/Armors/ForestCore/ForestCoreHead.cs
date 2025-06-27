@@ -1,10 +1,10 @@
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.ForestCore
+namespace LunarVeilLegacy.Items.Armors.ForestCore
 {
     [AutoloadEquip(EquipType.Head)]
     public class ForestCoreHead : ModItem

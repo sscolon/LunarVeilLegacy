@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Consumables;
+using LunarVeilLegacy.Items.Consumables;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Catacombs
+namespace LunarVeilLegacy.Tiles.Catacombs
 {
     //TODO: Smart Cursor Outlines and tModLoader support
     public class CatacombsDoorClosed : LockedDoor

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using SpiritMod.Tiles;
-using Stellamod.Gores;
+using LunarVeilLegacy.Gores;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Tiles.Ishtar
+namespace LunarVeilLegacy.Tiles.Ishtar
 {
     [TileTag(TileTags.VineSway)]
     public class IshtarVines : ModTile

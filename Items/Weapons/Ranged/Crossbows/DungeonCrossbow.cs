@@ -1,10 +1,10 @@
-﻿using Stellamod.Projectiles.Crossbows.MerNDungeon;
+﻿using LunarVeilLegacy.Projectiles.Crossbows.MerNDungeon;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged.Crossbows
+namespace LunarVeilLegacy.Items.Weapons.Ranged.Crossbows
 {
 
     public class DungeonCrossbow : ModItem

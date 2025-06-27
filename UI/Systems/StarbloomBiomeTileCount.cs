@@ -1,8 +1,8 @@
-﻿using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Tiles;
 using System;
 using Terraria.ModLoader;
 
-namespace Stellamod.UI.Systems
+namespace LunarVeilLegacy.UI.Systems
 {
     public class StarbloomBiomeTileCount : ModSystem
 	{

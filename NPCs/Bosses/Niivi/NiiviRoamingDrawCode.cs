@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Niivi
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi
 {
     internal partial class NiiviRoaming
     {
         private int _segmentIndex;
-        public const string BaseTexturePath = "Stellamod/NPCs/Bosses/Niivi/";
+        public const string BaseTexturePath = "LunarVeilLegacy/NPCs/Bosses/Niivi/";
 
         public Vector2 NextSegmentPos;
         public float NextSegmentRot;

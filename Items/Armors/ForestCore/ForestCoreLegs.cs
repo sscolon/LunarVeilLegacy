@@ -1,9 +1,9 @@
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.ForestCore
+namespace LunarVeilLegacy.Items.Armors.ForestCore
 {
     [AutoloadEquip(EquipType.Legs)]
     public class ForestCoreLegs : ModItem

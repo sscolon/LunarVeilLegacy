@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.GothiviaNRek.Gothivia;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Irradia;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Gothivia;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Irradia;
 using Terraria;
 using Terraria.Chat;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Global
+namespace LunarVeilLegacy.NPCs.Global
 {
     internal class NPCMessages : GlobalNPC
     {

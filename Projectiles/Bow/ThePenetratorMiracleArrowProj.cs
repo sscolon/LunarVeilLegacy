@@ -9,12 +9,12 @@ using Terraria.GameContent;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using ParticleLibrary;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 
-namespace Stellamod.Projectiles.Bow
+namespace LunarVeilLegacy.Projectiles.Bow
 {
     internal class ThePenetratorMiracleArrowProj : ModProjectile
     {

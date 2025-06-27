@@ -1,8 +1,8 @@
-﻿using Stellamod.Assets.Biomes;
+﻿using LunarVeilLegacy.Assets.Biomes;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Govheil
+namespace LunarVeilLegacy.NPCs.Govheil
 {
     /// <summary>Used to check if a player is currently in the starjinx event, and if so, set up visual effects.</summary>
     internal class GovheilPlayer : ModPlayer
@@ -19,7 +19,7 @@ namespace Stellamod.NPCs.Govheil
         {
             if (Player.InModBiome<FableBiome>())
             {
-                Player.ManageSpecialBiomeVisuals("Stellamod:GovheilSky", zoneGovheil);
+                Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:GovheilSky", zoneGovheil);
             }
         }
     }

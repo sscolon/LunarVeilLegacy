@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class Teraciz : ClassSwapItem
 	{
@@ -31,7 +31,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.useAnimation = 120;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.autoReuse = true;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/Balls");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Balls");
 
 			// Weapon Properties
 			Item.DamageType = DamageClass.Ranged;

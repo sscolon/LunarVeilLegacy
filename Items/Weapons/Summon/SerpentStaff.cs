@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Magic;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -11,17 +11,17 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Stellamod.Items.Weapons.Summon.VehementRhapsody;
+using static LunarVeilLegacy.Items.Weapons.Summon.VehementRhapsody;
 using static Terraria.ModLoader.ModContent;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria.Graphics.Shaders;
-using Stellamod.Projectiles.Summons.Minions;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
 using System.Collections.Generic;
 
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     public class SerpentStaff : ClassSwapItem
     {
@@ -70,7 +70,7 @@ namespace Stellamod.Items.Weapons.Summon
             projectile.originalDamage = Item.damage;
 
             player.AddBuff(Item.buffType, 2);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/GSummon"), player.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/GSummon"), player.position);
             // Here you can change where the minion is spawned. Most vanilla minions spawn at the cursor position.
             position = Main.MouseWorld;
             return false;

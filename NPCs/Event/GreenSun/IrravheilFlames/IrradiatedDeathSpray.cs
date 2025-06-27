@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Event.GreenSun.IrravheilFlames
+namespace LunarVeilLegacy.NPCs.Event.GreenSun.IrravheilFlames
 {
     internal class IrradiatedDeathSpray : ModProjectile
     {

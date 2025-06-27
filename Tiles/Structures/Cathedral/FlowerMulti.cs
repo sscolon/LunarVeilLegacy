@@ -8,7 +8,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Structures.Cathedral
+namespace LunarVeilLegacy.Tiles.Structures.Cathedral
 {
     public class FlowerMulti : ModTile
 	{

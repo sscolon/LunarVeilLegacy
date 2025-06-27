@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER
 {
 
     public class STARBOMBERGUN : ModNPC
@@ -53,7 +53,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
             Player player = Main.player[NPC.target];
             if (Shooter == 2)
             {
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARGUN"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARGUN"));
             }
 
             if (Shooter < 170)
@@ -85,7 +85,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
                         float speedXBb = NPC.velocity.X * Main.rand.NextFloat(-.3f, -.3f) + Main.rand.NextFloat(-4f, -4f);
                         float speedXb = NPC.velocity.X * Main.rand.NextFloat(.3f, .3f) + Main.rand.NextFloat(4f, 4f);
 
-                        SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARSHOOT"));
+                        SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARSHOOT"));
                         Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, speedXb - 2 * 2, speedYb - 2 * 2,
                             ModContent.ProjectileType<BULLET>(), 47, 0f, Owner: Main.myPlayer);
                     }
@@ -153,7 +153,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)
         {
-            Texture2D lineTexture = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/Extra_47").Value;
+            Texture2D lineTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/Extra_47").Value;
             Color lineDrawColor = (Color)GetLineAlpha(drawColor);
             lineDrawColor *= AlphaTimer;
 

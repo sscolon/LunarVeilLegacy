@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class wowgun : ClassSwapItem
     {
@@ -39,7 +39,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.useAnimation = 40;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.autoReuse = true;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/wow");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/wow");
 			
 			// Weapon Properties
 			Item.DamageType = DamageClass.Ranged;

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS;
-using Stellamod.NPCs.Bosses.IrradiaNHavoc.Irradia;
-using Stellamod.NPCs.Bosses.Verlia.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS;
+using LunarVeilLegacy.NPCs.Bosses.IrradiaNHavoc.Irradia;
+using LunarVeilLegacy.NPCs.Bosses.Verlia.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.UI.Dialogue
+namespace LunarVeilLegacy.UI.Dialogue
 {
     internal class GothiviaDialogue : Dialogue
     {
@@ -23,9 +23,9 @@ namespace Stellamod.UI.Dialogue
             {
                 case 0:
                     //Set the texture of the portrait
-                    DialogueSystem.SetPortrait("Stellamod/UI/Dialogue/GothiviaDialoguePortrait");
+                    DialogueSystem.SetPortrait("LunarVeilLegacy/UI/Dialogue/GothiviaDialoguePortrait");
 
-                    //Put your dialogue in Mods.Stellamod.Dialogue.hjson, then get it like this
+                    //Put your dialogue in Mods.LunarVeilLegacy.Dialogue.hjson, then get it like this
                     DialogueSystem.WriteText(GetLocalizedText("GothiviaDialogue1"));
                     break;
                 case 1:
@@ -51,7 +51,7 @@ namespace Stellamod.UI.Dialogue
           
             if (Main.netMode != NetmodeID.SinglePlayer)
             {
-                Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(),
+                LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(),
                     (byte)MessageType.StartBossFromDialogue, 
                     (int)DialogueType.Start_Goth).Send(-1);
             }

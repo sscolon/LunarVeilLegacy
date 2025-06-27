@@ -1,15 +1,15 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
 	public class SeaTemple : ModBiome
 	{
 		// Select all the scenery
-		public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("Stellamod/SeaTempleBackgroundStyle");
+		public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("LunarVeilLegacy/SeaTempleBackgroundStyle");
 
 		// Select Music
 	//	public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/morrowunderground");

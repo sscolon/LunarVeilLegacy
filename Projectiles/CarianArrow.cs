@@ -1,12 +1,12 @@
-﻿using Stellamod.Items.Quest.Zui;
-using Stellamod.Tiles.Abyss;
+﻿using LunarVeilLegacy.Items.Quest.Zui;
+using LunarVeilLegacy.Tiles.Abyss;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria.ID;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     internal class CarianArrow : ModProjectile
     {

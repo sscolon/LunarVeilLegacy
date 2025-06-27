@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown.Jugglers
+namespace LunarVeilLegacy.Projectiles.Thrown.Jugglers
 {
     internal class StickyCardsProj : ModProjectile
     {
@@ -101,7 +101,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
                 CombatText numText = Main.combatText[combatText];
                 numText.lifeTime = 60;
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia1"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia1"), Projectile.position);
                 Juggler.CatchCount++;
                 Juggler.DamageBonus += 1f;
                 Projectile.Kill();
@@ -145,7 +145,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
             Timer++;
             if (Timer >= 598)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Dirt"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Dirt"), Projectile.position);
                 Juggler.ResetJuggle();
                 Projectile.Kill();
             }
@@ -204,7 +204,7 @@ namespace Stellamod.Projectiles.Thrown.Jugglers
                 SoundEngine.PlaySound(jugglerHitMax, Projectile.position);
             }
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2"), Projectile.position);
             for (int i = 0; i < 4; i++)
             {
                 //Get a random velocity

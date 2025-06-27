@@ -1,18 +1,18 @@
 ﻿
 
-using Stellamod.Helpers;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee.Greatswords;
-using Stellamod.Items.Weapons.Melee.Greatswords.INY;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.Items.Weapons.Summon.Orbs;
-using Stellamod.Items.Weapons.Thrown.Jugglers;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords;
+using LunarVeilLegacy.Items.Weapons.Melee.Greatswords.INY;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.Items.Weapons.Summon.Orbs;
+using LunarVeilLegacy.Items.Weapons.Thrown.Jugglers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     public class SigfriedsPhotoAlbum : ModItem
     {

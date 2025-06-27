@@ -4,7 +4,7 @@ using System;
 using System.Runtime.CompilerServices;
 using Terraria;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
     public static class VectorHelper
     {

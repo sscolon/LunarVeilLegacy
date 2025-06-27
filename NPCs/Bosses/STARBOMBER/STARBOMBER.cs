@@ -1,19 +1,19 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Placeable;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Tiles.Furniture;
-using Stellamod.Trails;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Placeable;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Tiles.Furniture;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,7 +26,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.STARBOMBER
+namespace LunarVeilLegacy.NPCs.Bosses.STARBOMBER
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
 	public class STARBOMBER : ModNPC
@@ -126,7 +126,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			// Influences how the NPC looks in the Bestiary
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-			drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/STARBOMBER/STARBOMBERPreview";
+			drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/STARBOMBER/STARBOMBERPreview";
 			drawModifiers.PortraitScale = 0.8f; // Portrait refers to the full picture when clicking on the icon in the bestiary
 			drawModifiers.PortraitPositionYOverride = 0f;
 			NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -169,7 +169,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 				if (!DesperationPhase)
 				{
                     DesperationPhase = true;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/STARDEATH"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/STARDEATH"));
                 }
 
                 NPC.life = 1;
@@ -183,8 +183,8 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 			NPC.damage = 1;
 			NPC.defense = 45;
 			NPC.lifeMax = 11000;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
             NPC.knockBackResist = 0f;
 			NPC.noGravity = false;
 			NPC.noTileCollide = false;
@@ -404,7 +404,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 
 			float starFieldColorProgress = StarFieldTimer / 60f;
-			string texturePath = "Stellamod/NPCs/Bosses/STARBOMBER/Projectiles/STARFIELD";
+			string texturePath = "LunarVeilLegacy/NPCs/Bosses/STARBOMBER/Projectiles/STARFIELD";
 			Texture2D texture = ModContent.Request<Texture2D>(texturePath).Value;
 			Rectangle animationFrame = texture.AnimationFrame(ref StarFieldFrameCounter, ref StarFieldFrameTick, 1, 30, true);
 			Color starFieldDrawColor = new Color(Color.White.R, Color.White.G, Color.White.B, 0) * starFieldColorProgress;
@@ -718,7 +718,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			if (timer == 50)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARBOMBERWAKE"));	
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARBOMBERWAKE"));	
 			}
 
 			if (timer > 130)
@@ -803,7 +803,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 			if (timer == 2)
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 				if (StellaMultiplayer.IsHost)
 				{
                     var entitySource = NPC.GetSource_FromThis();
@@ -886,7 +886,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
                     NPC.NewNPC(NPC.GetSource_FromThis(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<STARLINGBIG>());
                 }
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARIGNITE"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARIGNITE"));
 			}
 
 			if (timer > 540)
@@ -935,13 +935,13 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			if (timer == 5)
             {
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARLAUGH"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARLAUGH"));
 
 			}
 
 			if (timer == 90)
             {
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARWAVE"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARWAVE"));
 			}
 
 			if (timer > 120)
@@ -958,7 +958,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			if (timer == 5)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARLAUGH"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARLAUGH"));
 
 			}
 			NPC.noTileCollide = false;
@@ -1010,7 +1010,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 			NPC.velocity *= 0.96f;
 			if (timer == 5)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARLAUGH"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARLAUGH"));
 
 			}
 
@@ -1102,8 +1102,8 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			if (timer == 5)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARLAUGH"));
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/STARWAVE"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARLAUGH"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/STARWAVE"));
 			}
 
 			if (timer < 201)
@@ -1231,7 +1231,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
                     NPC.NewNPC(entitySource, (int)NPC.Center.X - 10, (int)NPC.Center.Y - 200, ModContent.NPCType<STARBOMBERLASERWARN>());
                 }
 
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 			}
 
 
@@ -1242,12 +1242,12 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 					var entitySource = NPC.GetSource_FromThis();
 					NPC.NewNPC(entitySource, (int)NPC.Center.X - 10, (int)NPC.Center.Y - 200, ModContent.NPCType<STARBOMBERLASERWARN>());
 				}
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 			}
 
 			if (timer == 45)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 				if (StellaMultiplayer.IsHost)
 				{
 					var entitySource = NPC.GetSource_FromThis();
@@ -1257,7 +1257,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			if (timer == 55)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 				if (StellaMultiplayer.IsHost)
 				{
 					var entitySource = NPC.GetSource_FromThis();
@@ -1267,7 +1267,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			if (timer == 75)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 				if (StellaMultiplayer.IsHost)
 				{
 					var entitySource = NPC.GetSource_FromThis();
@@ -1277,7 +1277,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 
 			if (timer == 95)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AssassinsKnifeHit"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit"));
 				if (StellaMultiplayer.IsHost)
 				{
 					var entitySource = NPC.GetSource_FromThis();
@@ -1347,12 +1347,12 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
                         ModContent.ProjectileType<SINESTAR>(), 50, 0f, Owner: Main.myPlayer);
                 }
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/gun1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/gun1"));
 			}
 
 			if (timer == 45)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/gun1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/gun1"));
 				if (StellaMultiplayer.IsHost)
 				{
                     float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(-4f, -4f);
@@ -1370,7 +1370,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 			if (timer == 75)
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/gun1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/gun1"));
 				if (StellaMultiplayer.IsHost)
 				{
                     float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(-4f, -4f);
@@ -1386,7 +1386,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 			if (timer == 105)
 			{
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/gun1"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/gun1"));
 				if (StellaMultiplayer.IsHost)
 				{
                     float speedXb = NPC.velocity.X * Main.rand.NextFloat(0f, 0f) + Main.rand.NextFloat(-4f, -4f);
@@ -1419,7 +1419,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
 	
 			if(timer == 1 || timer == 241 || timer == 482)
 			{
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/HavocCharge"), NPC.position);
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/HavocCharge"), NPC.position);
 			}
 
 
@@ -1473,7 +1473,7 @@ namespace Stellamod.NPCs.Bosses.STARBOMBER
                         ModContent.ProjectileType<STRIKEBULLET>(), 40, 0f, Owner: Main.myPlayer);
                 }
 
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SunStalker_Bomb_2"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb_2"));
 
 				constshoot = 0;
 

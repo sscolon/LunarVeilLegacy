@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +10,11 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 using Terraria.Audio;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Projectiles.Swords;
 
-namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles
 {
     internal class XScissorRift : ModProjectile
     {
@@ -107,7 +107,7 @@ namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
                 Particle p = ParticleManager.NewParticle<RipperSlashTelegraphParticle>(Projectile.Center, Vector2.Zero, Color.White, 1f);
                 p.rotation = Projectile.velocity.ToRotation();
 
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RipperSlashTelegraph");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RipperSlashTelegraph");
                 soundStyle.PitchVariance = 0.15f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
             }

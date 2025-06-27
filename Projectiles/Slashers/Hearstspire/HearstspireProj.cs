@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Hearstspire
+namespace LunarVeilLegacy.Projectiles.Slashers.Hearstspire
 {
     public class HearstspireProj : ModProjectile
     {

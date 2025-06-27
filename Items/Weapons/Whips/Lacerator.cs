@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Whips;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Whips;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Whips
+namespace LunarVeilLegacy.Items.Weapons.Whips
 {
     public class Lacerator : ModItem
     {
@@ -97,13 +97,13 @@ namespace Stellamod.Items.Weapons.Whips
                 switch (sound)
                 {
                     case 0:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia1"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia1"), player.position);
                         break;
                     case 1:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia2"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia2"), player.position);
                         break;
                     case 2:
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia3"), player.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia3"), player.position);
                         break;
                 }
                 return false;
@@ -117,7 +117,7 @@ namespace Stellamod.Items.Weapons.Whips
             DrawHelper.DrawGlowInInventory(Item, spriteBatch, position, Color.Purple);
             if (_attackStyle == 1)
             {
-                Texture2D iconTexture = ModContent.Request<Texture2D>("Stellamod/Items/Weapons/Summon/LaceratorMiracle").Value;
+                Texture2D iconTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Items/Weapons/Summon/LaceratorMiracle").Value;
                 Vector2 size = new Vector2(36, 46);
                 Vector2 drawOrigin = size / 2;
                 spriteBatch.Draw(iconTexture, position, null, drawColor, 0f, drawOrigin, scale, SpriteEffects.None, 0);

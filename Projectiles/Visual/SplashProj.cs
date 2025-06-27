@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Gores;
-using Stellamod.Trails;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Visual
+namespace LunarVeilLegacy.Projectiles.Visual
 {
     internal class SplashProj : ModProjectile,
         IPixelPrimitiveDrawer

@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal abstract class IlluriaStarProj : ModProjectile
     {
@@ -142,7 +142,7 @@ namespace Stellamod.Projectiles.Magic
 
         public override void PostDraw(Color lightColor)
         {
-            string glowTexture = "Stellamod/Projectiles/Magic/IlluriaStarProjWhite";
+            string glowTexture = "LunarVeilLegacy/Projectiles/Magic/IlluriaStarProjWhite";
             Texture2D whiteTexture = ModContent.Request<Texture2D>(glowTexture).Value;
 
             Vector2 textureSize = new Vector2(18, 18);

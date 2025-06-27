@@ -1,43 +1,43 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Brooches;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Minions;
-using Stellamod.Dusts;
-using Stellamod.Gores.Foreground;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.PicturePerfect;
-using Stellamod.Items.Accessories.Runes;
-using Stellamod.Items.Armors.Alsis;
-using Stellamod.Items.Armors.Artisan;
-using Stellamod.Items.Armors.Daedia;
-using Stellamod.Items.Armors.Ducanblitz;
-using Stellamod.Items.Armors.Govheil;
-using Stellamod.Items.Armors.Lovestruck;
-using Stellamod.Items.Armors.Terric;
-using Stellamod.Items.Armors.Verl;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Special.Sirestias;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.NPCs.Bosses.Caeva;
-using Stellamod.NPCs.Bosses.DaedusRework;
-using Stellamod.NPCs.Bosses.DreadMire;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.NPCs.Bosses.Fenix;
-using Stellamod.NPCs.Bosses.GothiviaNRek.Reks;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.SupernovaFragment;
-using Stellamod.NPCs.Bosses.Verlia;
-using Stellamod.NPCs.Minibosses;
-using Stellamod.Particles;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Ambient;
-using Stellamod.Projectiles.Paint;
-using Stellamod.Projectiles.Summons.Minions;
-using Stellamod.Projectiles.Swords;
-using Stellamod.UI.Dialogue;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Gores.Foreground;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.PicturePerfect;
+using LunarVeilLegacy.Items.Accessories.Runes;
+using LunarVeilLegacy.Items.Armors.Alsis;
+using LunarVeilLegacy.Items.Armors.Artisan;
+using LunarVeilLegacy.Items.Armors.Daedia;
+using LunarVeilLegacy.Items.Armors.Ducanblitz;
+using LunarVeilLegacy.Items.Armors.Govheil;
+using LunarVeilLegacy.Items.Armors.Lovestruck;
+using LunarVeilLegacy.Items.Armors.Terric;
+using LunarVeilLegacy.Items.Armors.Verl;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Special.Sirestias;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.NPCs.Bosses.Caeva;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.NPCs.Bosses.Fenix;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaNRek.Reks;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.SupernovaFragment;
+using LunarVeilLegacy.NPCs.Bosses.Verlia;
+using LunarVeilLegacy.NPCs.Minibosses;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Ambient;
+using LunarVeilLegacy.Projectiles.Paint;
+using LunarVeilLegacy.Projectiles.Summons.Minions;
+using LunarVeilLegacy.Projectiles.Swords;
+using LunarVeilLegacy.UI.Dialogue;
+using LunarVeilLegacy.WorldG;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -46,7 +46,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
 
 
@@ -482,7 +482,7 @@ namespace Stellamod
 				{
 					var EntitySource = Player.GetSource_FromThis();
 					Projectile.NewProjectile(EntitySource, Player.Center.X, Player.Center.Y, 0, 0, ModContent.ProjectileType<WindeffectGintzl>(), Player.HeldItem.damage * 2, 1, Player.whoAmI, 0, 0);
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Verispin"), Player.position);
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Verispin"), Player.position);
 					Player.AddBuff(ModContent.BuffType<GintzelSheild>(), 800);
 					WindRuneOn = true;
 
@@ -491,7 +491,7 @@ namespace Stellamod
 
 			if (StealthRune && StealthTime >= 1800)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StealthRune"), Player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StealthRune"), Player.position);
                 for (int m = 0; m < 20; m++)
                 {
                     int num1 = Dust.NewDust(Player.position, Player.width, Player.height, DustID.Firework_Red, 0f, -2f, 0, default, .8f);
@@ -514,7 +514,7 @@ namespace Stellamod
 
                 if (Main.rand.NextBool(5))
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CorsageRune1"), Player.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CorsageRune1"), Player.position);
                     for (int i = 0; i < 20; i++)
                     {
                         var entitySource = Player.GetSource_FromThis();
@@ -547,11 +547,11 @@ namespace Stellamod
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CorsageRune2"), Player.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CorsageRune2"), Player.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CorsageRune3"), Player.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CorsageRune3"), Player.position);
                 }
                 for (int i = 0; i < 200; i++)
                 {
@@ -714,30 +714,30 @@ namespace Stellamod
         public override void PostUpdateMiscEffects()
 		{
 	
-            Player.ManageSpecialBiomeVisuals("Stellamod:VeilSky", ZoneVeil);
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:GovheilSky", ZoneFable);
+            Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:VeilSky", ZoneVeil);
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:GovheilSky", ZoneFable);
 
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:GreenSunSky", EventWorld.GreenSun && ZoneAcid);
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:GreenSunSky", EventWorld.GreenSun && ZoneAcid);
 
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:ChaosD", EventWorld.ChaosD && Player.ZoneBeach);
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:Veil", ZoneVeil);
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:ChaosD", EventWorld.ChaosD && Player.ZoneBeach);
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Veil", ZoneVeil);
 
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:Starbloom", EventWorld.Aurorean && (Player.ZoneOverworldHeight || Player.ZoneSkyHeight));
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Aurelus", ZoneAurelus);
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Illuria", ZoneIlluria);
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Acid", ZoneAcid);
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Lab", ZoneLab);
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Ishtar", ZoneIshtar);
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Veriplant", ZoneVeri);
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Gintzing", EventWorld.Gintzing);
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:Daedussss", NPC.AnyNPCs(ModContent.NPCType<DaedusR>()));
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Starbloom", EventWorld.Aurorean && (Player.ZoneOverworldHeight || Player.ZoneSkyHeight));
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Aurelus", ZoneAurelus);
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Illuria", ZoneIlluria);
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Acid", ZoneAcid);
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Lab", ZoneLab);
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Ishtar", ZoneIshtar);
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Veriplant", ZoneVeri);
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Gintzing", EventWorld.Gintzing);
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Daedussss", NPC.AnyNPCs(ModContent.NPCType<DaedusR>()));
 
 
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:Jellyfish1", NPC.AnyNPCs(ModContent.NPCType<GoliathJellyfish>()));
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Jellyfish2", NPC.AnyNPCs(ModContent.NPCType<GoliathCryogenicJellyfish>()));
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Govheil", ZoneGovheil);
-            base.Player.ManageSpecialBiomeVisuals("Stellamod:Verlia", NPC.AnyNPCs(ModContent.NPCType<VerliaB>()));
-			base.Player.ManageSpecialBiomeVisuals("Stellamod:Mechanics", ZoneMechanics);
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Jellyfish1", NPC.AnyNPCs(ModContent.NPCType<GoliathJellyfish>()));
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Jellyfish2", NPC.AnyNPCs(ModContent.NPCType<GoliathCryogenicJellyfish>()));
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Govheil", ZoneGovheil);
+            base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Verlia", NPC.AnyNPCs(ModContent.NPCType<VerliaB>()));
+			base.Player.ManageSpecialBiomeVisuals("LunarVeilLegacy:Mechanics", ZoneMechanics);
 		}
 
 		public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)
@@ -886,13 +886,13 @@ namespace Stellamod
             //player.extraAccessorySlots = extraAccSlots; dont actually use, it'll fuck things up
             if (WindRuneOn && !Player.HasBuff(ModContent.BuffType<GintzelSheild>() ))
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Player.position);
                 WindRuneOn = false;
                 player.AddBuff(ModContent.BuffType<GintzelSheildCD>(), 900);
             }
             if (!WindRune && Player.HasBuff(ModContent.BuffType<GintzelSheild>()))
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSlice"), Player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSlice"), Player.position);
                 player.ClearBuff(ModContent.BuffType<GintzelSheild>());
             }
             if (GHE)
@@ -1045,7 +1045,7 @@ namespace Stellamod
                 HMArmorTime++;
                 if (HMArmorTime <= 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/ArcharilitDrone3"), player.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/ArcharilitDrone3"), player.position);
 					var EntitySource = Player.GetSource_FromThis();
 
 					Projectile.NewProjectile(EntitySource, player.Center.X, player.Center.Y, 0, 0, ModContent.ProjectileType<HMArncharMinionRightProj>(), Player.HeldItem.damage * 2, 1, Player.whoAmI, 0, 0);
@@ -1067,7 +1067,7 @@ namespace Stellamod
 				CameraaaTime++;
 				if (CameraaaTime <= 1)
 				{
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/DMHeart__Vomit3"), player.position);
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/DMHeart__Vomit3"), player.position);
 					var EntitySource = Player.GetSource_FromThis();
 
 					Projectile.NewProjectile(EntitySource, player.Center.X, player.Center.Y, 0, 0, ModContent.ProjectileType<SmileForCamera>(), Player.HeldItem.damage * 0, 1, Player.whoAmI, 0, 0);
@@ -1088,7 +1088,7 @@ namespace Stellamod
                 FCArmorTime++;
                 if (FCArmorTime <= 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/CorsageRune1"), Player.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/CorsageRune1"), Player.position);
                     var EntitySource = Player.GetSource_FromThis();
                     Projectile.NewProjectile(EntitySource, player.Center.X, player.Center.Y, 0, 0, ModContent.ProjectileType<FCMinionProj>(), Player.HeldItem.damage * 2, 1, Player.whoAmI, 0, 0);
                     player.AddBuff(ModContent.BuffType<FCMinionBuff>(), 99999);
@@ -1180,7 +1180,7 @@ namespace Stellamod
 
 			if (NotiaB && NotiaBCooldown == 301)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Arcaneup"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Arcaneup"));
 				for (int j = 0; j < 1; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.1f, 1f);
@@ -1226,7 +1226,7 @@ namespace Stellamod
 
 			if (GovheilB && GovheilBCooldown == 301)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Arcaneup"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Arcaneup"));
 				for (int j = 0; j < 1; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.1f, 1f);
@@ -1251,7 +1251,7 @@ namespace Stellamod
 
 			if (GovheilC && GovheilBCooldown == 301)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Arcaneup"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Arcaneup"));
 				for (int j = 0; j < 1; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.1f, 1f);
@@ -1272,7 +1272,7 @@ namespace Stellamod
 
 			if (DucanB && DucanBCooldown == 301)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Arcaneup"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Arcaneup"));
 				for (int j = 0; j < 1; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(0.1f, 1f);
@@ -1301,7 +1301,7 @@ namespace Stellamod
 
 			if (ThreeTwoOneSmile && ThreeTwoOneSmileBCooldown == 180)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Three"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Three"));
 				for (int j = 0; j < 5; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);
@@ -1313,7 +1313,7 @@ namespace Stellamod
 
 			if (ThreeTwoOneSmile && ThreeTwoOneSmileBCooldown == 120)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Two"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Two"));
 				for (int j = 0; j < 5; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);
@@ -1325,7 +1325,7 @@ namespace Stellamod
 
 			if (ThreeTwoOneSmile && ThreeTwoOneSmileBCooldown == 60)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/One"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/One"));
 				for (int j = 0; j < 5; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);
@@ -1337,8 +1337,8 @@ namespace Stellamod
 
 			if (ThreeTwoOneSmile && ThreeTwoOneSmileBCooldown == 0)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/zero"));
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Binding_Abyss_Spawn"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/zero"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Binding_Abyss_Spawn"));
 				for (int j = 0; j < 5; j++)
 				{
 					Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);
@@ -2377,7 +2377,7 @@ namespace Stellamod
 									player.QuickSpawnItem(entitySource, ModContent.ItemType<GildedBag1>(), Main.rand.Next(1, 1));
 									player.inventory[i].TurnToAir();
 									player.inventory[i] = item;
-									SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Kaboom"));
+									SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Kaboom"));
 
 
 									Dice = false;
@@ -2402,7 +2402,7 @@ namespace Stellamod
 									player.QuickSpawnItem(entitySource, ModContent.ItemType<GildedBag1>(), Main.rand.Next(1, 2));
 									player.inventory[i].TurnToAir();
 									player.inventory[i] = item;
-									SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Kaboom"));
+									SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Kaboom"));
 
 
 									Dice = false;
@@ -2427,7 +2427,7 @@ namespace Stellamod
 									player.QuickSpawnItem(entitySource, ModContent.ItemType<GildedBag1>(), Main.rand.Next(0, 1));
 									player.inventory[i].TurnToAir();
 									player.inventory[i] = item;
-									SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Kaboom"));
+									SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Kaboom"));
 
 
 									Dice = false;
@@ -2452,7 +2452,7 @@ namespace Stellamod
 
 									player.inventory[i].TurnToAir();
 									player.inventory[i] = item;
-									SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Kaboom"));
+									SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Kaboom"));
 
 									Dice = false;
 									break;
@@ -2476,7 +2476,7 @@ namespace Stellamod
 									player.QuickSpawnItem(entitySource, ModContent.ItemType<GildedBag1>(), Main.rand.Next(2, 2));
 									player.inventory[i].TurnToAir();
 									player.inventory[i] = item;
-									SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Kaboom"));
+									SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Kaboom"));
 
 
 									Dice = false;
@@ -3032,7 +3032,7 @@ namespace Stellamod
             {
 				if (ArcaneMCooldown == 601)
 				{
-					SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/ArcaneExplode"));
+					SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/ArcaneExplode"));
 					for (int j = 0; j < 7; j++)
 					{
 						Vector2 speed = Main.rand.NextVector2Circular(1f, 1f);

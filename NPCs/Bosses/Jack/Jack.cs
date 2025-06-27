@@ -2,15 +2,15 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories.Igniter;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories.Igniter;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Utilis;
 using System;
 using System.IO;
 using Terraria;
@@ -23,7 +23,7 @@ using Terraria.ModLoader;
 
 
 //By Al0n37
-namespace Stellamod.NPCs.Bosses.Jack
+namespace LunarVeilLegacy.NPCs.Bosses.Jack
 {
     [AutoloadBossHead]
     public class Jack : ModNPC
@@ -48,7 +48,7 @@ namespace Stellamod.NPCs.Bosses.Jack
 
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/Jack/JackBestiary";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/Jack/JackBestiary";
             drawModifiers.PortraitScale = 1f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -143,7 +143,7 @@ namespace Stellamod.NPCs.Bosses.Jack
         {
             if (NPC.life <= 0)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Death1"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Death1"), NPC.position);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 128f);
                 var entitySource = NPC.GetSource_FromThis();
                 if (StellaMultiplayer.IsHost)
@@ -278,12 +278,12 @@ namespace Stellamod.NPCs.Bosses.Jack
                 NPC.ai[0]++;
                 if (NPC.ai[0] == 2)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Spawn"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Spawn"), NPC.position);
                     Utilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y + 600, 0, -10, ModContent.ProjectileType<JackSpawnRay>(), 50, 0f, -1, 0, NPC.whoAmI);
                 }
                 if (NPC.ai[0] == 80)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Laugh"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Laugh"), NPC.position);
                     Chucking = true;
                 }
                 if (NPC.ai[0] == 100)
@@ -519,7 +519,7 @@ namespace Stellamod.NPCs.Bosses.Jack
                         {
                             if (NPC.ai[0] == 20)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Jump"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Jump"), NPC.position);
                                 Jumping = true;
                                 NPC.velocity.Y -= 10;
                                 if (NPC.position.X <= player.position.X)
@@ -542,7 +542,7 @@ namespace Stellamod.NPCs.Bosses.Jack
                                 {
                                     if (Jumping)
                                     {
-                                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Land"), NPC.position);
+                                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Land"), NPC.position);
                                         Jumping = false;
                                     }
                                     NPC.velocity.X *= 0.1f;
@@ -571,7 +571,7 @@ namespace Stellamod.NPCs.Bosses.Jack
                         }
                         if (NPC.ai[0] == 30)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Throw"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Throw"), NPC.position);
                             Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
 
                             for (int i = 0; i < 50; i++)
@@ -615,7 +615,7 @@ namespace Stellamod.NPCs.Bosses.Jack
                         }
                         if (NPC.ai[0] == 30)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Throw"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Throw"), NPC.position);
                             Vector2 direction = Vector2.Normalize(Main.player[NPC.target].Center - NPC.Center) * 8.5f;
 
                             for (int i = 0; i < 50; i++)
@@ -668,12 +668,12 @@ namespace Stellamod.NPCs.Bosses.Jack
 
                                 if (NPC.ai[0] < 60 && NPC.ai[0] >= 30)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Jump"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Jump"), NPC.position);
                                     NPC.ai[0] = 60;
                                 }
                                 if (NPC.ai[0] < 100 && NPC.ai[0] >= 70)
                                 {
-                                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Jump"), NPC.position);
+                                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Jump"), NPC.position);
                                     NPC.ai[0] = 100;
                                 }
                             }
@@ -685,7 +685,7 @@ namespace Stellamod.NPCs.Bosses.Jack
                             NPC.velocity.Y += 0.1f;
                             if (NPC.ai[0] == 20)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Jack_Jump"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Jack_Jump"), NPC.position);
                                 NPC.velocity.Y -= 7;
                                 if (NPC.position.X <= player.position.X)
                                 {

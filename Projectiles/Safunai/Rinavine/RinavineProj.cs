@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Slashers.GrailAxe;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Slashers.GrailAxe;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Safunai.Rinavine
+namespace LunarVeilLegacy.Projectiles.Safunai.Rinavine
 {
     public class RinavineProj : ModProjectile
 	{
@@ -102,7 +102,7 @@ namespace Stellamod.Projectiles.Safunai.Rinavine
 		{
 
 			ShakeModSystem.Shake = 4;
-			SoundEngine.PlaySound(new SoundStyle($"{nameof(Stellamod)}/Assets/Sounds/MorrowExp"));
+			SoundEngine.PlaySound(new SoundStyle($"{nameof(LunarVeilLegacy)}/Assets/Sounds/MorrowExp"));
 			float speedX = Projectile.velocity.X * Main.rand.NextFloat(.2f, .3f) + Main.rand.NextFloat(-4f, 4f);
 			float speedY = Projectile.velocity.Y * Main.rand.Next(20, 35) * 0.01f + Main.rand.Next(-10, 11) * 0.2f;
 		

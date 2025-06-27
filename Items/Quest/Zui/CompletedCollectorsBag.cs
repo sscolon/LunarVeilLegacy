@@ -1,12 +1,12 @@
 ﻿
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Tiles;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Tiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.Zui
+namespace LunarVeilLegacy.Items.Quest.Zui
 {
     internal class CompletedCollectorsBag : ModItem
     {

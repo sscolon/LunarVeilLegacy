@@ -1,25 +1,25 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Slashers;
-using Stellamod.Projectiles.Slashers.ThefirstAurora;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Slashers;
+using LunarVeilLegacy.Projectiles.Slashers.ThefirstAurora;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-using Stellamod.Projectiles.Safunai.Alcarish;
+using LunarVeilLegacy.Projectiles.Safunai.Alcarish;
 using System.Collections.Generic;
 using System.IO;
 
-using Stellamod.Projectiles.Slashers.Maelstrom;
+using LunarVeilLegacy.Projectiles.Slashers.Maelstrom;
 
-namespace Stellamod.Items.Weapons.Melee.Greatswords
+namespace LunarVeilLegacy.Items.Weapons.Melee.Greatswords
 {
     public class Maelstrom : ModItem
     {
@@ -122,7 +122,7 @@ namespace Stellamod.Items.Weapons.Melee.Greatswords
                 player.GetModPlayer<MyPlayer>().SwordComboR = 240;
             }
 
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwingyMael") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwingyMael") { Pitch = Main.rand.NextFloat(-10f, 10f) }, player.Center);
             return false;
         }
 

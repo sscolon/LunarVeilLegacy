@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.Particles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -16,7 +16,7 @@ using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
 
-namespace Stellamod.NPCs.Bosses.DreadMire
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire
 {
 
     public class BloodCyst : ModNPC
@@ -174,7 +174,7 @@ namespace Stellamod.NPCs.Bosses.DreadMire
             if (NPC.life <= 0)
             {
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 128f);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/BloodCystDeath"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/BloodCystDeath"));
                 var entitySource = NPC.GetSource_FromThis();
                 NPC.NewNPC(entitySource, (int)NPC.Center.X, (int)NPC.Center.Y, NPCType<BloodCystDead>());
                 Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.Obsidian, 2.5f * hit.HitDirection, -2.5f, 0, default(Color), 1.2f);

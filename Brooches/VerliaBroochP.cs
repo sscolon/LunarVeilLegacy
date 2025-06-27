@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Brooches
+namespace LunarVeilLegacy.Brooches
 {
     public class VerliaBroochP : ModProjectile
     {

@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.IgniterExplosions.Stein;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions.Stein;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Steins
+namespace LunarVeilLegacy.Projectiles.Steins
 {
 
 

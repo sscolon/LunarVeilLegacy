@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Hyua
+namespace LunarVeilLegacy.Projectiles.Slashers.Hyua
 {
     public class RingedAlcd : ModProjectile
 	{

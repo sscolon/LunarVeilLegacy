@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon.Orbs
+namespace LunarVeilLegacy.Items.Weapons.Summon.Orbs
 {
     internal class OrbPlayer : ModPlayer
     {

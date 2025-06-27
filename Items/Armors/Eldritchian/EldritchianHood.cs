@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Particles;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Eldritchian
+namespace LunarVeilLegacy.Items.Armors.Eldritchian
 {
     public class EldritchianPlayer : ModPlayer
     {
@@ -69,7 +69,7 @@ namespace Stellamod.Items.Armors.Eldritchian
 				_attackSpeedBoost = Max_Speed * multiplier;
 				_attackSpeedBoostCounter = Max_Duration * multiplier;
 				Player.AddBuff(ModContent.BuffType<ShadowBoost>(), (int)_attackSpeedBoostCounter);
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/OverGrowth_TP1"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/OverGrowth_TP1"));
 				for (int i = 0; i < 16; i++)
 				{
 					Vector2 speed = Main.rand.NextVector2CircularEdge(4f, 4f);

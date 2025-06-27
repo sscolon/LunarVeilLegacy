@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Spears
+namespace LunarVeilLegacy.Projectiles.Spears
 {
     internal class HolmbergScytheProj : ModProjectile
     {
@@ -64,18 +64,18 @@ namespace Stellamod.Projectiles.Spears
                 {
                     Projectile.NewProjectile(EntitySource, Projectile.Center.X, Projectile.Center.Y, StartVelocity.X, StartVelocity.Y, ModContent.ProjectileType<HolmbergScytheMirageProjBlue>(), 60, 1, Projectile.owner, 0, 0);
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Scything2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Scything2"), Projectile.position);
                 }
                 else
                 {
                     int Sound = Main.rand.Next(1, 3);
                     if (Sound == 1)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Scything3"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Scything3"), Projectile.position);
                     }
                     else
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Scything1"), Projectile.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Scything1"), Projectile.position);
                     }
                     Projectile.NewProjectile(EntitySource, Projectile.Center.X, Projectile.Center.Y, StartVelocity.X, StartVelocity.Y, ModContent.ProjectileType<HolmbergScytheMirageProj>(), 20, 1, Projectile.owner, 0, 0);
                 }

@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.SunStalker
+namespace LunarVeilLegacy.NPCs.Bosses.SunStalker
 {
     internal class SunStalkerBossBar : ModBossBar
     {

@@ -1,15 +1,15 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
-using Stellamod.Items.Weapons.Summon;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Weapons.Summon;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     // - ModProjectile - the minion itself
 

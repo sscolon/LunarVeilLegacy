@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     internal class WindedQuiverPlayer : ModPlayer
     {
@@ -20,7 +20,7 @@ namespace Stellamod.Items.Accessories
         {
             if (type == ProjectileID.WoodenArrowFriendly && hasQuiver)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordThrow"), position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordThrow"), position);
                 type = ModContent.ProjectileType<ShinobiKnife>();
                 damage += 2;
                 velocity *= 2f;

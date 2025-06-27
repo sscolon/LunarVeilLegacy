@@ -1,13 +1,13 @@
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Buffs;
-using Stellamod.Items.Materials;
-using Stellamod.NPCs.Bosses.Niivi;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.NPCs.Bosses.Niivi;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Armors.Elagent
+namespace LunarVeilLegacy.Items.Armors.Elagent
 {
     public class ElegantPlayer : ModPlayer
     {

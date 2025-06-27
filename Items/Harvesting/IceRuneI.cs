@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Harvesting
+namespace LunarVeilLegacy.Items.Harvesting
 {
     internal class IceRuneI : ModItem
 	{

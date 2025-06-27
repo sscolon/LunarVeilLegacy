@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Illuria
+namespace LunarVeilLegacy.Tiles.Illuria
 {
     public class IlluriaTreeSapling : ModTile
     {

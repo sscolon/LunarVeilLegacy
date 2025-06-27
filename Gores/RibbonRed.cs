@@ -2,7 +2,7 @@
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Stellamod.Gores
+namespace LunarVeilLegacy.Gores
 {
     internal abstract class RibbonGore : ModGore
     {

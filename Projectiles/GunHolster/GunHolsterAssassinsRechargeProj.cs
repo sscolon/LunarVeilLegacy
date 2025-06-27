@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterAssassinsRechargeProj : GunHolsterProjectile
     {
@@ -44,7 +44,7 @@ namespace Stellamod.Projectiles.GunHolster
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), position, direction * 16,
                 ModContent.ProjectileType<AssassinsRechargeShot>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(Projectile.Center, 1024f, 16f);
-            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/gun1"), Projectile.position);
+            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/gun1"), Projectile.position);
         }
     }
 }

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.UI.Panels;
+using LunarVeilLegacy.UI.Panels;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace Stellamod.UI.Systems
+namespace LunarVeilLegacy.UI.Systems
 {
     public class UISystem : ModSystem
 	{
@@ -71,7 +71,7 @@ namespace Stellamod.UI.Systems
 			int interfaceLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Cursor"));
 			if (interfaceLayer != -1)
 			{
-				layers.Insert(interfaceLayer, new LegacyGameInterfaceLayer("Stellamod: Bag",
+				layers.Insert(interfaceLayer, new LegacyGameInterfaceLayer("LunarVeilLegacy: Bag",
 					delegate
 					{
 						if (_lastUpdateUiGameTime != null && userInterface?.CurrentState != null)
@@ -85,7 +85,7 @@ namespace Stellamod.UI.Systems
 			if (mouseTextIndex != -1)
 			{
 				layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer(
-					"Stellamod: Gamble Buttons",
+					"LunarVeilLegacy: Gamble Buttons",
 					delegate
 					{
 						if (Gamble.visible) _gambled.Draw(Main.spriteBatch, new GameTime());

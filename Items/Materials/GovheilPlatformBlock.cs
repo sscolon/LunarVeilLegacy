@@ -1,9 +1,9 @@
 ﻿using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
-using Stellamod.Tiles;
+using LunarVeilLegacy.Tiles;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
 	public class GovheilPlatformBlock : ModItem
 	{

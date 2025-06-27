@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Magical
+namespace LunarVeilLegacy.Projectiles.Crossbows.Magical
 {
     public class PiaCircle : ModProjectile
 	{

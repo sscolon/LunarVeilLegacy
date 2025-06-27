@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.Graphics.Shaders;
 
 
-namespace Stellamod.Effects
+namespace LunarVeilLegacy.Effects
 {
     public class PrimitiveTrailCopy
     {

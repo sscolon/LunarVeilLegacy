@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Wings
+namespace LunarVeilLegacy.Projectiles.Wings
 {
     internal abstract class WingDefaultProjectile : ModProjectile
     {

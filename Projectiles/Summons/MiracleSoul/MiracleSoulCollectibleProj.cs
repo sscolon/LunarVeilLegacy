@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Particles;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.MiracleSoul
+namespace LunarVeilLegacy.Projectiles.Summons.MiracleSoul
 {
     public class MiracleSoulCollectibleProj : ModProjectile
     {
@@ -48,7 +48,7 @@ namespace Stellamod.Projectiles.Summons.MiracleSoul
                 miraclePlayer.miracleLevel++;
                 miraclePlayer.miracleTimeLeft = miracleDuration;
                 Projectile.Kill();
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordOfGlactia1"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordOfGlactia1"), Projectile.position);
                 for (int i = 0; i < 64; i++)
                 {
                     Vector2 speed = Main.rand.NextVector2CircularEdge(4f, 4f);

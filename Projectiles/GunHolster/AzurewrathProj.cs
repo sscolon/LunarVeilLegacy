@@ -2,14 +2,14 @@
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     public class AzurewrathProj : ModProjectile
 	{
@@ -74,7 +74,7 @@ namespace Stellamod.Projectiles.GunHolster
 		{
 			Player player = Main.player[Projectile.owner];
 			
-			SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Crysalizer4"), player.position);
+			SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Crysalizer4"), player.position);
 			Projectile.netUpdate = true;
 
 

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Dusts;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Nails
+namespace LunarVeilLegacy.Projectiles.Nails
 {
     public class SteamedNailProj2 : ModProjectile
 	{
@@ -119,7 +119,7 @@ namespace Stellamod.Projectiles.Nails
 			Main.dust[dust].scale = 1.2f;
 			ShakeModSystem.Shake = 5;
 
-			SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Veriappear"));
+			SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Veriappear"));
 		}
 		public override void DrawBehind(int index, List<int> behindNPCsAndTiles, List<int> behindNPCs, List<int> behindProjectiles, List<int> overPlayers, List<int> overWiresUI)
 		{

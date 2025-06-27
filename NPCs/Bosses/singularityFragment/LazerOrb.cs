@@ -1,13 +1,13 @@
 
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Utilis;
 using Terraria;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.singularityFragment
+namespace LunarVeilLegacy.NPCs.Bosses.singularityFragment
 {
 
     public class LazerOrb : ModNPC

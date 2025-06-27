@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Items.Consumables;
+using LunarVeilLegacy.Items.Consumables;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.GameContent.UI.Elements;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace Stellamod.UI.Panels
+namespace LunarVeilLegacy.UI.Panels
 {
     public class GambleButtons : UIElement
 	{
@@ -65,7 +65,7 @@ namespace Stellamod.UI.Panels
 							item.SetDefaults(itemType);
 							player.inventory[i].TurnToAir();
 							player.inventory[i] = item;
-							SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Kaboom"));
+							SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Kaboom"));
 
 
 							Gamble.visible = false;
@@ -139,12 +139,12 @@ namespace Stellamod.UI.Panels
 
 			
 
-			Choice1 = new GambleButtons("Stellamod/UI/Panels/Die1", "1", new Color(255, 111, 58, 255), ModContent.ItemType<GildedBag1>(), 0);
-			Choice2 = new GambleButtons("Stellamod/UI/Panels/Die2", "2", new Color(255, 111, 58, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 1));
-			Choice3 = new GambleButtons("Stellamod/UI/Panels/Die3", "3", new Color(44, 201, 122, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 2));
-			Choice4 = new GambleButtons("Stellamod/UI/Panels/Die4", "4", new Color(209, 82, 234, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 3));
-			Choice5 = new GambleButtons("Stellamod/UI/Panels/Die5", "5", new Color(37, 185, 234, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 4));
-			Choice6 = new GambleButtons("Stellamod/UI/Panels/Die6", "6", new Color(255, 61, 116, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 5));
+			Choice1 = new GambleButtons("LunarVeilLegacy/UI/Panels/Die1", "1", new Color(255, 111, 58, 255), ModContent.ItemType<GildedBag1>(), 0);
+			Choice2 = new GambleButtons("LunarVeilLegacy/UI/Panels/Die2", "2", new Color(255, 111, 58, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 1));
+			Choice3 = new GambleButtons("LunarVeilLegacy/UI/Panels/Die3", "3", new Color(44, 201, 122, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 2));
+			Choice4 = new GambleButtons("LunarVeilLegacy/UI/Panels/Die4", "4", new Color(209, 82, 234, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 3));
+			Choice5 = new GambleButtons("LunarVeilLegacy/UI/Panels/Die5", "5", new Color(37, 185, 234, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 4));
+			Choice6 = new GambleButtons("LunarVeilLegacy/UI/Panels/Die6", "6", new Color(255, 61, 116, 255), ModContent.ItemType<GildedBag1>(), MathHelper.ToRadians(60 * 5));
 
 			
 			
@@ -161,7 +161,7 @@ namespace Stellamod.UI.Panels
 
 		public void OnClick1(UIMouseEvent evt, UIElement listeningElement)
 		{
-					SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/clickk"));
+					SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/clickk"));
 				
 			
 		}

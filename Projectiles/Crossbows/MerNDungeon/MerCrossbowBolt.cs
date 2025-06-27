@@ -1,9 +1,9 @@
-﻿using Stellamod.Projectiles.Summons;
+﻿using LunarVeilLegacy.Projectiles.Summons;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.MerNDungeon
+namespace LunarVeilLegacy.Projectiles.Crossbows.MerNDungeon
 {
     public class MerCrossbowBolt : ModProjectile
     {

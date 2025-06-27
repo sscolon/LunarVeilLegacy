@@ -5,7 +5,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Veil
+namespace LunarVeilLegacy.Tiles.Veil
 {
     public class VeilBanner1 : ModTile
     {

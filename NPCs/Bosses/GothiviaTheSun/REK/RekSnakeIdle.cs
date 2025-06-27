@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,12 +15,12 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.GothiviaTheSun.REK
+namespace LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.REK
 {
     internal class RekSnakeIdle : ModNPC
     {
         //Draw Code
-        private string BaseTexturePath => "Stellamod/NPCs/Bosses/GothiviaTheSun/REK/";
+        private string BaseTexturePath => "LunarVeilLegacy/NPCs/Bosses/GothiviaTheSun/REK/";
         public PrimDrawer TrailDrawer { get; private set; } = null;
         private float SegmentStretch = 0.66f;
         private float ChargeTrailOpacity;

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.Audio;
 using Terraria.ID;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
     internal class FocalPortal : ModProjectile
     {
@@ -36,7 +36,7 @@ namespace Stellamod.Projectiles
         {
             if (!_flash)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge"), Projectile.position);
                 _flash = true;
             }
 

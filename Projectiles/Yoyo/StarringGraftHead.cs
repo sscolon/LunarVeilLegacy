@@ -1,11 +1,11 @@
 ﻿
-using Stellamod.Dusts;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Yoyo
+namespace LunarVeilLegacy.Projectiles.Yoyo
 {
 	public class StarringGraftHead : ModProjectile
 	{

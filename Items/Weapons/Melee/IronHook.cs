@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Projectiles.Swords;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class IronHook : ModItem
     {
@@ -22,7 +22,7 @@ namespace Stellamod.Items.Weapons.Melee
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 13;
             Item.value = 10000;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/SkyrageShasher");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/SkyrageShasher");
 
             Item.DamageType = DamageClass.Melee; // Deals melee damage
             Item.autoReuse = true; // This determines whether the weapon has autoswing

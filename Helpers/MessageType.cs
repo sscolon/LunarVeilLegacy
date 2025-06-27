@@ -1,4 +1,4 @@
-﻿namespace Stellamod.Helpers
+﻿namespace LunarVeilLegacy.Helpers
 {
     public enum MessageType : byte
 	{

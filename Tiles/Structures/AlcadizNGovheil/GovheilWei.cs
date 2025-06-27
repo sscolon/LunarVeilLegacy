@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Structures.AlcadizNGovheil
+namespace LunarVeilLegacy.Tiles.Structures.AlcadizNGovheil
 
 {
     public class GovheilWei : ModTile

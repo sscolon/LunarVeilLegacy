@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class GunHolsterAzureWrathProj : GunHolsterProjectile
     {
@@ -44,7 +44,7 @@ namespace Stellamod.Projectiles.GunHolster
             Projectile.NewProjectile(Projectile.GetSource_FromThis(), position, velocity,
             ModContent.ProjectileType<AzurewrathProj>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
 
-            SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/TON618");
+            SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/TON618");
             soundStyle.PitchVariance = 0.5f;
             SoundEngine.PlaySound(soundStyle, Projectile.position);
         }

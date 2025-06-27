@@ -1,8 +1,8 @@
-﻿using Stellamod.Tiles.Structures.AlcadizNGovheil;
+﻿using LunarVeilLegacy.Tiles.Structures.AlcadizNGovheil;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable.Laboratory
+namespace LunarVeilLegacy.Items.Placeable.Laboratory
 {
     public class GLabCrystal : ModItem
 	{

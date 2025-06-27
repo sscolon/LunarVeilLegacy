@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.DreadMire.Heart
+namespace LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart
 {
 
     internal class DreadMiresHeartVomit1 : ModProjectile

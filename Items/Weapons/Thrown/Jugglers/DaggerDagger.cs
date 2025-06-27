@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Thrown.Jugglers;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Thrown.Jugglers;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Thrown.Jugglers
+namespace LunarVeilLegacy.Items.Weapons.Thrown.Jugglers
 {
     internal class DaggerDagger : ModItem
     {
@@ -62,7 +62,7 @@ namespace Stellamod.Items.Weapons.Thrown.Jugglers
                     CombatText numText = Main.combatText[combatText];
                     numText.lifeTime = 60;
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeProg"), position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeProg"), position);
                 }
             }
 

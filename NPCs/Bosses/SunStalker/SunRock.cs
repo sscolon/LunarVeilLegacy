@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 
 
 
-namespace Stellamod.NPCs.Bosses.SunStalker
+namespace LunarVeilLegacy.NPCs.Bosses.SunStalker
 {
     internal class SunRock : ModProjectile
     {
@@ -71,8 +71,8 @@ namespace Stellamod.NPCs.Bosses.SunStalker
             }
             var EntitySource = Projectile.GetSource_Death();
 
-            int Gore1 = ModContent.Find<ModGore>("Stellamod/Rock1").Type;
-            int Gore2 = ModContent.Find<ModGore>("Stellamod/Rock2").Type;
+            int Gore1 = ModContent.Find<ModGore>("LunarVeilLegacy/Rock1").Type;
+            int Gore2 = ModContent.Find<ModGore>("LunarVeilLegacy/Rock2").Type;
             Gore.NewGore(EntitySource, Projectile.position, Projectile.velocity, Gore1);
             Gore.NewGore(EntitySource, Projectile.position, Projectile.velocity, Gore2);
         }

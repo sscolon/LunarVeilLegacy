@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.UI.Systems;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.AlcadChests
+namespace LunarVeilLegacy.Items.Accessories.AlcadChests
 {
     internal class LittleWand : ModItem
     {
@@ -21,7 +21,7 @@ namespace Stellamod.Items.Accessories.AlcadChests
             Item.useAnimation = 100;
             Item.useTime = 100;
             Item.useStyle = ItemUseStyleID.Swing;
-            Item.UseSound = new SoundStyle($"Stellamod/Assets/Sounds/StormDragon_LightingZap");
+            Item.UseSound = new SoundStyle($"LunarVeilLegacy/Assets/Sounds/StormDragon_LightingZap");
             Item.value = Item.sellPrice(gold: 1);
         }
 

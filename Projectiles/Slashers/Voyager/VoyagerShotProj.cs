@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Slashers.Voyager
+namespace LunarVeilLegacy.Projectiles.Slashers.Voyager
 {
     public class VoyagerShotProj : ModProjectile
 	{

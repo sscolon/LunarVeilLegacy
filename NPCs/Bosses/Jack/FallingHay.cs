@@ -4,7 +4,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Jack
+namespace LunarVeilLegacy.NPCs.Bosses.Jack
 {
     public class FallingHay : ModProjectile
     {

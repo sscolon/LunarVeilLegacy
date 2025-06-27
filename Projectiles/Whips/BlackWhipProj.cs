@@ -2,9 +2,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Particles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.UI.Systems;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Whips
+namespace LunarVeilLegacy.Projectiles.Whips
 {
     public class BlackWhipProj : ModProjectile
 	{

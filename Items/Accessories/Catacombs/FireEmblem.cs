@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Catacombs
+namespace LunarVeilLegacy.Items.Accessories.Catacombs
 {
     internal class FireEmblemPlayer : ModPlayer
     {
@@ -47,7 +47,7 @@ namespace Stellamod.Items.Accessories.Catacombs
                 if (hit.Crit && Main.rand.NextBool(2))
                 {
                     ShakeModSystem.Shake = 10;
-                    SoundStyle soundStyle = new SoundStyle($"Stellamod/Assets/Sounds/Kaboom");
+                    SoundStyle soundStyle = new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Kaboom");
                     soundStyle.PitchVariance = 0.15f;
                     SoundEngine.PlaySound(soundStyle, target.position);
                     Projectile.NewProjectile(Player.GetSource_FromThis(), target.Center, Vector2.Zero,

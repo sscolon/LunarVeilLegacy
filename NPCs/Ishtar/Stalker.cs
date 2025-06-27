@@ -1,12 +1,12 @@
-﻿using Stellamod.Assets.Biomes;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Thrown.Jugglers;
+﻿using LunarVeilLegacy.Assets.Biomes;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Thrown.Jugglers;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Ishtar
+namespace LunarVeilLegacy.NPCs.Ishtar
 {
     internal class Stalker : ModNPC
     {

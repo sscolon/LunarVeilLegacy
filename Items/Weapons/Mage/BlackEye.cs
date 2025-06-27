@@ -1,5 +1,5 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Magic;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Magic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +9,12 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Projectiles.Magic;
+using LunarVeilLegacy.Projectiles.Magic;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 using Terraria.Audio;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     internal class BlackEye : ClassSwapItem
     {

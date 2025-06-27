@@ -1,11 +1,11 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories
+namespace LunarVeilLegacy.Items.Accessories
 {
     [AutoloadEquip(EquipType.Wings)]
 	public class EaglesGrace : ModItem

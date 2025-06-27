@@ -5,7 +5,7 @@ using System.Linq;
 using Terraria;
 using Terraria.Graphics.Shaders;
 
-namespace Stellamod.Effects.Primitives
+namespace LunarVeilLegacy.Effects.Primitives
 {
     public class PrimDrawer
     {

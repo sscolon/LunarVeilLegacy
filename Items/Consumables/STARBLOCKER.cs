@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.Chat;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Consumables
+namespace LunarVeilLegacy.Items.Consumables
 {
     internal class STARBLOCKER : ModItem
     {
@@ -37,7 +37,7 @@ namespace Stellamod.Items.Consumables
             {
                 if(Main.netMode != NetmodeID.SinglePlayer)
                 {
-                    Stellamod.WriteToPacket(Stellamod.Instance.GetPacket(), (byte)MessageType.STARBLOCK).Send(-1);
+                    LunarVeilLegacy.WriteToPacket(LunarVeilLegacy.Instance.GetPacket(), (byte)MessageType.STARBLOCK).Send(-1);
                 }
                 else
                 {

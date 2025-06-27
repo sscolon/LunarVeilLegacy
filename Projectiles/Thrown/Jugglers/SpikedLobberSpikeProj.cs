@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Thrown.Jugglers
+namespace LunarVeilLegacy.Projectiles.Thrown.Jugglers
 {
     internal class SpikedLobberSpikeProj : ModProjectile
     {

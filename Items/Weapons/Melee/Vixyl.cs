@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Slashers.Vixyl;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Slashers.Vixyl;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     internal class VixylPlayer : ModPlayer
     {
@@ -69,7 +69,7 @@ namespace Stellamod.Items.Weapons.Melee
             Vector2 velocity = Player.Center.DirectionTo(Main.MouseWorld);
             Projectile.NewProjectile(Player.GetSource_FromThis(),
                 Player.Center, velocity, ModContent.ProjectileType<VixylParryProj>(), Player.HeldItem.damage * 4, Player.HeldItem.knockBack, Player.whoAmI);
-            SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordSlice"), Player.position);
+            SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordSlice"), Player.position);
 
             parryCooldown = time;
             if (Main.netMode != NetmodeID.SinglePlayer)
@@ -99,7 +99,7 @@ namespace Stellamod.Items.Weapons.Melee
         public static void SendExampleDodgeMessage(int whoAmI)
         {
             // This code is called by both the initial 
-            ModPacket packet = ModContent.GetInstance<Stellamod>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<LunarVeilLegacy>().GetPacket();
             packet.Write((byte)MessageType.Dodge);
             packet.Write((byte)whoAmI);
             packet.Send(ignoreClient: whoAmI);
@@ -138,13 +138,13 @@ namespace Stellamod.Items.Weapons.Melee
             {
                 //Verli spam slashes
                 type = ModContent.ProjectileType<VixylSlashProj>();
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/SwordHoldVerlia"), position);
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/SwordHoldVerlia"), position);
             } 
             else if (vixylPlayer.parryCooldown <= 0 && !player.immune)
             {
                 vixylPlayer.parryTimer = 18;
                 //Normal slash
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SwordSheethe"), position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SwordSheethe"), position);
             }
         }
     }

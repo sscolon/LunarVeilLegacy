@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Projectiles.IgniterExplosions
+namespace LunarVeilLegacy.Projectiles.IgniterExplosions
 {
     internal class CinderBoom : ModProjectile
     {

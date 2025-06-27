@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria.GameContent.UI;
 
-namespace Stellamod.Helpers.Manifestments
+namespace LunarVeilLegacy.Helpers.Manifestments
 {
     public class ManifestmentOfLove : CustomCurrencySingleCoin
     {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -8,7 +8,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
 
     public class HarmonicBlasphemy : ClassSwapItem
@@ -65,7 +65,7 @@ namespace Stellamod.Items.Weapons.Ranged
             Item.value = Item.buyPrice(silver: 3);
             Item.noUseGraphic = false;
             Item.channel = true;
-            Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/HarmonicBlasphemy2");
+            Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/HarmonicBlasphemy2");
 
         }
 

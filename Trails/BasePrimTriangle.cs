@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Stellamod.Trails
+namespace LunarVeilLegacy.Trails
 {
     public struct BasePrimTriangle : IVertexType
     {

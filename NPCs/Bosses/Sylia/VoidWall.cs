@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Trails;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.Sylia.Projectiles;
-using Stellamod.Particles;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles;
+using LunarVeilLegacy.Particles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -14,7 +14,7 @@ using Terraria.GameContent.Shaders;
 using System;
 using Terraria.Graphics.Effects;
 
-namespace Stellamod.NPCs.Bosses.Sylia
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia
 {
     internal class VoidWall : ModNPC,
         IPixelPrimitiveDrawer
@@ -273,7 +273,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
                     }
     
                     Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(NPC.Center, 512f, 32f);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/RipperSlash1"), NPC.Center);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/RipperSlash1"), NPC.Center);
                     SwitchState(AttackState.Idle);
                     break;
 
@@ -416,7 +416,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
             Vector2 drawPosition = NPC.Center - Main.screenPosition;
             Vector2 origin = new Vector2(58 / 2, 88 / 2);
 
-            Texture2D voidMouthTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Sylia/Projectiles/VoidMouth").Value;
+            Texture2D voidMouthTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Sylia/Projectiles/VoidMouth").Value;
             int frameSpeed = 2;
             int frameCount = 6;
             Rectangle animationFrame = voidMouthTexture.AnimationFrame(ref _frameCounter, ref _frameTick, frameSpeed, frameCount, true);
@@ -424,7 +424,7 @@ namespace Stellamod.NPCs.Bosses.Sylia
                 Color.White, 0, origin, 2f, SpriteEffects.None, 0f);
 
             Vector2 drawOffset = new Vector2(-48, -128);
-            Texture2D voidEaterTexture = ModContent.Request<Texture2D>("Stellamod/NPCs/Bosses/Sylia/Projectiles/VoidWallEaterMini").Value;
+            Texture2D voidEaterTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Bosses/Sylia/Projectiles/VoidWallEaterMini").Value;
             animationFrame = voidEaterTexture.AnimationFrame(ref _frameCounter2, ref _frameTick2, frameSpeed, frameCount, true);
             Vector2 voidEaterSize = new Vector2(52, 38);
             Vector2 voidEaterOrigin = voidEaterSize / 2;

@@ -1,4 +1,4 @@
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -6,7 +6,7 @@ using static Terraria.ModLoader.ModContent;
 
 
 
-namespace Stellamod.Items.Armors.Windmillion
+namespace LunarVeilLegacy.Items.Armors.Windmillion
 {
     [AutoloadEquip(EquipType.Body)]
     public class WindmillionRobe : ModItem

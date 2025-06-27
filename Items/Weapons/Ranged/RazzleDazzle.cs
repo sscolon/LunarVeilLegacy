@@ -1,4 +1,4 @@
-﻿using Stellamod.Projectiles.Bow;
+﻿using LunarVeilLegacy.Projectiles.Bow;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +8,11 @@ using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria.Audio;
 using Terraria.DataStructures;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class RazzleDazzle : ModItem
     {

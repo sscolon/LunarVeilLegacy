@@ -1,21 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.NPCs.Bosses.STARBOMBER.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.STARBOMBER.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ParticleLibrary;
-using Stellamod.Dusts;
-using Stellamod.Particles;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Particles;
 using Terraria.DataStructures;
-using Stellamod.Trails;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Utilis;
 using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 
-namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Fenix.Projectiles
 {
 	public class Aldox : ModProjectile
 	{
@@ -66,7 +66,7 @@ namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
                     Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, 25 * 0, 25, ModContent.ProjectileType<NekoNeko>(), 60, 1, Main.myPlayer, 0, 0);
                 }
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Yumiko3"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Yumiko3"));
 			}
 
 			if (Timer == 100)
@@ -81,7 +81,7 @@ namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
 
 				Timer = 0;
 
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Yumiko4"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Yumiko4"));
 			}
 
 			if (++Projectile.frameCounter >= 1)
@@ -123,7 +123,7 @@ namespace Stellamod.NPCs.Bosses.Fenix.Projectiles
 					ParticleManager.NewParticle(Projectile.Center, speedab * 7, ParticleManager.NewInstance<VoidParticle>(), Color.RoyalBlue, Main.rand.NextFloat(0.2f, 0.8f));
 
 				}
-				SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/STARGROP"));
+				SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/STARGROP"));
 
 
 			}

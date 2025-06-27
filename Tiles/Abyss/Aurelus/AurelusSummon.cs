@@ -1,12 +1,12 @@
 ﻿
 
 using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Consumables;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.NPCs.Bosses.SupernovaFragment;
-using Stellamod.NPCs.Bosses.Veiizal;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.NPCs.Bosses.SupernovaFragment;
+using LunarVeilLegacy.NPCs.Bosses.Veiizal;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.ObjectInteractions;
@@ -16,7 +16,7 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 
-namespace Stellamod.Tiles.Abyss.Aurelus
+namespace LunarVeilLegacy.Tiles.Abyss.Aurelus
 {
     internal class AurelusSummon : ModTile
     {

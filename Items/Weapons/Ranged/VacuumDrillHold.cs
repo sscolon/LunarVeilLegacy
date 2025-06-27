@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Mono.Cecil;
-using Stellamod.Projectiles.Crossbows.Lasers;
-using Stellamod.Projectiles.Gun;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Projectiles.Crossbows.Lasers;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class VacuumDrillHold : ModProjectile
     {

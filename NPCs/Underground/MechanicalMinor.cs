@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Quest.Merena;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Quest.Merena;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Underground
+namespace LunarVeilLegacy.NPCs.Underground
 {
     internal class MechanicalMinor : ModNPC
     {
@@ -30,8 +30,8 @@ namespace Stellamod.NPCs.Underground
             NPC.damage = 40;
             NPC.defense = 12;
             NPC.lifeMax = 170;
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Hit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Gintze_Death") with { PitchVariance = 0.1f };
             NPC.value = 563f;
             NPC.knockBackResist = .45f;
             NPC.aiStyle = 3;
@@ -85,7 +85,7 @@ namespace Stellamod.NPCs.Underground
                             ModContent.ProjectileType<RustedPickaxe>(), (int)(NPC.damage * 0.2f), 4, Main.myPlayer);
                     }
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SkyrageShasher"));
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SkyrageShasher"));
                     _attackTimer = 0;
                 }
             }

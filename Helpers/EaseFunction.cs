@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public abstract class EaseFunction
 	{

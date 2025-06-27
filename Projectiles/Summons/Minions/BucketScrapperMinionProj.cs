@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Minions;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
 
 
@@ -102,7 +102,7 @@ namespace Stellamod.Projectiles.Summons.Minions
                 Projectile.velocity = -direction * 71;
                 Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, Vector2.Zero,
                     ModContent.ProjectileType<NailKaboom>(), 0, 0, Projectile.owner);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit2") with { PitchVariance = 0.1f });
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit2") with { PitchVariance = 0.1f });
             }
 
             public override bool PreDraw(ref Color lightColor)

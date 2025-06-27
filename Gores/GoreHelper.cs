@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Gores
+namespace LunarVeilLegacy.Gores
 {
     internal class GoreHelper
     {

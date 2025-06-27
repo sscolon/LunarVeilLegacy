@@ -1,7 +1,7 @@
-﻿using Stellamod.Items.Harvesting;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Powders;
-using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Items.Harvesting;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Powders;
+using LunarVeilLegacy.Tiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Items.Weapons.PowdersItem
+namespace LunarVeilLegacy.Items.Weapons.PowdersItem
 {
     internal class Verstidust : ModItem
 	{
@@ -37,7 +37,7 @@ namespace Stellamod.Items.Weapons.PowdersItem
 			Item.autoReuse = true;
 			Item.shootSpeed = 28f;
 			Item.crit = 26;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/Lenabee");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Lenabee");
 		}
 
 		public override void AddRecipes()

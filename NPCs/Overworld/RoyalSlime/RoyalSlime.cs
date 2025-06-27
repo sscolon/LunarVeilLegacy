@@ -2,8 +2,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.WorldG;
 using System;
 using Terraria;
 using Terraria.GameContent.Bestiary;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
-namespace Stellamod.NPCs.Overworld.RoyalSlime
+namespace LunarVeilLegacy.NPCs.Overworld.RoyalSlime
 {
 
     public class RoyalSlime : ModNPC

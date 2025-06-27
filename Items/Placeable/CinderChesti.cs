@@ -1,10 +1,10 @@
-﻿using Stellamod.Tiles.Abyss.Aurelus;
-using Stellamod.Tiles;
+﻿using LunarVeilLegacy.Tiles.Abyss.Aurelus;
+using LunarVeilLegacy.Tiles;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable
+namespace LunarVeilLegacy.Items.Placeable
 {
 	public class CinderChesti : ModItem
 	{

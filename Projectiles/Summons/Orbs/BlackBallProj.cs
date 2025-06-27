@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Particles;
-using Stellamod.Projectiles.IgniterExplosions;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Particles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Trails;
 using System;
 using System.IO;
 using Terraria;
@@ -15,7 +15,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Orbs
+namespace LunarVeilLegacy.Projectiles.Summons.Orbs
 {
     internal class BlackBallProj : OrbProjectile
     {
@@ -355,7 +355,7 @@ namespace Stellamod.Projectiles.Summons.Orbs
                         Projectile.damage, Projectile.knockBack, Projectile.owner);
           
                     target.SimpleStrikeNPC(Projectile.damage, hit.HitDirection);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/StarFlower3") { PitchVariance = 0.15f, Pitch = -0.75f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/StarFlower3") { PitchVariance = 0.15f, Pitch = -0.75f }, Projectile.position);
                     break;
             }
         }
@@ -370,8 +370,8 @@ namespace Stellamod.Projectiles.Summons.Orbs
                 new Vector3(3, 3, 3), 0);
 
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StarTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StringTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StarTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StringTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
             if (SwordSlash == null)
             {

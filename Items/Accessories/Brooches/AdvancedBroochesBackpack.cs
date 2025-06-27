@@ -1,15 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Brooches;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Tiles;
+using LunarVeilLegacy.Brooches;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Tiles;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Brooches
+namespace LunarVeilLegacy.Items.Accessories.Brooches
 {
     public class AdvancedBroochesBackpack : ModItem
 	{

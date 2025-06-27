@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     internal class Bongos : ClassSwapItem
     {
@@ -42,7 +42,7 @@ namespace Stellamod.Items.Weapons.Mage
 			Item.DamageType = DamageClass.Magic;
 			Item.value = 200;
 			Item.rare = ItemRarityID.Blue;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/bongo");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/bongo");
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<BongoBoom>();
 			Item.autoReuse = true;

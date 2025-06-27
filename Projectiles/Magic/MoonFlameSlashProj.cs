@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Terraria.Audio;
 using Terraria.ModLoader;
 using Terraria;
-using Stellamod.Buffs;
+using LunarVeilLegacy.Buffs;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class MoonFlameSlashProj : ModProjectile
     {
@@ -47,7 +47,7 @@ namespace Stellamod.Projectiles.Magic
 
             if (Projectile.ai[0] <= 1)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RipperSlash1");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RipperSlash1");
                 soundStyle.PitchVariance = 0.5f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 512f, 2f);

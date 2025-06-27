@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons
+namespace LunarVeilLegacy.Projectiles.Summons
 {
     public class Starbomb : ModProjectile
     {
@@ -49,7 +49,7 @@ namespace Stellamod.Projectiles.Summons
             if (Projectile.timeLeft == 180)
             {
                 ShakeModSystem.Shake = 6;
-                SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Starexplosion"));
+                SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Starexplosion"));
                 for (int j = 0; j < 40; j++)
                 {
 

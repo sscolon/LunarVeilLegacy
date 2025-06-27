@@ -1,10 +1,10 @@
 ﻿
-using Stellamod.Items.Harvesting;
+using LunarVeilLegacy.Items.Harvesting;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.Merena
+namespace LunarVeilLegacy.Items.Quest.Merena
 {
     internal class Give100DustBagsC : ModItem
     {

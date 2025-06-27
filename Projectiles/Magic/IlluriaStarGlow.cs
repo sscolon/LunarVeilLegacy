@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     internal class IlluriaStarGlow : ModProjectile
     {
@@ -29,7 +29,7 @@ namespace Stellamod.Projectiles.Magic
 
         public override bool PreDraw(ref Color lightColor)
         {
-            string texture = "Stellamod/Effects/Masks/ZuiEffect";
+            string texture = "LunarVeilLegacy/Effects/Masks/ZuiEffect";
             Texture2D maskTexture = ModContent.Request<Texture2D>(texture).Value;
 
             Vector2 textureSize = new Vector2(143, 143);

@@ -1,11 +1,11 @@
-﻿using Stellamod.Projectiles.Powders;
+﻿using LunarVeilLegacy.Projectiles.Powders;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace Stellamod.Items.Weapons.PowdersItem
+namespace LunarVeilLegacy.Items.Weapons.PowdersItem
 {
     internal class FlamePowder : ModItem
 	{

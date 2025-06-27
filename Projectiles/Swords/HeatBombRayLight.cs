@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     internal class HeatBombRayLight : ModNPC
     {
@@ -66,7 +66,7 @@ namespace Stellamod.Projectiles.Swords
 
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color lightColor)
         {
-            Texture2D texture2D4 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/RayLight").Value;
+            Texture2D texture2D4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/RayLight").Value;
             Main.spriteBatch.Draw(texture2D4, (NPC.Center - Main.screenPosition), null, new Color((int)(75f * alphaCounter), (int)(75f * alphaCounter), (int)(65f * alphaCounter), 0), NPC.rotation, new Vector2(171 / 2, 51 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
             return true;
         }

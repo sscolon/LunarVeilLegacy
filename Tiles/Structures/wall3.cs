@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 
 
-namespace Stellamod.Tiles.Structures
+namespace LunarVeilLegacy.Tiles.Structures
 {
     public class wall3 : ModTile
 	{

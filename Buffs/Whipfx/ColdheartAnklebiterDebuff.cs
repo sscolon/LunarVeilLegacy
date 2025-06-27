@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.NPCs.Bosses.Niivi.Projectiles;
-using Stellamod.Projectiles.Whips;
+using LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles;
+using LunarVeilLegacy.Projectiles.Whips;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs.Whipfx
+namespace LunarVeilLegacy.Buffs.Whipfx
 {
     public class ColdheartAnklebiterDebuff : ModBuff
     {

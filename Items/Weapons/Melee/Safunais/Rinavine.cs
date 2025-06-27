@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Ores;
-using Stellamod.Projectiles.Safunai.Parendine;
-using Stellamod.Projectiles.Safunai.Rinavine;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Projectiles.Safunai.Parendine;
+using LunarVeilLegacy.Projectiles.Safunai.Rinavine;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Safunais
+namespace LunarVeilLegacy.Items.Weapons.Melee.Safunais
 {
 	public class Rinavine : ModItem
 	{

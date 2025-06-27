@@ -2,9 +2,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.singularityFragment;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.singularityFragment;
+using LunarVeilLegacy.Trails;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -15,7 +15,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Bosses.SupernovaFragment
+namespace LunarVeilLegacy.NPCs.Bosses.SupernovaFragment
 {
 
     public class SupernovaOrb : ModNPC
@@ -75,7 +75,7 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
             GameShaders.Misc["VampKnives:BasicTrail"].SetShaderTexture(TrailRegistry.LightningTrail);
             TrailDrawer.DrawPrims(NPC.oldPos, frameOrigin - Main.screenPosition, 155);
 
-            Texture2D chainTexture = ModContent.Request<Texture2D>("Stellamod/Projectiles/Chains/SupernovaChainCircle").Value;
+            Texture2D chainTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Projectiles/Chains/SupernovaChainCircle").Value;
             int frameCount = 15;
             int frameTime = 2;
             float alpha = NPC.alpha / 255f;
@@ -135,8 +135,8 @@ namespace Stellamod.NPCs.Bosses.SupernovaFragment
             NPC.dontCountMe = false;
             NPC.dontTakeDamage = false;
             NPC.lifeMax = 2000;
-            NPC.DeathSound = new SoundStyle("Stellamod/Assets/Sounds/VoidDead2") with { PitchVariance = 0.1f };
-            NPC.HitSound = new SoundStyle("Stellamod/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
+            NPC.DeathSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidDead2") with { PitchVariance = 0.1f };
+            NPC.HitSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/VoidHit") with { PitchVariance = 0.1f };
         }
 
         public override void HitEffect(NPC.HitInfo hit)

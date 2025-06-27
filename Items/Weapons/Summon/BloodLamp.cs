@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     internal class BloodLamp : ClassSwapItem
 	{
@@ -26,7 +26,7 @@ namespace Stellamod.Items.Weapons.Summon
 			Item.knockBack = 0f;
 			Item.DamageType = DamageClass.Summon;
 			Item.rare = ItemRarityID.Green;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/bloodlamp");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/bloodlamp");
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.RainbowCrystalExplosion;
 			Item.autoReuse = true;

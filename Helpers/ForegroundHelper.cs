@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace Stellamod.Helpers;
+namespace LunarVeilLegacy.Helpers;
 
 public class ForegroundHelper : ModSystem
 {
@@ -111,7 +111,7 @@ public class ForegroundHelper : ModSystem
 
   
     /// <param name="name">Name of the requested texture.</param>
-    public static Texture2D GetTexture(string name) => Stellamod.Instance.Assets.Request<Texture2D>("Gores/Foreground/" + name).Value;
+    public static Texture2D GetTexture(string name) => LunarVeilLegacy.Instance.Assets.Request<Texture2D>("Gores/Foreground/" + name).Value;
 
     internal static void Save(TagCompound compound)
     {
@@ -157,15 +157,15 @@ public class ForegroundHelper : ModSystem
             }
         }
 
-        compound.Add("Stellamod:Foreground", compounds);
-        compound.Add("Stellamod:PlayerLayerForeground", playerLayerCompounds);
+        compound.Add("LunarVeilLegacy:Foreground", compounds);
+        compound.Add("LunarVeilLegacy:PlayerLayerForeground", playerLayerCompounds);
     }
 
     internal static void Load(TagCompound compound)
     {
-        if (compound.ContainsKey("Stellamod:Foreground"))
+        if (compound.ContainsKey("LunarVeilLegacy:Foreground"))
         {
-            if (compound["Stellamod:Foreground"] is not TagCompound tag)
+            if (compound["LunarVeilLegacy:Foreground"] is not TagCompound tag)
                 return;
 
             int count = tag.GetInt("count");
@@ -183,9 +183,9 @@ public class ForegroundHelper : ModSystem
             }
         }
 
-        if (compound.ContainsKey("Stellamod:PlayerLayerForeground"))
+        if (compound.ContainsKey("LunarVeilLegacy:PlayerLayerForeground"))
         {
-            if (compound["Stellamod:PlayerLayerForeground"] is not TagCompound playerLayerTag)
+            if (compound["LunarVeilLegacy:PlayerLayerForeground"] is not TagCompound playerLayerTag)
                 return;
 
             int count = playerLayerTag.GetInt("count");

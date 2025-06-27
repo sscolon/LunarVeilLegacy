@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials.Tech
+namespace LunarVeilLegacy.Items.Materials.Tech
 {
     public class ArmorDrive : ModItem
     {

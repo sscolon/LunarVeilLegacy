@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Dusts;
-using Stellamod.Helpers;
-using Stellamod.Items.Placeable.Cathedral;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Placeable.Cathedral;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -12,7 +12,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Stellamod.Tiles.Structures.Cathedral
+namespace LunarVeilLegacy.Tiles.Structures.Cathedral
 {
     public class CathedralChest : ModTile
 	{

@@ -1,12 +1,12 @@
 ﻿
 
-using Stellamod.Brooches;
+using LunarVeilLegacy.Brooches;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
 using ReLogic.Content;
-using Stellamod.NPCs.Bosses.DreadMire.Heart;
-using Stellamod.Particles;
+using LunarVeilLegacy.NPCs.Bosses.DreadMire.Heart;
+using LunarVeilLegacy.Particles;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -18,7 +18,7 @@ using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
 	// - ModProjectile - the minion itself
 

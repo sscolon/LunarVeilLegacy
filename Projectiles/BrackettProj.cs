@@ -1,14 +1,14 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles
+namespace LunarVeilLegacy.Projectiles
 {
 	public class BrackettProj : ModProjectile
 	{
@@ -41,7 +41,7 @@ namespace Stellamod.Projectiles
 			float speedX = Projectile.velocity.X;
 			float speedY = Projectile.velocity.Y;
 			Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X + speedX, Projectile.position.Y + speedY, speedX, speedY, ModContent.ProjectileType<BrackettThrough>(), (int)(Projectile.damage * 1.2), 0f, Projectile.owner, 0f, 0f);
-			SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Saw1"));
+			SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Saw1"));
 			Projectile.Kill();
 
 		}

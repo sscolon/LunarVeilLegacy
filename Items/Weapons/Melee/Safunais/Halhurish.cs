@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Safunai.Halhurish;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Safunai.Halhurish;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Safunais
+namespace LunarVeilLegacy.Items.Weapons.Melee.Safunais
 {
     public class Halhurish : ModItem
 	{
@@ -71,22 +71,22 @@ namespace Stellamod.Items.Weapons.Melee.Safunais
             combo++;
             if (combo2 == 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Safunais"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Safunais"));
 
             }
             if (combo2 == 2)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Safunais2"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Safunais2"));
 
             }
             if (combo2 == 3)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Safunais"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Safunais"));
 
             }
             if (combo2 == 4)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Safunais3"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Safunais3"));
 
 
             }
@@ -94,7 +94,7 @@ namespace Stellamod.Items.Weapons.Melee.Safunais
             {
                 combo2 = 0;
 
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Safunais2"));
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Safunais2"));
             }
             float distanceMult = Main.rand.NextFloat(0.8f, 1.2f);
 			float curvatureMult = 0.7f;

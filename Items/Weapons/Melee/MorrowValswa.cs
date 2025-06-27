@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Swords;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Swords;
 
 using Terraria.Audio;
 using Terraria.DataStructures;
-using Stellamod.Projectiles;
+using LunarVeilLegacy.Projectiles;
 
-namespace Stellamod.Items.Weapons.Melee
+namespace LunarVeilLegacy.Items.Weapons.Melee
 {
     public class MorrowValswa : ClassSwapItem
 	{

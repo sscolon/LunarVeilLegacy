@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Backgrounds;
-using Stellamod.Helpers;
-using Stellamod.Items.Materials;
-using Stellamod.Skies;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Backgrounds;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Skies;
+using LunarVeilLegacy.WorldG;
 using System.IO;
 using System.Reflection;
 using Terraria;
@@ -21,13 +21,13 @@ using Terraria.ModLoader;
 using Terraria.UI;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
-namespace Stellamod
+namespace LunarVeilLegacy
 {
 
 
-    public class Stellamod : Mod
+    public class LunarVeilLegacy : Mod
     {
-        public const string EMPTY_TEXTURE = "Stellamod/Empty";
+        public const string EMPTY_TEXTURE = "LunarVeilLegacy/Empty";
         public static Texture2D EmptyTexture
         {
             get;
@@ -35,7 +35,7 @@ namespace Stellamod
         }
         public int GlobalTimer { get; private set; }
 
-        public Stellamod()
+        public LunarVeilLegacy()
         {
             Instance = this;
 
@@ -84,7 +84,7 @@ namespace Stellamod
        
 
 
-        public static Stellamod Instance;
+        public static LunarVeilLegacy Instance;
         public static int MedalCurrencyID;
  
       
@@ -124,46 +124,46 @@ namespace Stellamod
                 MOLCurrencyID = CustomCurrencyManager.RegisterCurrency(new Helpers.Manifestments.ManifestmentOfLove(ModContent.ItemType<ManifestedLove>(), 999L, "Manifestation Of Love"));
 
                 //----------------------------------------------- Shaders
-                Filters.Scene["Stellamod:Daedussss"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Jellyfish1"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Ishtar"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.6f, -0.6f, -0.6f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Jellyfish2"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.475f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Mechanics"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Aurelus"] = new Filter(new AbyssScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 1f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Verlia"] = new Filter(new VerliaScreenShaderData("FilterMiniTower").UseColor(0.3f, 0.0f, 1f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Acid"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Lab"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Veriplant"] = new Filter(new VeriplantScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Starbloom"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(1f, 0.3f, 0.8f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Govheil"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(1f, 0.7f, 0f).UseOpacity(0.275f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:AuroreanStars"] = new Filter(new AuroreanStarsScreenShaderData("FilterMiniTower").UseColor(1.3f, 0.2f, 0.2f).UseOpacity(0.275f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Gintzing"] = new Filter(new GintzeScreenShaderData("FilterMiniTower").UseColor(0.4f, 0.4f, 0.6f).UseOpacity(0.275f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Caeva"] = new Filter(new CaevaScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.6f, 0.65f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Illuria"] = new Filter(new AuroreanStarsScreenShaderData("FilterMiniTower").UseColor(0.4f, -0.3f, 1.3f).UseOpacity(0.275f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Daedussss"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Jellyfish1"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Ishtar"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.6f, -0.6f, -0.6f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Jellyfish2"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.475f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Mechanics"] = new Filter(new DaedusScreenShaderData("FilterMiniTower").UseColor(-0.3f, -0.3f, -0.3f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Aurelus"] = new Filter(new AbyssScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 1f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Verlia"] = new Filter(new VerliaScreenShaderData("FilterMiniTower").UseColor(0.3f, 0.0f, 1f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Acid"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Lab"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Veriplant"] = new Filter(new VeriplantScreenShaderData("FilterMiniTower").UseColor(0f, 1f, 0.3f).UseOpacity(0.275f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Starbloom"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(1f, 0.3f, 0.8f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Govheil"] = new Filter(new AcidScreenShaderData("FilterMiniTower").UseColor(1f, 0.7f, 0f).UseOpacity(0.275f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:AuroreanStars"] = new Filter(new AuroreanStarsScreenShaderData("FilterMiniTower").UseColor(1.3f, 0.2f, 0.2f).UseOpacity(0.275f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Gintzing"] = new Filter(new GintzeScreenShaderData("FilterMiniTower").UseColor(0.4f, 0.4f, 0.6f).UseOpacity(0.275f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Caeva"] = new Filter(new CaevaScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.6f, 0.65f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Illuria"] = new Filter(new AuroreanStarsScreenShaderData("FilterMiniTower").UseColor(0.4f, -0.3f, 1.3f).UseOpacity(0.275f), EffectPriority.Medium);
 
-                Filters.Scene["Stellamod:ChaosD"] = new Filter(new ChaosDScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.7f, 0.1f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:ChaosT"] = new Filter(new ChaosTScreenShaderData("FilterMiniTower").UseColor(0.6f, 0.2f, 0.75f).UseOpacity(0.375f), EffectPriority.Medium);
-                Filters.Scene["Stellamod:Veil"] = new Filter(new ChaosPScreenShaderData("FilterMiniTower").UseColor(0.7f, 0.1f, 0.2f).UseOpacity(0.275f), EffectPriority.VeryHigh);
+                Filters.Scene["LunarVeilLegacy:ChaosD"] = new Filter(new ChaosDScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.7f, 0.1f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:ChaosT"] = new Filter(new ChaosTScreenShaderData("FilterMiniTower").UseColor(0.6f, 0.2f, 0.75f).UseOpacity(0.375f), EffectPriority.Medium);
+                Filters.Scene["LunarVeilLegacy:Veil"] = new Filter(new ChaosPScreenShaderData("FilterMiniTower").UseColor(0.7f, 0.1f, 0.2f).UseOpacity(0.275f), EffectPriority.VeryHigh);
 
-                Ref<Effect> screenRef = new Ref<Effect>(ModContent.Request<Effect>("Stellamod/Effects/Shockwave", AssetRequestMode.ImmediateLoad).Value); // The path to the compiled shader file.
+                Ref<Effect> screenRef = new Ref<Effect>(ModContent.Request<Effect>("LunarVeilLegacy/Effects/Shockwave", AssetRequestMode.ImmediateLoad).Value); // The path to the compiled shader file.
                 Filters.Scene["Shockwave"] = new Filter(new ScreenShaderData(screenRef, "Shockwave"), EffectPriority.VeryHigh);
                 Filters.Scene["Shockwave"].Load();
 
-                Filters.Scene["Stellamod:GreenMoonSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.2f, 0.5f).UseOpacity(0.53f), EffectPriority.High);
-                SkyManager.Instance["Stellamod:GreenMoonSky"] = new GreenMoonSky();
+                Filters.Scene["LunarVeilLegacy:GreenMoonSky"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.2f, 0.5f).UseOpacity(0.53f), EffectPriority.High);
+                SkyManager.Instance["LunarVeilLegacy:GreenMoonSky"] = new GreenMoonSky();
 
-                SkyManager.Instance["Stellamod:GovheilSky"] = new GovheilSky();
-                Filters.Scene["Stellamod:GovheilSky"] = new Filter((new ScreenShaderData("FilterMiniTower")).UseColor(0f, 0f, 0f).UseOpacity(0f), EffectPriority.VeryHigh);
+                SkyManager.Instance["LunarVeilLegacy:GovheilSky"] = new GovheilSky();
+                Filters.Scene["LunarVeilLegacy:GovheilSky"] = new Filter((new ScreenShaderData("FilterMiniTower")).UseColor(0f, 0f, 0f).UseOpacity(0f), EffectPriority.VeryHigh);
 
 
-                Filters.Scene["Stellamod:Starbloom"] = new Filter(new StellaScreenShader("FilterMiniTower").UseColor(0.1f, 0, 0.3f).UseOpacity(0.9f), EffectPriority.VeryHigh);
-                Filters.Scene["Stellamod:Starbloom"] = new Filter(new StellaScreenShader("FilterMiniTower").UseColor(0.5f, 0.2f, 0.7f).UseOpacity(0.65f), EffectPriority.VeryHigh);
-                SkyManager.Instance["Stellamod:Starbloom"] = new StarbloomSky();
-                SkyManager.Instance["Stellamod:NiiviSky"] = new NiiviSky();
+                Filters.Scene["LunarVeilLegacy:Starbloom"] = new Filter(new StellaScreenShader("FilterMiniTower").UseColor(0.1f, 0, 0.3f).UseOpacity(0.9f), EffectPriority.VeryHigh);
+                Filters.Scene["LunarVeilLegacy:Starbloom"] = new Filter(new StellaScreenShader("FilterMiniTower").UseColor(0.5f, 0.2f, 0.7f).UseOpacity(0.65f), EffectPriority.VeryHigh);
+                SkyManager.Instance["LunarVeilLegacy:Starbloom"] = new StarbloomSky();
+                SkyManager.Instance["LunarVeilLegacy:NiiviSky"] = new NiiviSky();
 
 
                 Ref<Effect> GenericLaserShader = new(Assets.Request<Effect>("Effects/LaserShader", AssetRequestMode.ImmediateLoad).Value);
-                GameShaders.Misc["Stellamod:LaserShader"] = new MiscShaderData(GenericLaserShader, "TrailPass");
+                GameShaders.Misc["LunarVeilLegacy:LaserShader"] = new MiscShaderData(GenericLaserShader, "TrailPass");
             }
 
 
@@ -184,91 +184,91 @@ namespace Stellamod
             if (!Main.dedServ && Main.netMode != NetmodeID.Server && ModContent.GetInstance<LunarVeilClientConfig>().VanillaTexturesToggle == true)
             {
                 Main.instance.LoadTiles(TileID.Dirt);
-                TextureAssets.Tile[TileID.Dirt] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/DirtRE");
+                TextureAssets.Tile[TileID.Dirt] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/DirtRE");
 
                 Main.instance.LoadTiles(TileID.IceBlock);
-                TextureAssets.Tile[TileID.IceBlock] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/IceRE");
+                TextureAssets.Tile[TileID.IceBlock] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/IceRE");
 
                 Main.instance.LoadTiles(TileID.SnowBlock);
-                TextureAssets.Tile[TileID.SnowBlock] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/SnowRE");
+                TextureAssets.Tile[TileID.SnowBlock] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/SnowRE");
 
                 Main.instance.LoadWall(WallID.Dirt);
-                TextureAssets.Wall[WallID.Dirt] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/DirtWallRE");
+                TextureAssets.Wall[WallID.Dirt] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/DirtWallRE");
 
                 Main.instance.LoadTiles(TileID.Stone);
-                TextureAssets.Tile[TileID.Stone] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/StoneRE");
+                TextureAssets.Tile[TileID.Stone] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/StoneRE");
 
                 Main.instance.LoadTiles(TileID.Grass);
-                TextureAssets.Tile[TileID.Grass] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/GrassRE");
+                TextureAssets.Tile[TileID.Grass] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/GrassRE");
 
                 Main.instance.LoadTiles(TileID.ClayBlock);
-                TextureAssets.Tile[TileID.ClayBlock] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/ClayRE");
+                TextureAssets.Tile[TileID.ClayBlock] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/ClayRE");
 
                 Main.instance.LoadTiles(TileID.Sand);
-                TextureAssets.Tile[TileID.Sand] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/SandRE");
+                TextureAssets.Tile[TileID.Sand] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/SandRE");
 
                 Main.instance.LoadTiles(TileID.HardenedSand);
-                TextureAssets.Tile[TileID.HardenedSand] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/HardSandRE");
+                TextureAssets.Tile[TileID.HardenedSand] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/HardSandRE");
 
                 Main.instance.LoadTiles(TileID.Sandstone);
-                TextureAssets.Tile[TileID.Sandstone] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/StoneSandRE");
+                TextureAssets.Tile[TileID.Sandstone] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/StoneSandRE");
 
                 Main.instance.LoadTiles(TileID.Mud);
-                TextureAssets.Tile[TileID.Mud] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/MudRE");
+                TextureAssets.Tile[TileID.Mud] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/MudRE");
 
                 Main.instance.LoadTiles(TileID.CrimsonGrass);
-                TextureAssets.Tile[TileID.CrimsonGrass] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/CrimGrassRE");
+                TextureAssets.Tile[TileID.CrimsonGrass] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/CrimGrassRE");
 
                 Main.instance.LoadTiles(TileID.JungleGrass);
-                TextureAssets.Tile[TileID.JungleGrass] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/MudGrassRE");
+                TextureAssets.Tile[TileID.JungleGrass] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/MudGrassRE");
 
                 Main.instance.LoadTiles(TileID.CorruptGrass);
-                TextureAssets.Tile[TileID.CorruptGrass] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/CrorpGrassRE");
+                TextureAssets.Tile[TileID.CorruptGrass] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/CrorpGrassRE");
 
                 Main.instance.LoadTiles(TileID.Crimstone);
-                TextureAssets.Tile[TileID.Crimstone] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/CrimStoneRE");
+                TextureAssets.Tile[TileID.Crimstone] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/CrimStoneRE");
 
                 Main.instance.LoadTiles(TileID.WoodBlock);
-                TextureAssets.Tile[TileID.WoodBlock] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/WoodRE");
+                TextureAssets.Tile[TileID.WoodBlock] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/WoodRE");
 
                 Main.instance.LoadTiles(TileID.GrayBrick);
-                TextureAssets.Tile[TileID.GrayBrick] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/StoneBrickRE");
+                TextureAssets.Tile[TileID.GrayBrick] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/StoneBrickRE");
 
                 Main.instance.LoadTiles(TileID.Pearlstone);
-                TextureAssets.Tile[TileID.Pearlstone] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/PearlstoneRE");
+                TextureAssets.Tile[TileID.Pearlstone] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/PearlstoneRE");
 
                 Main.instance.LoadTiles(TileID.GraniteBlock);
-                TextureAssets.Tile[TileID.GraniteBlock] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/GraniteRE");
+                TextureAssets.Tile[TileID.GraniteBlock] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/GraniteRE");
 
                 Main.instance.LoadTiles(TileID.Granite);
-                TextureAssets.Tile[TileID.Granite] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/GraniteRE");
+                TextureAssets.Tile[TileID.Granite] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/GraniteRE");
 
                 Main.instance.LoadTiles(TileID.MarbleBlock);
-                TextureAssets.Tile[TileID.MarbleBlock] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/MarbRE");
+                TextureAssets.Tile[TileID.MarbleBlock] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/MarbRE");
 
                 Main.instance.LoadTiles(TileID.Marble);
-                TextureAssets.Tile[TileID.Marble] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/MarbRE");
+                TextureAssets.Tile[TileID.Marble] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/MarbRE");
 
                 Main.instance.LoadTiles(TileID.MushroomGrass);
-                TextureAssets.Tile[TileID.MushroomGrass] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/MushGrassRE");
+                TextureAssets.Tile[TileID.MushroomGrass] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/MushGrassRE");
 
                 Main.instance.LoadTiles(TileID.Ebonstone);
-                TextureAssets.Tile[TileID.Ebonstone] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/CrorpStoneRE");
+                TextureAssets.Tile[TileID.Ebonstone] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/CrorpStoneRE");
 
                 Main.instance.LoadTiles(TileID.Ash);
-                TextureAssets.Tile[TileID.Ash] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/AshingRE");
+                TextureAssets.Tile[TileID.Ash] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/AshingRE");
 
                 Main.instance.LoadTiles(TileID.ObsidianBrick);
-                TextureAssets.Tile[TileID.ObsidianBrick] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/AshedRE");
+                TextureAssets.Tile[TileID.ObsidianBrick] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/AshedRE");
 
                 Main.instance.LoadTiles(TileID.Cloud);
-                TextureAssets.Tile[TileID.Cloud] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/CloudRE");
+                TextureAssets.Tile[TileID.Cloud] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/CloudRE");
 
                 Main.instance.LoadTiles(TileID.Pearlsand);
-                TextureAssets.Tile[TileID.Pearlsand] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/PearlSandRE");
+                TextureAssets.Tile[TileID.Pearlsand] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/PearlSandRE");
 
                 Main.instance.LoadTiles(TileID.SnowCloud);
-                TextureAssets.Tile[TileID.SnowCloud] = ModContent.Request<Texture2D>("Stellamod/Assets/Textures/SnowCloudRE");
+                TextureAssets.Tile[TileID.SnowCloud] = ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/SnowCloudRE");
             }
             
             
@@ -338,7 +338,7 @@ namespace Stellamod
 
 
             UIElement worldIcon = WorldIcon;
-            UIImage element = new UIImage(ModContent.Request<Texture2D>("Stellamod/Assets/Textures/Menu/LunarTree"))
+            UIImage element = new UIImage(ModContent.Request<Texture2D>("LunarVeilLegacy/Assets/Textures/Menu/LunarTree"))
             {
                 Top = new StyleDimension(-10f, 0f),
                 Left = new StyleDimension(-6f, 0f),
@@ -359,7 +359,7 @@ namespace Stellamod
     {
 
 
-        private const string menuAssetPath = "Stellamod/Assets/Textures/Menu"; // Creates a constant variable representing the texture path, so we don't have to write it out multiple times
+        private const string menuAssetPath = "LunarVeilLegacy/Assets/Textures/Menu"; // Creates a constant variable representing the texture path, so we don't have to write it out multiple times
 
         public override Asset<Texture2D> Logo => ModContent.Request<Texture2D>($"{menuAssetPath}/Logo");
 

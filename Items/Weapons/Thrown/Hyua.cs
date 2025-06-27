@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Projectiles.Slashers.Hyua;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Slashers.Hyua;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     public class Hyua : ModItem
     {

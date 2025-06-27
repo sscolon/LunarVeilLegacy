@@ -1,14 +1,14 @@
 ﻿
-using Stellamod.Helpers;
-using Stellamod.Items.Armors.Vanity.Gothivia;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Special;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Armors.Vanity.Gothivia;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Special;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Materials
+namespace LunarVeilLegacy.Items.Materials
 {
     internal class CompletionIdol : ModItem
     {

@@ -1,6 +1,6 @@
-﻿using Stellamod.Helpers;
-using Stellamod.Projectiles.Gun;
-using Stellamod.UI.Systems;
+﻿using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.UI.Systems;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +12,9 @@ using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
 using ParticleLibrary;
-using Stellamod.Particles;
+using LunarVeilLegacy.Particles;
 
-namespace Stellamod.Projectiles.GunHolster
+namespace LunarVeilLegacy.Projectiles.GunHolster
 {
     internal class BubbleBussyStickyProj : ModProjectile
     {

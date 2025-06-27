@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Particles.Sparkles
+namespace LunarVeilLegacy.Particles.Sparkles
 {
     public class CircleSparkle : RaritySparkle
     {
@@ -18,7 +18,7 @@ namespace Stellamod.Particles.Sparkles
             Position = position;
             Velocity = velocity;
             DrawColor = Color.Lerp(Color.White, Color.White, Main.rand.NextFloat(1f));
-            Texture = ModContent.Request<Texture2D>("Stellamod/Particles/MagicCircle2").Value;
+            Texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/MagicCircle2").Value;
             BaseFrame = null;
         }
     }

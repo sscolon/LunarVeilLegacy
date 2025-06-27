@@ -4,7 +4,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.INest.IEagle
+namespace LunarVeilLegacy.NPCs.Bosses.INest.IEagle
 {
     public class AcidFlame : ModProjectile
     {

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.DaedusRework;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.DaedusRework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.SunStalker
+namespace LunarVeilLegacy.NPCs.Bosses.SunStalker
 {
     internal class SunStalkerPreSpawn : ModNPC
     {
@@ -42,7 +42,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
             var entitySource = NPC.GetSource_FromThis();
             if (NPC.ai[0] == 100 && Main.dayTime)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge"), NPC.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge"), NPC.position);
                 if (Main.netMode != NetmodeID.MultiplayerClient)
                 {
                     NPC.NewNPC(entitySource, (int)(NPC.position.X), (int)(NPC.position.Y),
@@ -82,8 +82,8 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                 {
                     player.velocity.X = NPC.direction * 6f;
                     player.velocity.Y = -9f;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_PreSpawn2"), NPC.position);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_PreSpawn"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_PreSpawn2"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_PreSpawn"), NPC.position);
                 }
                 else
                 {
@@ -91,7 +91,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             LangText.Misc("SunStalkerPreSpawn"));
                     player.velocity.X = NPC.direction * 13f;
                     player.velocity.Y = -9f;
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_PreSpawn_Fail"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_PreSpawn_Fail"), NPC.position);
                 }
 
                 for (int i = 0; i < 50; i++)

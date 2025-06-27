@@ -3,13 +3,13 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Buffs;
-using Stellamod.Items.Materials;
-using Stellamod.Items.Weapons.Ranged.GunSwapping;
-using Stellamod.Items.Weapons.Summon;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.NPCs.Overworld.ShadowWraith;
-using Stellamod.Utilis;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Items.Weapons.Ranged.GunSwapping;
+using LunarVeilLegacy.Items.Weapons.Summon;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.NPCs.Overworld.ShadowWraith;
+using LunarVeilLegacy.Utilis;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -20,7 +20,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.NPCs.Acidic
+namespace LunarVeilLegacy.NPCs.Acidic
 {
     public class ToxicHornet : ModNPC
     {

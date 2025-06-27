@@ -1,10 +1,10 @@
-﻿using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
+﻿using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Mage
+namespace LunarVeilLegacy.Items.Weapons.Mage
 {
     internal class GildedStaff : ClassSwapItem
     {

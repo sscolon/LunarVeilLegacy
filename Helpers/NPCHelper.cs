@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Terraria;
 
-namespace Stellamod.Helpers
+namespace LunarVeilLegacy.Helpers
 {
     public static class NPCHelper
     {

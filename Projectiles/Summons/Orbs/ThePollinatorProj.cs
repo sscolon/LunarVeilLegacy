@@ -1,18 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Buffs;
-using Stellamod.Buffs.Whipfx;
-using Stellamod.Dusts;
-using Stellamod.Gores;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.Whipfx;
+using LunarVeilLegacy.Dusts;
+using LunarVeilLegacy.Gores;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Summons.Orbs
+namespace LunarVeilLegacy.Projectiles.Summons.Orbs
 {
     internal class ThePollinatorProj : OrbProjectile
     {
@@ -145,7 +145,7 @@ namespace Stellamod.Projectiles.Summons.Orbs
                 SoundStyle soundStyle = SoundID.Item7;
                 soundStyle.PitchVariance = 0.15f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Morrowarrow") { PitchVariance = 0.15f}, Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowarrow") { PitchVariance = 0.15f}, Projectile.position);
 
                 OrbHelper.PlaySummonSound(Projectile.position);
                 Reset();
@@ -205,7 +205,7 @@ namespace Stellamod.Projectiles.Summons.Orbs
                     SoundStyle soundStyle = SoundID.Item7;
                     soundStyle.PitchVariance = 0.15f;
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Morrowarrow") { PitchVariance = 0.15f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowarrow") { PitchVariance = 0.15f }, Projectile.position);
                     OrbHelper.PlaySummonSound(Projectile.position);
                     Reset();
                     SwingVelocity = Owner.DirectionTo(SwingTarget);
@@ -254,7 +254,7 @@ namespace Stellamod.Projectiles.Summons.Orbs
                     soundStyle.Pitch = -0.25f;
 
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Morrowarrow") { PitchVariance = 0.15f, Pitch = -0.25f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Morrowarrow") { PitchVariance = 0.15f, Pitch = -0.25f }, Projectile.position);
                     OrbHelper.PlaySummonSound(Projectile.position);
                     Reset();
                     SwingVelocity = Owner.DirectionTo(SwingTarget);
@@ -329,7 +329,7 @@ namespace Stellamod.Projectiles.Summons.Orbs
                     soundStyle = SoundID.Grass;
                     soundStyle.PitchVariance = 0.15f;
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/MorrowExp") { PitchVariance = 0.15f}, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/MorrowExp") { PitchVariance = 0.15f}, Projectile.position);
                     break;
 
                 case ActionState.Swing_3:
@@ -349,7 +349,7 @@ namespace Stellamod.Projectiles.Summons.Orbs
                     soundStyle = SoundID.Grass;
                     soundStyle.PitchVariance = 0.15f;
                     SoundEngine.PlaySound(soundStyle, Projectile.position);
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/OverGrowth_Thorn1") { PitchVariance = 0.15f }, Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/OverGrowth_Thorn1") { PitchVariance = 0.15f }, Projectile.position);
                     break;
             }
         }
@@ -364,8 +364,8 @@ namespace Stellamod.Projectiles.Summons.Orbs
                 new Vector3(3, 3, 3), 0);
 
 
-            var TrailTex = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/StarTrail").Value;
-            var TrailTex2 = ModContent.Request<Texture2D>("Stellamod/Effects/Primitives/Trails/WhispyTrail").Value;
+            var TrailTex = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/StarTrail").Value;
+            var TrailTex2 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Primitives/Trails/WhispyTrail").Value;
             Color color = Color.Multiply(new(1.50f, 1.75f, 3.5f, 0), 200);
             if (SwordSlash == null)
             {

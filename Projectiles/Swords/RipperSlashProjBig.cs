@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     public class RipperSlashProjBig : ModProjectile
     {
@@ -39,7 +39,7 @@ namespace Stellamod.Projectiles.Swords
 
             if (Projectile.ai[0] <= 1)
             {
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RipperSlash1");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RipperSlash1");
                 soundStyle.PitchVariance = 0.5f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
                 Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.Projectile.Center, 512f, 2f);

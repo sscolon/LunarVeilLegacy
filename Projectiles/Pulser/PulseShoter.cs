@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Stellamod.Projectiles.Pulser
+namespace LunarVeilLegacy.Projectiles.Pulser
 {
 
     public class PulseShoter : ModProjectile
@@ -44,7 +44,7 @@ namespace Stellamod.Projectiles.Pulser
 		public override void Load()
 		{ // This is called once on mod (re)load when this piece of content is being loaded.
 		  // This is the path to the texture that we'll use for the hook's chain. Make sure to update it.
-			PulseShot = Request<Texture2D>("Stellamod/Assets/Effects/PulseShot");
+			PulseShot = Request<Texture2D>("LunarVeilLegacy/Assets/Effects/PulseShot");
 		}
 
 		public override void Unload()

@@ -1,14 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs;
-using Stellamod.Helpers;
-using Stellamod.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles;
-using Stellamod.NPCs.Bosses.Niivi.Projectiles;
-using Stellamod.NPCs.Catacombs.Trap.Sparn;
-using Stellamod.NPCs.Catacombs.Water.WaterCogwork;
-using Stellamod.Projectiles;
-using Stellamod.Projectiles.Chains;
-using Stellamod.Projectiles.Gun;
-using Stellamod.Projectiles.Test;
+using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.NPCs.Bosses.GothiviaTheSun.GOS.Projectiles;
+using LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles;
+using LunarVeilLegacy.NPCs.Catacombs.Trap.Sparn;
+using LunarVeilLegacy.NPCs.Catacombs.Water.WaterCogwork;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.Projectiles.Chains;
+using LunarVeilLegacy.Projectiles.Gun;
+using LunarVeilLegacy.Projectiles.Test;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -16,7 +16,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     public class Test : ModItem
 	{
@@ -41,7 +41,7 @@ namespace Stellamod.Items.Weapons.Ranged
 			Item.useAnimation = 10;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.autoReuse = true;
-			Item.UseSound = new SoundStyle("Stellamod/Assets/Sounds/Balls");
+			Item.UseSound = new SoundStyle("LunarVeilLegacy/Assets/Sounds/Balls");
 
 			// Weapon Properties
 			Item.DamageType = DamageClass.Ranged;

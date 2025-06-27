@@ -1,11 +1,11 @@
 ﻿
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Quest.Merena
+namespace LunarVeilLegacy.Items.Quest.Merena
 {
     internal class TomeOfInfiniteSorcery : ModItem
     {

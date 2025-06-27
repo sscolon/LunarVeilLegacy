@@ -1,14 +1,14 @@
-﻿using Stellamod.Items.Armors.Miracle;
-using Stellamod.Projectiles.Summons;
+﻿using LunarVeilLegacy.Items.Armors.Miracle;
+using LunarVeilLegacy.Projectiles.Summons;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Stellamod.Items.Materials.Tech;
-using Stellamod.Items.Materials;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Items.Materials.Tech;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Items.Armors.Scrappy
+namespace LunarVeilLegacy.Items.Armors.Scrappy
 {
     internal class ScrappyPlayer : ModPlayer
     {

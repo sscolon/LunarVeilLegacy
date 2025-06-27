@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Brooches;
+using LunarVeilLegacy.Brooches;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Buffs.Dusteffects
+namespace LunarVeilLegacy.Buffs.Dusteffects
 {
 	public class UseIgniter : ModBuff
 	{

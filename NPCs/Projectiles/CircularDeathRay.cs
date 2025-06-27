@@ -1,7 +1,7 @@
 ﻿/*
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
+using LunarVeilLegacy.Trails;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Projectiles
+namespace LunarVeilLegacy.NPCs.Projectiles
 {
     public class CircularDeathRay : ModProjectile, IPixelPrimitiveDrawer
     {
@@ -29,7 +29,7 @@ namespace Stellamod.NPCs.Projectiles
 
         public const float MaxLaserLength = 4000f;
 
-        public override string Texture => "Stellamod/NPCs/Projectiles/Vray";
+        public override string Texture => "LunarVeilLegacy/NPCs/Projectiles/Vray";
 
    
 

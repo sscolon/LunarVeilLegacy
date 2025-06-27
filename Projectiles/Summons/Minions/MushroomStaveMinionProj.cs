@@ -9,10 +9,10 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Buffs.Minions;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Buffs.Minions;
 
-namespace Stellamod.Projectiles.Summons.Minions
+namespace LunarVeilLegacy.Projectiles.Summons.Minions
 {
     /*
      * This minion shows a few mandatory things that make it behave properly. 

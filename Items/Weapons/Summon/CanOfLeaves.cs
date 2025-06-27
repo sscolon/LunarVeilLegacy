@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles;
-using Stellamod.UI.Systems;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles;
+using LunarVeilLegacy.UI.Systems;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Summon
+namespace LunarVeilLegacy.Items.Weapons.Summon
 {
     internal class CanOfLeaves : ClassSwapItem
 	{

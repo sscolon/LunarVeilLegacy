@@ -1,17 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Accessories.Brooches;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Ores;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee.Shields;
-using Stellamod.Items.Weapons.Ranged;
-using Stellamod.Items.Weapons.Thrown;
-using Stellamod.NPCs.Bosses.StarrVeriplant.Projectiles;
-using Stellamod.UI.Systems;
-using Stellamod.WorldG;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Accessories.Brooches;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Ores;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee.Shields;
+using LunarVeilLegacy.Items.Weapons.Ranged;
+using LunarVeilLegacy.Items.Weapons.Thrown;
+using LunarVeilLegacy.NPCs.Bosses.StarrVeriplant.Projectiles;
+using LunarVeilLegacy.UI.Systems;
+using LunarVeilLegacy.WorldG;
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
@@ -22,7 +22,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
+namespace LunarVeilLegacy.NPCs.Event.Gintzearmy.BossGintze
 {
     [AutoloadBossHead] // This attribute looks for a texture called "ClassName_Head_Boss" and automatically registers it as the NPC boss head ic
 	public class CommanderGintzia : ModNPC
@@ -86,7 +86,7 @@ namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
 			// Influences how the NPC looks in the Bestiary
 			NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
 			{
-				CustomTexturePath = "Stellamod/NPCs/Event/Gintzearmy/BossGintze/GintziaPreview",
+				CustomTexturePath = "LunarVeilLegacy/NPCs/Event/Gintzearmy/BossGintze/GintziaPreview",
 				PortraitScale = 0.8f, // Portrait refers to the full picture when clicking on the icon in the bestiary
 				PortraitPositionYOverride = 0f,
 			};
@@ -477,7 +477,7 @@ namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
 			if (timer == 2)
 			{
 				//	GeneralStellaUtilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y + 1000, 0, -10, ModContent.ProjectileType<VRay>(), 600, 0f, -1, 0, NPC.whoAmI);
-				//	SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AbsoluteDistillence"));
+				//	SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AbsoluteDistillence"));
 				NPC.velocity.X *= 0;
 				NPC.velocity.Y *= 0;
 			}
@@ -499,7 +499,7 @@ namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
 			if (timer == 2)
 			{
 				//	GeneralStellaUtilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y + 1000, 0, -10, ModContent.ProjectileType<VRay>(), 600, 0f, -1, 0, NPC.whoAmI);
-				//	SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AbsoluteDistillence"));
+				//	SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AbsoluteDistillence"));
 
 
 				// We apply an initial velocity the first tick we are in the Jump frame. Remember that -Y is up.
@@ -526,7 +526,7 @@ namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
 			timer++;
 			if (timer == 1)
 			{
-				SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/Verifall"));
+				SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/Verifall"));
 				ShakeModSystem.Shake = 8;
 			}
 
@@ -652,7 +652,7 @@ namespace Stellamod.NPCs.Event.Gintzearmy.BossGintze
 			if (timer == 3)
 			{
 				//	GeneralStellaUtilities.NewProjectileBetter(NPC.Center.X, NPC.Center.Y + 1000, 0, -10, ModContent.ProjectileType<VRay>(), 600, 0f, -1, 0, NPC.whoAmI);
-				//	SoundEngine.PlaySound(new SoundStyle($"Stellamod/Assets/Sounds/AbsoluteDistillence"));
+				//	SoundEngine.PlaySound(new SoundStyle($"LunarVeilLegacy/Assets/Sounds/AbsoluteDistillence"));
 				NPC.velocity.X *= 0;
 				NPC.velocity.Y *= 0;
 			}

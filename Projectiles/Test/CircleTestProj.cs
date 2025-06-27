@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework.Graphics;
-using Stellamod.Trails;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Trails;
+using LunarVeilLegacy.Helpers;
 
-namespace Stellamod.Projectiles.Test
+namespace LunarVeilLegacy.Projectiles.Test
 {
     internal class CircleTestProj : ModProjectile, 
         IPixelPrimitiveDrawer

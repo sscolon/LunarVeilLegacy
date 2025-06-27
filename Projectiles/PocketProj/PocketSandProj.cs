@@ -1,10 +1,10 @@
-﻿using Stellamod.Buffs;
-using Stellamod.Buffs.PocketDustEffects;
+﻿using LunarVeilLegacy.Buffs;
+using LunarVeilLegacy.Buffs.PocketDustEffects;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.PocketProj
+namespace LunarVeilLegacy.Projectiles.PocketProj
 {
     public class PocketSandProj : ModProjectile
 	{

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Crossbows.Ultras
+namespace LunarVeilLegacy.Projectiles.Crossbows.Ultras
 {
     public class MoltenCrossbowBolt : ModProjectile
 	{

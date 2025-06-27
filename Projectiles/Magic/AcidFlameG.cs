@@ -1,13 +1,13 @@
 using Microsoft.Xna.Framework;
-using Stellamod.NPCs.Bosses.INest;
-using Stellamod.Projectiles.IgniterExplosions;
+using LunarVeilLegacy.NPCs.Bosses.INest;
+using LunarVeilLegacy.Projectiles.IgniterExplosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Magic
+namespace LunarVeilLegacy.Projectiles.Magic
 {
     public class AcidFlameG : ModProjectile
     {
@@ -69,11 +69,11 @@ namespace Stellamod.Projectiles.Magic
                 int Sound = Main.rand.Next(1, 3);
                 if (Sound == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Flare1"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Flare1"), Projectile.position);
                 }
                 else
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/Irradieagle_Flare2"), Projectile.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/Irradieagle_Flare2"), Projectile.position);
                 }
             }
             Projectile.spriteDirection = Projectile.direction;

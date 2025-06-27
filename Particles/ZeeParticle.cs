@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 
-namespace Stellamod.Particles
+namespace LunarVeilLegacy.Particles
 {
     internal class ZeeParticle : Particle
     {

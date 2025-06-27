@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ModLoader;
 using static tModPorter.ProgressUpdate;
 
-namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Niivi.Projectiles
 {
     internal class NiiviStarFieldBombProj : ModProjectile
     {
@@ -64,7 +64,7 @@ namespace Stellamod.NPCs.Bosses.Niivi.Projectiles
 
         public override bool PreDraw(ref Color lightColor)
         {
-            var texture = ModContent.Request<Texture2D>("Stellamod/Particles/SparkleTrailParticle");
+            var texture = ModContent.Request<Texture2D>("LunarVeilLegacy/Particles/SparkleTrailParticle");
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 drawSize = texture.Size();

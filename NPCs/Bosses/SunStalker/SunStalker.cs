@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers;
-using Stellamod.Items.Accessories;
-using Stellamod.Items.Consumables;
-using Stellamod.Items.Weapons.Mage;
-using Stellamod.Items.Weapons.Melee.Spears;
-using Stellamod.Items.Weapons.Ranged;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Items.Accessories;
+using LunarVeilLegacy.Items.Consumables;
+using LunarVeilLegacy.Items.Weapons.Mage;
+using LunarVeilLegacy.Items.Weapons.Melee.Spears;
+using LunarVeilLegacy.Items.Weapons.Ranged;
 using System;
 using System.IO;
 using Terraria;
@@ -17,7 +17,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.SunStalker
+namespace LunarVeilLegacy.NPCs.Bosses.SunStalker
 {
     [AutoloadBossHead]
     public class SunStalker : ModNPC
@@ -33,7 +33,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
 
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers();
-            drawModifiers.CustomTexturePath = "Stellamod/NPCs/Bosses/SunStalker/SunStalkerBestiary";
+            drawModifiers.CustomTexturePath = "LunarVeilLegacy/NPCs/Bosses/SunStalker/SunStalkerBestiary";
             drawModifiers.PortraitScale = 1f; // Portrait refers to the full picture when clicking on the icon in the bestiary
             drawModifiers.PortraitPositionYOverride = 0f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
@@ -219,7 +219,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                         _invincible = true;
                         NPC.netUpdate = true;
                     }
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge"), NPC.position);
                 }
                 if (NPC.alpha <= 5 && NPC.ai[1] == 0)
                 {
@@ -255,11 +255,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                     Glow = true;
                     NPC.ai[1] = 1;
 
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge_Full"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge_Full"), NPC.position);
                 }
                 if (NPC.alpha <= 0 && NPC.ai[1] == 1)
                 {
-                    SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge_Full_Note"), NPC.position);
+                    SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge_Full_Note"), NPC.position);
                     NPC.ai[1] = 2;
                     NPC.ai[0] = 5000;
                     NPC.alpha = 40;
@@ -324,11 +324,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Attack"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Attack"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Attack2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Attack2"), NPC.position);
                             }
 
                         }
@@ -361,11 +361,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Rock"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Rock"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Rock2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Rock2"), NPC.position);
                             }
                  
                             if (StellaMultiplayer.IsHost)
@@ -434,11 +434,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Feather"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Feather"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Feather2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Feather2"), NPC.position);
                             }
                             for (int i = 0; i < 50; i++)
                             {
@@ -528,11 +528,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Dash"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Dash"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Dash2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Dash2"), NPC.position);
                             }
                         }
                         if (NPC.ai[0] >= 150)
@@ -645,11 +645,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Attack"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Attack"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Attack2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Attack2"), NPC.position);
                             }
 
                         }
@@ -680,11 +680,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Bomb"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Bomb_2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Bomb_2"), NPC.position);
                             }
 
                             if (StellaMultiplayer.IsHost)
@@ -710,7 +710,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                         NPC.ai[0]++;
                         if (NPC.ai[0] <= 10)
                         {
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge_TP_Out"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge_TP_Out"), NPC.position);
                         }
                         if (NPC.ai[0] <= 50)
                         {
@@ -752,7 +752,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                         {
                             if (NPC.ai[0] == 51)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge_TP_In"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge_TP_In"), NPC.position);
                                 if (NPC.position.X >= player.position.X)
                                 {
                                     NPC.position.X = player.position.X - 200;
@@ -840,7 +840,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                                 NPC.netUpdate = true;
                             }
                       
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Sun_Start"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Sun_Start"), NPC.position);
                         }
                         if (NPC.ai[0] == 250)
                         {
@@ -849,7 +849,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                                 _invincible = false;
                                 NPC.netUpdate = true;
                             }
-                            SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Sun_End"), NPC.position);
+                            SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Sun_End"), NPC.position);
                         }
                         if (NPC.ai[0] >= 240)
                         {
@@ -874,11 +874,11 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                             int Sound = Main.rand.Next(1, 3);
                             if (Sound == 1)
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Sun_Shot1"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Sun_Shot1"), NPC.position);
                             }
                             else
                             {
-                                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Sun_Shot2"), NPC.position);
+                                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Sun_Shot2"), NPC.position);
                             }
                             float offsetRandom = Main.rand.Next(0, 50);
                             Main.LocalPlayer.GetModPlayer<MyPlayer>().ShakeAtPosition(base.NPC.Center, 2048f, 124f);
@@ -985,7 +985,7 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                     }
                     if (NPC.ai[2] == 40)
                     {
-                        SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SunStalker_Charge_TP_Out"), NPC.position);
+                        SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SunStalker_Charge_TP_Out"), NPC.position);
                     }
                 }
             }
@@ -1104,17 +1104,17 @@ namespace Stellamod.NPCs.Bosses.SunStalker
                     spriteEffects,
                 0);
             }
-            Texture2D texture2D4 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D4 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D4, (NPC.Center - Main.screenPosition), null, new Color((int)(55f * alphaCounter), (int)(55f * alphaCounter), (int)(45f * alphaCounter), 0), NPC.rotation, new Vector2(64 / 2, 64 / 2), 0.2f * (counter + 0.3f), SpriteEffects.None, 0f);
 
 
-            Texture2D texture2D5 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D5 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D5, (NPC.Center - Main.screenPosition), null, new Color((int)(55f * alphaCounter), (int)(55f * alphaCounter), (int)(15f * alphaCounter), 0), NPC.rotation, new Vector2(64 / 2, 64 / 2), 0.2f * (counter + 0.3f * 2), SpriteEffects.None, 0f);
 
-            Texture2D texture2D6 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D6 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D6, (NPC.Center - Main.screenPosition), null, new Color((int)(55f * alphaCounter), (int)(55f * alphaCounter), (int)(15f * alphaCounter), 0), NPC.rotation, new Vector2(64 / 2, 64 / 2), 0.2f * (counter + 0.3f * 6), SpriteEffects.None, 0f);
 
-            Texture2D texture2D7 = ModContent.Request<Texture2D>("Stellamod/Effects/Masks/DimLight").Value;
+            Texture2D texture2D7 = ModContent.Request<Texture2D>("LunarVeilLegacy/Effects/Masks/DimLight").Value;
             Main.spriteBatch.Draw(texture2D7, (NPC.Center - Main.screenPosition), null, new Color((int)(55f * alphaCounter), (int)(55f * alphaCounter), (int)(15f * alphaCounter), 0), NPC.rotation, new Vector2(64 / 2, 64 / 2), 0.2f * (counter + 0.3f * 7), SpriteEffects.None, 0f);
         }
         float alphaCounter = 0;

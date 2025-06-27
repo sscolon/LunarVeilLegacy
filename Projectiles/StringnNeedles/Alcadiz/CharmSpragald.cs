@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Buffs.Charms;
+using LunarVeilLegacy.Buffs.Charms;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Projectiles.StringnNeedles.Alcadiz
+namespace LunarVeilLegacy.Projectiles.StringnNeedles.Alcadiz
 {
     public class CharmSpragald : ModProjectile
 	{

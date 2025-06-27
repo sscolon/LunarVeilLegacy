@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Stellamod.Skies
+namespace LunarVeilLegacy.Skies
 {
     class VignettePlayer : ModPlayer
 	{

@@ -1,10 +1,10 @@
 ﻿
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeables
+namespace LunarVeilLegacy.Items.Placeables
 {
     internal class RunicTablel : ModItem
     {

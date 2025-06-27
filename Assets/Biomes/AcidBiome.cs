@@ -1,11 +1,11 @@
 ﻿
 using Microsoft.Xna.Framework;
-using Stellamod.WorldG;
+using LunarVeilLegacy.WorldG;
 using Terraria;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.Assets.Biomes
+namespace LunarVeilLegacy.Assets.Biomes
 {
     public class AcidBiome : ModBiome
     {
@@ -49,9 +49,9 @@ namespace Stellamod.Assets.Biomes
         public override string BestiaryIcon => base.BestiaryIcon;
         public override string BackgroundPath => MapBackground;
         public override Color? BackgroundColor => base.BackgroundColor;
-        public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("Stellamod/AcidWaterStyle");
+        public override ModWaterStyle WaterStyle => ModContent.Find<ModWaterStyle>("LunarVeilLegacy/AcidWaterStyle");
 
-        public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("Stellamod/MarrowSurfaceBackgroundStyle");
+        public override ModSurfaceBackgroundStyle SurfaceBackgroundStyle => ModContent.Find<ModSurfaceBackgroundStyle>("LunarVeilLegacy/MarrowSurfaceBackgroundStyle");
 
         public override bool IsBiomeActive(Player player) => (player.ZoneOverworldHeight || player.ZoneDirtLayerHeight) && BiomeTileCounts.InAcid;
         public override void OnEnter(Player player) => player.GetModPlayer<MyPlayer>().ZoneAcid = true;

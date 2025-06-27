@@ -1,9 +1,9 @@
-﻿using Stellamod.Tiles.RoyalCapital;
-using Stellamod.Tiles.DrakonicManor;
+﻿using LunarVeilLegacy.Tiles.RoyalCapital;
+using LunarVeilLegacy.Tiles.DrakonicManor;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable.Manor
+namespace LunarVeilLegacy.Items.Placeable.Manor
 {
     public class DrakonicHallI : ModItem
 	{

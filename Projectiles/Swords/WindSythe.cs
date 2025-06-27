@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Projectiles.Swords
+namespace LunarVeilLegacy.Projectiles.Swords
 {
     public class WindSythe : ModProjectile
     {
@@ -48,7 +48,7 @@ namespace Stellamod.Projectiles.Swords
             Projectile.ai[1]++;
             if (Projectile.ai[1] <= 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/SkyrageShasher"), Projectile.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/SkyrageShasher"), Projectile.position);
             }
             Projectile.rotation += 0.1f;
 			if(Projectile.timeLeft >= 250 && Projectile.timeLeft <= 310)

@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ModLoader;
 
 
-namespace Stellamod.NPCs.Town
+namespace LunarVeilLegacy.NPCs.Town
 {
     // Shows basic boss bar code using a custom colored texture. It only does visual things, so for a more practical boss bar, see the other example (MinionBossBossBar)
     // To use this, in an NPCs SetDefaults, write:
@@ -24,7 +24,7 @@ namespace Stellamod.NPCs.Town
 		{
 			if (VerlibossHeadIndex != -1)
 			{
-				return ModContent.Request<Texture2D>("Stellamod/NPCs/Town/DelgrimHeading");
+				return ModContent.Request<Texture2D>("LunarVeilLegacy/NPCs/Town/DelgrimHeading");
 			}
 			return null;
 		}

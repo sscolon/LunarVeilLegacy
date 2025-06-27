@@ -1,9 +1,9 @@
-﻿using Stellamod.Tiles.Structures.AlcadizNGovheil;
-using Stellamod.Tiles.DrakonicManor;
+﻿using LunarVeilLegacy.Tiles.Structures.AlcadizNGovheil;
+using LunarVeilLegacy.Tiles.DrakonicManor;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Placeable.Laboratory
+namespace LunarVeilLegacy.Items.Placeable.Laboratory
 {
     public class LabHall : ModItem
 	{

@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using Stellamod.Helpers.Separate;
+using LunarVeilLegacy.Helpers.Separate;
 using System;
 using System.Collections.Generic;
 using Terraria;
@@ -11,7 +11,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace Stellamod.Skies
+namespace LunarVeilLegacy.Skies
 
 {
 
@@ -27,9 +27,9 @@ namespace Stellamod.Skies
 
 		public override void SpecialVisuals(Player player, bool isActive)
 		{
-			player.ManageSpecialBiomeVisuals("Stellamod:GovheilSky", isActive);
+			player.ManageSpecialBiomeVisuals("LunarVeilLegacy:GovheilSky", isActive);
 			if (isActive)
-				SkyManager.Instance["Stellamod:GovheilSky"].Update(new());
+				SkyManager.Instance["LunarVeilLegacy:GovheilSky"].Update(new());
 		}
 	}
 
@@ -137,7 +137,7 @@ namespace Stellamod.Skies
 
             // Draw the sky and moon.
          
-                Texture2D skyTexture = ModContent.Request<Texture2D>("Stellamod/Skies/GovheilSky").Value;
+                Texture2D skyTexture = ModContent.Request<Texture2D>("LunarVeilLegacy/Skies/GovheilSky").Value;
                 spriteBatch.Draw(skyTexture, new Rectangle(0, 0, Main.screenWidth, Main.screenHeight), Color.White with { A = 0 } * intensity * 0.2f);
 
                 // Draw underwater rays over the screen.
@@ -154,7 +154,7 @@ namespace Stellamod.Skies
         /*
         private void DrawWaterRays(SpriteBatch spriteBatch)
         {
-            Texture2D noise = ModContent.Request<Texture2D>("Stellamod/Textures/BlurryPerlinNoise", AssetRequestMode.ImmediateLoad).Value;
+            Texture2D noise = ModContent.Request<Texture2D>("LunarVeilLegacy/Textures/BlurryPerlinNoise", AssetRequestMode.ImmediateLoad).Value;
             Effect waterRays = StellasEffectsRegistry.UnderwaterRayShader.Shader;
             waterRays.Parameters["noiseMap"].SetValue(noise);
             waterRays.Parameters["mainColor"].SetValue(Color.SkyBlue.ToVector3() * 1.5f);
@@ -204,7 +204,7 @@ namespace Stellamod.Skies
         private void DrawMoon(SpriteBatch spriteBatch)
         {
             // Draw the moon.
-            Texture2D bloom = ModContent.Request<Texture2D>("Stellamod/Skies/Piece").Value;//InfernumTextureRegistry.DistortedBloomRing.Value;
+            Texture2D bloom = ModContent.Request<Texture2D>("LunarVeilLegacy/Skies/Piece").Value;//InfernumTextureRegistry.DistortedBloomRing.Value;
             Color bloomColor = Color.DarkGoldenrod with { A = 0 } * intensity;
             float rotation = Main.GlobalTimeWrappedHourly * 0.67f;
             float bloomScale = 0.7f;
@@ -281,7 +281,7 @@ namespace Stellamod.Skies
             {
                 Cinder cinder = Cinders[i];
                 cinder.Update();
-                Texture2D cinderTexture = cinder.Bubble ? ModContent.Request<Texture2D>("Stellamod/Trails/CircleGradient").Value : ModContent.Request<Texture2D>("Stellamod/Trails/Star").Value;
+                Texture2D cinderTexture = cinder.Bubble ? ModContent.Request<Texture2D>("LunarVeilLegacy/Trails/CircleGradient").Value : ModContent.Request<Texture2D>("LunarVeilLegacy/Trails/Star").Value;
                 if (cinder.Depth > minDepth && cinder.Depth < maxDepth * 2f)
                 {
                     Vector2 scale = new Vector2(1f / cinder.Depth, 1f / cinder.Depth) * (cinder.Bubble ? 0.5f : 1f);

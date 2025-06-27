@@ -4,7 +4,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Accessories.Runes
+namespace LunarVeilLegacy.Items.Accessories.Runes
 {
     internal class DetonationBomb : ModProjectile
     {

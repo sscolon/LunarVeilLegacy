@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
-using Stellamod.Trails;
+using LunarVeilLegacy.Helpers;
+using LunarVeilLegacy.Trails;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
+namespace LunarVeilLegacy.NPCs.Bosses.Sylia.Projectiles
 {
     internal class VoidScissor2 : ModProjectile
     {
@@ -37,7 +37,7 @@ namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
             if (Timer == 1)
             {
                 TargetVelocity = Projectile.velocity;
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/RipperSlash2");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/RipperSlash2");
                 soundStyle.PitchVariance = 0.5f;
                 SoundEngine.PlaySound(soundStyle, Projectile.position);
             }
@@ -64,7 +64,7 @@ namespace Stellamod.NPCs.Bosses.Sylia.Projectiles
             {
                 IsStuck = true;
                 Projectile.position += oldVelocity;
-                SoundStyle soundStyle = new SoundStyle("Stellamod/Assets/Sounds/AssassinsKnifeHit");
+                SoundStyle soundStyle = new SoundStyle("LunarVeilLegacy/Assets/Sounds/AssassinsKnifeHit");
                 soundStyle.Pitch = -0.5f;
                 soundStyle.PitchVariance = 0.15f;
                 soundStyle.Volume = 0.3f;

@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
-using Stellamod.Projectiles.Bow;
+using LunarVeilLegacy.Items.Materials;
+using LunarVeilLegacy.Projectiles.Bow;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Ranged
+namespace LunarVeilLegacy.Items.Weapons.Ranged
 {
     internal class IcelockLongbow : ModItem
     {
@@ -62,7 +62,7 @@ namespace Stellamod.Items.Weapons.Ranged
             } 
             else if (_combo == maxCombo - 1)
             {
-                SoundEngine.PlaySound(new SoundStyle("Stellamod/Assets/Sounds/WinterboundArrow"), player.position);
+                SoundEngine.PlaySound(new SoundStyle("LunarVeilLegacy/Assets/Sounds/WinterboundArrow"), player.position);
                 type = ModContent.ProjectileType<IcelockArrow>();
                 Projectile.NewProjectile(source, position, velocity, type, damage * 2, knockback, player.whoAmI);
             }

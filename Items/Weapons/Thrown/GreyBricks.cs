@@ -1,10 +1,10 @@
 
 using Microsoft.Xna.Framework;
-using Stellamod.Projectiles.Thrown;
+using LunarVeilLegacy.Projectiles.Thrown;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     public class GreyBricks : ModItem
 	{

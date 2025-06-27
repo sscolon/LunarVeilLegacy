@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
-using Stellamod.Helpers;
+using LunarVeilLegacy.Helpers;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Brooches
+namespace LunarVeilLegacy.Brooches
 {
     /// <summary>
     /// Provides default implementation for brooch type follower, so you don't have to copy & paste code!

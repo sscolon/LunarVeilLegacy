@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using Terraria;
 using Terraria.ModLoader;
-namespace Stellamod.Dusts
+namespace LunarVeilLegacy.Dusts
 {
     public class GlowRingDust : ModDust
     {
@@ -13,7 +13,7 @@ namespace Stellamod.Dusts
             dust.noGravity = true;
             dust.frame = new Rectangle(0, 0, 53, 53);
 
-            dust.shader = new Terraria.Graphics.Shaders.ArmorShaderData(new Ref<Effect>(Stellamod.Instance.Assets.Request<Effect>("Effects/GlowingDust", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value), "GlowingDustPass");
+            dust.shader = new Terraria.Graphics.Shaders.ArmorShaderData(new Ref<Effect>(LunarVeilLegacy.Instance.Assets.Request<Effect>("Effects/GlowingDust", ReLogic.Content.AssetRequestMode.ImmediateLoad).Value), "GlowingDustPass");
         }
 
         public override Color? GetAlpha(Dust dust, Color lightColor)

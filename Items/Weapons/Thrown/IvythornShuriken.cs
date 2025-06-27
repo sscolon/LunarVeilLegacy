@@ -1,4 +1,4 @@
-﻿using Stellamod.Projectiles.Thrown;
+﻿using LunarVeilLegacy.Projectiles.Thrown;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +9,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Microsoft.Xna.Framework;
-using Stellamod.Items.Materials;
+using LunarVeilLegacy.Items.Materials;
 
-namespace Stellamod.Items.Weapons.Thrown
+namespace LunarVeilLegacy.Items.Weapons.Thrown
 {
     internal class IvythornShuriken : ModItem
     {

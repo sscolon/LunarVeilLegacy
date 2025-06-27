@@ -1,10 +1,10 @@
-﻿using Stellamod.Projectiles.Thrown;
+﻿using LunarVeilLegacy.Projectiles.Thrown;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Stellamod.Items.Weapons.Melee.Yoyos
+namespace LunarVeilLegacy.Items.Weapons.Melee.Yoyos
 {
     public class Blackdot : ModItem
     {
